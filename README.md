@@ -1,2 +1,2 @@
-# MentalFunctioningOntology
-A Mental Functioning Ontology [TBD]
+# Ecological Mental Functioning Ontology
+An Ecological Mental Functioning Ontology [TBD]
