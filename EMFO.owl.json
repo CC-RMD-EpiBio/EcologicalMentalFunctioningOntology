@@ -1,0 +1,2990 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined"
+    ],
+    "baseIris": [
+      "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "MentalFunctioningOntology": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.47",
+      "translation": [
+        299.42,
+        133.92
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "1"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "14",
+      "type": "owl:Class"
+    },
+    {
+      "id": "23",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "28",
+      "type": "owl:Class"
+    },
+    {
+      "id": "46",
+      "type": "owl:Class"
+    },
+    {
+      "id": "47",
+      "type": "owl:Class"
+    },
+    {
+      "id": "52",
+      "type": "owl:Class"
+    },
+    {
+      "id": "59",
+      "type": "owl:Class"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "64",
+      "type": "owl:Class"
+    },
+    {
+      "id": "65",
+      "type": "owl:Class"
+    },
+    {
+      "id": "30",
+      "type": "owl:Class"
+    },
+    {
+      "id": "66",
+      "type": "owl:Class"
+    },
+    {
+      "id": "67",
+      "type": "owl:Class"
+    },
+    {
+      "id": "70",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "82",
+      "type": "owl:Class"
+    },
+    {
+      "id": "83",
+      "type": "owl:Class"
+    },
+    {
+      "id": "76",
+      "type": "owl:Class"
+    },
+    {
+      "id": "43",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "40",
+      "type": "owl:Class"
+    },
+    {
+      "id": "88",
+      "type": "owl:Class"
+    },
+    {
+      "id": "81",
+      "type": "owl:Class"
+    },
+    {
+      "id": "90",
+      "type": "owl:Class"
+    },
+    {
+      "id": "86",
+      "type": "owl:Class"
+    },
+    {
+      "id": "95",
+      "type": "owl:Class"
+    },
+    {
+      "id": "98",
+      "type": "owl:Class"
+    },
+    {
+      "id": "99",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    },
+    {
+      "id": "100",
+      "type": "owl:Class"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "51",
+      "type": "owl:Class"
+    },
+    {
+      "id": "102",
+      "type": "owl:Class"
+    },
+    {
+      "id": "16",
+      "type": "owl:Class"
+    },
+    {
+      "id": "103",
+      "type": "owl:Class"
+    },
+    {
+      "id": "104",
+      "type": "owl:Class"
+    },
+    {
+      "id": "74",
+      "type": "owl:Class"
+    },
+    {
+      "id": "26",
+      "type": "owl:Class"
+    },
+    {
+      "id": "106",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "72",
+      "type": "owl:Class"
+    },
+    {
+      "id": "107",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "117",
+      "type": "owl:Class"
+    },
+    {
+      "id": "119",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "38",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "121",
+      "type": "owl:Class"
+    },
+    {
+      "id": "122",
+      "type": "owl:Class"
+    },
+    {
+      "id": "18",
+      "type": "owl:Class"
+    },
+    {
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "123",
+      "type": "owl:Class"
+    },
+    {
+      "id": "49",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#DistalTemporalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "DistalTemporalFactors"
+      }
+    },
+    {
+      "id": "6",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#CommunicationFunctions",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "CommunicationFunctions"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1858.83,
+        1477.01
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#MajorLifeAreasActivities",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "MajorLifeAreasActivities"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "14",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "113.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1537.7,
+        -237.54
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#FeedbackAppraisal",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "FeedbackAppraisal"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        2095.88,
+        1090.67
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#DistalContexts",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "DistalContexts"
+      },
+      "pos": [
+        -738.69,
+        42.79
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ProximalContexts",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ProximalContexts"
+      }
+    },
+    {
+      "id": "14",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#PersonFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "PersonFactors"
+      },
+      "pos": [
+        792.44,
+        889.4
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Continuant",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Continuant"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "BFO_0000002",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -257.59,
+        869.82
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#OntologyOfMentalFunctioning",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "OntologyOfMentalFunctioning"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "0",
+            "type": "label"
+          }
+        ],
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition1",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "100",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "RMD",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "RMD",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -46.34,
+        896.27
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Input",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Input"
+      },
+      "pos": [
+        -234.99,
+        445.46
+      ]
+    },
+    {
+      "id": "28",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#MentalFunctions",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "MentalFunctions"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1387,
+        939.85
+      ]
+    },
+    {
+      "id": "46",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#behavior",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "behavior"
+      },
+      "pos": [
+        294.31,
+        1454.4
+      ]
+    },
+    {
+      "id": "47",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#EnvironmentalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "EnvironmentalFactors"
+      }
+    },
+    {
+      "id": "52",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#PsychologicalPersonalBackgroundFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "PsychologicalPersonalBackgroundFactors"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1518.73,
+        756.19
+      ]
+    },
+    {
+      "id": "59",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#DistalCulturalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "DistalCulturalFactors"
+      }
+    },
+    {
+      "id": "31",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ExternalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ExternalFactors"
+      },
+      "pos": [
+        -190.47,
+        49.1
+      ]
+    },
+    {
+      "id": "64",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#CommunicationActivities",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "CommunicationActivities"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "9",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "108.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1245.58,
+        -203.31
+      ]
+    },
+    {
+      "id": "65",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#SimpleToComplexTemporal–BriefOrSustainedSingleOrMultiple",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "SimpleToComplexTemporal–BriefOrSustainedSingleOrMultiple"
+      }
+    },
+    {
+      "id": "30",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Context",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Context"
+      },
+      "pos": [
+        -156.92,
+        -282.04
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#MentalActivityDemands",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "MentalActivityDemands"
+      }
+    },
+    {
+      "id": "67",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Participation",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Participation"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": "70",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Person",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Person"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": "25",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Attributes",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Attributes"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "1",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -605.12,
+        794.11
+      ]
+    },
+    {
+      "id": "82",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#MentalNatureOfTask",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "MentalNatureOfTask"
+      }
+    },
+    {
+      "id": "83",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#SelfCareActivities",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "SelfCareActivities"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "11",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "110.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1771.93,
+        -62.5
+      ]
+    },
+    {
+      "id": "76",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Brain",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Brain"
+      },
+      "pos": [
+        1228.19,
+        1606.55
+      ]
+    },
+    {
+      "id": "43",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#MentalFunctioning",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "MentalFunctioning"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition3",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "3",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "102.0",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "SNOMED-CT",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "SNOMED-CT",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        752.69,
+        1193.04
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#PhysicalFunctioning",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "PhysicalFunctioning"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "7",
+            "type": "label"
+          }
+        ],
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "106.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "SNOMED-CT",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "SNOMED-CT",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1403.88,
+        525.87
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Output",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Output"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "2",
+            "type": "label"
+          }
+        ],
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition2",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "101.0",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        780.54,
+        1383.84
+      ]
+    },
+    {
+      "id": "88",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#DomesticLifeActivities",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "DomesticLifeActivities"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "12",
+            "type": "label"
+          }
+        ],
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "111.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1829.73,
+        91.01
+      ]
+    },
+    {
+      "id": "81",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#InterpersonalInteractionsAndRelationships",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "InterpersonalInteractionsAndRelationships"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "13",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "112.0",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1391.41,
+        -250.63
+      ]
+    },
+    {
+      "id": "90",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Mind",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Mind"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": "86",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#LearningAndApplyingKnowledge",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "LearningAndApplyingKnowledge"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "8",
+            "type": "label"
+          }
+        ],
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "107.0",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1818.12,
+        260.54
+      ]
+    },
+    {
+      "id": "95",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#GeneralTasksAndDemands",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "GeneralTasksAndDemands"
+      }
+    },
+    {
+      "id": "98",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#SocialEnvironmentFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "SocialEnvironmentFactors"
+      }
+    },
+    {
+      "id": "99",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Ontology%20of%20Mental%20Functioning",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Ontology%20of%20Mental%20Functioning"
+      },
+      "pos": [
+        34.14,
+        214.12
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#SensoryFunctions",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "SensoryFunctions"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        736.28,
+        335.46
+      ]
+    },
+    {
+      "id": "100",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#External%20Factors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "External%20Factors"
+      },
+      "pos": [
+        -349.21,
+        -539.44
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Throughput",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Throughput"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        480.06,
+        1146.2
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#HealthConditionFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "HealthConditionFactors"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        497.38,
+        638.86
+      ]
+    },
+    {
+      "id": "51",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#BiographicalPersonalBackgroundFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "BiographicalPersonalBackgroundFactors"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        948.87,
+        255.84
+      ]
+    },
+    {
+      "id": "102",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#SociopoliticalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "SociopoliticalFactors"
+      }
+    },
+    {
+      "id": "16",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#PersonalBackgroundFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "PersonalBackgroundFactors"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1145.74,
+        597.18
+      ]
+    },
+    {
+      "id": "103",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ExternalFeedback",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ExternalFeedback"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": "104",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ProximalCulturalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ProximalCulturalFactors"
+      }
+    },
+    {
+      "id": "74",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#MobilityActivities",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "MobilityActivities"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "10",
+            "type": "label"
+          }
+        ],
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "109.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1121.14,
+        -96.22
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#LevelOfPerformance",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "LevelOfPerformance"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition4",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "4",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "103.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -516.69,
+        1116.72
+      ]
+    },
+    {
+      "id": "106",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#PhysicalEnvironmentFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "PhysicalEnvironmentFactors"
+      }
+    },
+    {
+      "id": "4",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Occurrent",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Occurrent"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "BFO_0000003",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        389.38,
+        1505.37
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ObservableBehavior",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ObservableBehavior"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "5",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "104.0",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1102.12,
+        841.55
+      ]
+    },
+    {
+      "id": "72",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Community,SocialAndCivicLifeActivities",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Community,SocialAndCivicLifeActivities"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "15",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "114.0",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1670.81,
+        -170.32
+      ]
+    },
+    {
+      "id": "107",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ProximalTemporalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ProximalTemporalFactors"
+      }
+    },
+    {
+      "id": "19",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#BodyFunctions",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "BodyFunctions"
+      },
+      "pos": [
+        1014.25,
+        626.93
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ContextualFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ContextualFactors"
+      },
+      "pos": [
+        -771.72,
+        380.54
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        569.57,
+        -871.48
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Entity",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Entity"
+      },
+      "pos": [
+        -10.23,
+        1244.92
+      ]
+    },
+    {
+      "id": "117",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#AloneOrWithOthersRequiresset-upLevelOfStress",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "AloneOrWithOthersRequiresset-upLevelOfStress"
+      }
+    },
+    {
+      "id": "119",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#ProximalSituationalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "ProximalSituationalFactors"
+      }
+    },
+    {
+      "id": "7",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#CognitiveFunctions",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "CognitiveFunctions"
+      },
+      "pos": [
+        1743.89,
+        1144.06
+      ]
+    },
+    {
+      "id": "38",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Environment",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Environment"
+      },
+      "pos": [
+        -54.22,
+        -315.52
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Activities",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Activities"
+      },
+      "annotations": {
+        "Definition": [
+          {
+            "identifier": "Definition",
+            "language": "undefined",
+            "value": "Some Definition",
+            "type": "label"
+          }
+        ],
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "6",
+            "type": "label"
+          }
+        ],
+        "Source_ID": [
+          {
+            "identifier": "Source_ID",
+            "language": "undefined",
+            "value": "105.0",
+            "type": "label"
+          }
+        ],
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ],
+        "Definition_Source": [
+          {
+            "identifier": "Definition_Source",
+            "language": "undefined",
+            "value": "ICF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1426.02,
+        163.21
+      ]
+    },
+    {
+      "id": "121",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Feedback",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Feedback"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": "122",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#DistalSituationalFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "DistalSituationalFactors"
+      }
+    },
+    {
+      "id": "18",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#BodyStructures",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "BodyStructures"
+      },
+      "pos": [
+        1050.68,
+        1270.6
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Process",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "Process"
+      },
+      "annotations": {
+        "OntologyClassID": [
+          {
+            "identifier": "OntologyClassID",
+            "language": "undefined",
+            "value": "BFO_0000015",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        687.4,
+        1494.85
+      ]
+    },
+    {
+      "id": "123",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#InternalFeedback",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "InternalFeedback"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": "49",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#DemographicPersonalBackgroundFactors",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "DemographicPersonalBackgroundFactors"
+      },
+      "annotations": {
+        "Imported_From": [
+          {
+            "identifier": "Imported_From",
+            "language": "undefined",
+            "value": "EMMF",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        1557.06,
+        597.5
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "1",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "3",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "20",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "22",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "27",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "32",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "34",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "37",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "39",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "41",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "42",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "44",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "48",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "53",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "54",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "55",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "56",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "57",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "58",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "60",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "61",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "62",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "63",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "68",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "69",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "71",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "73",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "75",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "79",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "80",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "85",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "87",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "89",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "91",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "92",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "93",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "94",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "96",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "97",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "101",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "105",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "108",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "109",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "110",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "111",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "112",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "113",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "114",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "115",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "116",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "118",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "120",
+      "type": "owl:allValuesFrom"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "1",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#influences",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "influences"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        484.22,
+        -736.47
+      ]
+    },
+    {
+      "id": "3",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "4",
+      "range": "5",
+      "pos": [
+        189.57,
+        1375.14
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#experiences",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "experiences"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        554.11,
+        -1029.62
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#is_a_non_anatomical_phenomenon_within",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "is_a_non_anatomical_phenomenon_within"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        726.04,
+        -835.87
+      ]
+    },
+    {
+      "id": "22",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "11",
+      "range": "12",
+      "pos": [
+        -755.21,
+        211.66
+      ]
+    },
+    {
+      "id": "27",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "28",
+      "range": "19",
+      "pos": [
+        1200.63,
+        783.39
+      ]
+    },
+    {
+      "id": "29",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "30",
+      "range": "31",
+      "pos": [
+        -173.69,
+        -116.47
+      ]
+    },
+    {
+      "id": "32",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "9",
+      "range": "33",
+      "pos": [
+        1264.07,
+        502.38
+      ]
+    },
+    {
+      "id": "34",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "35",
+      "range": "19",
+      "pos": [
+        875.27,
+        481.19
+      ]
+    },
+    {
+      "id": "37",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "38",
+      "range": "31",
+      "pos": [
+        -122.34,
+        -133.21
+      ]
+    },
+    {
+      "id": "39",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "40",
+      "range": "4",
+      "pos": [
+        597.31,
+        1507.64
+      ]
+    },
+    {
+      "id": "41",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "7",
+      "range": "28",
+      "pos": [
+        1565.44,
+        1041.96
+      ]
+    },
+    {
+      "id": "42",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "43",
+      "range": "4",
+      "pos": [
+        571.04,
+        1349.2
+      ]
+    },
+    {
+      "id": "44",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "45",
+      "range": "4",
+      "pos": [
+        538.39,
+        1500.11
+      ]
+    },
+    {
+      "id": "48",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "49",
+      "range": "16",
+      "pos": [
+        1351.4,
+        597.34
+      ]
+    },
+    {
+      "id": "50",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "51",
+      "range": "16",
+      "pos": [
+        1047.31,
+        426.51
+      ]
+    },
+    {
+      "id": "53",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "31",
+      "range": "24",
+      "pos": [
+        -212.73,
+        247.28
+      ]
+    },
+    {
+      "id": "54",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "25",
+      "range": "23",
+      "pos": [
+        -431.36,
+        831.96
+      ]
+    },
+    {
+      "id": "55",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "24",
+      "range": "23",
+      "pos": [
+        -246.29,
+        657.64
+      ]
+    },
+    {
+      "id": "56",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "52",
+      "range": "16",
+      "pos": [
+        1332.24,
+        676.68
+      ]
+    },
+    {
+      "id": "57",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "26",
+      "range": "23",
+      "pos": [
+        -387.14,
+        993.27
+      ]
+    },
+    {
+      "id": "58",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "17",
+      "range": "14",
+      "pos": [
+        644.91,
+        764.13
+      ]
+    },
+    {
+      "id": "60",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "19",
+      "range": "14",
+      "pos": [
+        903.35,
+        758.16
+      ]
+    },
+    {
+      "id": "61",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "18",
+      "range": "14",
+      "pos": [
+        921.56,
+        1080
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#has_qualifier",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "has_qualifier"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        411.09,
+        -896.96
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#is_necessary_for",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "is_necessary_for"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        719.66,
+        -928.7
+      ]
+    },
+    {
+      "id": "68",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "15",
+      "range": "45",
+      "pos": [
+        583.73,
+        1320.52
+      ]
+    },
+    {
+      "id": "69",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "46",
+      "range": "45",
+      "pos": [
+        490.86,
+        1474.62
+      ]
+    },
+    {
+      "id": "71",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "72",
+      "range": "9",
+      "pos": [
+        1548.42,
+        -3.56
+      ]
+    },
+    {
+      "id": "73",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "74",
+      "range": "9",
+      "pos": [
+        1273.58,
+        33.49
+      ]
+    },
+    {
+      "id": "75",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "76",
+      "range": "18",
+      "pos": [
+        1139.43,
+        1438.57
+      ]
+    },
+    {
+      "id": "77",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "33",
+      "range": "40",
+      "pos": [
+        941.33,
+        1112.7
+      ]
+    },
+    {
+      "id": "78",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "8",
+      "range": "9",
+      "pos": [
+        1481.86,
+        -37.17
+      ]
+    },
+    {
+      "id": "79",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#provides_input_for",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "provides_input_for"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        455.87,
+        -983.46
+      ]
+    },
+    {
+      "id": "80",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "81",
+      "range": "9",
+      "pos": [
+        1408.72,
+        -43.71
+      ]
+    },
+    {
+      "id": "85",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "86",
+      "range": "9",
+      "pos": [
+        1622.07,
+        211.87
+      ]
+    },
+    {
+      "id": "87",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "83",
+      "range": "9",
+      "pos": [
+        1598.98,
+        50.35
+      ]
+    },
+    {
+      "id": "89",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "84",
+      "range": "9",
+      "pos": [
+        1414.95,
+        344.54
+      ]
+    },
+    {
+      "id": "91",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "88",
+      "range": "9",
+      "pos": [
+        1627.88,
+        127.11
+      ]
+    },
+    {
+      "id": "92",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "64",
+      "range": "9",
+      "pos": [
+        1335.8,
+        -20.05
+      ]
+    },
+    {
+      "id": "93",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "36",
+      "range": "5",
+      "pos": [
+        -28.29,
+        1070.59
+      ]
+    },
+    {
+      "id": "94",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "23",
+      "range": "5",
+      "pos": [
+        -133.91,
+        1057.37
+      ]
+    },
+    {
+      "id": "96",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "6",
+      "range": "7",
+      "pos": [
+        1801.36,
+        1310.53
+      ]
+    },
+    {
+      "id": "97",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "10",
+      "range": "7",
+      "pos": [
+        1919.88,
+        1117.36
+      ]
+    },
+    {
+      "id": "101",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#integrates",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "integrates"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        423.97,
+        -803.96
+      ]
+    },
+    {
+      "id": "105",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#dependent_on_integrity_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "dependent_on_integrity_of"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        658.58,
+        -1004.06
+      ]
+    },
+    {
+      "id": "108",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#has_a",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "has_a"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        671.8,
+        -749.41
+      ]
+    },
+    {
+      "id": "109",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#uses",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "uses"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        576.6,
+        -712.59
+      ]
+    },
+    {
+      "id": "110",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#part_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "part_of"
+      },
+      "attributes": [
+        "object",
+        "allValues"
+      ],
+      "domain": "38",
+      "range": "100",
+      "pos": [
+        -201.71,
+        -427.48
+      ]
+    },
+    {
+      "id": "111",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#part_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "part_of"
+      },
+      "attributes": [
+        "object",
+        "allValues"
+      ],
+      "domain": "43",
+      "range": "33",
+      "pos": [
+        927.4,
+        1017.29
+      ]
+    },
+    {
+      "id": "112",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#part_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "part_of"
+      },
+      "attributes": [
+        "object",
+        "allValues"
+      ],
+      "domain": "84",
+      "range": "33",
+      "pos": [
+        1253,
+        683.71
+      ]
+    },
+    {
+      "id": "113",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#part_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "part_of"
+      },
+      "attributes": [
+        "object",
+        "allValues"
+      ],
+      "domain": "15",
+      "range": "4",
+      "pos": [
+        434.72,
+        1325.78
+      ]
+    },
+    {
+      "id": "114",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#part_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "part_of"
+      },
+      "attributes": [
+        "object",
+        "allValues"
+      ],
+      "domain": "24",
+      "range": "99",
+      "pos": [
+        -100.43,
+        329.79
+      ]
+    },
+    {
+      "id": "115",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "14",
+      "range": "15",
+      "pos": [
+        636.25,
+        1017.8
+      ]
+    },
+    {
+      "id": "116",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "16",
+      "range": "14",
+      "pos": [
+        969.09,
+        743.29
+      ]
+    },
+    {
+      "id": "118",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#part_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "part_of"
+      },
+      "attributes": [
+        "object",
+        "allValues"
+      ],
+      "domain": "30",
+      "range": "100",
+      "pos": [
+        -253.06,
+        -410.74
+      ]
+    },
+    {
+      "id": "120",
+      "iri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#part_of",
+      "baseIri": "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology",
+      "label": {
+        "IRI-based": "part_of"
+      },
+      "attributes": [
+        "object",
+        "allValues"
+      ],
+      "domain": "40",
+      "range": "4",
+      "pos": [
+        601.58,
+        1559.26
+      ]
+    }
+  ]
+}
