@@ -146,6 +146,12 @@
     
 
 
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#maps_to -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#maps_to"/>
+    
+
+
     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#uses -->
 
     <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#uses"/>
@@ -176,9 +182,9 @@
     
 
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Alone_or_with_othersRequires_set-upLevel_of_stress -->
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Alone_or_with_others_Requires_set-up_Level_of_stress -->
 
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Alone_or_with_othersRequires_set-upLevel_of_stress">
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Alone_or_with_others_Requires_set-up_Level_of_stress">
         <OntologyClassID>EMFO_C015011</OntologyClassID>
     </owl:Class>
     
@@ -353,6 +359,19 @@
     
 
 
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Ecological_Mental_Functioning_Ontology -->
+
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Ecological_Mental_Functioning_Ontology">
+        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Entity"/>
+        <IAO_0000115:Definition>Some_Definition1</IAO_0000115:Definition>
+        <IAO_0000119:Definition_Source>RMD</IAO_0000119:Definition_Source>
+        <IAO_0000412:Imported_From>RMD</IAO_0000412:Imported_From>
+        <OntologyClassID>EMFO_C016694</OntologyClassID>
+        <Source_ID>6</Source_ID>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Entity -->
 
     <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Entity"/>
@@ -395,9 +414,9 @@
     
 
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Feedback_ -->
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Feedback -->
 
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Feedback_">
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Feedback">
         <IAO_0000412:Imported_From>EMMF</IAO_0000412:Imported_From>
         <OntologyClassID>EMFO_C089159</OntologyClassID>
         <Source_ID>4</Source_ID>
@@ -594,19 +613,6 @@
     
 
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Ontology_of_Mental_Functioning -->
-
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Ontology_of_Mental_Functioning">
-        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Entity"/>
-        <IAO_0000115:Definition>Some_Definition1</IAO_0000115:Definition>
-        <IAO_0000119:Definition_Source>RMD</IAO_0000119:Definition_Source>
-        <IAO_0000412:Imported_From>RMD</IAO_0000412:Imported_From>
-        <OntologyClassID>EMFO_C016694</OntologyClassID>
-        <Source_ID>6</Source_ID>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Output -->
 
     <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Output">
@@ -759,6 +765,14 @@
     
 
 
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Simple_to_complex_Temporal_brief_or_sustained_Single_or_multiple -->
+
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Simple_to_complex_Temporal_brief_or_sustained_Single_or_multiple">
+        <OntologyClassID>EMFO_C049286</OntologyClassID>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Social_Environment_Factors -->
 
     <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Social_Environment_Factors">
@@ -823,9 +837,9 @@
     
 
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#extendedOrganism -->
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#extended_organism -->
 
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#extendedOrganism">
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#extended_organism">
         <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independentContinuant"/>
         <IAO_0000412:Imported_From>OGMS</IAO_0000412:Imported_From>
         <OntologyClassID>OGMS_0000087</OntologyClassID>
@@ -881,14 +895,6 @@
         <IAO_0000412:Imported_From>ICF</IAO_0000412:Imported_From>
         <OntologyClassID>EMFO_C007687</OntologyClassID>
         <Source_ID>7</Source_ID>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Simple_to_complexTemporal_–_brief_or_sustainedSingle_or_multiple_ -->
-
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Simple_to_complexTemporal_–_brief_or_sustainedSingle_or_multiple_">
-        <OntologyClassID>EMFO_C049286</OntologyClassID>
     </owl:Class>
 </rdf:RDF>
 

@@ -149,6 +149,11 @@
     <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#uses"/>
     
 
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#maps_to -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#maps_to"/>
+    
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////

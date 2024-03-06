@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"classes","startColumn":"B","endColumn":"B","startRow":"2","endRow":"+","comment":"","rule":"Class: @B*\n \tSubClassOf: @C*\n\tAnnotations:  \tOntologyClassID @A*,\n\t\t\u0027Source_ID\u0027 @D*,\n\t\t\u0027Imported_From\u0027 @E*,\n\t\t\u0027Definition_Source\u0027 @F*,\t\t\n\t\tDefinition @G*","active":true}]}
