@@ -15,6 +15,9 @@
 |LICENSE.MD    | The License agreement for the EMFO's use|
 
 ## Summary
+
+The Ecological Mental Functioning Ontology is a representation of Mental Functioning based on the Ecological Model of Mental Functioning.  This is a description of mental functioning that is an evolution of content contained in the International Classification of Functioning Disability and Health.
+
 What is Mental functioning? Is a question that has been difficult to garner a consensus answer to. 
 <p> 
 Human mental functioning, represented as observable behavior, is understood as a transaction between the person and their intrinsic attributes, the context and environment where functioning takes place, and the nature and type of activities the person engages in.   
