@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#"
+     xml:base="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:EcologicalMentalFunctioningOntology="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#">
+    <owl:Ontology rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology">
+        <owl:versionIRI rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioning_2024_02_26"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Class1 -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Class1"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Class2 -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Class2"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Definition -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115#Definition -->
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115#Definition"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Definition_Source -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119#Definition Source -->
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119#Definition_Source"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Imported_From -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412#Imported_From -->
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412#Imported_From"/>
+
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#OntologyClassID -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#OntologyClassID"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Source_ID -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Source_ID"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#relationship_id -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#relationship_id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#dependent_on_integrity_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#dependent_on_integrity_of"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#experiences -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#experiences"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#has_a -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#has_a"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#has_qualifier -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#has_qualifier"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#influences -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#influences"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#integrates -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#integrates"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#is_a_non_anatomical_phenomenon_within -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#is_a_non_anatomical_phenomenon_within"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#is_necessary_for -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#is_necessary_for"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibry.org/obo/BFO_0000050#part_of"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#provides_input_for -->
+    <!-- http://purl.obolibrary.org/obo/RO_0002413#provides_input_for -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002413#provides_input_for"/>
+    
+
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#uses -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#uses"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+   </rdf:RDF>
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
