@@ -805,7 +805,7 @@
 
     <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#behavior">
         <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#Process"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodilyProcess"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodily_process"/>
         <IAO_0000412:Imported_From>GO</IAO_0000412:Imported_From>
         <OntologyClassID>EMFO_C011176</OntologyClassID>
         <OntologyClassID>GO_0007610</OntologyClassID>
@@ -814,9 +814,9 @@
     
 
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodilyProcess -->
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodily_process -->
 
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodilyProcess"/>
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodily_process"/>
     
 
 
@@ -840,16 +840,16 @@
     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#extended_organism -->
 
     <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#extended_organism">
-        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independentContinuant"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independent_continuant"/>
         <IAO_0000412:Imported_From>OGMS</IAO_0000412:Imported_From>
         <OntologyClassID>OGMS_0000087</OntologyClassID>
     </owl:Class>
     
 
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independentContinuant -->
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independent_continuant -->
 
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independentContinuant">
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independent_continuant">
         <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#continuant"/>
         <IAO_0000412:Imported_From>BFO</IAO_0000412:Imported_From>
         <OntologyClassID>BFO_0000004</OntologyClassID>
@@ -858,10 +858,10 @@
     
 
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#mentalProcess -->
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#mental_process -->
 
-    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#mentalProcess">
-        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodilyProcess"/>
+    <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#mental_process">
+        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#bodily_process"/>
         <IAO_0000412:Imported_From>MFO</IAO_0000412:Imported_From>
         <OntologyClassID>MF_0000020</OntologyClassID>
         <Source_ID>9</Source_ID>
@@ -872,7 +872,7 @@
     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#mental_functioning_related_anitomical_structures -->
 
     <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#mental_functioning_related_anitomical_structures">
-        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independentContinuant"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#independent_continuant"/>
         <IAO_0000412:Imported_From>MFO</IAO_0000412:Imported_From>
         <OntologyClassID>MF_0000000</OntologyClassID>
         <Source_ID>9</Source_ID>
