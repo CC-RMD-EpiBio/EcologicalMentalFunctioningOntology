@@ -14,6 +14,7 @@
 |EMFODEFR.CSV  | The Relations Definitions in CSV format |
 |LICENSE.MD    | The License agreement for the EMFO's use|
 |EMFO_Picture.pptx| A visual Representation of the top Levels of the Ontology |
+|Derived Terminologies | Terminologies derived from the Ontology |
 
 
 ## Summary
@@ -54,7 +55,7 @@ See the [***License file***](https://github.com/CC-RMD-EpiBio/EcologicalMentalFu
 
 
 # Contact Us #
-[TBD]
+  Guy Divita guy.divita@nih.gov
 
 
 # References #
