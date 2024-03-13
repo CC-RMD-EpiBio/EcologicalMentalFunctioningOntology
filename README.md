@@ -36,7 +36,10 @@ We are using the EMFO as a rhetorical device to foster a dialog to garner consen
 <p>
 The Ontology has been packaged into a set of csv and excel files, an RDF/XML Owl file, and a webVowl json file.
 
+
 ![image](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/EMFO_Picture.png)
+Figure 1: Visualization of the Upper Levels of the Ecological Mental Functioning Ontology
+<p>
 
 # About Us #
 This work stems from the Epidemiology and Biostatistics section of the Rehabilitation Medicine Department, National Institutes of Health (NIH) Clinical Center that uses the ICF as a framework to develop analytic tools for clinical natural language processing and the development of functional assessment measures.  The interdisciplinary team is intentionally composed of a diverse set of scientists, including those in health informatics, mathematics, statistics, computer science, computational linguistics, public health, and healthcare.
