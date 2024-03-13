@@ -13,6 +13,8 @@
 |EMFODEFC.CSV  | The Classes Definitions in CSV format   |
 |EMFODEFR.CSV  | The Relations Definitions in CSV format |
 |LICENSE.MD    | The License agreement for the EMFO's use|
+|EMFO_Picture.pptx| A visual Representation of the top Levels of the Ontology |
+
 
 ## Summary
 The Ecological Mental Functioning Ontology (EMFO) is a representation of mental functioning based on the Ecological Model of Mental Functioning (EMMF) (reference) that integrates concepts taken from the International Classification of Functioning, Disability and Health (ICF) (World Health Organization, 2001); person-environment-activities transactive models (Dean et al., 2019; Dunn et al., 1994; Law et al., 1996), social-ecological theories (Stineman & Streim, 2010; Van Assche et al., 2019); and Open System Theory (von Bertalanffy, 1968).   
@@ -34,6 +36,7 @@ We are using the EMFO as a rhetorical device to foster a dialog to garner consen
 <p>
 The Ontology has been packaged into a set of csv and excel files, an RDF/XML Owl file, and a webVowl json file.
 
+![image](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/EMFO_Picture.png)
 
 # About Us #
 This work stems from the Epidemiology and Biostatistics section of the Rehabilitation Medicine Department, National Institutes of Health (NIH) Clinical Center that uses the ICF as a framework to develop analytic tools for clinical natural language processing and the development of functional assessment measures.  The interdisciplinary team is intentionally composed of a diverse set of scientists, including those in health informatics, mathematics, statistics, computer science, computational linguistics, public health, and healthcare.
