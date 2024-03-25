@@ -1,0 +1,354 @@
+SSA000l|work activities|<noun>|<base>|work activities|work activities|CognitiveActivities
+SSA0000|work activity|<noun>|<base>|work activity|work activity|CognitiveActivities
+SSA0002|perform work activities|<verb>|<base>|perform work activities|perform work activities|CognitiveActivities
+SSA0003|understanding and learning terms, instructions, procedures|<noun>|<base>|understanding and learning terms, instructions, procedures|understanding and learning terms, instructions, procedures|CognitiveActivities:Learning
+SSA0004|understanding and learning terms|<noun>|<base>|understanding and learning terms|understanding and learning terms|CognitiveActivities:Learning
+SSA0005|understanding instructions|<verb>|<base>|understanding instructions|understanding instructions|CognitiveActivities:Learning
+SSA0006|understand instructions|<verb>|<base>|understand instructions|understand instructions|CognitiveActivities:Learning
+SSA0006|understand instruction|<verb>|<base>|understand instruction|understand instruction|CognitiveActivities:Learning
+SSA0007|understanding procedures|<verb>|<base>|understanding procedures|understanding procedures|CognitiveActivities:Learning
+SSA0008|learning terms|<verb>|<base>|learning terms|learning terms|CognitiveActivities:Learning
+SSA0009|learning instructions|<verb>|<base>|learning instructions|learning instructions|CognitiveActivities:Learning
+SSA0010|learning procedures|<verb>|<base>|learning procedures|learning procedures|CognitiveActivities:Learning
+SSA0011|following one or two step oral instructions|<verb>|<base>|following one or two step oral instructions|following one or two step oral instructions|CognitiveActivities:ApplyingKnowledge_
+SSA0012|following instructions|<verb>|<base>|following instructions|following instructions|CognitiveActivities:ApplyingKnowledge_
+SSA0013|following oral instructions|<verb>|<base>|following oral instructions|following oral instructions|CognitiveActivities:ApplyingKnowledge_
+SSA0014|following one-step instructions|<verb>|<base>|following one-step instructions|following one-step instructions|CognitiveActivities:ApplyingKnowledge_
+SSA0000|following one-step oral instructions|<verb>|<base>|following one-step oral instructions|following one-step oral instructions|CognitiveActivities:ApplyingKnowledge_
+SSA0000|following two-step instructions|<verb>|<base>|following two-step instructions|following two-step instructions|CognitiveActivities:ApplyingKnowledge_
+SSA0000|following two-step oral instructions|<verb>|<base>|following two-step oral instructions|following two-step oral instructions|CognitiveActivities:ApplyingKnowledge_
+SSA0000|carry out a task|carry out daily routine is the closest matching|<verb>|<base>|carry out a task|carry out daily routine is the closest matching|carry out a task|carry out daily routine is the closest matching|CognitiveActivities:ApplyingKnowledge_
+SSA0000|carring out a task|<verb>|<base>|carring out a task|carring out a task|CognitiveActivities:ApplyingKnowledge_
+SSA0000|carried out a task|<verb>|<base>|carring out a task|carring out a task|CognitiveActivities:ApplyingKnowledge_
+SSA0000|describing work activity to someone else|<verb>|<base>|describing work activity to someone else|describing work activity to someone else|CognitiveActivities:ApplyingKnowledge_
+SSA0000|asking and answering questions|<verb>|<base>|asking and answering questions|asking and answering questions|CognitiveActivities:ApplyingKnowledge_
+SSA0000|asking questions|<verb>|<base>|asking questions|asking questions|CognitiveActivities
+SSA0000|ask question|<verb>|<base>|ask question|ask question|CognitiveActivities
+SSA0000|ask questions|<verb>|<base>|ask questions|ask questions|CognitiveActivities
+SSA0000|answering questions|<verb>|<base>|answering questions|answering questions|CognitiveActivities
+SSA0000|answer question|<verb>|<base>|answer question|answer question|CognitiveActivities:ApplyingKnowledge_
+SSA0000|answered question|<verb>|<base>|answered question|answered question|CognitiveActivities:ApplyingKnowledge_
+SSA0000|answered questions|<verb>|<base>|answered questions|answered questions|CognitiveActivities:ApplyingKnowledge_
+SSA0000|providing explanations|<verb>|<base>|providing explanations|providing explanations|CognitiveActivities:ApplyingKnowledge_
+SSA0000|providing explanation|<verb>|<base>|providing explanation|providing explanation|CognitiveActivities:ApplyingKnowledge_
+SSA0000|provide explanation|<verb>|<base>|provide explanation|provide explanation|CognitiveActivities:ApplyingKnowledge_
+SSA0000|provided explanation|<verb>|<base>|provided explanation|provided explanation|CognitiveActivities:ApplyingKnowledge_
+SSA0000|provided explanations|<verb>|<base>|provided explanations|provided explanations|CognitiveActivities:ApplyingKnowledge_
+SSA0000|provides explanation|<verb>|<base>|provides explanation|provides explanation|CognitiveActivities:ApplyingKnowledge_
+SSA0000|provides explanations|<verb>|<base>|provides explanations|provides explanations|CognitiveActivities:ApplyingKnowledge_
+SSA0000|recognizing a mistake and correcting it|<verb>|<base>|recognizing a mistake and correcting it|recognizing a mistake and correcting it|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognizing mistake and correcting it|<verb>|<base>|recognizing mistake and correcting it|recognizing mistake and correcting it|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognizing mistakes and correcting them|<verb>|<base>|recognizing mistakes and correcting them|recognizing mistakes and correcting them|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognizing a mistake|<verb>|<base>|recognizing a mistake|recognizing a mistake|CognitiveActivities:Learning:ApplyingKnowledge_:Learning:ApplyingKnowledge_
+SSA0000|recognize a mistake|<verb>|<base>|recognize a mistake|recognize a mistake|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognized a mistake|<verb>|<base>|recognized a mistake|recognized a mistake|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognizing mistake|<verb>|<base>|recognizing mistake|recognizing mistake|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognize mistake|<verb>|<base>|recognize mistake|recognize mistake|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognized mistake|<verb>|<base>|recognized mistake|recognized mistake|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognizing mistakes|<verb>|<base>|recognizing mistakes|recognizing mistakes|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognize mistakes|<verb>|<base>|recognize mistakes|recognize mistakes|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|recognized mistakes|<verb>|<base>|recognized mistakes|recognized mistakes|CognitiveActivities:Learning:ApplyingKnowledge_
+SSA0000|correcting a mistake|<verb>|<base>|correcting a mistake|correcting a mistake|CognitiveActivities:ApplyingKnowledge_
+SSA0000|correct a mistake|<verb>|<base>|correct a mistake|correct a mistake|CognitiveActivities:ApplyingKnowledge_
+SSA0000|correcting mistakes|<verb>|<base>|correcting mistakes|correcting mistakes|CognitiveActivities:ApplyingKnowledge_
+SSA0000|correct mistakes|<verb>|<base>|correct mistakes|correct mistakes|CognitiveActivities:ApplyingKnowledge_
+SSA0000|correcting mistake|<verb>|<base>|correcting mistake|correcting mistake|CognitiveActivities:ApplyingKnowledge_
+SSA0000|correct mistake|<verb>|<base>|correct mistake|correct mistake|CognitiveActivities:ApplyingKnowledge_
+SSA0000|identifying and solving problems|<verb>|<base>|identifying and solving problems|identifying and solving problems|CognitiveActivities:ApplyingKnowlege
+SSA0000|identifying problems|<verb>|<base>|identifying problems|identifying problems|related to existing concept "solving problems" CognitiveActivities
+SSA0000|identifying problem|<verb>|<base>|identifying problem|identifying problem|CognitiveActivities:ApplyingKnowlege
+SSA0000|sequencing multi-step activities|<verb>|<base>|sequencing multi-step activities|sequencing multi-step activities|CognitiveActivities
+SSA0000|sequence multi-step activities|<verb>|<base>|sequence multi-step activities|sequence multi-step activities|CognitiveActivities
+SSA0000|sequence multi-step activity|<verb>|<base>|sequence multi-step activity|sequence multi-step activity|CognitiveActivities
+SSA0000|sequencing multi-step activity|<verb>|<base>|sequencing multi-step activity|sequencing multi-step activity|CognitiveActivitiesCognitiveActivities
+SSA0000|using reasoning|<verb>|<base>|using reasoning|using reasoning|CognitiveActivities:ApplyingKnowlege
+SSA0000|using reason|<verb>|<base>|using reason|using reason|CognitiveActivities:ApplyingKnowlege
+SSA0000|make work related decisions|related to ability to make decisions|<verb>|<base>|make work related decisions|related to ability to make decisions|make work related decisions|related to ability to make decisions|CognitiveActivities
+SSA0000|work related decisions|<noun>|<base>|work related decisions|work related decisions|CognitiveActivities
+SSA0000|work related decision|<noun>|<base>|work related decision|work related decision|CognitiveActivities
+SSA0000|work decision|<noun>|<base>|work decision|work decision|CognitiveActivities
+SSA0000|work decisions|<noun>|<base>|work decisions|work decisions|CognitiveActivities
+SSA0000|make work related decisions|<verb>|<base>|make work related decisions|make work related decisions|CognitiveActivities
+#able to make work related decisions|
+#ability to make work related decisions|
+SSA0000|interact with others|related to ability to interact with others|<verb>|<base>|interact with others|related to ability to interact with others|interact with others|related to ability to interact with others|CognitiveActivities:IPIRActivities
+SSA0000|ability to work with others|<verb>|<base>|ability to work with others|ability to work with others|CognitiveActivities:IPIRActivities
+SSA0000|work with others|<verb>|<base>|work with others|work with others|CognitiveActivities:IPIRActivities
+SSA0000|relate to and work with supervisors, co-workers, and the public|<verb>|<base>|relate to and work with supervisors, co-workers, and the public|relate to and work with supervisors, co-workers, and the public|CognitiveActivities:IPIRActivities
+SSA0000|relate to and work with supervisors|<verb>|<base>|relate to and work with supervisors|relate to and work with supervisors|CognitiveActivities:IPIRActivities
+SSA0000|relate to and work with supervisor|<verb>|<base>|relate to and work with supervisor|relate to and work with supervisor|CognitiveActivities:IPIRActivities
+SSA0000|relate to and work with co-workers|<verb>|<base>|relate to and work with co-workers|relate to and work with co-workers|CognitiveActivities:IPIRActivities
+SSA0000|relate to and work with co-worker |<verb>|<base>|relate to and work with co-worker ||relate to and work with co-worker |CognitiveActivities:IPIRActivities
+SSA0000|relate to and work with the public|<verb>|<base>|relate to and work with the public|relate to and work with the public|CognitiveActivities:IPIRActivities
+SSA0000|work with supervisors|<verb>|<base>|work with supervisors|work with supervisors|CognitiveActivities:IPIRActivities
+SSA0000|work with supervisor|<verb>|<base>|work with supervisor|work with supervisor|CognitiveActivities:IPIRActivities
+SSA0000|work with co-workers|<verb>|<base>|work with co-workers|work with co-workers|CognitiveActivities:IPIRActivities
+SSA0000|work with co-worker |<verb>|<base>|work with co-worker ||work with co-worker |CognitiveActivities:IPIRActivities
+SSA0000|work with the public|<verb>|<base>|work with the public|work with the public|CognitiveActivities:IPIRActivities
+SSA0000|relate to supervisors|<verb>|<base>|relate to supervisors|relate to supervisors|CognitiveActivities:IPIRActivities
+SSA0000|relate to supervisor|<verb>|<base>|relate to supervisor|relate to supervisor|CognitiveActivities:IPIRActivities
+SSA0000|relate to co-workers|<verb>|<base>|relate to co-workers|relate to co-workers|CognitiveActivities:IPIRActivities
+SSA0000|relate to co-worker |<verb>|<base>|relate to co-worker ||relate to co-worker |CognitiveActivities:IPIRActivities
+SSA0000|relate to the public|<verb>|<base>|relate to the public|relate to the public|CognitiveActivities:IPIRActivities
+SSA0000|asking for help|<verb>|<base>|asking for help|asking for help|CognitiveActivitiesCognitiveActivities:CommunicationActivities
+#ask for help|
+SSA0000|asked for help|<verb>|<base>|asked for help|asked for help|CognitiveActivities:CommunicationActivities
+SSA0000|handling conflicts with others|<verb>|<base>|handling conflicts with others|handling conflicts with others|CognitiveActivities:IPIRActivities
+SSA0000|handling conflict|<verb>|<base>|handling conflict|handling conflict|CognitiveActivities:IPIRActivities
+SSA0000|handles conflict|<verb>|<base>|handles conflict|handles conflict|CognitiveActivities
+SSA0000|handled conflict|<verb>|<base>|handled conflict|handled conflict|CognitiveActivities:IPIRActivities
+SSA0000|stating own point of view|<verb>|<base>|stating own point of view|stating own point of view|CognitiveActivities:CommunicationActivities
+SSA0000|stating point of view|<verb>|<base>|stating point of view|stating point of view|CognitiveActivities:CommunicationActivities
+SSA0000|point of view|<noun>|<base>|point of view|point of view|[TBA]
+SSA0000|initiating or sustaining conversation|<verb>|<base>|initiating or sustaining conversation|initiating or sustaining conversation|CognitiveActivities:CommunicationActivities
+SSA0000|initiates or sustains conversation|<verb>|<base>|initiates or sustains conversation|initiates or sustains conversation|CognitiveActivities:CommunicationActivities
+SSA0000|initiating conversation|<verb>|<base>|initiating conversation|initiating conversation|CognitiveActivities:CommunicationActivities
+SSA0000|initiated conversation|<verb>|<base>|initiated conversation|initiated conversation|CognitiveActivities:CommunicationActivities
+SSA0000|initiates conversation|<verb>|<base>|initiates conversation|initiates conversation|CognitiveActivities:CommunicationActivities
+SSA0000|sustaining conversation|<verb>|<base>|sustaining conversation|sustaining conversation|CognitiveActivities:CommunicationActivities
+SSA0000|sustains conversation|<verb>|<base>|sustains conversation|sustains conversation|CognitiveActivities:CommunicationActivities
+SSA0000|understanding and responding to social cues (physical, verbal, emotional)|<verb>|<base>|understanding and responding to social cues (physical, verbal, emotional)|understanding and responding to social cues (physical, verbal, emotional)|CognitiveActivities:CommunicationActivities
+SSA0000|understanding and responding to social cues|<verb>|<base>|understanding and responding to social cues|understanding and responding to social cues|CognitiveActivities:CommunicationActivities
+SSA0000|socal cues|<noun>|<base>|socal cues|socal cues|[TBA]
+SSA0000|socal cue|<noun>|<base>|socal cue|socal cue|[TBA]
+SSA0000|physical socal cues|<noun>|<base>|physical socal cues|physical socal cues|[TBA]
+SSA0000|physical socal cue|<noun>|<base>|physical socal cue|physical socal cue|[TBA]
+SSA0000|verbal socal cues|<noun>|<base>|verbal socal cues|verbal socal cues|[TBA]
+SSA0000|verbal socal cue|<noun>|<base>|verbal socal cue|verbal socal cue|[TBA]
+SSA0000|emotional socal cues|<noun>|<base>|emotional socal cues|emotional socal cues|[TBA]
+SSA0000|emotional socal cue|<noun>|<base>|emotional socal cue|emotional socal cue|[TBA]
+SSA0000|responding to social cues|<verb>|<base>|responding to social cues|responding to social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responds to social cues|<verb>|<base>|responds to social cues|responds to social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responded to social cues|<verb>|<base>|responded to social cues|responded to social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responding to social cue|<verb>|<base>|responding to social cue|responding to social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responds to social cue|<verb>|<base>|responds to social cue|responds to social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responded to social cue|<verb>|<base>|responded to social cue|responded to social cue|CognitiveActivities:CommunicationActivities
+SSA0000|understanding social cues|<verb>|<base>|understanding social cues|understanding social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understand social cues|<verb>|<base>|understand social cues|understand social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood social cues|<verb>|<base>|understood social cues|understood social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understanding social cue|<verb>|<base>|understanding social cue|understanding social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understand social cue|<verb>|<base>|understand social cue|understand social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood social cue|<verb>|<base>|understood social cue|understood social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|responding to physical social cues|<verb>|<base>|responding to physical social cues|responding to physical social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responds to physical social cues|<verb>|<base>|responds to physical social cues|responds to physical social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responded to physical social cues|<verb>|<base>|responded to physical social cues|responded to physical social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responding to physical social cue|<verb>|<base>|responding to physical social cue|responding to physical social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responds to physical social cue|<verb>|<base>|responds to physical social cue|responds to physical social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responded to physical social cue|<verb>|<base>|responded to physical social cue|responded to physical social cue|CognitiveActivities:CommunicationActivities
+SSA0000|understanding physical social cues|<verb>|<base>|understanding physical social cues|understanding physical social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understand physical social cues|<verb>|<base>|understand physical social cues|understand physical social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood physical social cues|<verb>|<base>|understand physical social cues|understand physical social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understanding physical social cue|<verb>|<base>|understanding physical social cue|understanding physical social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understand physical social cue|<verb>|<base>|understand physical social cue|understand physical social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood physical social cue|<verb>|<base>|understood physical social cue|understood physical social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|responding to verbal social cues|<verb>|<base>|responding to verbal social cues|responding to verbal social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responds to verbal social cues|<verb>|<base>|responds to verbal social cues|responds to verbal social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responded to verbal social cues|<verb>|<base>|responded to verbal social cues|responded to verbal social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responding to verbal social cue|<verb>|<base>|responding to verbal social cue|responding to verbal social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responds to verbal social cue|<verb>|<base>|responds to verbal social cue|responds to verbal social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responded to verbal social cue|<verb>|<base>|responded to verbal social cue|responded to verbal social cue|CognitiveActivities:CommunicationActivities
+SSA0000|understand verbal social cues|<verb>|<base>|understand verbal social cues|understand verbal social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood verbal social cues|<verb>|<base>|understood verbal social cues|understood verbal social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understanding verbal social cue|<verb>|<base>|understanding verbal social cue|understanding verbal social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understand verbal social cue|<verb>|<base>|understand verbal social cue|understand verbal social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood verbal social cue|<verb>|<base>|understood verbal social cue|understood verbal social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|responding to emotional social cues|<verb>|<base>|responding to emotional social cues|responding to emotional social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responds to emotional social cues|<verb>|<base>|responds to emotional social cues|responds to emotional social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responded to emotional social cues|<verb>|<base>|responded to emotional social cues|responded to emotional social cues|CognitiveActivities:CommunicationActivities
+SSA0000|responding to emotional social cue|<verb>|<base>|responding to emotional social cue|responding to emotional social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responds to emotional social cue|<verb>|<base>|responds to emotional social cue|responds to emotional social cue|CognitiveActivities:CommunicationActivities
+SSA0000|responded to emotional social cue|<verb>|<base>|responded to emotional social cue|responded to emotional social cue|CognitiveActivities:CommunicationActivities
+SSA0000|understanding emotional social cues|<verb>|<base>|understanding emotional social cues|understanding emotional social cues|CognitiveActivities
+SSA0000|understand emotional social cues|<verb>|<base>|understand emotional social cues|understand emotional social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood emotional social cues|<verb>|<base>|understood emotional social cues|understood emotional social cues|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understanding emotional social cue|<verb>|<base>|understanding emotional social cue|understanding emotional social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understand emotional social cue|<verb>|<base>|understand emotional social cue|understand emotional social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|understood emotional social cue|<verb>|<base>|understood emotional social cue|understood emotional social cue|CognitiveActivities:ApplyingKnowledge_
+SSA0000|responding to requests, suggestions, criticism, correction and challenges|<verb>|<base>|responding to requests, suggestions, criticism, correction and challenges|responding to requests, suggestions, criticism, correction and challenges|CognitiveActivities:CommunicationActivities
+SSA0000|responding to requests|<verb>|<base>|responding to requests|responding to requests|CognitiveActivities:CommunicationActivities
+SSA0000|responding to request|<verb>|<base>|responding to request|responding to request|CognitiveActivities:CommunicationActivities
+SSA0000|responding to suggestions|<verb>|<base>|responding to suggestions|responding to suggestions|CognitiveActivities:CommunicationActivities
+SSA0000|responding to suggestion|<verb>|<base>|responding to suggestion|responding to suggestion|CognitiveActivities:CommunicationActivities
+SSA0000|responding to criticism|<verb>|<base>|responding to criticism|responding to criticism|CognitiveActivities:CommunicationActivities
+SSA0000|responding to challenges|<verb>|<base>|responding to challenges|responding to challenges|CognitiveActivities:CommunicationActivities
+SSA0000|responding to demands|<verb>|<base>|responding to demands|responding to demands|CognitiveActivities:CommunicationActivities
+SSA0000|responding to demand|<verb>|<base>|responding to demand|responding to demand|CognitiveActivities:CommunicationActivities
+SSA0000|responded to requests|<verb>|<base>|responded to requests|responded to requests|CognitiveActivities:CommunicationActivities
+SSA0000|responded to request|<verb>|<base>|responded to request|responded to request|CognitiveActivities:CommunicationActivities
+SSA0000|responded to suggestions|<verb>|<base>|responded to suggestions|responded to suggestions|CognitiveActivities:CommunicationActivities
+SSA0000|responded to suggestion|<verb>|<base>|responded to suggestion|responded to suggestion|CognitiveActivities:CommunicationActivities
+SSA0000|responded to criticism|<verb>|<base>|responded to criticism|responded to criticism|CognitiveActivities:CommunicationActivities
+SSA0000|responded to criticisms|<verb>|<base>|responded to criticisms|responded to criticisms|CognitiveActivities:CommunicationActivities
+SSA0000|responded to correction|<verb>|<base>|responded to correction|responded to correction|CognitiveActivities:CommunicationActivities
+SSA0000|responded to corrections|<verb>|<base>|responded to corrections|responded to corrections|CognitiveActivities:CommunicationActivities
+SSA0000|responded to challenge|<verb>|<base>|responded to challenge|responded to challenge|CognitiveActivities:CommunicationActivities
+SSA0000|responded to challenges|<verb>|<base>|responded to challenges|responded to challenges|CognitiveActivities:CommunicationActivities
+SSA0000|responded to demands|<verb>|<base>|responded to demands|responded to demands|CognitiveActivities:CommunicationActivities
+SSA0000|responded to demand|<verb>|<base>|responded to demand|responded to demand|CognitiveActivities:CommunicationActivities
+SSA0000|responds to requests|<verb>|<base>|responds to requests|responds to requests|CognitiveActivities:CommunicationActivities
+SSA0000|responds to request|<verb>|<base>|responds to request|responds to request|CognitiveActivities:CommunicationActivities
+SSA0000|responds to suggestions|<verb>|<base>|responds to suggestions|responds to suggestions|CognitiveActivities:CommunicationActivities
+SSA0000|responds to suggestion|<verb>|<base> |responds to suggestion|responds to suggestion|CognitiveActivities:CommunicationActivities
+SSA0000|responds to criticism|<verb>|<base>|responds to criticism|responds to criticism|CognitiveActivities:CommunicationActivities
+SSA0000|responds to criticisms|<verb>|<base>|responds to criticisms|responds to criticisms|CognitiveActivities:CommunicationActivities
+SSA0000|responds to correction|<verb>|<base>|responds to correction|responds to correction|CognitiveActivities:CommunicationActivities
+SSA0000|responds to corrections|<verb>|<base>|responds to corrections|responds to corrections|CognitiveActivities:CommunicationActivities
+SSA0000|responds to challenge|<verb>|<base>|responds to challenge|responds to challenge|CognitiveActivities:CommunicationActivities
+SSA0000|responds to challenges|<verb>|<base>|responds to challenges|responds to challenges|CognitiveActivities:CommunicationActivities
+SSA0000|responds to demands|<verb>|<base>|responds to demands|responds to demands|CognitiveActivities:CommunicationActivities
+SSA0000|responds to demand|<verb>|<base>|responds to demand|responds to demand|CognitiveActivities:CommunicationActivities
+SSA0000|respond to requests|<verb>|<base>|respond to requests|respond to requests|CognitiveActivities:CommunicationActivities
+SSA0000|respond to request|<verb>|<base>|respond to request|respond to request|CognitiveActivities:CommunicationActivities
+SSA0000|respond to suggestions|<verb>|<base>|respond to suggestions|respond to suggestions|CognitiveActivities:CommunicationActivities
+SSA0000|respond to suggestion|<verb>|<base>|respond to suggestion|respond to suggestion|CognitiveActivities:CommunicationActivities
+SSA0000|respond to criticism|<verb>|<base>|respond to criticism|respond to criticism|CognitiveActivities:CommunicationActivities
+SSA0000|respond to criticisms|<verb>|<base>|respond to criticisms|respond to criticisms|CognitiveActivities:CommunicationActivities
+SSA0000|respond to correction|<verb>|<base>|respond to correction|respond to correction|CognitiveActivities:CommunicationActivities
+SSA0000|respond to corrections|<verb>|<base>|respond to corrections|respond to corrections|CognitiveActivities:CommunicationActivities
+SSA0000|respond to challenge|<verb>|<base>|respond to challenge|respond to challenge|CognitiveActivities:CommunicationActivities
+SSA0000|respond to challenges|<verb>|<base>|respond to challenges|respond to challenges|CognitiveActivities:CommunicationActivities
+SSA0000|respond to demands|<verb>|<base>|respond to demands|respond to demands|CognitiveActivities:CommunicationActivities
+SSA0000|respond to demand|<verb>|<base>|respond to demand|respond to demand|CognitiveActivities:CommunicationActivities
+SSA0000|social interactions|<verb>|<base>|||CognitiveActivities:IPIRActivities
+SSA0000|keeping social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|<verb>|<base>|keeping social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|keeping social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|keeping social interactions free of excessive sensitivity|<verb>|<base>|keeping social interactions free of excessive sensitivity|keeping social interactions free of excessive sensitivity|CognitiveActivities:IPIRActivities
+SSA0000|keeping social interactions free of excessive argumentativeness|<verb>|<base>|keeping social interactions free of excessive argumentativeness|keeping social interactions free of excessive argumentativeness|CognitiveActivities:IPIRActivities
+SSA0000|keeping social interactions free of excessive suspiciousness|<verb>|<base>|keeping social interactions free of excessive suspiciousness|keeping social interactions free of excessive suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|keeping social interactions free of excessive sensitivity|<verb>|<base>|keeping social interactions free of excessive sensitivity|keeping social interactions free of excessive sensitivity|CognitiveActivities:IPIRActivities
+SSA0000|keeping social interactions free of excessive argumentativeness|<verb>|<base>|keeping social interactions free of excessive argumentativeness|keeping social interactions free of excessive argumentativeness|CognitiveActivities:IPIRActivities
+SSA0000|keeping social interactions free of excessive suspiciousness|<verb>|<base>|keeping social interactions free of excessive suspiciousness|keeping social interactions free of excessive suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|keep social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|<verb>|<base>|keep social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|keep social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|keep social interactions free of excessive sensitivity|<verb>|<base>|keep social interactions free of excessive sensitivity|keep social interactions free of excessive sensitivity|CognitiveActivities:IPIRActivities
+SSA0000|keep social interactions free of excessive argumentativeness|<verb>|<base>|keep social interactions free of excessive argumentativeness|keep social interactions free of excessive argumentativeness|CognitiveActivities:IPIRActivities
+SSA0000|keep social interactions free of excessive suspiciousness|<verb>|<base>|keep social interactions free of excessive suspiciousness|keep social interactions free of excessive suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|keep social interactions free of excessive sensitivity|<verb>|<base>|keep social interactions free of excessive sensitivity|keep social interactions free of excessive sensitivity|CognitiveActivities:IPIRActivities
+SSA0000|keep social interactions free of excessive argumentativeness|<verb>|<base>|keep social interactions free of excessive argumentativeness|keep social interactions free of excessive argumentativeness|CognitiveActivities:IPIRActivities
+SSA0000|keep social interactions free of excessive suspiciousness|<verb>|<base>|keep social interactions free of excessive suspiciousness|keep social interactions free of excessive suspiciousness|CognitiveActivities:IPIRActivities
+#|excessive sensitivity|->over-sensitivity|<noun>|<base>|excessive sensitivity|->over-sensitivity|excessive sensitivity|->over-sensitivity|:IPIRActivities
+SSA0000|kept social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|<verb>|<base>|kept social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|kept social interactions free of excessive irritability, sensitivity, argumentativeness, or suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|kept social interactions free of excessive sensitivity|<verb>|<base>|kept social interactions free of excessive sensitivity|kept social interactions free of excessive sensitivity|CognitiveActivities
+SSA0000|kept social interactions free of excessive argumentativeness|<verb>|<base>|kept social interactions free of excessive argumentativeness|kept social interactions free of excessive argumentativeness|CognitiveActivities:IPIRActivities
+SSA0000|kept social interactions free of excessive suspiciousness|<verb>|<base>|kept social interactions free of excessive suspiciousness|kept social interactions free of excessive suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|kept social interactions free of excessive sensitivity|<verb>|<base>|kept social interactions free of excessive sensitivity|kept social interactions free of excessive sensitivity|CognitiveActivities:IPIRActivities
+SSA0000|kept social interactions free of excessive argumentativeness|<verb>|<base>|kept social interactions free of excessive argumentativeness|kept social interactions free of excessive argumentativeness|CognitiveActivities:IPIRActivities
+SSA0000|kept social interactions free of excessive suspiciousness|<verb>|<base>|kept social interactions free of excessive suspiciousness|kept social interactions free of excessive suspiciousness|CognitiveActivities:IPIRActivities
+SSA0000|stay on task at a sustained rate|<verb>|<base>|stay on task at a sustained rate|stay on task at a sustained rate|CognitiveActivities
+SSA0000|stay on task|<verb>|<base>|stay on task|CognitiveActivities
+SSA0000|on task|<verb>|<base>|on task|on task|CognitiveActivities
+SSA0000|sustained rate|<noun>|<base>|level of effort|sustained rate|level of effort|sustained rate|LevelOfEffort|
+SSA0000|consistent rate|<noun>|<base>| level of effort|consistent rate|level of effort|consistent rate|LevelOfEffort|
+SSA0000|consistent pace|<noun>|<base>| level of effort|consistent pace|level of effort|consistent pace|LevelOfEffort|
+SSA0000|appropriate rate|<noun>|<base>| level of effort|appropriate rate|level of effort|appropriate rate|LevelOfEffort|
+SSA0000|appropriate pace|<noun>|<base>| level of effort|appropriate pace|level of effort|appropriate pace|LevelOfEffort|
+SSA0000|initiating a task|<verb>|<base>|initiating a task|initiating a task|CognitiveActivities
+SSA0000|consistent pace|<noun>|<base>| level of effort|consistent pace|level of effort|consistent pace|LevelOfEffort|
+SSA0000|initiating and performing a task|<verb>|<base>|initiating and performing a task|initiating and performing a task|CognitiveActivities
+SSA0000|initiating and performing task|<verb>|<base>|initiating and performing task|initiating and performing task|CognitiveActivities
+SSA0000|initiated and performed a task|<verb>|<base>|initiated and performed a task|initiated and performed a task|CognitiveActivities
+SSA0000|initiated and performed task|<verb>|<base>|initiated and performed task|initiated and performed task|CognitiveActivities
+SSA0000|initiate a task|<verb>|<base>|initiate a task|initiate a task|CognitiveActivities
+SSA0000|initiated a task|<verb>|<base>|initiated a task|initiated a task|CognitiveActivities
+SSA0000|starting a task|<verb>|<base>|starting a task|starting a task|CognitiveActivities
+SSA0000|started a task|<verb>|<base>|started a task|started a task|CognitiveActivities
+SSA0000|start a task|<verb>|<base>|start a task|start a task|CognitiveActivities
+SSA0000|perform a task|<verb>|<base>|perform a task|perform a task|CognitiveActivities
+SSA0000|performed a task|<verb>|<base>|performed a task|performed a task|CognitiveActivities
+SSA0000|performing a task|<verb>|<base>|performing a task|performing a task|CognitiveActivities
+SSA0000|understand and know how to|<verb>|<base>|understand and know how to|understand and know how to|CognitiveActivities
+SSA0000|completes|<verb>|<base>|completes|completes|CognitiveActivities
+SSA0000|completed|<verb>|<base>|completed|completed|CognitiveActivities
+SSA0000|completing a task|<verb>|<base>|completing a task|completing a task|CognitiveActivities
+SSA0000|completes task|<verb>|<base>|completes task|completes task|CognitiveActivities
+SSA0000|completes a task|<verb>|<base>|completes a task|completes a task|CognitiveActivities
+SSA0000|avoids distractions|<verb>|<base>|avoids distractions|avoids distractions|CognitiveActivities
+SSA0000|avoids distraction|<verb>|<base>|avoids distraction|avoids distraction|CognitiveActivities
+SSA0000|avoid distractions|<verb>|<base>|avoid distractions|avoid distractions|CognitiveActivities
+SSA0000|avoid distraction|<verb>|<base>|avoid distraction|avoid distraction|CognitiveActivities
+SSA0000|avoiding distraction|<verb>|<base>|avoiding distraction|avoiding distraction|CognitiveActivities
+SSA0000|avoid|<verb>|<base>|avoid|avoid|CognitiveActivities
+SSA0000|avoiding|<verb>|<base>|avoiding|avoiding|CognitiveActivities
+SSA0000|avoids|<verb>|<base>|avoids|avoids|CognitiveActivities
+SSA0000|ignores distractions|<verb>|<base>|ignores distractions|ignores distractions|CognitiveActivities
+SSA0000|ignoring distractions|<verb>|<base>|ignoring distractions|ignoring distractions|CognitiveActivities
+SSA0000|ignores distraction|<verb>|<base>|ignores distraction|ignores distraction|CognitiveActivities
+SSA0000|ignoring distraction|<verb>|<base>|ignoring distraction|ignoring distraction|CognitiveActivities
+SSA0000|ignored distraction|<verb>|<base>|ignored distraction|ignored distraction|CognitiveActivities
+SSA0000|ignored distractions|<verb>|<base>|ignored distractions|ignored distractions|CognitiveActivities
+SSA0000|interrupting or distracting|<verb>|<base>|interrupting or distracting|interrupting or distracting|CognitiveActivities
+SSA0000|interrupting|<verb>|<base>|interrupting|interrupting|CognitiveActivities
+SSA0000|interrupt|<verb>|<base>|interrupt|interrupt|CognitiveActivities
+SSA0000|routine|<noun>|<base>|routine|routine|[TBD]
+SSA0000|sustaining an orderly routine|<verb>|<base>|sustaining an orderly routine|sustaining an orderly routine|CognitiveActivities
+SSA0000|orderly routine|<noun>|<base>|orderly routine|orderly routine|
+SSA0000|regular attendance|<noun>|<base>|regular attendance|regular attendance|[TBD]
+SSA0000|at work|<noun>|<base>|at work|at work|[TBD]
+SSA0000|working|<adj>|<base>||working|working|[TBD]
+#?psychologically based symptoms|
+SSA0000|distinguishing between acceptable and unacceptable|<verb>|<base>|distinguishing between acceptable and unacceptable|distinguishing between acceptable and unacceptable|CognitiveActivities
+SSA0000|distinguishing between|<verb>|<base>|distinguishing between|distinguishing between|CognitiveActivities
+SSA0000|acceptable and unacceptable|<adj>|<base>||acceptable and unacceptable|acceptable and unacceptable|CognitiveActivities:LevelOfEffort
+SSA0000|acceptable|<adj>|<base>||acceptable|acceptable|IPIRActivities:LevelOfEffort
+SSA0000|unacceptable|<adj>|<base>|unacceptable|unacceptable|IPIRActivities
+SSA0000|setting goals|<verb>|<base>|setting goals|setting goals|CognitiveActivities
+SSA0000|sets goals|<verb>|<base>|sets goals|sets goals|CognitiveActivities
+SSA0000|set goals|<verb>|<base>|set goals|set goals|CognitiveActivities
+SSA0000|setting realistic goals|<verb>|<base>|setting realistic goals|setting realistic goals|CognitiveActivities
+SSA0000|sets realistic goals|<verb>|<base>|sets realistic goals|sets realistic goals|CognitiveActivities
+SSA0000|set realistic goals|<verb>|<base>|set realistic goals|set realistic goals|CognitiveActivities
+SSA0000|making plans|<verb>|<base>|making plans|making plans|CognitiveActivities
+SSA0000|work setting|<noun>|<base>|work setting|work setting|[TBD]
+SSA0000|work settings|<noun>|<base>|work settings|work settings|[TBD]
+SSA0000|adapting to|<verb>|<present>|adapt to|adapt to|CognitiveActivities:Learning
+SSA0000|adapt to|<verb>|<base>|adapt to|adapt to|CognitiveActivities:Learning
+SSA0000|adapted to|<verb>|<past>|adapt to|adapt to|CognitiveActivities:Learning
+SSA0000|social withdrawal|<noun>|<base>|||IPIRActivities
+SSA0000|ability to function|<noun>|<base>|||CognitiveActivities
+SSA0000|mobility|<noun>|<base>|||MobilityActivities
+SSA0000|dexterity|<noun>|<base>|||MobilityActivities
+SSA0000|upper or lower extremity functioning|<noun>|<base>|||BodyFunction
+SSA0000|ability to walk|<noun>|<base>|||MobilityActivities
+SSA0000|perform fine and gross movements|<verb>|<base>|||MobilityActivities
+SSA0000|without prosthesis|<noun>|<base>|||LevelOfEffort
+SSA0000|without prostheses|<noun>|<base>|||LevelOfEffort
+SSA0000|without prosthesis in place|<noun>|<base>|||LevelOfEffort
+SSA0000|without prosthesis(es) in place|<noun>|<base>|||LevelOfEffort
+SSA0000|cannot use your prosthesis(es)|<noun>|<base>|||LevelOfEffort
+SSA0000|cannot use prosthesis|<noun>|<base>|||LevelOfEffort
+SSA0000|cannot use prostheses|<noun>|<base>|||LevelOfEffort
+SSA0000|inability to use|<verb>|<base>|||LevelOfEffort
+SSA0000|hold on to|<verb>|<base>|||MobilityActivity
+SSA0000|to support or aid you in walking|<verb>|<base>|||LevelOfEffort
+SSA0000|to support or aid|<verb>|<base>|||LevelOfEffort
+SSA0000|to support in walking|<verb>|<base>|||LevelOfEffort
+SSA0000|to aid in walking|<verb>|<base>|||LevelOfEffort
+SSA0000|limits the use of|<verb>|<base>|||LevelOfEffort
+SSA0000|use a wheelchair|<verb>|<base>|||MobilityActivity
+SSA0000|with one hand|<verb>|<base>|||LevelOfEffort
+SSA0000|with both hands|<verb>|<base>|||LevelOfEffort
+SSA0000|with no hands|<verb>|<base>|||LevelOfEffort
+SSA0000|work environment|<noun>|<base>|||EnvironmentalFactors;ContextualFactors
+SSA0000|work experience|<noun>|<base>|||ContextualFactors
+SSA0000|home environment|<noun>|<base>|||EnvironmentalFactors;ContextualFactors
+SSA0000|reduction in|<verb>|<base>|||LevelOfEffort
+SSA0000|functional limitation|<noun>|<base>|||ActivitiesAndParticipation
+SSA0000|functional limitations|<noun>|<plural>|||ActivitiesAndParticipation
+SSA0000|functional effects|<noun>|<plural>|||ActivitiesAndParticipation
+SSA0000|functional impact|<verb>|<base>|||ActivitiesAndParticipation
+SSA0000|functional ability|<verb>|<base>|||ActivitiesAndParticipation
+SSA0000|functional imparments|<verb>|<base>|||LevelOfEffort
+SSA0000|need to use|<verb>|<base>|||LevelOfEffort
+SSA0000|prevents or corrects a dysfunction or deformity|<noun>|<base>|||LevelOfEffort
+SSA0000|confined to bed|<verb>|<base>|||MobilityActivity
+SSA0000|confined to your bed|<verb>|<base>|||MobilityActivity
+SSA0000|confined to his bed|<verb>|<base>|||MobilityActivity
+SSA0000|confined to her bed|<verb>|<base>|||MobilityActivity
+SSA0000|MET|<noun>|<base>|MET|MET|none
+SSA0000|practical skills|<noun>|<base>|||CognitiveActivities:ApplyingKnowledge_
+SSA0000|prividing explanations|<noun>|<base>|||CognitiveActivities:ApplyingKnowledge_
+SSA0000|documented by|<noun>|<base>|||SubjectIsOther
+SSA0000|evaluation of|<noun>|<base>|||SubjectIsOther
+SSA0000|evaluation under social security|<noun>|<base>|||SubjectIsOther
+SSA0000|evaluation and diagnosis|<noun>|<base>|||SubjectIsOther
+SSA0000|evaluation process|<noun>|<base>|||SubjectIsOther
+SSA0000|on one evaluation|<noun>|<base>|||SubjectIsOther
+SSA0000|on evaluation|<noun>|<base>|||SubjectIsOther

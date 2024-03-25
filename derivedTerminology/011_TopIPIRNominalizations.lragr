@@ -1,0 +1,55 @@
+#
+#  These are IPIR words that trigger an IPIR devoid of other evidence
+#      These come in two flavors -IPIRAbility       - the ability to participate in ipir like: she had -social skills- 
+#                                -IPIRParticipation - the act of participating in an ipir defacto defined action: he -participated- in the discussion.
+#                                Note: Homosidal activity is being defined as ipir defacto action: he attempted -suicide- 
+#
+OntologyID_12000|pleasant|<noun>|<base>|pleasant|pleasant|IPIRActivities:IPIRAbility|source|eui|history
+OntologyID_12000|nice|<noun>|<base>|pleasant|pleasant|IPIRActivities:IPIRAbility|source|eui|history
+OntologyID_12001|social participation|<noun>|<base>|social participation|social participation|IPIRActivities:IPIRParticipation|source|eui|history
+#
+#
+#  These are trigger nouns that show interaction skills 
+#
+OntologyID_12000|pleasant|<noun>|<base>|pleasant|pleasant|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|social skills|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|easy to talk to|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|perfect gentleman|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|a gentleman|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|perfect gentlemen|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|perfect lady|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|social cues|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|cues|<noun>|<base>|social skills|social skills|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|recognize the needs of others|<noun>|<base>|needs of others|needs of others|IPIRActivities:IPIRAbility|source|eui|history|skills
+OntologyID_12000|sense of humor|<noun>|<base>|sense of humor|sense of humar|IPIRActivities:IPIRAbility|source|eui|history|skills
+#
+#
+OntologyID_12000|social participation|<noun>|<base>|social participation|social participation|IPIRActivities:IPIRParticipation|source|eui|history|skills
+OntologyID_12000|interact with|<verb>|<base+infinitive+pres1p23p>|befriend|befriend|CognitiveActivities:IPIRActivities:IPIRParticipation|conspire-71|E0012242|s+ici|interaction
+OntologyID_12000|homicidal act|<verb>|<base+infinitive+pres1p23p>|||CognitiveActivities:IPIRActivities:IPIRParticipation|conspire-71|E0012242|s+ici|interaction
+OntologyID_12000|relate|<verb>|<base+infinitive+pres1p23p>|befriend|befriend|CognitiveActivities:IPIRActivities:IPIRAbility|conspire-71|E0012242|s+ici|interaction
+OntologyID_11139|talkative|<verb>|<base+infinitive+pres1p23p>|show|show|CommunicationActivities:LearningAndApplyingKnowledge:IPIRActivities:IPIRAbility|transfer_mesg-37.1.1|E0055733|s+ici
+OntologyID_11139|social|<verb>|<base+infinitive+pres1p23p>|show|show|CommunicationActivities:LearningAndApplyingKnowledge:IPIRActivities:IPIRParticipation|transfer_mesg-37.1.1|E0055733|s+ici
+OntologyID_11139|expressive|<verb>|<base+infinitive+pres1p23p>|show|show|CommunicationActivities:LearningAndApplyingKnowledge:IPIRActivities:IPIRAbility|transfer_mesg-37.1.1|E0055733|s+ici
+OntologyID_11139|lively|<verb>|<base+infinitive+pres1p23p>|show|show|CommunicationActivities:LearningAndApplyingKnowledge:IPIRActivities:IPIRParticipation|transfer_mesg-37.1.1|E0055733|s+ici
+OntologyID_11140|group activities|<noun>|<plural>|group activity|group activity|IPIRActivities:IPIRParticipation|source|eui|history
+OntologyID_11140|group activity|<noun>|<base>|group activity|group activity|IPIRActivities:IPIRParticipation|source|eui|history
+OntologyID_11099|relates|<verb>|<pres3s>|relate|relate|CommunicationActivities:IPIRActivities:IPIRParticipation|involve-107.1|E0052603|s+ici
+OntologyID_11099|related|<verb>|<past>|relate|relate|CommunicationActivities:IPIRActivities:IPIRParticipation|involve-107.1|E0052603|s+ici
+OntologyID_11099|relate|<verb>|<past>|relate|relate|CommunicationActivities:IPIRActivities:IPIRParticipation|involve-107.1|E0052603|s+ici
+#
+OntologyID_11116|homicide|<noun>|<base>|murder|murder|IPIRActivities:IPIRParticipation|murder-42.1|E0041394|s+ici
+OntologyID_11116|homicidal|<adj>|<base>|murder|murder|IPIRActivities:IPIRParticipation|murder-42.1|E0041394|s+ici
+OntologyID_11116|homicides|<noun>|<plural>|murder|murder|IPIRActivities:IPIRParticipation|murder-42.1|E0041394|s+ici
+OntologyID_11116|murdered|<verb>|<past+pastPart>|murder|murder|IPIRActivities:IPIRParticipation|murder-42.1|E0041394|s+ici
+OntologyID_11116|murdering|<verb>|<presPart>|murder|murder|IPIRActivities:IPIRParticipation|murder-42.1|E0041394|s+ici
+OntologyID_11116|murders|<verb>|<pres3s>|murder|murder|IPIRActivities:IPIRParticipation|murder-42.1|E0041394|s+ici
+#
+# Grooming activities that are considered defacto ipir
+#
+OntologyID_12000|well groomed|<noun>|<base>|groomed|groomed|IPIRActivities:IPIRAbility|groom-41.1.2|eui|history
+OntologyID_12000|groomed|<noun>|<base>|groomed|groomed|IPIRActivities:IPIRAbility|groom-41.1.2|eui|history
+OntologyID_12000|disheveled|<noun>|<base>|groomed|groomed|IPIRActivities:IPIRAbility|groom-41.1.2|eui|history
+#
+# Other entities 
+#

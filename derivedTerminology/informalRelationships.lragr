@@ -1,0 +1,125 @@
+#  
+#
+#  Infomral relationship evidence
+#     last edited 03/20/2023  
+#     Guy Divita
+# eui|key|pos|inflection|inflectedForm|citationForm|RelationshipType|
+IR00000|buddy|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|buddies|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|friend|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|friends|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|crony|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|cronies|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|confederate|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|pal|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|neighbor|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|neighbors|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|next-door neighbor|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|next-door neighbors|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|aquaintence|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|aquaintences|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|amigo|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|amigos|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|chum|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|companion|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|companions|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|homeboy|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|homeboys|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|homegirl|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|homegirls|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|sidekick|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|sidekicks|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|mate|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|mates|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|classmate|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|classmates|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|roomate|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|roomates|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|playmate|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|playmates|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|schoolmate|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|schoolmates|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|alter ego|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|bosom buddy|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|bosom buddies|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|soul mate|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|soul mates|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|enemy|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|enemies|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|foe|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|foes|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|opponent|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|opponents|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|stranger|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|strangers|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|detractor|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|detractors|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|confidant|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|confidants|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|backseat driver|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|backseat drivers|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|buttinsky|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|kibitzer|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|second-guesser|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|eavesdropper|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|protector|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|housesitter|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|wingman|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|wingmen|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|study partner|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|study partners|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|spectator|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|spectators|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|small group|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|small groups|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|support group|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|support groups|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|group setting|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|group settings|<noun>|<base>|||InformalRelationshipEvidence
+#IR00000|group|<noun>|<base>|||StringerRelationshipEvidence
+#IR00000|groups|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|group|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|groups|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|participates in groups|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|participates in the group|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|participates in individual and group therapy|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|participated in the group|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|behavior in group|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|group member|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|group members|<noun>|<base>|||InformalRelationshipEvidence
+#IR00000|group attendies|<noun>|<base>|||
+IR00000|group topic|<noun>|<base>|||
+IR00000|group topics|<noun>|<base>|||
+#IR00000|emotion regulation group|<noun>|<base>|||
+#IR00000|psychotherapy group|<noun>|<base>|||
+#IR00000|group discussion|<noun>|<base>|||
+#IR00000|session|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|sweetheart|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|experiencer|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|individually|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|close knit|<adj>|<base>|||InformalRelationshipEvidence
+IR00000|close connection|<adj>|<base>|||InformalRelationshipEvidence
+IR00000|coworker|<adj>|<base>|||InformalRelationshipEvidence
+IR00000|co-worker|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|coworkers|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|co-workers|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|worker|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|workers|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|customer|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|customers|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|peer|<noun>|<base>|||InformalRelationshipEvidence
+IR00000|peers|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|people|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|people at work|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|people at school|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|people at church|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|ex-wife|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|ex wife|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|social life|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|social support network|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|social network|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|participate|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|participates|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|participated|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|participating|<noun>|<plural>|||InformalRelationshipEvidence
+IR00000|participation|<noun>|<plural>|||InformalRelationshipEvidence

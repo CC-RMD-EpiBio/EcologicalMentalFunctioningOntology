@@ -1,0 +1,1184 @@
+# Positions/roles of authority 
+# (for the task of ssa adjudication)
+#
+#   Possible Position of Authority Values
+#           AuthorityPosition|NonAuthority|SometimesAuthority
+#
+#  These have been subclassed into the following categories
+#  (these should not have to be exclusive, and this is not a
+#   a complete set of work categories)
+#
+# Count|Work Category
+# -----+------------------------------
+#   142 OccupationPiece
+#   104 Business
+#    75 OfficeAndAdministration
+#    67 Trades
+#    66 LawEnforcment
+#    63 Food
+#    61 Medicine
+#    59 Engineering
+#    55 Military
+#    49 SocialService# Positions/roles of authority 
+# (for the task of ssa adjudication)
+#
+#   Possible Position of Authority Values
+#           AuthorityPosition|NonAuthority|SometimesAuthority
+#
+#  These have been subclassed into the following categories
+#  (these should not have to be exclusive, and this is not a
+#   a complete set of work categories)
+#
+# Count|Work Category
+# -----+------------------------------
+#   142 OccupationPiece
+#   104 Business
+#    75 OfficeAndAdministration
+#    67 Trades
+#    66 LawEnforcment
+#    63 Foods
+#    36 Construction
+#    34 MediaAndThePress
+#    28 Transportation
+#    26 MusicAndArts
+#    24 Religious
+#    23 Politics
+#    22 Education
+#    21 Sales
+#    13 Sports
+#    11 Insurance
+#    11 Government
+#    10 Misc
+#     7 NaturalResources
+#     7 MusicAndTheArts
+#
+# sources for job/role titles 
+#   wikipedia 
+#   ONGIG Job Titles: The Difinitive Guide (https://www.ongig.com/job-titles#/#hierarchy)
+#   U.S. Bureau of Labor Statistics 2010 Census Occupational Titles and Code List (https://www.bls.gov/cps/cenocc2010.htm)
+#   social work job titles https://www.wcupa.edu/education-socialwork/gradSocialWork/documents/socialworkjobtitles.pdf
+#
+#### pieces of occupations #####
+RO00001|worker|<noun>|<base>|worker|worker|NonAuthority:OccupationPiece:person
+RO00001|workers|<noun>|<plural>|worker|worker|NonAuthority:OccupationPiece:person
+RO00001|co-worker|<noun>|<base>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|co-workers|<noun>|<plural>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|coworker|<noun>|<base>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|coworkers|<noun>|<plural>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|co worker|<noun>|<base>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|co workers|<noun>|<plural>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|peer|<noun>|<base>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|peers|<noun>|<base>|coworker|coworker|NonAuthority:OccupationPiece:person
+RO00001|colleague|<noun>|<base>|colleague|colleague|NonAuthority:OccupationPiece:person
+RO00001|colleagues|<noun>|<plural>|colleague|colleague|NonAuthority:OccupationPiece:person
+RO00001|comrade|<noun>|<base>|comrade|comrade|NonAuthority:OccupationPiece:person
+RO00001|teammate|<noun>|<base>|teammate|teammate|NonAuthority:OccupationPiece:person
+RO00001|ally|<noun>|<base>|ally|ally|NonAuthority:OccupationPiece:person
+RO00001|workmate|<noun>|<base>|workmate|workmate|NonAuthority:OccupationPiece:person
+RO00001|workmates|<noun>|<plural>|workmate|workmate|NonAuthority:OccupationPiece:person
+RO00001|copartner|<noun>|<base>|copartner|copartner|NonAuthority:OccupationPiece:person
+RO00001|slave driver|<noun>|<base>|slave driver|slave driver|AuthorityPosition:OccupationPiece:person
+RO00001|big cheese|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00001|big gun|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00001|top dog|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00001|straw boss|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00001|taskmaster|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00001|head honcho|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00001|big kahuna|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00001|big enchilada|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+#
+RO00002|supervisor|<noun>|<base>|supervisor|supervisor|AuthorityPosition:OccupationPiece:SubjectIsOther:person
+RO00002|superviser|<noun>|<base>|supervisor|supervisor|AuthorityPosition:OccupationPiece:SubjectIsOther:person
+RO00002|supervisors|<noun>|<plural>|supervisor|supervisor|AuthorityPosition:OccupationPiece:SubjectIsOther:person
+RO00002|supervisers|<noun>|<plural>|supervisor|supervisor|AuthorityPosition:OccupationPiece:SubjectIsOther:person
+RO00003|supervisory|<noun>|<base>|supervisory|supervisory|AuthorityPosition:OccupationPiece:person
+RO00004|superior|<noun>|<base>|superior|superior|AuthorityPosition:OccupationPiece:person
+RO00005|teacher|<noun>|<base>|teacher|teacher|AuthorityPosition:OccupationPiece:person
+RO00006|student|<noun>|<base>|student|student|NonAuthority:OccupationPiece:person
+RO00007|chief|<noun>|<base>|chief|chief|AuthorityPosition:OccupationPiece:person
+RO00008|officer|<noun>|<base>|officer|officer|AuthorityPosition:OccupationPiece:person
+RO00009|sergeant|<noun>|<base>|sergeant|sergeant|AuthorityPosition:OccupationPiece:person
+RO00010|director|<noun>|<base>|director|director|AuthorityPosition:OccupationPiece:person
+RO00011|president|<noun>|<base>|president|president|AuthorityPosition:OccupationPiece:person
+RO00012|technician|<noun>|<base>|technician|technician|NonAuthority:OccupationPiece:person
+RO00012|technicians|<noun>|<plural>|technician|technician|NonAuthority:OccupationPiece:person
+RO00013|head|<noun>|<base>|head|head|OccupationPiece:person
+RO00014|engineer|<noun>|<base>|engineer|engineer|SometimesAuthority:OccupationPiece:person
+RO00015|scientist|<noun>|<base>|scientist|scientist|SometimesAuthority:OccupationPiece:person
+RO00016|researcher|<noun>|<base>|researcher|researcher|SometimesAuthority:OccupationPiece:person
+RO00017|consultant|<noun>|<base>|consultant|consultant|NonAuthority:OccupationPiece:person
+RO00018|counselor|<noun>|<base>|counselor|counselor|AuthorityPosition:OccupationPiece:person
+RO00019|analyst|<noun>|<base>|analyst|analyst|NonAuthority:OccupationPiece:person
+RO00020|associate|<noun>|<base>|associate|associate|NonAuthority:OccupationPiece:person
+RO00021|security|<noun>|<base>|security|security|SometimesAuthority:OccupationPiece:person
+RO00022|operator|<noun>|<base>|operator|operator|NonAuthority:OccupationPiece:person
+RO00023|specialist|<noun>|<base>|specialist|specialist|AuthorityPosition:OccupationPiece:person
+RO00024|executive|<noun>|<base>|executive|executive|AuthorityPosition:OccupationPiece:person
+RO00025|managing|<noun>|<base>|managing|managing|OccupationPiece:person
+RO00026|manager|<noun>|<base>|manager|manager|AuthorityPosition:OccupationPiece:person
+RO00027|committee|<noun>|<base>|committee|committee|AuthorityPosition:OccupationPiece:person
+RO00028|division|<noun>|<base>|division|division|SometimesAuthority:OccupationPiece:person
+RO00029|section|<noun>|<base>|section|section|SometimesAuthority:OccupationPiece:person
+RO00030|department|<noun>|<base>|department|department|SometimesAuthority:OccupationPiece:person
+RO00031|senior|<noun>|<base>|senior|senior|AuthorityPosition:OccupationPiece:person
+RO00032|counsel|<noun>|<base>|counsel|counsel|AuthorityPosition:OccupationPiece:person
+RO00033|board|<noun>|<base>|board|board|AuthorityPosition:OccupationPiece:person
+RO00034|marketing|<noun>|<base>|marketing|marketing|SometimesAuthority:OccupationPiece:person
+RO00035|general|<noun>|<base>|general|general|SometimesAuthority:OccupationPiece:person
+RO00036|lieutenant|<noun>|<base>|lieutenant|lieutenant|AuthorityPosition:OccupationPiece:person
+RO00037|deputy|<noun>|<base>|deputy|deputy|AuthorityPosition:OccupationPiece:person
+RO00038|vice|<noun>|<base>|vice|vice|AuthorityPosition:OccupationPiece:person
+RO00039|lead|<noun>|<base>|lead|lead|OccupationPiece:person
+RO00040|assistant|<noun>|<base>|assistant|assistant|NonAuthority:OccupationPiece:person
+RO00041|coordinator|<noun>|<base>|coordinator|coordinator|NonAuthority:OccupationPiece:person
+RO00042|staff|<noun>|<base>|staff|staff|NonAuthority:OccupationPiece:person
+RO00043|administrator|<noun>|<base>|administrator|administrator|NonAuthority:OccupationPiece:person
+#RO00044|therapist|<noun>|<base>|therapist|therapist|AuthorityPosition:OccupationPiece:person
+RO00044|therapist|<noun>|<base>|therapist|therapist|OccupationPiece:person
+RO00045|nurse|<noun>|<base>|nurse|nurse|SometimesAuthority:OccupationPiece:person
+RO00046|agent|<noun>|<base>|agent|agent|NonAuthority:OccupationPiece:person
+RO00047|clerk|<noun>|<base>|clerk|clerk|NonAuthority:OccupationPiece:person
+RO00048|advisor|<noun>|<base>|advisor|advisor|SometimesAuthority:OccupationPiece:person
+RO00049|servant|<noun>|<base>|servant|servant|NonAuthority:OccupationPiece:person
+RO00050|employee|<noun>|<base>|employee|employee|NonAuthority:OccupationPiece:person
+RO00050|employees|<noun>|<plural>|employee|employee|NonAuthority:OccupationPiece:person
+RO00051|planner|<noun>|<base>|planner|planner|NonAuthority:OccupationPiece:person
+RO00052|screener|<noun>|<base>|screener|screener|SometimesAuthority:OccupationPiece:person
+RO00053|public|<noun>|<base>|public|public|SometimesAuthority:OccupationPiece:person
+RO00054|liaison|<noun>|<base>|liaison|liaison|SometimesAuthority:OccupationPiece:person
+RO00055|crew|<noun>|<base>|crew|crew|NonAuthority:OccupationPiece:person
+RO00056|driver|<noun>|<base>|driver|driver|NonAuthority:OccupationPiece:person
+RO00057|fitter|<noun>|<base>|fitter|fitter|NonAuthority:OccupationPiece:person
+RO00058|assembler|<noun>|<base>|assembler|assembler|NonAuthority:OccupationPiece:person
+RO00059|fabricator|<noun>|<base>|fabricator|fabricator|NonAuthority:OccupationPiece:person
+RO00060|servicer|<noun>|<base>|servicer|servicer|NonAuthority:OccupationPiece:person
+RO00061|tester|<noun>|<base>|tester|tester|NonAuthority:OccupationPiece:person
+RO00062|evaluator|<noun>|<base>|evaluator|evaluator|NonAuthority:OccupationPiece:person
+RO00063|tender|<noun>|<base>|tender|tender|NonAuthority:OccupationPiece:person
+RO00064|setter|<noun>|<base>|setter|setter|NonAuthority:OccupationPiece:person
+RO00065|maker|<noun>|<base>|maker|maker|NonAuthority:OccupationPiece:person
+#RO00066|management|<noun>|<base>|management|management|AuthorityPosition:OccupationPiece:person
+RO00067|team|<noun>|<base>|team|team|SometimesAuthority:OccupationPiece:person
+RO00068|trainee|<noun>|<base>|trainee|trainee|NonAuthority:OccupationPiece:person
+RO00069|apprentice|<noun>|<base>|apprentice|apprentice|NonAuthority:OccupationPiece:person
+RO00070|journeyman|<noun>|<base>|journeyman|journeyman|NonAuthority:OccupationPiece:person
+RO00071|master|<noun>|<base>|master|master|SometimesAuthority:OccupationPiece:person
+RO00072|craftsman|<noun>|<base>|craftsman|craftsman|SometimesAuthority:OccupationPiece:person
+RO00073|artisan|<noun>|<base>|artisan|artisan|SometimesAuthority:OccupationPiece:person
+RO00074|member|<noun>|<base>|member|member|NonAuthority:OccupationPiece:person
+#RO00075|support|<noun>|<base>|support|support|NonAuthority:OccupationPiece:person
+RO00075|support|<noun>|<base>|support|support|OccupationPiece:person
+#RO00076|IT|<noun>|<base>|IT|IT|NonAuthority:OccupationPiece:person
+RO00077|information technology|<noun>|<base>|information technology|information technology|NonAuthority:OccupationPiece:person
+RO00078|computer science|<noun>|<base>|computer science|computer science|NonAuthority:OccupationPiece:person
+RO00079|web development|<noun>|<base>|web development|web development|NonAuthority:OccupationPiece:person
+RO00080|software|<noun>|<base>|software|software|NonAuthority:OccupationPiece:person
+RO00081|development|<noun>|<base>|development|development|NonAuthority:OccupationPiece:person
+RO00082|social media|<noun>|<base>|social media|social media|NonAuthority:OccupationPiece:person
+#RO00083|social|<noun>|<base>|social|social|NonAuthority:OccupationPiece:person
+RO00083|social|<noun>|<base>|social|social|OccupationPiece:person
+RO00084|entry level|<noun>|<base>|entry level|entry level|NonAuthority:OccupationPiece:person
+RO00085|entry position|<noun>|<base>|entry position|entry position|NonAuthority:OccupationPiece:person
+RO00086|contributor|<noun>|<base>|contributor|contributor|NonAuthority:OccupationPiece:person
+RO00087|developer|<noun>|<base>|developer|developer|NonAuthority:OccupationPiece:person
+RO00088|architect|<noun>|<base>|architect|architect|AuthorityPosition:OccupationPiece:person
+RO00089|blockchain|<noun>|<base>|blockchain|blockchain|NonAuthority:OccupationPiece:person
+RO00090|crypto|<noun>|<base>|crypto|crypto|NonAuthority:OccupationPiece:person
+RO00091|boss|<noun>|<base>|boss|boss|AuthorityPosition:OccupationPiece:person
+RO00092|leader|<noun>|<base>|leader|leader|AuthorityPosition:OccupationPiece:person
+RO00093|doctor|<noun>|<base>|doctor|doctor|AuthorityPosition:OccupationPiece:person
+RO00094|police|<noun>|<base>|police|police|AuthorityPosition:OccupationPiece:person
+RO00095|head of the|<noun>|<base>|head of the|head of the|AuthorityPosition:OccupationPiece:person
+RO00096|coach|<noun>|<base>|coach|coach|AuthorityPosition:OccupationPiece:person
+RO00097|captain|<noun>|<base>|captain|captain|AuthorityPosition:OccupationPiece:person
+RO00098|chairman|<noun>|<base>|chairman|chairman|AuthorityPosition:OccupationPiece:person
+#RO00099|chair|<noun>|<base>|chair|chair|AuthorityPosition:OccupationPiece:person
+RO00100|chairperson|<noun>|<base>|chairperson|chairperson|AuthorityPosition:OccupationPiece:person
+RO00101|person|<noun>|<base>|person|person|OccupationPiece:person
+RO00102|advocate|<noun>|<base>|advocate|advocate|NonAuthority:OccupationPiece:person
+RO00103|strategist|<noun>|<base>|strategist|strategist|NonAuthority:OccupationPiece:person
+RO00104|organizer|<noun>|<base>|organizer|organizer|AuthorityPosition:OccupationPiece:person
+RO00105|licensed|<noun>|<base>|licensed|licensed|AuthorityPosition:OccupationPiece:person
+RO00106|logistics|<noun>|<base>|logistics|logistics|SometimesAuthority:OccupationPiece:person
+RO00107|cook|<noun>|<base>|cook|cook|SometimesAuthority:OccupationPiece:person
+RO00108|food|<noun>|<base>|food|food|SometimesAuthority:OccupationPiece:person
+RO00109|salesman|<noun>|<base>|salesman|salesman|NonAuthority:OccupationPiece:person
+RO00110|saleswoman|<noun>|<base>|saleswoman|saleswoman|NonAuthority:OccupationPiece:person
+RO00111|sales|<noun>|<base>|sales|sales|NonAuthority:OccupationPiece:person
+RO00112|office|<noun>|<base>|office|office|NonAuthority:OccupationPiece:person
+RO00113|insurance|<noun>|<base>|insurance|insurance|NonAuthority:OccupationPiece:person
+RO00114|web|<noun>|<base>|web|web|NonAuthority:OccupationPiece:person
+RO00115|designer|<noun>|<base>|designer|designer|NonAuthority:OccupationPiece:person
+RO00116|computer|<noun>|<base>|computer|computer|NonAuthority:OccupationPiece:person
+RO00117|program|<noun>|<base>|program|program|NonAuthority:OccupationPiece:person
+RO00118|nurse|<noun>|<base>|nurse|nurse|NonAuthority:OccupationPiece:person
+#RO00119|medical|<noun>|<base>|medical|medical|NonAuthority:OccupationPiece:person
+RO00119|medical|<noun>|<base>|medical|medical|OccupationPiece:person
+RO00120|business|<noun>|<base>|business|business|NonAuthority:OccupationPiece:person
+RO00121|accountant|<noun>|<base>|accountant|accountant|NonAuthority:OccupationPiece:person
+RO00122|state|<noun>|<base>|state|state|NonAuthority:OccupationPiece:person
+RO00123|operations|<noun>|<base>|operations|operations|NonAuthority:OccupationPiece:person
+RO00124|attendant|<noun>|<base>|attendant|attendant|NonAuthority:OccupationPiece:person
+RO00125|adjuster|<noun>|<base>|adjuster|adjuster|NonAuthority:OccupationPiece:person
+RO00126|writer|<noun>|<base>|writer|writer|NonAuthority:OccupationPiece:person
+RO00127|secretary|<noun>|<base>|secretary|secretary|SometimesAuthority:OccupationPiece:person
+RO00128|producer|<noun>|<base>|producer|producer|AuthorityPosition:OccupationPiece:person
+#RO00129|managment|<noun>|<base>|managment|managment|AuthorityPosition:OccupationPiece:person
+RO00130|finance|<noun>|<base>|finance|finance|SometimesAuthority:OccupationPiece:person
+RO00131|financal|<noun>|<base>|financal|financal|SometimesAuthority:OccupationPiece:person
+RO00132|clinical|<noun>|<base>|clinical|clinical|SometimesAuthority:OccupationPiece:person
+RO00133|customer|<noun>|<base>|customer|customer|NonAuthority:OccupationPiece:person
+RO00134|accounting|<noun>|<base>|accounting|accounting|NonAuthority:OccupationPiece:person
+RO00135|technical|<noun>|<base>|technical|technical|NonAuthority:OccupationPiece:person
+RO00136|representative|<noun>|<base>|representative|representative|NonAuthority:OccupationPiece:person
+RO00137|maintenance|<noun>|<base>|maintenance|maintenance|NonAuthority:OccupationPiece:person
+RO00137|maintenance person|<noun>|<base>|maintenance|maintenance|NonAuthority:OccupationPiece:person
+RO00138|legal|<noun>|<base>|legal|legal|OccupationPiece:person
+RO00139|investigator|<noun>|<base>|investigator|investigator|AuthorityPosition:OccupationPiece:person
+RO00140|inpector|<noun>|<base>|inpector|inpector|AuthorityPosition:OccupationPiece:person
+RO00141|corporate|<noun>|<base>|corporate|corporate|AuthorityPosition:OccupationPiece:person
+RO00142|contractor|<noun>|<base>|contractor|contractor|SometimesAuthority:OccupationPiece:person
+### Misc
+RO00143|person responsible|<noun>|<base>|person responsible|person responsible|AuthorityPosition:Misc:person
+RO00144|responsible person|<noun>|<base>|responsible person|responsible person|AuthorityPosition:Misc:person
+RO00145|chief scout|<noun>|<base>|chief scout|chief scout|AuthorityPosition:Misc:person
+RO00146|father figure|<noun>|<base>|father figure|father figure|AuthorityPosition:Misc:person
+RO00147|mother figure|<noun>|<base>|mother figure|mother figure|AuthorityPosition:Misc:person
+RO00148|surrogate father|<noun>|<base>|surrogate father|surrogate father|AuthorityPosition:Misc:person
+RO00149|father surrogate|<noun>|<base>|father surrogate|father surrogate|AuthorityPosition:Misc:person
+RO00150|surrogate mother|<noun>|<base>|surrogate mother|surrogate mother|AuthorityPosition:Misc:person
+RO00151|mother surrogate|<noun>|<base>|mother surrogate|mother surrogate|AuthorityPosition:Misc:person
+RO00152|figurehead|<noun>|<base>|figurehead|figurehead|SometimesAuthority:Misc:person
+##### Religious ###
+RO00153|clergy|<noun>|<base>|clergy|clergy|AuthorityPosition:Religious:person
+RO00154|cleric|<noun>|<base>|cleric|cleric|AuthorityPosition:Religious:person
+RO00155|deacon|<noun>|<base>|deacon|deacon|AuthorityPosition:Religious:person
+RO00156|elder|<noun>|<base>|elder|elder|Religious:person
+RO00157|elders|<noun>|<base>|elders|elders|AuthorityPosition:Religious:person
+RO00158|priest|<noun>|<base>|priest|priest|AuthorityPosition:Religious:person
+RO00159|bishop|<noun>|<base>|bishop|bishop|AuthorityPosition:Religious:person
+RO00160|preacher|<noun>|<base>|preacher|preacher|AuthorityPosition:Religious:person
+RO00161|pastor|<noun>|<base>|pastor|pastor|AuthorityPosition:Religious:person
+RO00162|presbyter|<noun>|<base>|presbyter|presbyter|AuthorityPosition:Religious:person
+RO00163|minister|<noun>|<base>|minister|minister|AuthorityPosition:Religious:person
+RO00164|ministry|<noun>|<base>|ministry|ministry|AuthorityPosition:Religious:person
+RO00165|parish council|<noun>|<base>|parish council|parish council|AuthorityPosition:Religious:person
+RO00166|pope|<noun>|<base>|pope|pope|AuthorityPosition:Religious:person
+RO00167|imam|<noun>|<base>|imam|imam|AuthorityPosition:Religious:person
+RO00168|caliph|<noun>|<base>|caliph|caliph|AuthorityPosition:Religious:person
+RO00169|qadi|<noun>|<base>|qadi|qadi|AuthorityPosition:Religious:person
+RO00170|sheikh|<noun>|<base>|sheikh|sheikh|AuthorityPosition:Religious:person
+RO00171|mufi|<noun>|<base>|mufi|mufi|AuthorityPosition:Religious:person
+RO00172|mullah|<noun>|<base>|mullah|mullah|AuthorityPosition:Religious:person
+RO00173|muezzin|<noun>|<base>|muezzin|muezzin|AuthorityPosition:Religious:person
+RO00174|ayatollah|<noun>|<base>|ayatollah|ayatollah|AuthorityPosition:Religious:person
+RO00175|hazzan|<noun>|<base>|hazzan|hazzan|AuthorityPosition:Religious:person
+RO00176|cantor|<noun>|<base>|cantor|cantor|AuthorityPosition:Religious:person
+#### Music and the Arts ####
+RO00177|musical conductor|<noun>|<base>|musical conductor|musical conductor|AuthorityPosition:MusicAndArts:person
+RO00178|music director|<noun>|<base>|music director|music director|AuthorityPosition:MusicAndArts:person
+RO00179|musical director|<noun>|<base>|musical director|musical director|AuthorityPosition:MusicAndArts:person
+RO00180|conductor|<noun>|<base>|conductor|conductor|AuthorityPosition:MusicAndArts:person
+RO00181|director of music|<noun>|<base>|director of music|director of music|AuthorityPosition:MusicAndArts:person
+RO00182|artistic director|<noun>|<base>|artistic director|artistic director|AuthorityPosition:MusicAndArts:person
+RO00183|choirmaster|<noun>|<base>|choirmaster|choirmaster|AuthorityPosition:MusicAndArts:person
+RO00184|mandmaster|<noun>|<base>|mandmaster|mandmaster|AuthorityPosition:MusicAndArts:person
+RO00185|first chair|<noun>|<base>|first chair|first chair|AuthorityPosition:MusicAndArts:person
+RO00186|second chair|<noun>|<base>|second chair|second chair|AuthorityPosition:MusicAndArts:person
+RO00187|music supervisor|<noun>|<base>|music supervisor|music supervisor|AuthorityPosition:MusicAndArts:person
+RO00188|artist|<noun>|<base>|artist|artist|NonAuthority:MusicAndArts:person
+RO00189|designer|<noun>|<base>|designer|designer|NonAuthority:MusicAndArts:person
+RO00190|actor|<noun>|<base>|actor|actor|SometimesAuthority:MusicAndArts:person
+RO00191|producter|<noun>|<base>|producter|producter|AuthorityPosition:MusicAndArts:person
+RO00192|director|<noun>|<base>|director|director|AuthorityPosition:MusicAndArts:person
+RO00193|performer|<noun>|<base>|performer|performer|NonAuthority:MusicAndArts:person
+RO00194|singer|<noun>|<base>|singer|singer|NonAuthority:MusicAndArts:person
+RO00195|dancer|<noun>|<base>|dancer|dancer|NonAuthority:MusicAndArts:person
+RO00196|choreographer|<noun>|<base>|choreographer|choreographer|AuthorityPosition:MusicAndArts:person
+RO00197|musician|<noun>|<base>|musician|musician|NonAuthority:MusicAndArts:person
+RO00198|entertainer|<noun>|<base>|entertainer|entertainer|NonAuthority:MusicAndArts:person
+RO00199|projectionist|<noun>|<base>|projectionist|projectionist|NonAuthority:MusicAndArts:person
+RO00200|usher|<noun>|<base>|usher|usher|SometimesAuthority:MusicAndArts:person
+RO00201|attendant|<noun>|<base>|attendant|attendant|NonAuthority:MusicAndArts:person
+RO00202|ticket taker|<noun>|<base>|ticket taker|ticket taker|NonAuthority:MusicAndArts:person
+RO00203|sound mixer|<noun>|<base>|sound mixer|sound mixer|NonAuthority:MusicAndTheArts:person
+RO00204|audio engineer|<noun>|<base>|audio engineer|audio engineer|NonAuthority:MusicAndTheArts:person
+RO00205|stagehand|<noun>|<base>|stagehand|stagehand|NonAuthority:MusicAndTheArts:person
+RO00206|producer|<noun>|<base>|producer|producer|AuthorityPosition:MusicAndTheArts:person
+RO00207|production assistant|<noun>|<base>|production assistant|production assistant|NonAuthority:MusicAndTheArts:person
+RO00208|sound producer|<noun>|<base>|sound producer|sound producer|AuthorityPosition:MusicAndTheArts:person
+RO00209|music producer|<noun>|<base>|music producer|music producer|AuthorityPosition:MusicAndTheArts:person
+### Business ####
+RO00210|executive director|<noun>|<base>|executive director|executive director|AuthorityPosition:Business:person
+RO00211|chief executive officer|<noun>|<base>|chief executive officer|chief executive officer|AuthorityPosition:Business:person
+RO00212|CEO|<noun>|<base>|CEO|CEO|AuthorityPosition:Business:person
+RO00213|president|<noun>|<base>|president|president|AuthorityPosition:Business:person
+RO00214|chief operating officer|<noun>|<base>|chief operating officer|chief operating officer|AuthorityPosition:Business:person
+RO00215|COO|<noun>|<base>|COO|COO|Business:person
+RO00216|vice president|<noun>|<base>|vice president|vice president|AuthorityPosition:Business:person
+RO00217|chief financial officer|<noun>|<base>|chief financial officer|chief financial officer|AuthorityPosition:Business:person
+RO00218|CFO|<noun>|<base>|CFO|CFO|AuthorityPosition:Business:person
+RO00219|board of director|<noun>|<base>|board of director|board of director|AuthorityPosition:Business:person
+RO00220|executive vice president|<noun>|<base>|executive vice president|executive vice president|AuthorityPosition:Business:person
+RO00221|EVP|<noun>|<base>|EVP|EVP|AuthorityPosition:Business:person
+RO00222|supervisory board|<noun>|<base>|supervisory board|supervisory board|AuthorityPosition:Business:person
+#RO00223|managment|<noun>|<base>|managment|managment|AuthorityPosition:Business:person
+RO00224|managing director|<noun>|<base>|managing director|managing director|AuthorityPosition:Business:person
+RO00225|cabinet|<noun>|<base>|cabinet|cabinet|AuthorityPosition:Business:person
+RO00226|management committee|<noun>|<base>|management committee|management committee|AuthorityPosition:Business:person
+RO00227|executive committee|<noun>|<base>|executive committee|executive committee|AuthorityPosition:Business:person
+RO00228|subsidiary head|<noun>|<base>|subsidiary head|subsidiary head|AuthorityPosition:Business:person
+RO00229|division head|<noun>|<base>|division head|division head|AuthorityPosition:Business:person
+RO00230|division chief|<noun>|<base>|division chief|division chief|AuthorityPosition:Business:person
+RO00231|senior officer|<noun>|<base>|senior officer|senior officer|AuthorityPosition:Business:person
+RO00232|company secretary|<noun>|<base>|company secretary|company secretary|AuthorityPosition:Business:person
+RO00233|secretary|<noun>|<base>|secretary|secretary|SometimesAuthority:Business:person
+RO00234|treasurer|<noun>|<base>|treasurer|treasurer|AuthorityPosition:Business:person
+RO00235|chief strategy officer|<noun>|<base>|chief strategy officer|chief strategy officer|AuthorityPosition:Business:person
+RO00236|CSO|<noun>|<base>|CSO|CSO|AuthorityPosition:Business:person
+RO00237|chief marketing officer|<noun>|<base>|chief marketing officer|chief marketing officer|AuthorityPosition:Business:person
+RO00238|CMO|<noun>|<base>|CMO|CMO|AuthorityPosition:Business:person
+RO00239|marketing director|<noun>|<base>|marketing director|marketing director|AuthorityPosition:Business:person
+RO00240|marketing chief|<noun>|<base>|marketing chief|marketing chief|AuthorityPosition:Business:person
+RO00241|general manager|<noun>|<base>|general manager|general manager|AuthorityPosition:Business:person
+RO00242|deputy|<noun>|<base>|deputy|deputy|AuthorityPosition:Business:person
+RO00243|deputy general manger|<noun>|<base>|deputy general manger|deputy general manger|AuthorityPosition:Business:person
+RO00244|assistant manager|<noun>|<base>|assistant manager|assistant manager|AuthorityPosition:Business:person
+RO00245|section head|<noun>|<base>|section head|section head|AuthorityPosition:Business:person
+RO00246|team lead|<noun>|<base>|team lead|team lead|AuthorityPosition:Business:person
+RO00247|team leader|<noun>|<base>|team leader|team leader|AuthorityPosition:Business:person
+RO00247|stakeholder|<noun>|<base>|team leader|team leader|AuthorityPosition:Business:person
+RO00247|stakeholders|<noun>|<plural>|team leader|team leader|AuthorityPosition:Business:person
+RO00248|staff|<noun>|<base>|staff|staff|NonAuthority:Business:person
+RO00249|program coordinator|<noun>|<base>|program coordinator|program coordinator|AuthorityPosition:Business:person
+RO00250|program director|<noun>|<base>|program director|program director|AuthorityPosition:Business:person
+RO00251|program evaluator|<noun>|<base>|program evaluator|program evaluator|AuthorityPosition:Business:person
+RO00252|program manager|<noun>|<base>|program manager|program manager|AuthorityPosition:Business:person
+RO00253|program supervisor|<noun>|<base>|program supervisor|program supervisor|AuthorityPosition:Business:person
+RO00254|administrator|<noun>|<base>|administrator|administrator|SometimesAuthority:Business:person
+RO00255|senior staff|<noun>|<base>|senior staff|senior staff|AuthorityPosition:Business:person
+RO00256|executive|<noun>|<base>|executive|executive|AuthorityPosition:Business:person
+RO00257|executive officer|<noun>|<base>|executive officer|executive officer|AuthorityPosition:Business:person
+RO00258|senior managment|<noun>|<base>|senior managment|senior managment|AuthorityPosition:Business:person
+RO00259|department chief|<noun>|<base>|department chief|department chief|AuthorityPosition:Business:person
+RO00260|department head|<noun>|<base>|department head|department head|AuthorityPosition:Business:person
+RO00261|manager|<noun>|<base>|manager|manager|AuthorityPosition:Business:person
+RO00262|director|<noun>|<base>|director|director|AuthorityPosition:Business:person
+RO00263|vice president of|<noun>|<base>|vice president of|vice president of|AuthorityPosition:Business:person
+RO00264|chief business officer|<noun>|<base>|chief business officer|chief business officer|AuthorityPosition:Business:person
+RO00265|chief administrative officer|<noun>|<base>|chief administrative officer|chief administrative officer|AuthorityPosition:Business:person
+RO00266|chief diversity officer|<noun>|<base>|chief diversity officer|chief diversity officer|AuthorityPosition:Business:person
+RO00267|CDO|<noun>|<base>|CDO|CDO|AuthorityPosition:Business:person
+RO00268|head of human resources|<noun>|<base>|head of human resources|head of human resources|AuthorityPosition:Business:person
+RO00269|chairman of the board|<noun>|<base>|chairman of the board|chairman of the board|AuthorityPosition:Business:person
+RO00270|presiding officer|<noun>|<base>|presiding officer|presiding officer|AuthorityPosition:Business:person
+RO00271|corporate board|<noun>|<base>|corporate board|corporate board|AuthorityPosition:Business:person
+RO00272|corporate board of directors|<noun>|<base>|corporate board of directors|corporate board of directors|AuthorityPosition:Business:person
+RO00273|board of directors|<noun>|<base>|board of directors|board of directors|AuthorityPosition:Business:person
+RO00274|chairman|<noun>|<base>|chairman|chairman|AuthorityPosition:Business:person
+RO00275|chief of staff|<noun>|<base>|chief of staff|chief of staff|AuthorityPosition:Business:person
+RO00276|commissioner|<noun>|<base>|commissioner|commissioner|AuthorityPosition:Business:person
+RO00277|financial control officer|<noun>|<base>|financial control officer|financial control officer|AuthorityPosition:Business:person
+RO00278|superintendent|<noun>|<base>|superintendent|superintendent|AuthorityPosition:Business:person
+RO00279|owner|<noun>|<base>|owner|owner|AuthorityPosition:Business:person
+RO00280|partner|<noun>|<base>|partner|partner|Business:person
+RO00281|vice chairman|<noun>|<base>|vice chairman|vice chairman|AuthorityPosition:Business:person
+RO00282|chief academic officer|<noun>|<base>|chief academic officer|chief academic officer|AuthorityPosition:Business:person
+RO00283|chief accessiblity officer|<noun>|<base>|chief accessiblity officer|chief accessiblity officer|AuthorityPosition:Business:person
+RO00284|chief architect|<noun>|<base>|chief architect|chief architect|AuthorityPosition:Business:person
+RO00285|chief audit officer|<noun>|<base>|chief audit officer|chief audit officer|AuthorityPosition:Business:person
+RO00286|chief brand officer|<noun>|<base>|chief brand officer|chief brand officer|AuthorityPosition:Business:person
+RO00287|brand manager|<noun>|<base>|brand manager|brand manager|AuthorityPosition:Business:person
+RO00288|chief business development officer|<noun>|<base>|chief business development officer|chief business development officer|AuthorityPosition:Business:person
+RO00289|chief commercial officer|<noun>|<base>|chief commercial officer|chief commercial officer|AuthorityPosition:Business:person
+RO00290|chief * officer|<noun>|<base>|chief * officer|chief * officer|AuthorityPosition:Business:person
+RO00291|social media coordinator|<noun>|<base>|social media coordinator|social media coordinator|NonAuthority:Business:person
+RO00292|social media manager|<noun>|<base>|social media manager|social media manager|AuthorityPosition:Business:person
+RO00293|foreman|<noun>|<base>|forman|forman|AuthorityPosition:Business:person
+RO00293|forewoman|<noun>|<base>|forman|forman|AuthorityPosition:Business:person
+RO00293|foreperson|<noun>|<base>|forman|forman|AuthorityPosition:Business:person
+RO00294|finance director|<noun>|<base>|finance director|finance director|AuthorityPosition:Business:person
+RO00295|finance|<noun>|<base>|finance|finance|SometimesAuthority:Business:person
+RO00296|front office|<noun>|<base>|front office|front office|SometimesAuthority:Business:person
+RO00297|front office manager|<noun>|<base>|front office manager|front office manager|AuthorityPosition:Business:person
+RO00298|administrator|<noun>|<base>|administrator|administrator|AuthorityPosition:Business:person
+RO00299|marketing associate|<noun>|<base>|marketing associate|marketing associate|NonAuthority:Business:person
+RO00300|buyer|<noun>|<base>|buyer|buyer|NonAuthority:Business:person
+RO00301|clerk|<noun>|<base>|clerk|clerk|NonAuthority:Business:person
+RO00302|business analyst|<noun>|<base>|business analyst|business analyst|NonAuthority:Business:person
+RO00303|job coach|<noun>|<base>|job coach|job coach|SometimesAuthority:Business:person
+RO00304|finance analyst|<noun>|<base>|finance analyst|finance analyst|NonAuthority:Business:person
+RO00305|auditor|<noun>|<base>|auditor|auditor|SometimesAuthority:Business:person
+RO00306|security officer|<noun>|<base>|security officer|security officer|AuthorityPosition:Business:person
+RO00307|trader|<noun>|<base>|trader|trader|NonAuthority:Business:person
+RO00308|operations analyst|<noun>|<base>|operations analyst|operations analyst|NonAuthority:Business:person
+RO00309|operations specialist|<noun>|<base>|operations specialist|operations specialist|NonAuthority:Business:person
+RO00310|operations coordinator|<noun>|<base>|operations coordinator|operations coordinator|NonAuthority:Business:person
+RO00311|operations manager|<noun>|<base>|operations manager|operations manager|AuthorityPosition:Business:person
+RO00312|solutions consultant|<noun>|<base>|solutions consultant|solutions consultant|NonAuthority:Business:person
+RO00313|quality control manager|<noun>|<base>|quality control manager|quality control manager|AuthorityPosition:Business:person
+#### Insurance 
+RO00314|actuary|<noun>|<base>|actuary|actuary|NonAuthority:Insurance:person
+RO00315|insurance adjuster|<noun>|<base>|insurance adjuster|insurance adjuster|NonAuthority:Insurance:person
+RO00316|insurance claims adjuster|<noun>|<base>|insurance claims adjuster|insurance claims adjuster|NonAuthority:Insurance:person
+RO00317|claims adjuster|<noun>|<base>|claims adjuster|claims adjuster|NonAuthority:Insurance:person
+RO00318|actuarial analyst|<noun>|<base>|actuarial analyst|actuarial analyst|NonAuthority:Insurance:person
+RO00319|insurance underwriter|<noun>|<base>|insurance underwriter|insurance underwriter|NonAuthority:Insurance:person
+RO00320|underwriter|<noun>|<base>|underwriter|underwriter|NonAuthority:Insurance:person
+RO00321|adjuster|<noun>|<base>|adjuster|adjuster|NonAuthority:Insurance:person
+RO00322|insurance sales person|<noun>|<base>|insurance sales person|insurance sales person|NonAuthority:Insurance:person
+RO00323|insurance salesman|<noun>|<base>|insurance salesman|insurance salesman|NonAuthority:Insurance:person
+RO00324|insurance saleswoman|<noun>|<base>|insurance saleswoman|insurance saleswoman|NonAuthority:Insurance:person
+##### Medicine ######
+RO00325|doctor|<noun>|<base>|doctor|doctor|AuthorityPosition:Medicine:person
+RO00326|physician|<noun>|<base>|physician|physician|AuthorityPosition:Medicine:person
+RO00327|physician assistant|<noun>|<base>|physician assistant|physician assistant|SometimesAuthority:Medicine:person
+RO00328|pa|<noun>|<base>|pa|pa|SometimesAuthority:Medicine:person
+RO00329|surgeon|<noun>|<base>|surgeon|surgeon|AuthorityPosition:Medicine:person
+RO00330|gynaecologist|<noun>|<base>|gynaecologist|gynaecologist|AuthorityPosition:Medicine:person
+RO00331|dentist|<noun>|<base>|dentist|dentist|AuthorityPosition:Medicine:person
+RO00332|caregiver|<noun>|<base>|caregiver|caregiver|AuthorityPosition:Medicine:person
+RO00333|caretaker|<noun>|<base>|caretaker|caretaker|AuthorityPosition:Medicine:person
+RO00334|nurse|<noun>|<base>|nurse|nurse|SometimesAuthority:Medicine:person
+RO00335|practioner|<noun>|<base>|practioner|practioner|AuthorityPosition:Medicine:person
+RO00336|nurse practioner|<noun>|<base>|nurse practioner|nurse practioner|SometimesAuthority:Medicine:person
+RO00337|np|<noun>|<base>|np|np|SometimesAuthority:Medicine:person
+RO00338|advocate|<noun>|<base>|advocate|advocate|NonAuthority:Medicine:person
+RO00339|specialist|<noun>|<base>|specialist|specialist|AuthorityPosition:Medicine:person
+RO00340|chiropractor|<noun>|<base>|chiropractor|chiropractor|AuthorityPosition:Medicine:person
+RO00341|dietitian|<noun>|<base>|dietitian|dietitian|SometimesAuthority:Medicine:person
+RO00342|nutritionist|<noun>|<base>|nutritionist|nutritionist|SometimesAuthority:Medicine:person
+RO00343|optometrist|<noun>|<base>|optometrist|optometrist|AuthorityPosition:Medicine:person
+RO00344|pharmacist|<noun>|<base>|pharmacist|pharmacist|AuthorityPosition:Medicine:person
+RO00345|podiatrist|<noun>|<base>|podiatrist|podiatrist|AuthorityPosition:Medicine:person
+RO00346|audiologist|<noun>|<base>|audiologist|audiologist|AuthorityPosition:Medicine:person
+#RO00347|occupational therapist|<noun>|<base>|occupational therapist|occupational therapist|AuthorityPosition:Medicine:person
+RO00347|occupational therapist|<noun>|<base>|occupational therapist|occupational therapist|Medicine:person
+#RO00348|physical therapist|<noun>|<base>|physical therapist|physical therapist|AuthorityPosition:Medicine:person
+RO00348|physical therapist|<noun>|<base>|physical therapist|physical therapist|Medicine:person
+#RO00349|radiation therapist|<noun>|<base>|radiation therapist|radiation therapist|AuthorityPosition:Medicine:person
+RO00349|radiation therapist|<noun>|<base>|radiation therapist|radiation therapist|Medicine:person
+#RO00350|recreation therapist|<noun>|<base>|recreation therapist|recreation therapist|AuthorityPosition:Medicine:person
+RO00350|recreation therapist|<noun>|<base>|recreation therapist|recreation therapist|Medicine:person
+#RO00351|respiratory therapist|<noun>|<base>|respiratory therapist|respiratory therapist|AuthorityPosition:Medicine:person
+RO00351|respiratory therapist|<noun>|<base>|respiratory therapist|respiratory therapist|Medicine:person
+#RO00352|speach therapist|<noun>|<base>|speach therapist|speach therapist|AuthorityPosition:Medicine:person
+RO00352|speach therapist|<noun>|<base>|speach therapist|speach therapist|Medicine:person
+#RO00353|speach language therapist|<noun>|<base>|speach language therapist|speach language therapist|AuthorityPosition:Medicine:person
+RO00353|speach language therapist|<noun>|<base>|speach language therapist|speach language therapist|Medicine:person
+RO00354|exercise physiologist|<noun>|<base>|exercise physiologist|exercise physiologist|AuthorityPosition:Medicine:person
+RO00355|veterinarian|<noun>|<base>|veterinarian|veterinarian|AuthorityPosition:Medicine:person
+RO00356|registered nurse|<noun>|<base>|registered nurse|registered nurse|SometimesAuthority:Medicine:person
+RO00357|nurse anesthetist|<noun>|<base>|nurse anesthetist|nurse anesthetist|SometimesAuthority:Medicine:person
+RO00358|midwife|<noun>|<base>|midwife|midwife|AuthorityPosition:Medicine:person
+RO00359|labratory technician|<noun>|<base>|labratory technician|labratory technician|NonAuthority:Medicine:person
+RO00360|lab tech|<noun>|<base>|lab tech|lab tech|NonAuthority:Medicine:person
+RO00361|dental hygienist|<noun>|<base>|dental hygienist|dental hygienist|NonAuthority:Medicine:person
+RO00362|information technician|<noun>|<base>|information technician|information technician|NonAuthority:Medicine:person
+RO00363|aide|<noun>|<base>|aide|aide|NonAuthority:Medicine:person
+#RO00364|massage therapist|<noun>|<base>|massage therapist|massage therapist|NonAuthority:Medicine:person
+RO00364|massage therapist|<noun>|<base>|massage therapist|massage therapist|Medicine:person
+RO00365|phlebotomist|<noun>|<base>|phlebotomist|phlebotomist|SometimesAuthority:Medicine:person
+RO00366|preparer|<noun>|<base>|preparer|preparer|NonAuthority:Medicine:person
+RO00367|attending physician|<noun>|<base>|attending physician|attending physician|AuthorityPosition:Medicine:person
+RO00368|attending|<noun>|<base>|attending|attending|Medicine:person
+RO00369|medical staff|<noun>|<base>|medical staff|medical staff|NonAuthority:Medicine:person
+RO00370|house staff|<noun>|<base>|house staff|house staff|NonAuthority:Medicine:person
+RO00371|fellow|<noun>|<base>|fellow|fellow|AuthorityPosition:Medicine:person
+RO00371|visiting fellow|<noun>|<base>|fellow|fellow|person
+RO00371|fellow veteran|<noun>|<base>|fellow|fellow|person
+RO00371|fellow veterans|<noun>|<plural>|fellow|fellow|person
+RO00372|hospitalist|<noun>|<base>|hospitalist|hospitalist|AuthorityPosition:Medicine:person
+RO00373|resident|<noun>|<base>|resident|resident|Medicine:person
+RO00374|chief resident|<noun>|<base>|chief resident|chief resident|AuthorityPosition:Medicine:person
+RO00375|senior resident|<noun>|<base>|senior resident|senior resident|AuthorityPosition:Medicine:person
+RO00376|junior resident|<noun>|<base>|junior resident|junior resident|NonAuthority:Medicine:person
+RO00377|intern|<noun>|<base>|intern|intern|NonAuthority:Medicine:person
+RO00378|medical student|<noun>|<base>|medical student|medical student|NonAuthority:Medicine:person
+RO00379|pre-med student|<noun>|<base>|pre-med student|pre-med student|NonAuthority:Medicine:person
+RO00380|admissions clerk|<noun>|<base>|admissions clerk|admissions clerk|NonAuthority:Medicine:person
+RO00381|medical records clerk|<noun>|<base>|medical records clerk|medical records clerk|NonAuthority:Medicine:person
+RO00382|coding specialist|<noun>|<base>|coding specialist|coding specialist|NonAuthority:Medicine:person
+RO00383|clinician|<noun>|<base>|clinician|clinician|AuthorityPosition:Medicine:person
+RO00384|clinical director|<noun>|<base>|clinical director|clinical director|AuthorityPosition:Medicine:person
+RO00385|clinical supervisor|<noun>|<base>|clinical supervisor|clinical supervisor|AuthorityPosition:Medicine:person
+##### Social Services 
+RO00386|social services|<noun>|<base>|social services|social services|SometimesAuthority:SocialServices:person
+RO00387|addictions counselor|<noun>|<base>|addictions counselor|addictions counselor|AuthorityPosition:SocialServices:person
+RO00388|behavior strategist|<noun>|<base>|behavior strategist|behavior strategist|SometimesAuthority:SocialServices:person
+RO00389|behavioral health consultant|<noun>|<base>|behavioral health consultant|behavioral health consultant|NonAuthority:SocialServices:person
+RO00390|behavioral health counselor|<noun>|<base>|behavioral health counselor|behavioral health counselor|AuthorityPosition:SocialServices:person
+RO00391|behavioral therapist|<noun>|<base>|behavioral therapist|behavioral therapist|AuthorityPosition:SocialServices:person
+RO00392|care manager|<noun>|<base>|care manager|care manager|AuthorityPosition:SocialServices:person
+RO00393|case manager|<noun>|<base>|case manager|case manager|AuthorityPosition:SocialServices:person
+#RO00394|case management specialist|<noun>|<base>|case management specialist|case management specialist|NonAuthority:SocialServices:person
+RO00395|case worker|<noun>|<base>|case worker|case worker|NonAuthority:SocialServices:person
+RO00396|child advocate|<noun>|<base>|child advocate|child advocate|SometimesAuthority:SocialServices:person
+RO00397|children's service specialist|<noun>|<base>|children's service specialist|children's service specialist|NonAuthority:SocialServices:person
+RO00398|community organizer|<noun>|<base>|community organizer|community organizer|AuthorityPosition:SocialServices:person
+RO00399|community outreach worker|<noun>|<base>|community outreach worker|community outreach worker|NonAuthority:SocialServices:person
+RO00400|community support specialist|<noun>|<base>|community support specialist|community support specialist|SometimesAuthority:SocialServices:person
+RO00401|crisis counselor|<noun>|<base>|crisis counselor|crisis counselor|AuthorityPosition:SocialServices:person
+RO00402|director of social services|<noun>|<base>|director of social services|director of social services|AuthorityPosition:SocialServices:person
+RO00403|family finding specialist|<noun>|<base>|family finding specialist|family finding specialist|SometimesAuthority:SocialServices:person
+RO00404|family intervention specialist|<noun>|<base>|family intervention specialist|family intervention specialist|SometimesAuthority:SocialServices:person
+RO00405|family therapist|<noun>|<base>|family therapist|family therapist|AuthorityPosition:SocialServices:person
+RO00406|foster care specialist|<noun>|<base>|foster care specialist|foster care specialist|SometimesAuthority:SocialServices:person
+RO00407|housing resource manager|<noun>|<base>|housing resource manager|housing resource manager|AuthorityPosition:SocialServices:person
+RO00408|intake services coordinator|<noun>|<base>|intake services coordinator|intake services coordinator|SometimesAuthority:SocialServices:person
+RO00409|intervention coordinator|<noun>|<base>|intervention coordinator|intervention coordinator|SometimesAuthority:SocialServices:person
+RO00410|licensed clinical social worker|<noun>|<base>|licensed clinical social worker|licensed clinical social worker|AuthorityPosition:SocialServices:person
+RO00411|medical social worker|<noun>|<base>|medical social worker|medical social worker|AuthorityPosition:SocialServices:person
+RO00412|mental health counselor|<noun>|<base>|mental health counselor|mental health counselor|SometimesAuthority:SocialServices:person
+RO00413|mental health specialist|<noun>|<base>|mental health specialist|mental health specialist|SometimesAuthority:SocialServices:person
+#RO00414|mobile therapist|<noun>|<base>|mobile therapist|mobile therapist|AuthorityPosition:SocialServices:person
+RO00414|mobile therapist|<noun>|<base>|mobile therapist|mobile therapist|SocialServices:person
+RO00415|multisystemic therapist|<noun>|<base>|multisystemic therapist|multisystemic therapist|AuthorityPosition:SocialServices:person
+RO00416|outpatient manager|<noun>|<base>|outpatient manager|outpatient manager|AuthorityPosition:SocialServices:person
+#RO00417|outpatient therapist|<noun>|<base>|outpatient therapist|outpatient therapist|AuthorityPosition:SocialServices:person
+RO00417|outpatient therapist|<noun>|<base>|outpatient therapist|outpatient therapist|SocialServices:person
+RO00418|outpatient unit director|<noun>|<base>|outpatient unit director|outpatient unit director|AuthorityPosition:SocialServices:person
+RO00419|outreach coordinator|<noun>|<base>|outreach coordinator|outreach coordinator|SometimesAuthority:SocialServices:person
+RO00420|patient advocate|<noun>|<base>|patient advocate|patient advocate|SometimesAuthority:SocialServices:person
+RO00421|patient navigator|<noun>|<base>|patient navigator|patient navigator|SometimesAuthority:SocialServices:person
+RO00422|prevention specialist|<noun>|<base>|prevention specialist|prevention specialist|SometimesAuthority:SocialServices:person
+#RO00423|primary therapist|<noun>|<base>|primary therapist|primary therapist|AuthorityPosition:SocialServices:person
+RO00423|primary therapist|<noun>|<base>|primary therapist|primary therapist|SocialServices:person
+#RO00424|psychotherapist|<noun>|<base>|psychotherapist|psychotherapist|AuthorityPosition:SocialServices:person
+RO00424|psychotherapist|<noun>|<base>|psychotherapist|psychotherapist|SocialServices:person
+RO00425|school social worker|<noun>|<base>|school social worker|school social worker|AuthorityPosition:SocialServices:person
+RO00426|service coordinator|<noun>|<base>|service coordinator|service coordinator|NonAuthority:SocialServices:person
+RO00427|social services coordinator|<noun>|<base>|social services coordinator|social services coordinator|SometimesAuthority:SocialServices:person
+RO00428|social services director|<noun>|<base>|social services director|social services director|AuthorityPosition:SocialServices:person
+RO00429|social worker|<noun>|<base>|social worker|social worker|AuthorityPosition:SocialServices:person
+RO00430|substance abuse counselor|<noun>|<base>|substance abuse counselor|substance abuse counselor|SometimesAuthority:SocialServices:person
+RO00431|trauma therapist|<noun>|<base>|trauma therapist|trauma therapist|AuthorityPosition:SocialServices:person
+RO00432|victim advocate|<noun>|<base>|victim advocate|victim advocate|SometimesAuthority:SocialServices:person
+RO00433|volunteer coordinator|<noun>|<base>|volunteer coordinator|volunteer coordinator|SometimesAuthority:SocialServices:person
+RO00434|youth and family specialist|<noun>|<base>|youth and family specialist|youth and family specialist|SometimesAuthority:SocialServices:person
+#### Politics ####
+RO00435|congresman|<noun>|<base>|congresman|congresman|AuthorityPosition:Politics:person
+RO00436|alderman|<noun>|<base>|alderman|alderman|AuthorityPosition:Politics:person
+RO00437|senator|<noun>|<base>|senator|senator|AuthorityPosition:Politics:person
+RO00438|president|<noun>|<base>|president|president|AuthorityPosition:Politics:person
+RO00439|vice president|<noun>|<base>|vice president|vice president|AuthorityPosition:Politics:person
+RO00440|secretary of|<noun>|<base>|secretary of|secretary of|AuthorityPosition:Politics:person
+RO00441|mayor|<noun>|<base>|mayor|mayor|AuthorityPosition:Politics:person
+RO00442|councilman|<noun>|<base>|councilman|councilman|AuthorityPosition:Politics:person
+RO00443|councilwoman|<noun>|<base>|councilwoman|councilwoman|AuthorityPosition:Politics:person
+RO00444|council person|<noun>|<base>|council person|council person|AuthorityPosition:Politics:person
+RO00445|elected official|<noun>|<base>|elected official|elected official|AuthorityPosition:Politics:person
+RO00446|representative|<noun>|<base>|representative|representative|AuthorityPosition:Politics:person
+RO00447|head of state|<noun>|<base>|head of state|head of state|AuthorityPosition:Politics:person
+RO00448|governor|<noun>|<base>|governor|governor|AuthorityPosition:Politics:person
+RO00449|lieutenant governor|<noun>|<base>|lieutenant governor|lieutenant governor|AuthorityPosition:Politics:person
+RO00450|lawmaker|<noun>|<base>|lawmaker|lawmaker|AuthorityPosition:Politics:person
+RO00451|legislator|<noun>|<base>|legislator|legislator|AuthorityPosition:Politics:person
+RO00452|member of congress|<noun>|<base>|member of congress|member of congress|AuthorityPosition:Politics:person
+RO00453|member of parliament|<noun>|<base>|member of parliament|member of parliament|AuthorityPosition:Politics:person
+RO00454|member of the assembly|<noun>|<base>|member of the assembly|member of the assembly|AuthorityPosition:Politics:person
+RO00455|member of the legislature|<noun>|<base>|member of the legislature|member of the legislature|AuthorityPosition:Politics:person
+RO00456|politician|<noun>|<base>|politician|politician|AuthorityPosition:Politics:person
+RO00457|chamberlain|<noun>|<base>|chamberlain|chamberlain|AuthorityPosition:Politics:person
+### Law Enforcement ####
+RO00458|patrol officer|<noun>|<base>|patrol officer|patrol officer|AuthorityPosition:LawEnforcment:person
+RO00459|officer|<noun>|<base>|officer|officer|AuthorityPosition:LawEnforcment:person
+RO00460|police officer|<noun>|<base>|police officer|police officer|AuthorityPosition:LawEnforcment:person
+RO00461|security officer|<noun>|<base>|security officer|security officer|AuthorityPosition:LawEnforcment:person
+RO00462|survailance officer|<noun>|<base>|survailance officer|survailance officer|AuthorityPosition:LawEnforcment:person
+RO00463|lifeguard|<noun>|<base>|lifeguard|lifeguard|AuthorityPosition:LawEnforcment:person
+RO00464|security guard|<noun>|<base>|security guard|security guard|AuthorityPosition:LawEnforcment:person
+RO00465|crossing guard|<noun>|<base>|crossing guard|crossing guard|AuthorityPosition:LawEnforcment:person
+RO00466|gate keeper|<noun>|<base>|gate keeper|gate keeper|SometimesAuthority:LawEnforcment:person
+RO00467|guard|<noun>|<base>|guard|guard|AuthorityPosition:LawEnforcment:person
+RO00468|transportration security screener|<noun>|<base>|transportration security screener|transportration security screener|AuthorityPosition:LawEnforcment:person
+RO00469|screener|<noun>|<base>|screener|screener|AuthorityPosition:LawEnforcment:person
+RO00470|corrections officer|<noun>|<base>|corrections officer|corrections officer|AuthorityPosition:LawEnforcment:person
+RO00471|correctional officer|<noun>|<base>|correctional officer|correctional officer|AuthorityPosition:LawEnforcment:person
+RO00472|customs officer|<noun>|<base>|customs officer|customs officer|AuthorityPosition:LawEnforcment:person
+RO00473|detective|<noun>|<base>|detective|detective|AuthorityPosition:LawEnforcment:person
+RO00474|sheriff|<noun>|<base>|sheriff|sheriff|AuthorityPosition:LawEnforcment:person
+RO00475|deputy sheriff|<noun>|<base>|deputy sheriff|deputy sheriff|AuthorityPosition:LawEnforcment:person
+RO00476|state police officer|<noun>|<base>|state police officer|state police officer|AuthorityPosition:LawEnforcment:person
+RO00477|state police|<noun>|<base>|state police|state police|AuthorityPosition:LawEnforcment:person
+RO00478|state trooper|<noun>|<base>|state trooper|state trooper|AuthorityPosition:LawEnforcment:person
+RO00479|tropper|<noun>|<base>|tropper|tropper|AuthorityPosition:LawEnforcment:person
+RO00480|local police|<noun>|<base>|local police|local police|AuthorityPosition:LawEnforcment:person
+RO00481|county police|<noun>|<base>|county police|county police|AuthorityPosition:LawEnforcment:person
+RO00482|county police chief|<noun>|<base>|county police chief|county police chief|AuthorityPosition:LawEnforcment:person
+RO00483|highway patrol|<noun>|<base>|highway patrol|highway patrol|AuthorityPosition:LawEnforcment:person
+RO00484|highway patrol officer|<noun>|<base>|highway patrol officer|highway patrol officer|AuthorityPosition:LawEnforcment:person
+RO00485|fbi agent|<noun>|<base>|fbi agent|fbi agent|AuthorityPosition:LawEnforcment:person
+RO00486|investigator|<noun>|<base>|investigator|investigator|AuthorityPosition:LawEnforcment:person
+RO00487|criminal investigator|<noun>|<base>|criminal investigator|criminal investigator|AuthorityPosition:LawEnforcment:person
+RO00488|game warden|<noun>|<base>|game warden|game warden|AuthorityPosition:LawEnforcment:person
+RO00489|warden|<noun>|<base>|warden|warden|AuthorityPosition:LawEnforcment:person
+RO00490|animal control worker|<noun>|<base>|animal control worker|animal control worker|AuthorityPosition:LawEnforcment:person
+RO00491|special agent|<noun>|<base>|special agent|special agent|AuthorityPosition:LawEnforcment:person
+RO00492|dea agent|<noun>|<base>|dea agent|dea agent|AuthorityPosition:LawEnforcment:person
+RO00493|u.s. marshal|<noun>|<base>|u.s. marshal|u.s. marshal|AuthorityPosition:LawEnforcment:person
+RO00494|us marshal|<noun>|<base>|us marshal|us marshal|AuthorityPosition:LawEnforcment:person
+RO00495|judge|<noun>|<base>|judge|judge|AuthorityPosition:LawEnforcment:person
+RO00496|lawyer|<noun>|<base>|lawyer|lawyer|AuthorityPosition:LawEnforcment:person
+RO00497|attorney|<noun>|<base>|attorney|attorney|AuthorityPosition:LawEnforcment:person
+RO00498|bailiff|<noun>|<base>|bailiff|bailiff|AuthorityPosition:LawEnforcment:person
+RO00499|court officer|<noun>|<base>|court officer|court officer|AuthorityPosition:LawEnforcment:person
+RO00500|officer of the court|<noun>|<base>|officer of the court|officer of the court|AuthorityPosition:LawEnforcment:person
+RO00501|parking enforcement officer|<noun>|<base>|parking enforcement officer|parking enforcement officer|AuthorityPosition:LawEnforcment:person
+RO00502|policeman|<noun>|<base>|policeman|policeman|AuthorityPosition:LawEnforcment:person
+RO00503|policewoman|<noun>|<base>|policewoman|policewoman|AuthorityPosition:LawEnforcment:person
+RO00504|probation officer|<noun>|<base>|probation officer|probation officer|AuthorityPosition:LawEnforcment:person
+RO00505|law clerk|<noun>|<base>|law clerk|law clerk|AuthorityPosition:LawEnforcment:person
+RO00506|prosecutor|<noun>|<base>|prosecutor|prosecutor|AuthorityPosition:LawEnforcment:person
+RO00507|defence attorney|<noun>|<base>|defence attorney|defence attorney|AuthorityPosition:LawEnforcment:person
+RO00508|court appointed advisor|<noun>|<base>|court appointed advisor|court appointed advisor|AuthorityPosition:LawEnforcment:person
+RO00509|advisor|<noun>|<base>|advisor|advisor|AuthorityPosition:LawEnforcment:person
+RO00510|court appointed|<noun>|<base>|court appointed|court appointed|AuthorityPosition:LawEnforcment:person
+RO00511|legal council|<noun>|<base>|legal council|legal council|AuthorityPosition:LawEnforcment:person
+RO00512|judge advocate|<noun>|<base>|judge advocate|judge advocate|AuthorityPosition:LawEnforcment:person
+RO00513|advocate|<noun>|<base>|advocate|advocate|SometimesAuthority:LawEnforcment:person
+RO00514|negociator|<noun>|<base>|negociator|negociator|SometimesAuthority:LawEnforcment:person
+RO00515|barrister|<noun>|<base>|barrister|barrister|AuthorityPosition:LawEnforcment:person
+RO00516|notary|<noun>|<base>|notary|notary|AuthorityPosition:LawEnforcment:person
+RO00517|solicitor|<noun>|<base>|solicitor|solicitor|AuthorityPosition:LawEnforcment:person
+RO00518|public servant|<noun>|<base>|public servant|public servant|NonAuthority:LawEnforcment:person
+RO00519|client|<noun>|<base>|client|client|person
+RO00520|jailer|<noun>|<base>|jailer|jailer|AuthorityPosition:LawEnforcment:person
+RO00521|firefighter|<noun>|<base>|firefighter|firefighter|AuthorityPosition:LawEnforcment:person
+RO00522|fire inpector|<noun>|<base>|fire inpector|fire inpector|AuthorityPosition:LawEnforcment:person
+RO00523|inpector|<noun>|<base>|inpector|inpector|AuthorityPosition:LawEnforcment:person
+### Military 
+RO00524|petty officer|<noun>|<base>|petty officer|petty officer|NonAuthority:Military:person
+RO00525|commanding officer|<noun>|<base>|commanding officer|commanding officer|AuthorityPosition:Military:person
+RO00526|private|<noun>|<base>|private|private|NonAuthority:Military:person
+RO00527|private first class|<noun>|<base>|private first class|private first class|NonAuthority:Military:person
+RO00528|specialist|<noun>|<base>|specialist|specialist|NonAuthority:Military:person
+RO00529|corporal|<noun>|<base>|corporal|corporal|NonAuthority:Military:person
+RO00530|sergeant|<noun>|<base>|sergeant|sergeant|NonAuthority:Military:person
+RO00531|staff sergeant|<noun>|<base>|staff sergeant|staff sergeant|AuthorityPosition:Military:person
+RO00532|sergeant first class|<noun>|<base>|sergeant first class|sergeant first class|NonAuthority:Military:person
+RO00533|master sergeant|<noun>|<base>|master sergeant|master sergeant|AuthorityPosition:Military:person
+RO00534|first sergeant|<noun>|<base>|first sergeant|first sergeant|AuthorityPosition:Military:person
+RO00535|sergeant major|<noun>|<base>|sergeant major|sergeant major|AuthorityPosition:Military:person
+RO00536|command sergeant major|<noun>|<base>|command sergeant major|command sergeant major|AuthorityPosition:Military:person
+RO00537|warrant officer|<noun>|<base>|warrant officer|warrant officer|AuthorityPosition:Military:person
+RO00538|chief warrant officer|<noun>|<base>|chief warrant officer|chief warrant officer|AuthorityPosition:Military:person
+RO00539|second lieutenant|<noun>|<base>|second lieutenant|second lieutenant|AuthorityPosition:Military:person
+RO00540|first lieutenant|<noun>|<base>|first lieutenant|first lieutenant|AuthorityPosition:Military:person
+RO00541|lieutenant|<noun>|<base>|lieutenant|lieutenant|AuthorityPosition:Military:person
+RO00542|major|<noun>|<base>|major|major|AuthorityPosition:Military:person
+RO00543|lieutenant colonel|<noun>|<base>|lieutenant colonel|lieutenant colonel|AuthorityPosition:Military:person
+RO00544|colonel|<noun>|<base>|colonel|colonel|AuthorityPosition:Military:person
+RO00545|brigadier general|<noun>|<base>|brigadier general|brigadier general|AuthorityPosition:Military:person
+RO00546|major general|<noun>|<base>|major general|major general|AuthorityPosition:Military:person
+RO00547|lieutenant general|<noun>|<base>|lieutenant general|lieutenant general|AuthorityPosition:Military:person
+#RO00548|general|<noun>|<base>|general|general|AuthorityPosition:Military:person
+RO00549|seaman apprentice|<noun>|<base>|seaman apprentice|seaman apprentice|SometimesAuthority:Military:person
+RO00550|seaman|<noun>|<base>|seaman|seaman|SometimesAuthority:Military:person
+RO00551|petty officer third class|<noun>|<base>|petty officer third class|petty officer third class|SometimesAuthority:Military:person
+RO00552|petty officer second class|<noun>|<base>|petty officer second class|petty officer second class|SometimesAuthority:Military:person
+RO00553|petty officer first class|<noun>|<base>|petty officer first class|petty officer first class|SometimesAuthority:Military:person
+RO00554|petty officer|<noun>|<base>|petty officer|petty officer|SometimesAuthority:Military:person
+RO00555|ensign|<noun>|<base>|ensign|ensign|AuthorityPosition:Military:person
+RO00556|lieutenant junior grade|<noun>|<base>|lieutenant junior grade|lieutenant junior grade|AuthorityPosition:Military:person
+RO00557|lieutenant commander|<noun>|<base>|lieutenant commander|lieutenant commander|AuthorityPosition:Military:person
+RO00558|commander|<noun>|<base>|commander|commander|AuthorityPosition:Military:person
+RO00559|captain|<noun>|<base>|captain|captain|AuthorityPosition:Military:person
+RO00560|rear admiral lower half|<noun>|<base>|rear admiral lower half|rear admiral lower half|AuthorityPosition:Military:person
+RO00561|rear admiral upper half|<noun>|<base>|rear admiral upper half|rear admiral upper half|AuthorityPosition:Military:person
+RO00562|vice admiral|<noun>|<base>|vice admiral|vice admiral|AuthorityPosition:Military:person
+RO00563|admiral|<noun>|<base>|admiral|admiral|AuthorityPosition:Military:person
+RO00564|e-2|<noun>|<base>|e-2|e-2|SometimesAuthority:Military:person
+RO00565|e-3|<noun>|<base>|e-3|e-3|SometimesAuthority:Military:person
+RO00566|e-4|<noun>|<base>|e-4|e-4|SometimesAuthority:Military:person
+RO00567|e-5|<noun>|<base>|e-5|e-5|SometimesAuthority:Military:person
+RO00568|airman|<noun>|<base>|airman|airman|NonAuthority:Military:person
+RO00569|airman first class|<noun>|<base>|airman first class|airman first class|NonAuthority:Military:person
+RO00570|senior airman|<noun>|<base>|senior airman|senior airman|NonAuthority:Military:person
+RO00571|technical sergeant|<noun>|<base>|technical sergeant|technical sergeant|NonAuthority:Military:person
+RO00572|chief sergeant|<noun>|<base>|chief sergeant|chief sergeant|AuthorityPosition:Military:person
+RO00573|command chief master sergeant|<noun>|<base>|command chief master sergeant|command chief master sergeant|AuthorityPosition:Military:person
+RO00574|gunny|<noun>|<base>|gunny|gunny|AuthorityPosition:Military:person
+RO00575|defence contractor|<noun>|<base>|defence contractor|defence contractor|NonAuthority:Military:person
+RO00576|special forces|<noun>|<base>|special forces|special forces|AuthorityPosition:Military:person
+RO00577|green baret|<noun>|<base>|green baret|green baret|AuthorityPosition:Military:person
+RO00578|navy seal|<noun>|<base>|navy seal|navy seal|AuthorityPosition:Military:person
+#### Education ####
+RO00579|admissions director|<noun>|<base>|admissions director|admissions director|AuthorityPosition:Education:person
+RO00580|teacher|<noun>|<base>|teacher|teacher|AuthorityPosition:Education:person
+RO00580|teachers|<noun>|<plural>|teacher|teacher|AuthorityPosition:Education:person
+RO00581|head teacher|<noun>|<base>|head teacher|head teacher|AuthorityPosition:Education:person
+RO00582|headmaster|<noun>|<base>|headmaster|headmaster|AuthorityPosition:Education:person
+RO00583|school administrator|<noun>|<base>|school administrator|school administrator|AuthorityPosition:Education:person
+RO00584|principal|<noun>|<base>|principal|principal|AuthorityPosition:Education:person
+RO00585|assistant|<noun>|<base>|assistant|assistant|NonAuthority:Education:person
+RO00586|provost|<noun>|<base>|provost|provost|AuthorityPosition:Education:person
+RO00587|professor|<noun>|<base>|professor|professor|AuthorityPosition:Education:person
+RO00588|superintendent|<noun>|<base>|superintendent|superintendent|AuthorityPosition:Education:person
+RO00589|master|<noun>|<base>|master|master|AuthorityPosition:Education:person
+RO00590|tutor|<noun>|<base>|tutor|tutor|AuthorityPosition:Education:person
+RO00591|educator|<noun>|<base>|educator|educator|AuthorityPosition:Education:person
+RO00592|school teacher|<noun>|<base>|school teacher|school teacher|AuthorityPosition:Education:person
+RO00593|schoolteacher|<noun>|<base>|schoolteacher|schoolteacher|AuthorityPosition:Education:person
+RO00594|special education teacher|<noun>|<base>|special education teacher|special education teacher|AuthorityPosition:Education:person
+RO00595|special ed teacher|<noun>|<base>|special ed teacher|special ed teacher|AuthorityPosition:Education:person
+RO00596|librarian|<noun>|<base>|librarian|librarian|AuthorityPosition:Education:person
+RO00597|teacher assistant|<noun>|<base>|teacher assistant|teacher assistant|SometimesAuthority:Education:person
+RO00598|student|<noun>|<base>|student|student|NonAuthority:Education:person
+RO00599|parttime student|<noun>|<base>|parttime student|parttime student|NonAuthority:Education:person
+RO00600|grant writer|<noun>|<base>|grant writer|grant writer|NonAuthority:Education:person
+### Trades ####
+RO00601|babysitter|<noun>|<base>|babysitter|babysitter|SometimesAuthority:Trades:person
+RO00602|housekeeping|<noun>|<base>|housekeeping|housekeeping|NonAuthority:Trades:person
+RO00603|janitor|<noun>|<base>|janitor|janitor|NonAuthority:Trades:person
+RO00604|landscaper|<noun>|<base>|landscaper|landscaper|NonAuthority:Trades:person
+RO00605|cleaner|<noun>|<base>|cleaner|cleaner|NonAuthority:Trades:person
+RO00605|cleaning staff|<noun>|<base>|cleaner|cleaner|NonAuthority:Trades:person
+RO00605|cleaning man|<noun>|<base>|cleaner|cleaner|NonAuthority:Trades:person
+RO00605|cleaning person|<noun>|<base>|cleaner|cleaner|NonAuthority:Trades:person
+RO00606|maintenance crew|<noun>|<base>|maintenance crew|maintenance crew|NonAuthority:Trades:person
+RO00607|lawn mower|<noun>|<base>|lawn mower|lawn mower|NonAuthority:Trades:person
+RO00608|plumber|<noun>|<base>|plumber|plumber|AuthorityPosition:Trades:person
+RO00609|electrician|<noun>|<base>|electrician|electrician|AuthorityPosition:Trades:person
+RO00610|contractor|<noun>|<base>|contractor|contractor|SometimesAuthority:Trades:person
+RO00611|handyman|<noun>|<base>|handyman|handyman|NonAuthority:Trades:person
+RO00612|maid|<noun>|<base>|maid|maid|NonAuthority:Trades:person
+RO00613|embalmer|<noun>|<base>|embalmer|embalmer|NonAuthority:Trades:person
+RO00614|funeral attendent|<noun>|<base>|funeral attendent|funeral attendent|NonAuthority:Trades:person
+RO00615|mortician|<noun>|<base>|mortician|mortician|AuthorityPosition:Trades:person
+RO00616|undertaker|<noun>|<base>|undertaker|undertaker|AuthorityPosition:Trades:person
+RO00617|funeral director|<noun>|<base>|funeral director|funeral director|AuthorityPosition:Trades:person
+RO00618|barber|<noun>|<base>|barber|barber|NonAuthority:Trades:person
+RO00619|hairdresser|<noun>|<base>|hairdresser|hairdresser|NonAuthority:Trades:person
+RO00620|hairstylist|<noun>|<base>|hairstylist|hairstylist|NonAuthority:Trades:person
+RO00621|cosmetologist|<noun>|<base>|cosmetologist|cosmetologist|NonAuthority:Trades:person
+RO00622|porter|<noun>|<base>|porter|porter|NonAuthority:Trades:person
+RO00623|belhop|<noun>|<base>|belhop|belhop|NonAuthority:Trades:person
+RO00624|concierge|<noun>|<base>|concierge|concierge|NonAuthority:Trades:person
+RO00625|travel guide|<noun>|<base>|travel guide|travel guide|SometimesAuthority:Trades:person
+RO00626|childcare worker|<noun>|<base>|childcare worker|childcare worker|NonAuthority:Trades:person
+RO00627|retail worker|<noun>|<base>|retail worker|retail worker|NonAuthority:Trades:person
+RO00628|travel agent|<noun>|<base>|travel agent|travel agent|SometimesAuthority:Trades:person
+RO00629|assembler|<noun>|<base>|assembler|assembler|NonAuthority:Trades:person
+RO00630|locksmith|<noun>|<base>|locksmith|locksmith|NonAuthority:Trades:person
+RO00631|rigger|<noun>|<base>|rigger|rigger|NonAuthority:Trades:person
+RO00632|setter|<noun>|<base>|setter|setter|NonAuthority:Trades:person
+RO00632|super|<noun>|<base>|super|super|SometimesAuthority:Trades:person
+RO00632|costodian|<noun>|<base>|costodian|costodian|NonAuthority:Trades:person
+RO00633|machinist|<noun>|<base>|machinist|machinist|NonAuthority:Trades:person
+RO00634|auto mechanic|<noun>|<base>|auto mechanic|auto mechanic|SometimesAuthority:Trades:person
+RO00635|mechanic|<noun>|<base>|mechanic|mechanic|SometimesAuthority:Trades:person
+RO00636|repairer|<noun>|<base>|repairer|repairer|NonAuthority:Trades:person
+RO00637|caster|<noun>|<base>|caster|caster|NonAuthority:Trades:person
+RO00638|pourer|<noun>|<base>|pourer|pourer|NonAuthority:Trades:person
+RO00639|tender|<noun>|<base>|tender|tender|NonAuthority:Trades:person
+RO00640|tool and die maker|<noun>|<base>|tool and die maker|tool and die maker|NonAuthority:Trades:person
+RO00641|maker|<noun>|<base>|maker|maker|NonAuthority:Trades:person
+RO00642|grinder|<noun>|<base>|grinder|grinder|NonAuthority:Trades:person
+RO00643|printing press operator|<noun>|<base>|printing press operator|printing press operator|NonAuthority:Trades:person
+RO00644|seamstress|<noun>|<base>|seamstress|seamstress|NonAuthority:Trades:person
+RO00645|tailor|<noun>|<base>|tailor|tailor|NonAuthority:Trades:person
+RO00646|dressmaker|<noun>|<base>|dressmaker|dressmaker|NonAuthority:Trades:person
+RO00647|sewer|<noun>|<base>|sewer|sewer|NonAuthority:Trades:person
+RO00648|patternmaker|<noun>|<base>|patternmaker|patternmaker|NonAuthority:Trades:person
+RO00649|upholsterer|<noun>|<base>|upholsterer|upholsterer|NonAuthority:Trades:person
+RO00650|injector|<noun>|<base>|injector|injector|NonAuthority:Trades:person
+RO00651|sampler|<noun>|<base>|sampler|sampler|NonAuthority:Trades:person
+RO00652|weigher|<noun>|<base>|weigher|weigher|NonAuthority:Trades:person
+RO00653|jeweler|<noun>|<base>|jeweler|jeweler|NonAuthority:Trades:person
+RO00654|engraver|<noun>|<base>|engraver|engraver|NonAuthority:Trades:person
+RO00655|etcher|<noun>|<base>|etcher|etcher|NonAuthority:Trades:person
+RO00656|garbage collector|<noun>|<base>|garbage collector|garbage collector|NonAuthority:Trades:person
+RO00657|garbage man|<noun>|<base>|garbage man|garbage man|NonAuthority:Trades:person
+RO00658|sanitation engineer|<noun>|<base>|sanitation engineer|sanitation engineer|NonAuthority:Trades:person
+RO00659|shampooer|<noun>|<base>|shampooer|shampooer|NonAuthority:Trades:person
+RO00660|forklift operator|<noun>|<base>|forklift operator|forklift operator|NonAuthority:Trades:person
+RO00661|machine operator|<noun>|<base>|machine operator|machine operator|NonAuthority:Trades:person
+RO00662|material handler|<noun>|<base>|material handler|material handler|NonAuthority:Trades:person
+RO00663|warehouse manager|<noun>|<base>|warehouse manager|warehouse manager|AuthorityPosition:Trades:person
+RO00664|logistics manager|<noun>|<base>|logistics manager|logistics manager|AuthorityPosition:Trades:person
+RO00665|production manager|<noun>|<base>|production manager|production manager|AuthorityPosition:Trades:person
+RO00666|order selector|<noun>|<base>|order selector|order selector|NonAuthority:Trades:person
+RO00667|logistics coordinator|<noun>|<base>|logistics coordinator|logistics coordinator|NonAuthority:Trades:person
+#### Sales 
+RO00668|cashier|<noun>|<base>|cashier|cashier|NonAuthority:Sales:person
+RO00669|salesperson|<noun>|<base>|salesperson|salesperson|NonAuthority:Sales:person
+RO00670|sales person|<noun>|<base>|sales person|sales person|NonAuthority:Sales:person
+RO00671|salesman|<noun>|<base>|salesman|salesman|NonAuthority:Sales:person
+RO00672|sales agent|<noun>|<base>|sales agent|sales agent|NonAuthority:Sales:person
+RO00673|saleswoman|<noun>|<base>|saleswoman|saleswoman|NonAuthority:Sales:person
+RO00674|representative|<noun>|<base>|representative|representative|NonAuthority:Sales:person
+RO00675|promoter|<noun>|<base>|promoter|promoter|NonAuthority:Sales:person
+RO00676|real estate broker|<noun>|<base>|real estate broker|real estate broker|NonAuthority:Sales:person
+RO00677|broker|<noun>|<base>|broker|broker|NonAuthority:Sales:person
+RO00678|telemarketer|<noun>|<base>|telemarketer|telemarketer|NonAuthority:Sales:person
+RO00679|street vendor|<noun>|<base>|street vendor|street vendor|NonAuthority:Sales:person
+RO00680|car salesman|<noun>|<base>|car salesman|car salesman|NonAuthority:Sales:person
+RO00681|rug salesman|<noun>|<base>|rug salesman|rug salesman|NonAuthority:Sales:person
+RO00682|used car salesman|<noun>|<base>|used car salesman|used car salesman|NonAuthority:Sales:person
+RO00683|door-to-door salesman|<noun>|<base>|door-to-door salesman|door-to-door salesman|NonAuthority:Sales:person
+RO00684|checker|<noun>|<base>|checker|checker|NonAuthority:Sales:person
+RO00685|ticket agent|<noun>|<base>|ticket agent|ticket agent|NonAuthority:Sales:person
+RO00686|reservations|<noun>|<base>|reservations|reservations|NonAuthority:Sales:person
+RO00687|merchandizer|<noun>|<base>|merchandizer|merchandizer|NonAuthority:Sales:person
+RO00688|coordinator|<noun>|<base>|coordinator|coordinator|NonAuthority:Sales:person
+### Office and administrative support occupations ###
+RO00689|switchbard operator|<noun>|<base>|switchbard operator|switchbard operator|NonAuthority:OfficeAndAdministration:person
+RO00690|bill collector|<noun>|<base>|bill collector|bill collector|NonAuthority:OfficeAndAdministration:person
+RO00691|billing clerk|<noun>|<base>|billing clerk|billing clerk|NonAuthority:OfficeAndAdministration:person
+RO00692|operator|<noun>|<base>|operator|operator|NonAuthority:OfficeAndAdministration:person
+RO00693|bookeeping|<noun>|<base>|bookeeping|bookeeping|NonAuthority:OfficeAndAdministration:person
+RO00694|accounting|<noun>|<base>|accounting|accounting|NonAuthority:OfficeAndAdministration:person
+RO00695|accountant|<noun>|<base>|accountant|accountant|NonAuthority:OfficeAndAdministration:person
+RO00696|staff accountant|<noun>|<base>|staff accountant|staff accountant|NonAuthority:OfficeAndAdministration:person
+RO00697|controller|<noun>|<base>|controller|controller|AuthorityPosition:OfficeAndAdministration:person
+RO00698|tax accountant|<noun>|<base>|tax accountant|tax accountant|AuthorityPosition:OfficeAndAdministration:person
+RO00699|accounting manager|<noun>|<base>|accounting manager|accounting manager|AuthorityPosition:OfficeAndAdministration:person
+RO00700|accounting assistant|<noun>|<base>|accounting assistant|accounting assistant|NonAuthority:OfficeAndAdministration:person
+RO00701|hr manager|<noun>|<base>|hr manager|hr manager|AuthorityPosition:OfficeAndAdministration:person
+RO00702|hr|<noun>|<base>|hr|hr|SometimesAuthority:OfficeAndAdministration:person
+RO00703|human resources manager|<noun>|<base>|human resources manager|human resources manager|AuthorityPosition:OfficeAndAdministration:person
+RO00704|human resources|<noun>|<base>|human resources|human resources|SometimesAuthority:OfficeAndAdministration:person
+RO00705|recruiter|<noun>|<base>|recruiter|recruiter|NonAuthority:OfficeAndAdministration:person
+RO00706|virtual recruiter|<noun>|<base>|virtual recruiter|virtual recruiter|NonAuthority:OfficeAndAdministration:person
+RO00707|headhunter|<noun>|<base>|headhunter|headhunter|NonAuthority:OfficeAndAdministration:person
+RO00708|training manager|<noun>|<base>|training manager|training manager|AuthorityPosition:OfficeAndAdministration:person
+RO00709|facilities manager|<noun>|<base>|facilities manager|facilities manager|AuthorityPosition:OfficeAndAdministration:person
+RO00710|call center|<noun>|<base>|call center|call center|NonAuthority:OfficeAndAdministration:person
+RO00711|chat agent|<noun>|<base>|chat agent|chat agent|NonAuthority:OfficeAndAdministration:person
+RO00712|call center representative|<noun>|<base>|call center representative|call center representative|NonAuthority:OfficeAndAdministration:person
+RO00713|live chat agent|<noun>|<base>|live chat agent|live chat agent|NonAuthority:OfficeAndAdministration:person
+RO00714|customer care|<noun>|<base>|customer care|customer care|NonAuthority:OfficeAndAdministration:person
+RO00715|customer care representative|<noun>|<base>|customer care representative|customer care representative|NonAuthority:OfficeAndAdministration:person
+RO00716|logistics manager|<noun>|<base>|logistics manager|logistics manager|AuthorityPosition:OfficeAndAdministration:person
+RO00717|logistics|<noun>|<base>|logistics|logistics|SometimesAuthority:OfficeAndAdministration:person
+RO00718|purchase manager|<noun>|<base>|purchase manager|purchase manager|AuthorityPosition:OfficeAndAdministration:person
+RO00719|maintenance manager|<noun>|<base>|maintenance manager|maintenance manager|AuthorityPosition:OfficeAndAdministration:person
+RO00720|security manager|<noun>|<base>|security manager|security manager|AuthorityPosition:OfficeAndAdministration:person
+RO00721|payroll clerk|<noun>|<base>|payroll clerk|payroll clerk|NonAuthority:OfficeAndAdministration:person
+RO00722|payroll specialist|<noun>|<base>|payroll specialist|payroll specialist|NonAuthority:OfficeAndAdministration:person
+RO00723|payroll manager|<noun>|<base>|payroll manager|payroll manager|AuthorityPosition:OfficeAndAdministration:person
+RO00724|payroll accountant|<noun>|<base>|payroll accountant|payroll accountant|AuthorityPosition:OfficeAndAdministration:person
+RO00725|payroll technician|<noun>|<base>|payroll technician|payroll technician|NonAuthority:OfficeAndAdministration:person
+RO00726|procurment officer|<noun>|<base>|procurment officer|procurment officer|NonAuthority:OfficeAndAdministration:person
+RO00727|teller|<noun>|<base>|teller|teller|NonAuthority:OfficeAndAdministration:person
+RO00728|authorizer|<noun>|<base>|authorizer|authorizer|AuthorityPosition:OfficeAndAdministration:person
+RO00729|customer service represenative|<noun>|<base>|customer service represenative|customer service represenative|NonAuthority:OfficeAndAdministration:person
+RO00730|desk clerk|<noun>|<base>|desk clerk|desk clerk|NonAuthority:OfficeAndAdministration:person
+RO00731|file clerk|<noun>|<base>|file clerk|file clerk|NonAuthority:OfficeAndAdministration:person
+RO00732|clerical worker|<noun>|<base>|clerical worker|clerical worker|NonAuthority:OfficeAndAdministration:person
+RO00733|receptionist|<noun>|<base>|receptionist|receptionist|NonAuthority:OfficeAndAdministration:person
+RO00734|personal assistant|<noun>|<base>|personal assistant|personal assistant|NonAuthority:OfficeAndAdministration:person
+RO00735|executive assistant|<noun>|<base>|executive assistant|executive assistant|NonAuthority:OfficeAndAdministration:person
+RO00736|office assistant|<noun>|<base>|office assistant|office assistant|NonAuthority:OfficeAndAdministration:person
+RO00737|office manager|<noun>|<base>|office manager|office manager|AuthorityPosition:OfficeAndAdministration:person
+RO00738|office administrator|<noun>|<base>|office administrator|office administrator|NonAuthority:OfficeAndAdministration:person
+RO00739|administrative coordinator|<noun>|<base>|administrative coordinator|administrative coordinator|NonAuthority:OfficeAndAdministration:person
+RO00740|legal assistant|<noun>|<base>|legal assistant|legal assistant|NonAuthority:OfficeAndAdministration:person
+RO00741|in house counsel|<noun>|<base>|in house counsel|in house counsel|AuthorityPosition:OfficeAndAdministration:person
+RO00742|inhouse counsel|<noun>|<base>|inhouse counsel|inhouse counsel|AuthorityPosition:OfficeAndAdministration:person
+RO00743|general counsel|<noun>|<base>|general counsel|general counsel|AuthorityPosition:OfficeAndAdministration:person
+RO00744|compliance officer|<noun>|<base>|compliance officer|compliance officer|AuthorityPosition:OfficeAndAdministration:person
+RO00745|contract administrator|<noun>|<base>|contract administrator|contract administrator|AuthorityPosition:OfficeAndAdministration:person
+RO00746|certified public accountant|<noun>|<base>|certified public accountant|certified public accountant|AuthorityPosition:OfficeAndAdministration:person
+RO00747|cpa|<noun>|<base>|cpa|cpa|AuthorityPosition:OfficeAndAdministration:person
+RO00748|currier|<noun>|<base>|currier|currier|NonAuthority:OfficeAndAdministration:person
+RO00749|meter reader|<noun>|<base>|meter reader|meter reader|NonAuthority:OfficeAndAdministration:person
+RO00750|dispatcher|<noun>|<base>|dispatcher|dispatcher|AuthorityPosition:OfficeAndAdministration:person
+RO00751|postal service clerk|<noun>|<base>|postal service clerk|postal service clerk|NonAuthority:OfficeAndAdministration:person
+RO00752|mail carrier|<noun>|<base>|mail carrier|mail carrier|NonAuthority:OfficeAndAdministration:person
+RO00753|processor|<noun>|<base>|processor|processor|NonAuthority:OfficeAndAdministration:person
+RO00754|machine operator|<noun>|<base>|machine operator|machine operator|NonAuthority:OfficeAndAdministration:person
+RO00755|shipping clerk|<noun>|<base>|shipping clerk|shipping clerk|NonAuthority:OfficeAndAdministration:person
+RO00756|administrative assistant|<noun>|<base>|administrative assistant|administrative assistant|NonAuthority:OfficeAndAdministration:person
+RO00757|word processor|<noun>|<base>|word processor|word processor|NonAuthority:OfficeAndAdministration:person
+RO00758|typist|<noun>|<base>|typist|typist|NonAuthority:OfficeAndAdministration:person
+RO00759|publisher|<noun>|<base>|publisher|publisher|NonAuthority:OfficeAndAdministration:person
+RO00760|mail clerk|<noun>|<base>|mail clerk|mail clerk|NonAuthority:OfficeAndAdministration:person
+RO00761|proofreader|<noun>|<base>|proofreader|proofreader|NonAuthority:OfficeAndAdministration:person
+RO00762|copy marker|<noun>|<base>|copy marker|copy marker|NonAuthority:OfficeAndAdministration:person
+RO00763|copywriter|<noun>|<base>|copywriter|copywriter|NonAuthority:OfficeAndAdministration:person
+### government ####
+RO00764|municipal commissioner|<noun>|<base>|municipal commissioner|municipal commissioner|AuthorityPosition:Government:person
+RO00765|government official|<noun>|<base>|government official|government official|AuthorityPosition:Government:person
+RO00766|government officer|<noun>|<base>|government officer|government officer|AuthorityPosition:Government:person
+RO00767|commissioner|<noun>|<base>|commissioner|commissioner|AuthorityPosition:Government:person
+RO00768|official|<noun>|<base>|official|official|AuthorityPosition:Government:person
+RO00769|bureaucrat|<noun>|<base>|bureaucrat|bureaucrat|NonAuthority:Government:person
+RO00770|civil servant|<noun>|<base>|civil servant|civil servant|NonAuthority:Government:person
+RO00771|local authority|<noun>|<base>|local authority|local authority|AuthorityPosition:Government:person
+RO00772|public servant|<noun>|<base>|public servant|public servant|NonAuthority:Government:person
+RO00773|government employee|<noun>|<base>|government employee|government employee|NonAuthority:Government:person
+RO00774|technocrat|<noun>|<base>|technocrat|technocrat|NonAuthority:Government:person
+### Sports ####
+RO00775|referee|<noun>|<base>|referee|referee|AuthorityPosition:Sports:person
+RO00776|umpire|<noun>|<base>|umpire|umpire|AuthorityPosition:Sports:person
+RO00777|athlete|<noun>|<base>|athlete|athlete|NonAuthority:Sports:person
+RO00777|quarterback|<noun>|<base>|athlete|athlete|AuthorityPosition:Sports:person
+RO00778|agent|<noun>|<base>|agent|agent|AuthorityPosition:Sports:person
+RO00779|business manager|<noun>|<base>|business manager|business manager|AuthorityPosition:Sports:person
+RO00780|coach|<noun>|<base>|coach|coach|AuthorityPosition:Sports:person
+RO00781|announcer|<noun>|<base>|announcer|announcer|AuthorityPosition:Sports:person
+RO00782|physical trainer|<noun>|<base>|physical trainer|physical trainer|AuthorityPosition:Sports:person
+RO00783|trainer|<noun>|<base>|trainer|trainer|AuthorityPosition:Sports:person
+RO00784|fitness adviser|<noun>|<base>|fitness adviser|fitness adviser|SometimesAuthority:Sports:person
+RO00785|player|<noun>|<base>|player|player|NonAuthority:Sports:person
+RO00786|participant|<noun>|<base>|participant|participant|NonAuthority:Sports:person
+RO00787|ski patrol|<noun>|<base>|ski patrol|ski patrol|AuthorityPosition:Sports:person
+#
+#### Engineering ####
+RO00788|chief engineer|<noun>|<base>|chief engineer|chief engineer|AuthorityPosition:Engineering:person
+RO00789|computer scientist|<noun>|<base>|computer scientist|computer scientist|NonAuthority:Engineering:person
+RO00790|scientist|<noun>|<base>|scientist|scientist|SometimesAuthority:Engineering:person
+RO00791|engineer|<noun>|<base>|engineer|engineer|SometimesAuthority:Engineering:person
+RO00792|computer programmer|<noun>|<base>|computer programmer|computer programmer|NonAuthority:Engineering:person
+RO00793|software engineer|<noun>|<base>|software engineer|software engineer|NonAuthority:Engineering:person
+RO00794|software developer|<noun>|<base>|software developer|software developer|NonAuthority:Engineering:person
+RO00795|computer operator|<noun>|<base>|computer operator|computer operator|NonAuthority:Engineering:person
+RO00796|computer developer|<noun>|<base>|computer developer|computer developer|NonAuthority:Engineering:person
+RO00797|data entry keyer|<noun>|<base>|data entry keyer|data entry keyer|NonAuthority:Engineering:person
+RO00798|web developer|<noun>|<base>|web developer|web developer|NonAuthority:Engineering:person
+RO00799|database administrator|<noun>|<base>|database administrator|database administrator|NonAuthority:Engineering:person
+RO00800|dba|<noun>|<base>|dba|dba|NonAuthority:Engineering:person
+RO00801|data analyst|<noun>|<base>|data analyst|data analyst|NonAuthority:Engineering:person
+RO00802|front end developer|<noun>|<base>|front end developer|front end developer|NonAuthority:Engineering:person
+RO00803|information security officer|<noun>|<base>|information security officer|information security officer|AuthorityPosition:Engineering:person
+RO00804|network engineer|<noun>|<base>|network engineer|network engineer|NonAuthority:Engineering:person
+RO00805|salesforce developer|<noun>|<base>|salesforce developer|salesforce developer|NonAuthority:Engineering:person
+RO00806|graphic designer|<noun>|<base>|graphic designer|graphic designer|NonAuthority:Engineering:person
+RO00807|ux designer|<noun>|<base>|ux designer|ux designer|NonAuthority:Engineering:person
+RO00808|illustrator|<noun>|<base>|illustrator|illustrator|NonAuthority:Engineering:person
+RO00809|creative|<noun>|<base>|creative|creative|NonAuthority:Engineering:person
+RO00810|creative director|<noun>|<base>|creative director|creative director|AuthorityPosition:Engineering:person
+RO00811|web designer|<noun>|<base>|web designer|web designer|NonAuthority:Engineering:person
+RO00812|game designer|<noun>|<base>|game designer|game designer|NonAuthority:Engineering:person
+RO00813|industrial designer|<noun>|<base>|industrial designer|industrial designer|NonAuthority:Engineering:person
+RO00814|statistician|<noun>|<base>|statistician|statistician|NonAuthority:Engineering:person
+RO00815|consultant|<noun>|<base>|consultant|consultant|NonAuthority:Engineering:person
+RO00816|mathematician|<noun>|<base>|mathematician|mathematician|NonAuthority:Engineering:person
+RO00817|surveyor|<noun>|<base>|surveyor|surveyor|SometimesAuthority:Engineering:person
+RO00818|cartographer|<noun>|<base>|cartographer|cartographer|SometimesAuthority:Engineering:person
+RO00819|civil engineer|<noun>|<base>|civil engineer|civil engineer|SometimesAuthority:Engineering:person
+RO00820|aerospace engineer|<noun>|<base>|aerospace engineer|aerospace engineer|SometimesAuthority:Engineering:person
+RO00821|agricultural engineer|<noun>|<base>|agricultural engineer|agricultural engineer|SometimesAuthority:Engineering:person
+RO00822|chemical engineer|<noun>|<base>|chemical engineer|chemical engineer|SometimesAuthority:Engineering:person
+RO00823|environmental scientist|<noun>|<base>|environmental scientist|environmental scientist|SometimesAuthority:Engineering:person
+RO00824|environmental engineer|<noun>|<base>|environmental engineer|environmental engineer|SometimesAuthority:Engineering:person
+RO00825|electrical engineer|<noun>|<base>|electrical engineer|electrical engineer|SometimesAuthority:Engineering:person
+RO00826|mining engineer|<noun>|<base>|mining engineer|mining engineer|SometimesAuthority:Engineering:person
+RO00827|geological engineer|<noun>|<base>|geological engineer|geological engineer|SometimesAuthority:Engineering:person
+RO00828|mining safety engineer|<noun>|<base>|mining safety engineer|mining safety engineer|SometimesAuthority:Engineering:person
+RO00829|nuculear engineer|<noun>|<base>|nuculear engineer|nuculear engineer|SometimesAuthority:Engineering:person
+RO00830|petrolium engineer|<noun>|<base>|petrolium engineer|petrolium engineer|SometimesAuthority:Engineering:person
+RO00831|drafter|<noun>|<base>|drafter|drafter|NonAuthority:Engineering:person
+RO00832|technician|<noun>|<base>|technician|technician|NonAuthority:Engineering:person
+RO00833|food engineer|<noun>|<base>|food engineer|food engineer|NonAuthority:Engineering:person
+RO00834|life scientist|<noun>|<base>|life scientist|life scientist|SometimesAuthority:Engineering:person
+RO00835|linguist|<noun>|<base>|linguist|linguist|NonAuthority:Engineering:person
+RO00836|computational linguist|<noun>|<base>|computational linguist|computational linguist|NonAuthority:Engineering:person
+RO00837|astronomer|<noun>|<base>|astronomer|astronomer|SometimesAuthority:Engineering:person
+RO00838|physicist|<noun>|<base>|physicist|physicist|SometimesAuthority:Engineering:person
+RO00839|materials scientist|<noun>|<base>|materials scientist|materials scientist|SometimesAuthority:Engineering:person
+RO00840|economist|<noun>|<base>|economist|economist|SometimesAuthority:Engineering:person
+RO00841|survey researcher|<noun>|<base>|survey researcher|survey researcher|SometimesAuthority:Engineering:person
+RO00842|psychologist|<noun>|<base>|psychologist|psychologist|AuthorityPosition:Engineering:person
+RO00843|sociologist|<noun>|<base>|sociologist|sociologist|SometimesAuthority:Engineering:person
+RO00844|urban planner|<noun>|<base>|urban planner|urban planner|SometimesAuthority:Engineering:person
+RO00845|regional planner|<noun>|<base>|regional planner|regional planner|SometimesAuthority:Engineering:person
+RO00846|urban and regional planner|<noun>|<base>|urban and regional planner|urban and regional planner|SometimesAuthority:Engineering:person
+#### Media and the Press ####
+RO00847|newspaper reporter|<noun>|<base>|newspaper reporter|newspaper reporter|AuthorityPosition:MediaAndThePress:person
+RO00848|reporter|<noun>|<base>|reporter|reporter|AuthorityPosition:MediaAndThePress:person
+RO00849|news analyst|<noun>|<base>|news analyst|news analyst|AuthorityPosition:MediaAndThePress:person
+RO00850|correspondents|<noun>|<base>|correspondents|correspondents|AuthorityPosition:MediaAndThePress:person
+RO00851|public relations specialist|<noun>|<base>|public relations specialist|public relations specialist|NonAuthority:MediaAndThePress:person
+RO00852|editor|<noun>|<base>|editor|editor|AuthorityPosition:MediaAndThePress:person
+RO00853|technical writer|<noun>|<base>|technical writer|technical writer|NonAuthority:MediaAndThePress:person
+RO00854|writer|<noun>|<base>|writer|writer|NonAuthority:MediaAndThePress:person
+RO00855|author|<noun>|<base>|author|author|NonAuthority:MediaAndThePress:person
+RO00856|broadcast engineer|<noun>|<base>|broadcast engineer|broadcast engineer|NonAuthority:MediaAndThePress:person
+RO00857|sound engineer|<noun>|<base>|sound engineer|sound engineer|SometimesAuthority:MediaAndThePress:person
+RO00858|broadcast technician|<noun>|<base>|broadcast technician|broadcast technician|NonAuthority:MediaAndThePress:person
+RO00859|sound technician|<noun>|<base>|sound technician|sound technician|NonAuthority:MediaAndThePress:person
+RO00860|radio operator|<noun>|<base>|radio operator|radio operator|NonAuthority:MediaAndThePress:person
+RO00861|photographer|<noun>|<base>|photographer|photographer|NonAuthority:MediaAndThePress:person
+RO00862|camera operator|<noun>|<base>|camera operator|camera operator|NonAuthority:MediaAndThePress:person
+RO00863|opinionist|<noun>|<base>|opinionist|opinionist|AuthorityPosition:MediaAndThePress:person
+RO00864|commentator|<noun>|<base>|commentator|commentator|AuthorityPosition:MediaAndThePress:person
+RO00865|podcaster|<noun>|<base>|podcaster|podcaster|NonAuthority:MediaAndThePress:person
+RO00866|communications|<noun>|<base>|communications|communications|NonAuthority:MediaAndThePress:person
+RO00867|communications director|<noun>|<base>|communications director|communications director|AuthorityPosition:MediaAndThePress:person
+RO00868|communications manager|<noun>|<base>|communications manager|communications manager|AuthorityPosition:MediaAndThePress:person
+RO00869|public relations|<noun>|<base>|public relations|public relations|SometimesAuthority:MediaAndThePress:person
+RO00870|pr|<noun>|<base>|pr|pr|SometimesAuthority:MediaAndThePress:person
+RO00871|publicist|<noun>|<base>|publicist|publicist|SometimesAuthority:MediaAndThePress:person
+RO00872|cast member|<noun>|<base>|cast member|cast member|NonAuthority:MediaAndThePress:person
+RO00873|gripper|<noun>|<base>|gripper|gripper|NonAuthority:MediaAndThePress:person
+RO00874|muse|<noun>|<base>|muse|muse|NonAuthority:MediaAndThePress:person
+RO00875|cameraman|<noun>|<base>|cameraman|cameraman|NonAuthority:MediaAndThePress:person
+RO00876|camera man|<noun>|<base>|camera man|camera man|NonAuthority:MediaAndThePress:person
+RO00877|camera person|<noun>|<base>|camera person|camera person|NonAuthority:MediaAndThePress:person
+RO00878|foley person|<noun>|<base>|foley person|foley person|NonAuthority:MediaAndThePress:person
+RO00879|foley man|<noun>|<base>|foley man|foley man|NonAuthority:MediaAndThePress:person
+RO00880|foley|<noun>|<base>|foley|foley|NonAuthority:MediaAndThePress:person
+#### Food ####
+RO00881|chef|<noun>|<base>|chef|chef|SometimesAuthority:Food:person
+RO00882|executive chef|<noun>|<base>|executive chef|executive chef|AuthorityPosition:Food:person
+RO00883|deputy chef|<noun>|<base>|deputy chef|deputy chef|AuthorityPosition:Food:person
+RO00884|station chef|<noun>|<base>|station chef|station chef|AuthorityPosition:Food:person
+RO00885|kitchen porter|<noun>|<base>|kitchen porter|kitchen porter|NonAuthority:Food:person
+RO00886|purchasing manager|<noun>|<base>|purchasing manager|purchasing manager|AuthorityPosition:Food:person
+RO00887|busboy|<noun>|<base>|busboy|busboy|NonAuthority:Food:person
+RO00888|busser|<noun>|<base>|busser|busser|NonAuthority:Food:person
+RO00889|food prep|<noun>|<base>|food prep|food prep|NonAuthority:Food:person
+RO00890|prep|<noun>|<base>|prep|prep|NonAuthority:Food:person
+RO00891|line cook|<noun>|<base>|line cook|line cook|NonAuthority:Food:person
+RO00892|fish cook|<noun>|<base>|fish cook|fish cook|NonAuthority:Food:person
+RO00893|saucemaker chef|<noun>|<base>|saucemaker chef|saucemaker chef|SometimesAuthority:Food:person
+RO00894|assistant cook|<noun>|<base>|assistant cook|assistant cook|SometimesAuthority:Food:person
+RO00895|entry chef|<noun>|<base>|entry chef|entry chef|SometimesAuthority:Food:person
+RO00896|vegetable cook|<noun>|<base>|vegetable cook|vegetable cook|NonAuthority:Food:person
+RO00897|rcuterie cook|<noun>|<base>|rcuterie cook|rcuterie cook|NonAuthority:Food:person
+RO00898|roast chef|<noun>|<base>|roast chef|roast chef|SometimesAuthority:Food:person
+RO00899|fry cook|<noun>|<base>|fry cook|fry cook|NonAuthority:Food:person
+RO00900|grill cook|<noun>|<base>|grill cook|grill cook|NonAuthority:Food:person
+RO00901|fast food cook|<noun>|<base>|fast food cook|fast food cook|NonAuthority:Food:person
+RO00902|maitre d|<noun>|<base>|maitre d|maitre d|AuthorityPosition:Food:person
+RO00903|sommelier|<noun>|<base>|sommelier|sommelier|AuthorityPosition:Food:person
+RO00904|pandry|<noun>|<base>|pandry|pandry|NonAuthority:Food:person
+RO00905|chef de cousine|<noun>|<base>|chef de cousine|chef de cousine|SometimesAuthority:Food:person
+RO00906|chef de partie|<noun>|<base>|chef de partie|chef de partie|SometimesAuthority:Food:person
+RO00907|commis chef|<noun>|<base>|commis chef|commis chef|SometimesAuthority:Food:person
+RO00908|junior chef|<noun>|<base>|junior chef|junior chef|NonAuthority:Food:person
+RO00909|kitchen manager|<noun>|<base>|kitchen manager|kitchen manager|AuthorityPosition:Food:person
+RO00910|kitchen staff|<noun>|<base>|kitchen staff|kitchen staff|NonAuthority:Food:person
+RO00911|position staff|<noun>|<base>|position staff|position staff|NonAuthority:Food:person
+RO00912|bar staff|<noun>|<base>|bar staff|bar staff|NonAuthority:Food:person
+RO00913|floor staff|<noun>|<base>|floor staff|floor staff|NonAuthority:Food:person
+RO00914|delivery staff|<noun>|<base>|delivery staff|delivery staff|NonAuthority:Food:person
+RO00915|delivery|<noun>|<base>|delivery|delivery|NonAuthority:Food:person
+RO00916|bookkeeper|<noun>|<base>|bookkeeper|bookkeeper|NonAuthority:Food:person
+RO00917|team member|<noun>|<base>|team member|team member|NonAuthority:Food:person
+RO00918|front-of-house member|<noun>|<base>|front-of-house member|front-of-house member|NonAuthority:Food:person
+RO00919|cook|<noun>|<base>|cook|cook|NonAuthority:Food:person
+RO00920|head chef|<noun>|<base>|head chef|head chef|AuthorityPosition:Food:person
+RO00921|sous chef|<noun>|<base>|sous chef|sous chef|AuthorityPosition:Food:person
+RO00922|head cook|<noun>|<base>|head cook|head cook|AuthorityPosition:Food:person
+RO00923|dessert chef|<noun>|<base>|dessert chef|dessert chef|SometimesAuthority:Food:person
+RO00924|side dishes chef|<noun>|<base>|side dishes chef|side dishes chef|SometimesAuthority:Food:person
+RO00925|server|<noun>|<base>|server|server|NonAuthority:Food:person
+RO00926|bar back|<noun>|<base>|bar back|bar back|NonAuthority:Food:person
+RO00927|bartender|<noun>|<base>|bartender|bartender|NonAuthority:Food:person
+RO00928|attendant|<noun>|<base>|attendant|attendant|NonAuthority:Food:person
+RO00929|steward|<noun>|<base>|steward|steward|NonAuthority:Food:person
+RO00930|waiter|<noun>|<base>|waiter|waiter|NonAuthority:Food:person
+RO00931|waitress|<noun>|<base>|waitress|waitress|NonAuthority:Food:person
+RO00932|helper|<noun>|<base>|helper|helper|NonAuthority:Food:person
+RO00933|food runner|<noun>|<base>|food runner|food runner|NonAuthority:Food:person
+RO00934|dishwasher|<noun>|<base>|dishwasher|dishwasher|NonAuthority:Food:person
+RO00935|host|<noun>|<base>|host|host|NonAuthority:Food:person
+RO00936|hostess|<noun>|<base>|hostess|hostess|NonAuthority:Food:person
+RO00937|counter worker|<noun>|<base>|counter worker|counter worker|NonAuthority:Food:person
+RO00938|baker|<noun>|<base>|baker|baker|NonAuthority:Food:person
+RO00939|butcher|<noun>|<base>|butcher|butcher|NonAuthority:Food:person
+RO00940|food processing worker|<noun>|<base>|food processing worker|food processing worker|NonAuthority:Food:person
+RO00941|barista|<noun>|<base>|barista|barista|NonAuthority:Food:person
+RO00942|fryer|<noun>|<base>|fryer|fryer|NonAuthority:Food:person
+RO00943|gate keeper|<noun>|<base>|gate keeper|gate keeper|SometimesAuthority:Food:person
+### Natural Resources/agricultural
+RO00944|breeder|<noun>|<base>|breeder|breeder|NonAuthority:NaturalResources:person
+RO00945|forestry worker|<noun>|<base>|forestry worker|forestry worker|NonAuthority:NaturalResources:person
+RO00946|farmer|<noun>|<base>|farmer|farmer|NonAuthority:NaturalResources:person
+RO00947|sorter|<noun>|<base>|sorter|sorter|NonAuthority:NaturalResources:person
+RO00948|hunter|<noun>|<base>|hunter|hunter|SometimesAuthority:NaturalResources:person
+RO00949|trapper|<noun>|<base>|trapper|trapper|SometimesAuthority:NaturalResources:person
+RO00950|logging worker|<noun>|<base>|logging worker|logging worker|NonAuthority:NaturalResources:person
+### Construction
+RO00951|boilermaker|<noun>|<base>|boilermaker|boilermaker|NonAuthority:Construction:person
+RO00952|brickmason|<noun>|<base>|brickmason|brickmason|NonAuthority:Construction:person
+RO00953|blockmason|<noun>|<base>|blockmason|blockmason|NonAuthority:Construction:person
+RO00954|stonemason|<noun>|<base>|stonemason|stonemason|NonAuthority:Construction:person
+RO00955|installer|<noun>|<base>|installer|installer|NonAuthority:Construction:person
+RO00956|finisher|<noun>|<base>|finisher|finisher|NonAuthority:Construction:person
+RO00957|mason|<noun>|<base>|mason|mason|NonAuthority:Construction:person
+RO00958|construction worker|<noun>|<base>|construction worker|construction worker|NonAuthority:Construction:person
+RO00959|laborer|<noun>|<base>|laborer|laborer|NonAuthority:Construction:person
+RO00960|construction laboror|<noun>|<base>|construction laboror|construction laboror|NonAuthority:Construction:person
+RO00961|paver|<noun>|<base>|paver|paver|NonAuthority:Construction:person
+RO00962|drywall installer|<noun>|<base>|drywall installer|drywall installer|NonAuthority:Construction:person
+RO00963|taper|<noun>|<base>|taper|taper|NonAuthority:Construction:person
+RO00964|glazier|<noun>|<base>|glazier|glazier|NonAuthority:Construction:person
+RO00965|electrician|<noun>|<base>|electrician|electrician|NonAuthority:Construction:person
+RO00966|painter|<noun>|<base>|painter|painter|NonAuthority:Construction:person
+RO00967|pipelayer|<noun>|<base>|pipelayer|pipelayer|NonAuthority:Construction:person
+RO00968|plumber|<noun>|<base>|plumber|plumber|NonAuthority:Construction:person
+RO00969|pipefitter|<noun>|<base>|pipefitter|pipefitter|NonAuthority:Construction:person
+RO00970|steamfitter|<noun>|<base>|steamfitter|steamfitter|NonAuthority:Construction:person
+RO00971|plasterer|<noun>|<base>|plasterer|plasterer|NonAuthority:Construction:person
+RO00972|stucco mason|<noun>|<base>|stucco mason|stucco mason|NonAuthority:Construction:person
+RO00973|roofer|<noun>|<base>|roofer|roofer|NonAuthority:Construction:person
+RO00974|sheet metal worker|<noun>|<base>|sheet metal worker|sheet metal worker|NonAuthority:Construction:person
+RO00975|steel worker|<noun>|<base>|steel worker|steel worker|NonAuthority:Construction:person
+RO00976|fencer|<noun>|<base>|fencer|fencer|NonAuthority:Construction:person
+RO00977|driller|<noun>|<base>|driller|driller|NonAuthority:Construction:person
+RO00978|ordance handling expert|<noun>|<base>|ordance handling expert|ordance handling expert|AuthorityPosition:Construction:person
+RO00979|expert|<noun>|<base>|expert|expert|SometimesAuthority:Construction:person
+RO00980|blaster|<noun>|<base>|blaster|blaster|SometimesAuthority:Construction:person
+RO00981|millright|<noun>|<base>|millright|millright|NonAuthority:Construction:person
+RO00982|carpenter|<noun>|<base>|carpenter|carpenter|NonAuthority:Construction:person
+RO00983|cabinetmaker|<noun>|<base>|cabinetmaker|cabinetmaker|NonAuthority:Construction:person
+RO00984|furniture finisher|<noun>|<base>|furniture finisher|furniture finisher|NonAuthority:Construction:person
+RO00985|woodworker|<noun>|<base>|woodworker|woodworker|NonAuthority:Construction:person
+RO00986|wood worker|<noun>|<base>|wood worker|wood worker|NonAuthority:Construction:person
+### Transportation
+RO00987|pilot|<noun>|<base>|pilot|pilot|AuthorityPosition:Transportation:person
+RO00988|air traffic controller|<noun>|<base>|air traffic controller|air traffic controller|AuthorityPosition:Transportation:person
+RO00989|flight attendant|<noun>|<base>|flight attendant|flight attendant|AuthorityPosition:Transportation:person
+RO00990|ambulance driver|<noun>|<base>|ambulance driver|ambulance driver|NonAuthority:Transportation:person
+RO00991|EMT|<noun>|<base>|EMT|EMT|AuthorityPosition:Transportation:person
+RO00992|emergency medical technicians|<noun>|<base>|emergency medical technicians|emergency medical technicians|AuthorityPosition:Transportation:person
+RO00993|truck driver|<noun>|<base>|truck driver|truck driver|NonAuthority:Transportation:person
+RO00994|uber driver|<noun>|<base>|uber driver|uber driver|NonAuthority:Transportation:person
+RO00995|lyft driver|<noun>|<base>|lyft driver|lyft driver|NonAuthority:Transportation:person
+RO00996|taxi driver|<noun>|<base>|taxi driver|taxi driver|NonAuthority:Transportation:person
+RO00997|driver|<noun>|<base>|driver|driver|NonAuthority:Transportation:person
+RO00998|commercial driver|<noun>|<base>|commercial driver|commercial driver|NonAuthority:Transportation:person
+RO00999|bus driver|<noun>|<base>|bus driver|bus driver|AuthorityPosition:Transportation:person
+RO01000|schoolbus driver|<noun>|<base>|schoolbus driver|schoolbus driver|AuthorityPosition:Transportation:person
+RO01001|school bus driver|<noun>|<base>|school bus driver|school bus driver|AuthorityPosition:Transportation:person
+RO01002|chauffeur|<noun>|<base>|chauffeur|chauffeur|NonAuthority:Transportation:person
+RO01003|gig worker|<noun>|<base>|gig worker|gig worker|NonAuthority:Transportation:person
+RO01004|sailor|<noun>|<base>|sailor|sailor|NonAuthority:Transportation:person
+RO01005|skipper|<noun>|<base>|skipper|skipper|NonAuthority:Transportation:person
+RO01006|railroad conductor|<noun>|<base>|railroad conductor|railroad conductor|AuthorityPosition:Transportation:person
+RO01007|switch operator|<noun>|<base>|switch operator|switch operator|NonAuthority:Transportation:person
+RO01008|brake operator|<noun>|<base>|brake operator|brake operator|NonAuthority:Transportation:person
+RO01009|transportation worker|<noun>|<base>|transportation worker|transportation worker|NonAuthority:Transportation:person
+RO01010|lock tender|<noun>|<base>|lock tender|lock tender|NonAuthority:Transportation:person
+RO01011|parking lot attendant|<noun>|<base>|parking lot attendant|parking lot attendant|NonAuthority:Transportation:person
+RO01012|crane operator|<noun>|<base>|crane operator|crane operator|NonAuthority:Transportation:person
+RO01013|mover|<noun>|<base>|mover|mover|NonAuthority:Transportation:person
+RO01014|packer|<noun>|<base>|packer|packer|NonAuthority:Transportation:person
+#
+RO01000|instructor|<noun>|<base>|packer|packer|AuthorityPosition:OccupationPart:person
+RO01000|mentor|<noun>|<base>|mentor|mentor|AuthorityPosition:OccupationPart:person
+RO01000|monitor|<noun>|<base>|monitor|monitor|AuthorityPosition:OccupationPart:person
+RO01000|overseer|<noun>|<base>|monitor|monitor|AuthorityPosition:OccupationPart:person
+RO01000|watchdog|<noun>|<base>|monitor|monitor|AuthorityPosition:OccupationPart:person
+RO01000|righthand person|<noun>|<base>|righthand person|righthand person|AuthorityPosition:Business:person
+RO01000|righthand man|<noun>|<base>|righthand person|righthand person|AuthorityPosition:Business:person
+RO01000|informant|<noun>|<base>|informant|informant|NonAuthorityPosition:Misc:person
+RO01000|curator|<noun>|<base>|curator|curator|SometimesAuthority:Misc:person
+RO01000|bodyguard|<noun>|<base>|bodyguard|bodyguard|NonAuthority:LawEnforcement:person
+RO01000|watchperson|<noun>|<base>|bodyguard|bodyguard|NonAuthority:LawEnforcement:person
+RO01000|attestant|<noun>|<base>|||NonAuthority:LawEnforcement:person
+RO01000|attestator|<noun>|<base>|||NonAuthority:LawEnforcement:person
+RO01000|signatory|<noun>|<base>|||NonAuthority:LawEnforcement:person
+RO01000|signer|<noun>|<base>|||NonAuthority:LawEnforcement:person
+RO01000|authority figure|<noun>|<base>|authority figure|authority figure|AuthorityPosition:LawEnforcement:person
+RO01000|authority figures|<noun>|<plural>|authority figure|authority figure|AuthorityPosition:LawEnforcement:person
+RO01000|position of authority|<noun>|<base>|authority figure|authority figure|AuthorityPosition:LawEnforcement:person
+RO01000|positions of authority|<noun>|<plural>|authority figure|authority figure|AuthorityPosition:LawEnforcement:person
+RO01000|authority|<noun>|<base>|authority|authority|AuthorityPosition:person
+RO00580|landlord|<noun>|<base>|landlord|landlord|person
+RO00580|landlords|<noun>|<plural>|landlord|landlord|person

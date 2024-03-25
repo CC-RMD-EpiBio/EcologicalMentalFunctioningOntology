@@ -1,0 +1,131 @@
+attributionEvidence.lragr:S00001|denies|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|denies any|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+negationEvidence.lragr:N0000142|denies|noun|count(thr_sing)|denies|denies|NegationEvidence|pre
+negationEvidence.lragr:N0000143|denies active|noun|count(thr_sing)|denies active|denies active|NegationEvidence|pre
+negationEvidence.lragr:N0000144|denies any|noun|count(thr_sing)|denies any|denies any|NegationEvidence|pre
+negationEvidence.lragr:N0000145|denies any abnormal|noun|count(thr_sing)|denies any abnormal|denies any abnormal|NegationEvidence|pre
+negationEvidence.lragr:N0000146|denies any change in the|noun|count(thr_sing)|denies any change in the|denies any change in the|NegationEvidence|pre
+negationEvidence.lragr:N0000147|denies any changes in the|noun|count(thr_sing)|denies any changes in the|denies any changes in the|NegationEvidence|pre
+negationEvidence.lragr:N0000148|denies any current|noun|count(thr_sing)|denies any current|denies any current|NegationEvidence|pre
+negationEvidence.lragr:N0000149|denies any high-risk|noun|count(thr_sing)|denies any high-risk|denies any high-risk|NegationEvidence|pre
+negationEvidence.lragr:N0000150|denies any history of|noun|count(thr_sing)|denies any history of|denies any history of|NegationEvidence|pre
+negationEvidence.lragr:N0000151|denies any other|noun|count(thr_sing)|denies any other|denies any other|NegationEvidence|pre
+negationEvidence.lragr:N0000152|denies any other|noun|count(thr_sing)|denies any other|denies any other|NegationEvidence|pre
+negationEvidence.lragr:N0000153|denies any problems|noun|count(thr_sing)|denies any problems|denies any problems|NegationEvidence|pre
+negationEvidence.lragr:N0000154|denies any problems of|noun|count(thr_sing)|denies any problems of|denies any problems of|NegationEvidence|pre
+negationEvidence.lragr:N0000155|denies any problems with|noun|count(thr_sing)|denies any problems with|denies any problems with|NegationEvidence|pre
+negationEvidence.lragr:N0000156|denies any problems with|noun|count(thr_sing)|denies any problems with|denies any problems with|NegationEvidence|pre
+negationEvidence.lragr:N0000157|denies any recent|noun|count(thr_sing)|denies any recent|denies any recent|NegationEvidence|pre
+negationEvidence.lragr:N0000158|denies any significant|noun|count(thr_sing)|denies any significant|denies any significant|NegationEvidence|pre
+negationEvidence.lragr:N0000159|denies any symptom of|noun|count(thr_sing)|denies any symptom of|denies any symptom of|NegationEvidence|pre
+negationEvidence.lragr:N0000160|denies any symptoms of|noun|count(thr_sing)|denies any symptoms of|denies any symptoms of|NegationEvidence|pre
+negationEvidence.lragr:N0000161|denies any undue|noun|count(thr_sing)|denies any undue|denies any undue|NegationEvidence|pre
+negationEvidence.lragr:N0000162|denies current|noun|count(thr_sing)|denies current|denies current|NegationEvidence|pre
+negationEvidence.lragr:N0000163|denies ever|noun|count(thr_sing)|denies ever|denies ever|NegationEvidence|pre
+negationEvidence.lragr:N0000164|denies experiencing|noun|count(thr_sing)|denies experiencing|denies experiencing|NegationEvidence|pre
+negationEvidence.lragr:N0000165|denies experiencing any|noun|count(thr_sing)|denies experiencing any|denies experiencing any|NegationEvidence|pre
+negationEvidence.lragr:N0000166|denies problems with|noun|count(thr_sing)|denies problems with|denies problems with|NegationEvidence|pre
+negationEvidence.lragr:N0000167|denies significant|noun|count(thr_sing)|denies significant|denies significant|NegationEvidence|pre
+negationEvidence.lragr:N0000168|denies symptoms of|noun|count(thr_sing)|denies symptoms of|denies symptoms of|NegationEvidence|pre
+negationEvidence.lragr:N0000169|denies there was any|noun|count(thr_sing)|denies there was any|denies there was any|NegationEvidence|pre
+negationEvidence.lragr:N0000170|denies there was any|noun|count(thr_sing)|denies there was any|denies there was any|NegationEvidence|pre
+negationEvidence.lragr:N0000171|denies there was any current|noun|count(thr_sing)|denies there was any current|denies there was any current|NegationEvidence|pre
+negationEvidence.lragr:N0000172|denies there was any current|noun|count(thr_sing)|denies there was any current|denies there was any current|NegationEvidence|pre
+negationEvidence.lragr:N0000173|denies there was any history of|noun|count(thr_sing)|denies there was any history of|denies there was any history of|NegationEvidence|pre
+negationEvidence.lragr:N0000174|denies there was any history of|noun|count(thr_sing)|denies there was any history of|denies there was any history of|NegationEvidence|pre
+negationEvidence.lragr:N0000175|denies there was any recent|noun|count(thr_sing)|denies there was any recent|denies there was any recent|NegationEvidence|pre
+negationEvidence.lragr:N0000176|denies there was any recent|noun|count(thr_sing)|denies there was any recent|denies there was any recent|NegationEvidence|pre
+negationEvidence.lragr:N0000177|denies there was ever|noun|count(thr_sing)|denies there was ever|denies there was ever|NegationEvidence|pre
+negationEvidence.lragr:N0000178|denies there was ever|noun|count(thr_sing)|denies there was ever|denies there was ever|NegationEvidence|pre
+negationEvidence.lragr:N0000179|denies there was ever history of|noun|count(thr_sing)|denies there was ever history of|denies there was ever history of|NegationEvidence|pre
+negationEvidence.lragr:N0000180|denies there was ever history of|noun|count(thr_sing)|denies there was ever history of|denies there was ever history of|NegationEvidence|pre
+negationEvidence.lragr:N0000181|denies there was history of|noun|count(thr_sing)|denies there was history of|denies there was history of|NegationEvidence|pre
+negationEvidence.lragr:N0000182|denies there was history of|noun|count(thr_sing)|denies there was history of|denies there was history of|NegationEvidence|pre
+negationEvidence.lragr:N0000183|denies there was problems|noun|count(thr_sing)|denies there was problems|denies there was problems|NegationEvidence|pre
+negationEvidence.lragr:N0000184|denies there was problems|noun|count(thr_sing)|denies there was problems|denies there was problems|NegationEvidence|pre
+negationEvidence.lragr:N0000185|denies there was problems of|noun|count(thr_sing)|denies there was problems of|denies there was problems of|NegationEvidence|pre
+negationEvidence.lragr:N0000186|denies there was problems of|noun|count(thr_sing)|denies there was problems of|denies there was problems of|NegationEvidence|pre
+negationEvidence.lragr:N0000187|denies there were any|noun|count(thr_sing)|denies there were any|denies there were any|NegationEvidence|pre
+negationEvidence.lragr:N0000188|denies there were any|noun|count(thr_sing)|denies there were any|denies there were any|NegationEvidence|pre
+negationEvidence.lragr:N0000189|denies there were any history of|noun|count(thr_sing)|denies there were any history of|denies there were any history of|NegationEvidence|pre
+negationEvidence.lragr:N0000190|denies there were any history of|noun|count(thr_sing)|denies there were any history of|denies there were any history of|NegationEvidence|pre
+negationEvidence.lragr:N0000191|denies there were ever|noun|count(thr_sing)|denies there were ever|denies there were ever|NegationEvidence|pre
+negationEvidence.lragr:N0000192|denies there were ever|noun|count(thr_sing)|denies there were ever|denies there were ever|NegationEvidence|pre
+negationEvidence.lragr:N0000193|denies there were ever history of|noun|count(thr_sing)|denies there were ever history of|denies there were ever history of|NegationEvidence|pre
+negationEvidence.lragr:N0000194|denies there were ever history of|noun|count(thr_sing)|denies there were ever history of|denies there were ever history of|NegationEvidence|pre
+negationEvidence.lragr:N0000195|denies there were history of|noun|count(thr_sing)|denies there were history of|denies there were history of|NegationEvidence|pre
+negationEvidence.lragr:N0000196|denies there were history of|noun|count(thr_sing)|denies there were history of|denies there were history of|NegationEvidence|pre
+negationEvidence.lragr:N0000197|denies there were problems|noun|count(thr_sing)|denies there were problems|denies there were problems|NegationEvidence|pre
+negationEvidence.lragr:N0000198|denies there were problems|noun|count(thr_sing)|denies there were problems|denies there were problems|NegationEvidence|pre
+negationEvidence.lragr:N0000199|denies there were problems of|noun|count(thr_sing)|denies there were problems of|denies there were problems of|NegationEvidence|pre
+negationEvidence.lragr:N0000200|denies there were problems of|noun|count(thr_sing)|denies there were problems of|denies there were problems of|NegationEvidence|pre
+negationEvidence.lragr:N0000201|denies this|noun|count(thr_sing)|denies this|denies this|NegationEvidence|pre
+negationEvidence.lragr:N0000202|denies true|noun|count(thr_sing)|denies true|denies true|NegationEvidence|pre
+negationEvidence.lragr:N0000203|denies use of|noun|count(thr_sing)|denies use of|denies use of|NegationEvidence|pre
+negationEvidence.lragr:N0000204|denies use of other|noun|count(thr_sing)|denies use of other|denies use of other|NegationEvidence|pre
+attributionEvidence.lragr:S00001|states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|reports|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|reported by the patient|noun|count(thr_sing)|||AttributionPatientEvidence|post
+attributionEvidence.lragr:S00001|reported by the pt|noun|count(thr_sing)|||AttributionPatientEvidence|post
+attributionEvidence.lragr:S00001|notes|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+negationEvidence.lragr:N0000357|noted to be neg|noun|count(thr_sing)|noted to be neg|noted to be neg|NegationEvidence|post
+negationEvidence.lragr:N0000358|noted to be negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+negationEvidence.lragr:N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+negationEvidence.lragr:N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|pre
+attributionEvidence.lragr:S00001|patient states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|pt states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|pt stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient reports|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|also reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|he reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|she reported|verb|past|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|she reports|verb|present|||AttributionPatientEvidence|pre
+
+
+negationEvidence.lragr:N0000227|didn't report any|noun|count(thr_sing)|didn't report any|didn't report any|NegationEvidence|pre
+negationEvidence.lragr:N0000228|didn't report any problems with|noun|count(thr_sing)|didn't report any problems with|didn't report any problems with|NegationEvidence|pre
+negationEvidence.lragr:N0000229|does not report|noun|count(thr_sing)|does not|does not|NegationEvidence|pre
+negationEvidence.lragr:N0000229|does not report any|noun|count(thr_sing)|does not|does not|NegationEvidence|pre
+negationEvidence.lragr:N0000310|no reported|noun|count(thr_sing)|no reported|no reported|NegationEvidence|pre
+negationEvidence.lragr:N0000311|no reported mention|noun|count(thr_sing)|no reported mention|no reported mention|NegationEvidence|pre
+negationEvidence.lragr:N0000442|without reported|noun|count(thr_sing)|without reported|without reported|NegationEvidence|pre
+attributionEvidence.lragr:S00001|it should be noted|noun|count(thr_sing)|||AttributionProviderEvidence|post
+attributionEvidence.lragr:S00001|it should be noted that|noun|count(thr_sing)|||AttributionProviderEvidence|post
+attributionEvidence.lragr:S00001|notes|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+negationEvidence.lragr:N0000357|noted to be neg|noun|count(thr_sing)|noted to be neg|noted to be neg|NegationEvidence|post
+negationEvidence.lragr:N0000358|noted to be negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+negationEvidence.lragr:N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+negationEvidence.lragr:N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|pre
+negationEvidence.lragr:N0000423|was noted to be negative|noun|count(thr_sing)|was noted to be negative|was noted to be negative|NegationEvidence|post
+
+attributionEvidence.lragr:S00001|it should be noted|noun|count(thr_sing)|||AttributionProviderEvidence|post
+attributionEvidence.lragr:S00001|it should be noted that|noun|count(thr_sing)|||AttributionProviderEvidence|post
+attributionEvidence.lragr:S00001|notes|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+negationEvidence.lragr:N0000357|noted to be neg|noun|count(thr_sing)|noted to be neg|noted to be neg|NegationEvidence|post
+negationEvidence.lragr:N0000358|noted to be negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+negationEvidence.lragr:N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+negationEvidence.lragr:N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|pre
+negationEvidence.lragr:N0000423|was noted to be negative|noun|count(thr_sing)|was noted to be negative|was noted to be negative|NegationEvidence|post
+attributionEvidence.lragr:S00001|patient states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient reports|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient says|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient said|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|patient does not|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+
+attributionEvidence.lragr:S00001|patient said|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|pt said|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|said the patient|noun|count(thr_sing)|||AttributionPatientEvidence|post
+attributionEvidence.lragr:S00001|said the pt|noun|count(thr_sing)|||AttributionPatientEvidence|post
+
+attributionEvidence.lragr:S00001|she admits|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|she admitted|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+attributionEvidence.lragr:S00001|admits to|noun|count(thr_sing)|||AttributionPatientEvidence|pre
