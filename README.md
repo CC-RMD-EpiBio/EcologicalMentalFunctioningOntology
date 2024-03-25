@@ -43,9 +43,7 @@ Figure 1: Visualization of the Upper Levels of the Ecological Mental Functioning
 <p>
 
 # About Us #
-This work stems from the Epidemiology and Biostatistics section of the Rehabilitation Medicine Department, National Institutes of Health (NIH) Clinical Center that uses the ICF as a framework to develop analytic tools for clinical natural language processing and the development of functional assessment measures.  The interdisciplinary team is intentionally composed of a diverse set of scientists, including those in health informatics, mathematics, statistics, computer science, computational linguistics, public health, and healthcare.
-  
-The ontology team, in particular, is made up of individuals representing computer science, occupational and physical therapy, medicine, and psychiatry, with consults from speech and language pathology. 
+This work stems from the Epidemiology and Biostatistics section of the Rehabilitation Medicine Department, National Institutes of Health (NIH) Clinical Center that uses the ICF as a framework to develop analytic tools for clinical natural language processing and the development of functional assessment measures. The group is composed of professionals from behavioral health, rehabilitation, medicine, computer science, and health services researchers. The ontology team, in particular, is made up of individuals representing computer science, occupational and physical therapy, medicine, and psychiatry, with consults from speech and language pathology. 
 
 # Publications #
 Sacco, M. J., Divita, G., & Rasch, E. (2023). Development of an ontology to characterize mental functioning. Disabil Rehabil, 1-10. https://doi.org/10.1080/09638288.2023.2252337
