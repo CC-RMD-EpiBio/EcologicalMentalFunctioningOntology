@@ -57,11 +57,33 @@ See the [***License file***](https://github.com/CC-RMD-EpiBio/EcologicalMentalFu
 
 
 # References #
-- Dean…
-- Dunn W, Brown C, McGuigan A. The ecology of human Performance A framework for considering the effect of context [article. Am J Occup Ther. 1994; Jul48(7):595–607. doi: 10.5014/ajot.48.7.595.
-- Law…
-- Sacco, M. J., Divita, G., & Rasch, E. (2023). Development of an ontology to characterize mental functioning. Disabil Rehabil, 1-10. https://doi.org/10.1080/09638288.2023.2252337
-- Van Assche, K., Verschraegen, G., Valentinov, V., & Gruezmacher, M. (2019). The social, the ecological, and the adaptive. Von Bertalanffy's general systems theory and the adaptive governance of social-ecological systems [Article]. Systems Research and Behavioral Science, 36(3), 308-321. https://doi.org/10.1002/sres.2587
-- von Bertalanffy, L. (1968). General System Theory: Foundations, Development, Applications. Aldine Publishing Co.
-- World Health Organization. International classification of functioning, disability and health: ICF. Geneva: world Health Organization; 2001.
 
+ - International Classification of Functioning, Disability and Health, Geneva: World Health Organization, 2001. 
+ - M. J. Sacco, G. Divita and E. Rasch, "Development of an ontology to characterize mental functioning," Disability and Rehabilitation, p. 1, 2023. 
+ - von Bertalanffy, L. General system theory: Foundations, development, applications, Aldine Publishing Co., 1968. 
+ - M. G. Stineman and J. E. Streim, "The biopsycho-ecological paradigm: a foundational theory for medicine," PM&R, vol. 2, no. 11, pp. 1035-1045, 2010. 
+ - Van Assche, K et al., "The social, the ecological, and the adaptive. Von Bertalanffy's general systems theory and the adaptive governance of social?ecological systems.," Systems Research and Behavioral Science, vol. 36, no. 3, pp. 308-321, 2019. 
+ - Dean, E.E. et al. "Adaptation as a transaction with the environment perspectives from the ecology of human performance model," in Adaptation through occupation: multidimensional perspectives, Danvers, MA, SLACK Incorporated, 2019, pp. 141-155.
+ - W. Dunn, C. Brown and A. McGuigan, "The ecology of human performance: A framework for considering the effect of context," The American Journal of Occupational Therapy , vol. 47, no. 7, pp. 595-607, 1994. 
+ - M. law et al. "The person-environment-occupation model: A transactive approach to occupational performance," Canadian journal of occupational therapy, vol. 63, no. 1, pp. 9-23, 1996. 
+ - G. O. klein and B. Smith, "Concept Systems and Ontologies: Recommendations for Basic Terminology," Trans Jpn Soc Artif Intell., vol. 25, no. 3, pp. 433-441, 2010. 
+ - P. L. Schuyler, W. T. Hole, M. S. Tuttle and D. D. Sheretz, "The UMLS Metathesaurus: representing different views of biomedical concepts," Bulletin of the Medical Library Association, vol. 81, no. 2, p. 217, 1993. 
+ - D. A. lindberg, B. L. Humphreys and A. T. McCray, "The unified medical language system," Yearbook of medical informatics, vol. 2, no. 01, pp. 41-51, 1993. 
+ - S. Cozzi, A. Martinuzzi and V. Della Mea, "Ontological modeling of the International Classification of Functioning, Disabilities and Health (ICF): activities&participation and environmental factors components," BMC medical informatics and decision making, vol. 21, pp. 1-21, 2021. 
+ - E. Beisswanger, S. Schulz, H. Stenzhorn and U. hahn, "BioTop: An upper domain ontology for the life sciences," Applied Ontology, vol. 3, no. 4, pp. 205-212, 2008. 
+ - I. Niles and A. Pease, "Towards a standard upper ontology," in Proceedings of the international conference on Formal Ontology in Information Systems, 2001. 
+ - J. Hastings, W. Ceusters, M. Jensen, K. Milligan and B. Smith, "Towards an Ontology of Mental Functioning," in ICBO Workshop, 2012. 
+ - N. J. Otte, J. Beverley and A. Ruttenberg, "BFO: Basic formal ontology," Applied ontology, vol. 17, no. 1, pp. 17-43, 2022. 
+ - B. Smith et al. "The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration," Nature biotechnology, vol. 25, no. 11, pp. 1251-1255, 2007. 
+ - J. Cimino, "Desiderata for controlled medical vocabularies in the twenty-first century," Methods of information in medicine, vol. 37, no. 04/05, pp. 393-403, 1998. 
+ - A. burgun, "Desiderata for domain reference ontologies in biomedicine," Journal of biomedical informatics, vol. 39, no. 3, pp. 307-313, 2006. 
+ - M. J. Sacco, G. Divita, H. Goldman, K. Coale and C. P. Ros�, "An Ecological Model in Support of an Ontology of Mental Functioning," Unpublished manuscript, 2024. 
+ - G. Divita, "Java-NLP-Framework," NIH Clinical Center Rehabilitation Medicine Department EpiBio Branch, 29 07 2022. [Online]. Available: https://github.com/CC-RMD-EpiBio/java-nlp-framework. [Accessed 29 March 2024].
+ - "Medical Subject Headings (MeSH)," National Libarary of Medicine, National Institutes of Health, 2022. [Online]. Available: https://www.nlm.nih.gov/mesh/meshhome.html. [Accessed 20 March 2024].
+ - "SNOMED CT," National Library of Medicine, National Institutes of Health, 2019. [Online]. Available: https://www.nlm.nih.gov/healthit/snomedct/index.html. 
+ - "MedDRA Medical Dictionarly for Regulatory Activities," International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH), March 2024. [Online]. Available: https://www.meddra.org
+ - "Thesaurus of Psychological Index Terms," American Psychological Association, March 2024. [Online]. Available: https://www.apa.org/pubs/databases/training/thesaurus. 
+ - "Chapter 3: Related Concepts," in UMLS Reference Manual [Internet], Bethesda MD, National Library of Medicine, National Institutes of Health, 2009. 
+ - Kipper-Schuler, "VerbNet, A computational Lexical Resource for Verbs," Computational Language and Education Research (CLEAR) University of Colorado, 2006. [Online]. Available: verbs.colorado.edu/verbnet. [Accessed 20 March 2024].
+ - C. E. Lipscomb, "Medical subject headings (MeSH)," Bulletin of the Medical Library Association, vol. 88, no. 3, p. 265, 2000. 
+ - K. K. Schuler, VerbNet: A broad-coverage, comprehensive verb lexicon, University of Pennsylvania, 2005.
