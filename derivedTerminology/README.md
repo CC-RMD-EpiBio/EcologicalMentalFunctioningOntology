@@ -1,4 +1,5 @@
 |Number of Rows|File                                        |Description                                                                                                      |
+| ------------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 |   7631|001_TopExternalFactors.lragr                      |Derived External Factors inflected forms from 26 seed UMLS concepts                                               |
 |  36301|002_TopPersonFactors.lragr                        |Derived Person Factor inflected forms from 32 seed UMLS concepts                                                  | 
 |   9830|003_TopActivitiesAndParticipation.lragr           |Derived Activities and Particiaption inflected forms from 17 seed UMLS concepts                                   |
