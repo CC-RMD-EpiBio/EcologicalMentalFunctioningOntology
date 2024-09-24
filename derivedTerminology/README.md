@@ -1,4 +1,4 @@
-#The EMF Ontology Dictionary Files#
+# The EMF Ontology Dictionary Files 
 
 The following are the dictionary files the Ontology Named Entity Recognition Tools employ to find mentions.  These are pipe delimited csv files in a format akin to 
 the National Library of Medicine's SPECIALIST Lexicon's LRAGR file.  (LRAGR was the name for the lexical relational files that includes syntatic agreement information in it).
@@ -24,7 +24,7 @@ Those LRAGR files listed here have to do with matches to EMFO categorized termin
 slot:values, sentences, phrases, terms and tokens. That is, there are dictionary files that catalog section names, slot names, addresses pieces, disease names and the like.  These can
 be found by looking into the source code directly.
 
-# EMFO Related Dictionary files#
+# EMFO Related Dictionary files #
 
 
 |Number of Rows| File                                        | Description                                                                                                        |
