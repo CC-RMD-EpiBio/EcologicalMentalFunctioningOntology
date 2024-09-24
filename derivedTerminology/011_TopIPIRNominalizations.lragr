@@ -35,7 +35,7 @@ OntologyID_11139|lively|<verb>|<base+infinitive+pres1p23p>|show|show|Communicati
 OntologyID_11140|group activities|<noun>|<plural>|group activity|group activity|IPIRActivities:IPIRParticipation|source|eui|history
 OntologyID_11140|group activity|<noun>|<base>|group activity|group activity|IPIRActivities:IPIRParticipation|source|eui|history
 OntologyID_11099|relates|<verb>|<pres3s>|relate|relate|CommunicationActivities:IPIRActivities:IPIRParticipation|involve-107.1|E0052603|s+ici
-OntologyID_11099|related|<verb>|<past>|relate|relate|CommunicationActivities:IPIRActivities:IPIRParticipation|involve-107.1|E0052603|s+ici
+OntologyID_11099|related|<verb>|<past>|relate|relate|IPIRActivities:IPIRParticipation|involve-107.1|E0052603|s+ici
 OntologyID_11099|relate|<verb>|<past>|relate|relate|CommunicationActivities:IPIRActivities:IPIRParticipation|involve-107.1|E0052603|s+ici
 #
 OntologyID_11116|homicide|<noun>|<base>|murder|murder|IPIRActivities:IPIRParticipation|murder-42.1|E0041394|s+ici

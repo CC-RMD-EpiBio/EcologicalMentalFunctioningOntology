@@ -8082,7 +8082,7 @@ E0052596|rekindle|<verb>|<base+infinitive+pres1p23p>|other_cos-45.4|rekindle|Sel
 E0052596|rekindling|<verb>|<presPart>|other_cos-45.4|rekindle|SelfCareActivities|FACT
 E0052603|related|<verb>|<past+pastPart>|involve-107|relate|IPIRActivities|FACT
 E0052603|related|<verb>|<past+pastPart>|relate-86.2-2|relate|IPIRActivities|FACT
-E0052603|related|<verb>|<past+pastPart>|say-37.7-1|relate|CommunicationActivities|FACT
+#E0052603|related|<verb>|<past+pastPart>|say-37.7-1|relate|CommunicationActivities|FACT
 E0052603|relates|<verb>|<pres3s>|involve-107|relate|IPIRActivities|FACT
 E0052603|relates|<verb>|<pres3s>|relate-86.2-2|relate|IPIRActivities|FACT
 E0052603|relates|<verb>|<pres3s>|say-37.7-1|relate|CommunicationActivities|FACT

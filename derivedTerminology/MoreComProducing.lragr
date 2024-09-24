@@ -1,6 +1,8 @@
-# 
+#  ------------------------
+#  d330_d349_comProducing
 # From person and attribution terms that overlap CommunicationActivities
-#
+# ------------------------
+
 CP00000|admits to|noun|count(thr_sing)|admits to|admits to|CommunicationActivities:d310_d329_comReceiving:d330_d349_comProducing
 CP00000|admits lo|noun|count(thr_sing)|admits to|admits to|CommunicationActivities:d310_d329_comReceiving:d330_d349_comProducing
 CP00000|verbalized understanding|verb|base|verbalized understanding|verbalized understanding|CommunicationActivities:d330_d349_comProducing:d310_d329_comReceiving
@@ -11,6 +13,9 @@ CP00000|verbalizes agreement|verb|present|verbalized understanding|verbalized un
 CP00000|verbalized agreement|verb|present|verbalized understanding|verbalized understanding|CommunicationActivities:d330_d349_comProducing:d310_d329_comReceiving
 CP00000|verbalizing agreement|verb|present|verbalized understanding|verbalized understanding|CommunicationActivities:d330_d349_comProducing:d310_d329_comReceiving
 CP00000|also reported|noun|count(thr_sing)|also reported|also reported|CommunicationActivities:d330_d349_comProducing
+CP00000|did report|noun|count(thr_sing)|also reported|also reported|CommunicationActivities:d330_d349_comProducing
+CP00000|pt shared|noun|count(thr_sing)|also reported|also reported|CommunicationActivities:d330_d349_comProducing
+CP00000|patientt shared|noun|count(thr_sing)|also reported|also reported|CommunicationActivities:d330_d349_comProducing
 CP00000|denies active|noun|count(thr_sing)|denies active|denies active|CommunicationActivities:d330_d349_comProducing
 CP00000|denies any abnormal|noun|count(thr_sing)|denies any abnormal|denies any abnormal|CommunicationActivities:d330_d349_comProducing
 CP00000|denies any change in the|noun|count(thr_sing)|denies any change in the|denies any change in the|CommunicationActivities:d330_d349_comProducing
@@ -70,6 +75,11 @@ CP00000|no reported|noun|count(thr_sing)|no reported|no reported|CommunicationAc
 CP00000|noted to be negative|noun|count(thr_sing)|noted to be negative|noted to be negative|CommunicationActivities:d330_d349_comProducing
 CP00000|noted to be neg|noun|count(thr_sing)|noted to be neg|noted to be neg|CommunicationActivities:d330_d349_comProducing
 CP00000|notes|noun|count(thr_sing)|noted|noted|CommunicationActivities:d330_d349_comProducing
+CP00000|all notes|noun|count(ploral)|note|note|NMFO
+CP00000|told by your|<verb>|<base>|told by your|told by your|NMFO
+KS000000|written concent obtained for communication|<noun>|<base>|||SLOT:CommunicationActivities:d330_d349_comProducing|process
+KS000000|w ritten concent obtained for communication|<noun>|<base>|||SLOT:CommunicationActivities:d330_d349_comProducing|process
+
 #
 CP00000|patient does not|noun|count(thr_sing)|patient does not|patient does not|CommunicationActivities:d330_d349_comProducing
 CP00000|patient reported|noun|count(thr_sing)|patient reports|patient reports|CommunicationActivities:d330_d349_comProducing
@@ -106,6 +116,20 @@ CP00000|was noted to be negative|noun|count(thr_sing)|was noted to be negative|w
 #
 # From development records
 #
+CP00000|verbal pain rating|<noun>|<base>|verbal pain rating|verbal pain rating|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|written concent obtained|<noun>|<base>|written concent obtained|written concent obtained|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|w ritten concent obtained|<noun>|<base>|written concent obtained|written concent obtained|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|written concent given|<noun>|<base>|written concent obtained|written concent obtained|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|informed concent obtained|<noun>|<base>|written concent obtained|written concent obtained|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|informed concent given|<noun>|<base>|written concent obtained|written concent obtained|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|verbal concent obtained|<noun>|<base>|written concent obtained|written concent obtained|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|verbal concent given|<noun>|<base>|written concent obtained|written concent obtained|SLOT:CommunicationActivities:d330_d349_comProducing
+CP00000|verbally obtained concent|<noun>|<base>|written concent obtained|written concent obtained|CommunicationActivities:d330_d349_comProducing
+CP00000|after concent|<noun>|<base>|written concent obtained|written concent obtained|CommunicationActivities:d330_d349_comProducing
+CP00000|able to answer simple questions|<verb>|<base>|able to answer simple questions|able to answer simple questions|CommunicationActivities:d330_d349_comProducing
+CP00000|able to answer questions|<verb>|<base>|able to answer simple questions|able to answer simple questions|CommunicationActivities:d330_d349_comProducing
+CP00000|able to answer question|<verb>|<base>|able to answer simple questions|able to answer simple questions|CommunicationActivities:d330_d349_comProducing
+
 CP00000|informed consent was|verb|past|informed consent|informed consent|CommunicationActivities:d330_d349_comProducing:d310_d329_comReceiving
 CP00000|informed consent has|verb|past|informed consent|informed consent|CommunicationActivities:d330_d349_comProducing:d310_d329_comReceiving
 CP00000|speech was|verb|past|speech was|speech was|CommunicationActivities:d330_d349_comProducing
@@ -132,6 +156,57 @@ CP00000|precaution sign|noun|base|precaution sign|precaution sign|NMFO
 CP00000|sign posted on the door|noun|base|sign posted on the door|sign posted on the door|NMFO
 CP00000|add some water|noun|base|add some water|add some water|NMFO
 CP00000|seek medical attention|noun|base|seek medical attention|seek medical attention|NMFO
+CP00000|if|noun|base|if|if|NMFO
+CP00000|print|verb|base|print|print|NMFO
+CP00000|imprinting|noun|base|imprinting|imprinting|NMFO
+CP00000|exhibit|<noun>|<base>|exhibit|exhibit|NMFO
+CP00000|verified|<noun>|<base>|verified|verified|NMFO
+CP00000|within normal limits|<noun>|<base>|within normal limits|within normal limits|NMFO
+CP00000|add comment|<verb>|<base>|add comment|add comment|NMFO
+CP00000|signed|<verb>|<base>|signed|signed|NMFO
+CP00000|not present|<noun>|<base>|not present|not present|VALUE:NMFO
+CP00000|site clean|<noun>|<base>|site clean|site clean|VALUE:NMFO
+
+CP00000|fax|<noun>|<base>|fax|fax|SLOT:NMFO
+CP00000|printed|verb|past|print|print|SLOT:NMFO
+CP00000|race|<noun>|<base>|race|race|SLOT:NMFO
+CC00000|pain|<noun>|<base>|||NMFO
+CP00000|client|<noun>|<base>|||NMFO
+CP00000|speech|<noun>|<base>|||NMFO
+CP00000|encounter|<noun>|<base>|||NMFO
+CP00000|daily|<noun>|<base>|||NMFO
+CP00000|tablet|<noun>|<base>|||NMFO
+CP00000|m|<noun>|<base>|||NMFO
+CP00000|complete|<noun>|<base>|||NMFO
+CP00000|oriented|<noun>|<base>|||NMFO
+CP00000|history|<noun>|<base>|||NMFO
+CP00000|document|<noun>|<base>|||NMFO
+CP00000|foundation|<noun>|<base>|||NMFO
+CP00000|available|<noun>|<base>|||NMFO
+CP00000|transcription|<noun>|<base>|||NMFO
+CP00000|state|<noun>|<base>|||NMFO
+CP00000|box|<noun>|<base>|||NMFO
+CP00000|acute|<noun>|<base>|||NMFO
+CP00000|nurse|<noun>|<base>|||NMFO
+CP00000|instructed|<noun>|<base>|||NMFO
+CP00000|abdominal|<noun>|<base>|||NMFO
+CP00000|neck|<noun>|<base>|||NMFO
+CP00000|comment|<noun>|<base>|||NMFO
+CP00000|ultrasound|<noun>|<base>|||NMFO
+CP00000|letter|<noun>|<base>|||NMFO
+CP00000|assessment|<noun>|<base>|||NMFO
+CP00000|verified|<noun>|<base>|||NMFO
+CP00000|swelling|<noun>|<base>|||NMFO
+CP00000|regarding|<noun>|<base>|||NMFO
+CP00000|plan|<noun>|<base>|||NMFO
+CP00000|muscles|<noun>|<base>|||NMFO
+CP00000|intact|<noun>|<base>|||NMFO
+CP00000|generated|<noun>|<base>|||NMFO
+CP00000|panel|<noun>|<base>|||NMFO
+CP00000|p.o.|<noun>|<base>|||NMFO
+CP00000|payment|<noun>|<base>|||NMFO
+
+#icd-719.41
 #
 # From the training records
 #
@@ -539,6 +614,7 @@ CP00000|stop thought process|verb|base|stop thought process|stop thought process
 CP00000|repetition strategy|verb|base|repetition strategy|repetition strategy|Learning_:d130_d159_basicLearning
 #
 #
+#
 # d160_focusing
 #
 CP00000|unfocused|verb|past|unfocus|unfocus|ApplyingKnowedge_:d160_focusing
@@ -621,8 +697,8 @@ CP0000|completes a task|verb|base|complete a task|complete a task|GeneralTasksAn
 CP0000|completes some tasks|verb|base|complete a task|complete a task|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|the task|verb|base|a task|a task|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|a task|verb|base|a task|a task|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|able to follow single step instructions|verb|base|able to follow single step instructions|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|able to follow|verb|base|able to follow|able to follow|GeneralTasksAndDemands:d210_d220_tasks
+CP0000|able to follow single step instructions|verb|base|able to follow single step instructions|GeneralTasksAndDemands:d210_d220_tasks:d310_d329_comReceiving
+CP0000|able to follow|verb|base|able to follow|able to follow|GeneralTasksAndDemands:d210_d220_tasks:d310_d329_comReceiving
 CP0000|able to demonstrate|verb|base|able to follow|able to follow|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|able to demo|verb|base|able to follow|able to follow|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|follow single-step instructions|verb|base|follow single step instructions|GeneralTasksAndDemands:d210_d220_tasks
@@ -723,6 +799,7 @@ CP0000|he sets|verb|base|he sets|he sets|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|he puts|verb|base|he puts|he puts|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|she puts|verb|base|she puts|she puts|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|well groomed|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
+CP0000|casually groomed|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|well dressed|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|well appearing|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|dressed appearance|verb|base|groomed|groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
@@ -730,7 +807,10 @@ CP0000|dressed appropriately|verb|base|groomed|groomed|GeneralTasksAndDemands:d2
 CP0000|dress and hygiene|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|good hygiene and grooming|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|good hygiene|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
+CP0000|poor hygiene|verb|base|poorly groomed|poorly groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
+CP0000|poorly hygiene|verb|base|poorly groomed|poorly groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|good grooming|verb|base|well groomed|well groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
+CP0000|poor grooming|verb|base|poor groomed|poor groomed|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|unkempt|verb|base|unkempt|unkempt|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|discheveled|verb|base|discheveled|discheveled|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
 CP0000|grooming|verb|prespart|discheveled|discheveled|GeneralTasksAndDemands:d210_d220_tasks:d163_thinking
@@ -762,17 +842,135 @@ CP0000|held a job|verb|base|holding on to job|holding on to job|GeneralTasksAndD
 #
 CP0000|persist at tasks|verb|base|persist at tasks|persist at tasks|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|follow commands|verb|base|follow commands|follow commands|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|following commands|verb|base|follow commands|follow commands|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|following multi-step commands|verb|base|follow commands|follow commands|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|following directions|verb|base|simple instructions and directions|simple instructions and directions|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|following multi-step directions|verb|base|instructions and directions|instructions and directions|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|following multi step directions|verb|base|instructions and directions|instructions and directions|GeneralTasksAndDemands:d210_d220_tasks
-CP0000|following multistep directions|verb|base|instructions and directions|instructions and directions|GeneralTasksAndDemands:d210_d220_tasks
+CP0000|following commands|verb|base|follow commands|follow commands|GeneralTasksAndDemands:d210_d220_tasks:d310-d329_comReceiving	
+CP0000|following multi-step commands|verb|base|follow commands|follow commands|GeneralTasksAndDemands:d210_d220_tasks:d310-d329_comReceiving
+CP0000|following directions|verb|base|simple instructions and directions|simple instructions and directions|GeneralTasksAndDemands:d210_d220_tasks:d310-d329_comReceiving
+CP0000|following multi-step directions|verb|base|instructions and directions|instructions and directions|GeneralTasksAndDemands:d210_d220_tasks:d310-d329_comReceiving
+CP0000|following multi step directions|verb|base|instructions and directions|instructions and directions|GeneralTasksAndDemands:d210_d220_tasks:d310-d329_comReceiving
+CP0000|following multistep directions|verb|base|instructions and directions|instructions and directions|GeneralTasksAndDemands:d210_d220_tasks:d310-d329_comReceiving
 CP0000|multistep directions|verb|base|instructions and directions|instructions and directions|GeneralTasksAndDemands:d210_d220_tasks
 
-CP0000|understanding and following|verb|base|understanding and following|understanding and following|GeneralTasksAndDemands:d210_d220_tasks
+CP0000|understanding and following|verb|base|understanding and following|understanding and following|GeneralTasksAndDemands:d210_d220_tasks:d310-d329_comReceiving
 CP0000|understanding of the role|verb|base|understanding and following|understanding and following|GeneralTasksAndDemands:d210_d220_tasks
 CP0000|understand the role|verb|base|understanding and following|understanding and following|GeneralTasksAndDemands:d210_d220_tasks
+
+# --------------
+# from guidelines
+# --------------
+
+CP0000|demonstrate understanding|<verb>|<base>|demonstrates understanding|demonstrates understanding|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|demonstrates understanding|<verb>|<present>|demonstrates understanding|demonstrates understanding|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|demonstrating understanding|<verb>|<prespart>|demonstrates understanding|demonstrates understanding|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|demonstrated understanding|<verb>|<past>|demonstrates understanding|demonstrates understanding|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|take medication as directed|<verb>|<base>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|takes medication as directed|<verb>|<present>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|taking medication as directed|<verb>|<prespart>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|took medication as directed|<verb>|<past>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|take medications as directed|<verb>|<base>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|takes medications as directed|<verb>|<present>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|taking medications as directed|<verb>|<prespart>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|took medications as directed|<verb>|<past>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+
+#CP0000|take medications as perscribed|<verb>|<base>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|takes medications as perscribed|<verb>|<present>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|taking medications as perscribed|<verb>|<prespart>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|took medications as perscribed|<verb>|<past>|take medication as directed|take medication as directed|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+
+CP0000|to finish|<verb>|<base>|finish|finish|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|finishs|<verb>|<present>|finish|finish|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|finishing|<verb>|<prespart>|finish|finish|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|finished|<verb>|<past>|finish|finish|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+CP0000|apply for|<verb>|<base>|apply|apply|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|applys for|<verb>|<present>|apply|apply|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|applying for|<verb>|<prespart>|apply|apply|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|applied for|<verb>|<past>|apply|apply|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|is doing|<verb>|<base>|is doing|is doing|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|is doing|<verb>|<present>|is doing|is doing|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|was doing|<verb>|<past>|is doing|is doing|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+CP0000|should be doing|<verb>|<present>|is doing|is doing|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|should have been doing|<verb>|<past>|is doing|is doing|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+CP0000|gather|<verb>|<base>|gather|gather|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|gathers|<verb>|<present>|gather|gather|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|gathering|<verb>|<prespart>|gather|gather|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|gathered|<verb>|<past>|gather|gather|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+CP0000|load|<verb>|<base>|load|load|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|loads|<verb>|<present>|load|load|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|loading|<verb>|<prespart>|load|load|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|loaded|<verb>|<past>|load|load|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|answer|<verb>|<base>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|answers|<verb>|<present>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|answering|<verb>|<prespart>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|answered|<verb>|<past>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+
+CP0000|answers question|<verb>|<present>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|answering question|<verb>|<prespart>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+CP0000|answered question|<verb>|<past>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310-d329_comReceiving
+
+
+CP0000|answers questions|<verb>|<present>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310_d329_comReceiving:d330_d349_comProducing
+CP0000|answering questions|<verb>|<prespart>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310_d329_comReceiving:d330_d349_comProducing
+CP0000|answered questions|<verb>|<past>|answer|answer|CognitiveActivities:d210_d220_tasks:appliedMemory:d310_d329_comReceiving:d330_d349_comProducing
+
+CP0000|self care skills|<noun>|<plural>|self care skills|self care skills|CognitiveActivities:d210_d220_tasks
+CP0000|domestic skills|<noun>|<plural>|domestic skills|domestic skills|CognitiveActivities:d210_d220_tasks
+
+CP0000|pt schedules|<verb>|<present>|pt scheduled|pt scheduled|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|pt is scheduling|<verb>|<prespart>|pt scheduled|pt scheduled|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|pt scheduled|<verb>|<past>|pt scheduled|pt scheduled|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|patient schedules|<verb>|<present>|pt scheduled|pt scheduled|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|patient is scheduling|<verb>|<prespart>|pt scheduled|pt scheduled|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|patient scheduled|<verb>|<past>|pt scheduled|pt scheduled|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|address|<verb>|<base>|address|address|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|addresses|<verb>|<present>|address|address|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|addressing|<verb>|<prespart>|address|address|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|addressed|<verb>|<past>|address|address|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+CP0000|plan|<verb>|<base>|plan|plan|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|plans|<verb>|<present>|plan|plan|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|planing|<verb>|<prespart>|plan|plan|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|planed|<verb>|<past>|plan|plan|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|short term plans|<noun>|<singular>|short term plans|short term plans|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|long term plans|<noun>|<singular>|long term plans|long term plans|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|cooperate|<verb>|<base>|cooperate|cooperate|CognitiveActivities:d210_d220_tasks:appliedMemory:d110_d129_perposefulSensoryExperiences
+CP0000|cooperates|<verb>|<present>|cooperate|cooperate|CognitiveActivities:d210_d220_tasks:appliedMemory:d110_d129_perposefulSensoryExperiences
+CP0000|cooperating|<verb>|<prespart>|cooperate|cooperate|CognitiveActivities:d210_d220_tasks:appliedMemory:d110_d129_perposefulSensoryExperiences
+CP0000|cooperated|<verb>|<past>|cooperate|cooperate|CognitiveActivities:d210_d220_tasks:appliedMemory:d110_d129_perposefulSensoryExperiences
+CP0000|cooperative|<adj>|<base>|cooperative|cooperative|CognitiveActivities:d210_d220_tasks:appliedMemory:d110_d129_perposefulSensoryExperiences
+
+CP0000|some tasks|<noun>|<singular>|some tasks|some tasks|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|all tasks|<noun>|<singular>|all tasks|all tasks|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+
+#CP0000|try to|<verb>|<base>|try to|try to|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|tries to|<verb>|<present>|try to|try to|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|trying to|<verb>|<prespart>|try to|try to|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|tried to|<verb>|<past>|try to|try to|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|discuss|<verb>|<base>|discuss|discuss|CognitiveActivities:d210_d220_tasks:appliedMemory:d350_d369_ConversationAndDiscussion
+CP0000|discusses|<verb>|<present>|discuss|discuss|CognitiveActivities:d210_d220_tasks:appliedMemory:d350_d369_ConversationAndDiscussion
+CP0000|discussing|<verb>|<prespart>|discuss|discuss|CognitiveActivities:d210_d220_tasks:appliedMemory:d350_d369_ConversationAndDiscussion
+CP0000|discussed|<verb>|<past>|discuss|discuss|CognitiveActivities:d210_d220_tasks:appliedMemory:d350_d369_ConversationAndDiscussion
+
+CP0000|continues to|<verb>|<present>|continue to|continue to|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|continuing to|<verb>|<prespart>|continue to|continue to|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|continued to|<verb>|<past>|continue to|continue to|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+CP0000|set-up|<noun>|<singular>|set-up|set-up|CognitiveActivities:d210_d220_tasks:appliedMemory
+
+#CP0000|refile|<verb>|<base>|refile|refile|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|refiles|<verb>|<present>|refile|refile|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|refiling|<verb>|<prespart>|refile|refile|CognitiveActivities:d210_d220_tasks:appliedMemory
+CP0000|refiled|<verb>|<past>|refile|refile|CognitiveActivities:d210_d220_tasks:appliedMemory
 
 #
 # d310_d329 Comm receiving 
@@ -799,10 +997,10 @@ CP00000|some questions|<verb>|<base>|no questions|no questions|CommunicationActi
 CP00000|standby prompting|<verb>|<base>|no questions|no questions|CommunicationActivities:d310_d329_comReceiving
 CP00000|explained|<verb>|<base>|explained|explained|CommunicationActivities:d310_d329_comReceiving
 CP00000|explained to|<verb>|<base>|explained|explained|CommunicationActivities:d310_d329_comReceiving
-CP00000|following multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving
-CP00000|follow multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving
-CP00000|followed multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving
-CP00000|follows multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving
+CP00000|following multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving:d210_d220_tasks
+CP00000|follow multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving:d210_d220_tasks
+CP00000|followed multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving:d210_d220_tasks
+CP00000|follows multi-step directions|<verb>|<base>|following multi-step directions|followiing multi-step directions|CommunicationActivities:d310_d329_comReceiving:d210_d220_tasks
 CP00000|direction|<verb>|<base>|direction|direction|CommunicationActivities:d310_d329_comReceiving
 CP00000|demonstrated|<verb>|<base>|direction|direction|CommunicationActivities:d310_d329_comReceiving
 CP00000|independently recognized people|verb|base|recognize people|recognize people|GeneralTasksAndDemands:ActivitiesOfDailyLiving:CommunicationActivities:d310_d329_comReceiving
@@ -844,6 +1042,129 @@ CP00000|requires verbal cues|<noun>|<base>|require direction|require direction|d
 CP00000|verbal cues required|<noun>|<base>|required direction|without direction|d310_d329_comReceiving:appliedMemory:d210_d220_tasks
 CP00000|verbal apraxia|<noun>|<base>|verbal apraxia|verbal apraxia|d310_d329_comReceiving:appliedMemory
 
+#
+# from development records
+#
+CP0000|-1-|<verb>|<base>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<present>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<prespart>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<past>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-2-|<noun>|<singular>|-2-|-2-|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|reframe the question|<verb>|<base>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|reframes the question|<verb>|<present>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|reframing the question|<verb>|<prespart>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|reframed the question|<verb>|<past>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|reframe a question|<verb>|<base>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|reframes a question|<verb>|<present>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|reframing a question|<verb>|<prespart>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|reframed a question|<verb>|<past>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|re-frame the question|<verb>|<base>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|re-frames the question|<verb>|<present>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|re-framing the question|<verb>|<prespart>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|re-framed the question|<verb>|<past>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|re-frame a question|<verb>|<base>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|re-frames a question|<verb>|<present>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|re-framing a question|<verb>|<prespart>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+CP0000|re-framed a question|<verb>|<past>|reframe the question|reframe the question|CognitiveActivities:d310_d329_comReceiving
+
+
+CP0000|agree to|<verb>|<base>|agree|agree|CognitiveActivities:d310_d329_comReceiving
+CP0000|agrees to|<verb>|<present>|agree|agree|CognitiveActivities:d310_d329_comReceiving:d330_d349_comProducing
+CP0000|agreeing to|<verb>|<prespart>|agree|agree|CognitiveActivities:d310_d329_comReceiving:d330_d349_comProducing
+CP0000|agreed to|<verb>|<past>|agree|agree|CognitiveActivities:d310_d329_comReceiving:d330_d349_comProducing
+
+CP0000|agreement with|<verb>|<base>|agree|agree|CognitiveActivities:d310_d329_comReceiving
+CP0000|in agreement with|<verb>|<base>|agree|agree|CognitiveActivities:d310_d329_comReceiving:d330_d349_comProducing
+CP0000|satisfied with|<verb>|<base>|satisfied with|satisfied with|CognitiveActivities:d310_d329_comReceiving:d330_d349_comProducing
+
+#CP0000|review|<verb>|<base>|review|review|CognitiveActivities:d310_d329_comReceiving
+CP0000|reviews|<verb>|<present>|review|review|CognitiveActivities:d310_d329_comReceiving
+CP0000|reviewing|<verb>|<prespart>|review|review|CognitiveActivities:d310_d329_comReceiving
+CP0000|reviewed|<verb>|<past>|review|review|CognitiveActivities:d310_d329_comReceiving
+CP0000|reviewed with the patient|<verb>|<past>|review|review|CognitiveActivities:d310_d329_comReceiving
+
+#CP0000|remind|<verb>|<base>|remind|remind|CognitiveActivities:d310_d329_comReceiving
+#CP0000|remind|<verb>|<present>|remind|remind|CognitiveActivities:d310_d329_comReceiving
+CP0000|remindng by|<verb>|<prespart>|remind|remind|CognitiveActivities:d310_d329_comReceiving
+CP0000|reminded by|<verb>|<past>|remind|remind|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|retain information|<verb>|<base>|retain information|retain information|CognitiveActivities:d310_d329_comReceiving
+CP0000|retains information|<verb>|<present>|retain information|retain information|CognitiveActivities:d310_d329_comReceiving
+CP0000|retaining information|<verb>|<prespart>|retain information|retain information|CognitiveActivities:d310_d329_comReceiving
+CP0000|retained information|<verb>|<past>|retain information|retain information|CognitiveActivities:d310_d329_comReceiving
+
+#CP0000|receptive|<verb>|<base>|is receptive|is receptive|CognitiveActivities:d310_d329_comReceiving
+CP0000|is receptive|<verb>|<present>|is receptive|is receptive|CognitiveActivities:d310_d329_comReceiving
+CP0000|has been receptive|<verb>|<pastpart>|is receptive|is receptive|CognitiveActivities:d310_d329_comReceiving
+CP0000|was receptive|<verb>|<past>|is receptive|is receptive|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|continue to refuse|<verb>|<base>|continue to refuse|continue to refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|continues to refuse|<verb>|<present>|continue to refuse|continue to refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|continuing to refuse|<verb>|<prespart>|continue to refuse|continue to refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|continued to refuse|<verb>|<past>|continue to refuse|continue to refuse|CognitiveActivities:d310_d329_comReceiving
+
+#CP0000|refuse to|<verb>|<base>|refuse|refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|refuses to|<verb>|<present>|refuse|refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|refusing to|<verb>|<prespart>|refuse|refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|refused to|<verb>|<past>|refuse|refuse|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|declines to|<verb>|<present>|refuse|refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|declineing to|<verb>|<prespart>|refuse|refuse|CognitiveActivities:d310_d329_comReceiving
+CP0000|declined to|<verb>|<past>|refuse|refuse|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|follow verbal cues|<verb>|<base>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|follows verbal cues|<verb>|<present>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|following verbal cues|<verb>|<prespart>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|followed verbal cues|<verb>|<past>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|follow cues|<verb>|<base>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|follows cues|<verb>|<present>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|following cues|<verb>|<prespart>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|followed cues|<verb>|<past>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|follow nonverbal cues|<verb>|<base>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|follows nonverbal cues|<verb>|<present>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|following nonverbal cues|<verb>|<prespart>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|followed nonverbal cues|<verb>|<past>|follow verbal cues|follow verbal cues|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|told repeatedly|<verb>|<past>|repeatedly told|repeatedly told|CognitiveActivities:d310_d329_comReceiving
+CP0000|repeatedly told|<verb>|<past>|repeatedly told|repeatedly told|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|pick up on non verbal cues|<verb>|<base>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picks up on non verbal cues|<verb>|<present>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picking up on non verbal cues|<verb>|<prespart>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picking up non verbal cues|<verb>|<prespart>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picked up on non verbal cues|<verb>|<past>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|pick up well on non verbal cues|<verb>|<base>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picks up well on non verbal cues|<verb>|<present>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picking up well on non verbal cues|<verb>|<prespart>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picking up well non verbal cues|<verb>|<prespart>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+CP0000|picked up well on non verbal cues|<verb>|<past>|pick up on non verbal cues|pick up on non verbal cues|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|-1-|<verb>|<base>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<present>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<prespart>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<past>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-2-|<noun>|<singular>|-2-|-2-|CognitiveActivities:d310_d329_comReceiving
+
+
+CP0000|understand american sign language|<verb>|<base>|understand american sign language|understand american sign language|CognitiveActivities:d310_d329_comReceiving
+CP0000|understands american sign language|<verb>|<present>|understand american sign language|understand american sign language|CognitiveActivities:d310_d329_comReceiving
+CP0000|understanding american sign language|<verb>|<prespart>|understand american sign language|understand american sign language|CognitiveActivities:d310_d329_comReceiving
+CP0000|understood american sign language|<verb>|<past>|understand american sign language|understand american sign language|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|reading comprehension|<noun>|<singular>|reading comprehension|reading comprehension|CognitiveActivities:d310_d329_comReceiving
+CP0000|reading and concentration|<noun>|<singular>|reading and concentration|reading and concentration|CognitiveActivities:d310_d329_comReceiving
+
+CP0000|-1-|<verb>|<base>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<present>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<prespart>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
+CP0000|-1-|<verb>|<past>|-1-|-1-|CognitiveActivities:d310_d329_comReceiving
 
 #
 # persistence
@@ -891,49 +1212,51 @@ CP0000|choosing|<verb>|<prespart>|choose|choose|CognitiveActivities:d177_MakingD
 
 
 CP0000|decline|<verb>|<base>|delcine|decline|CognitiveActivities:d177_MakingDecisions
-CP0000|declines|<verb>|<present>|delcine|decline|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving
+CP0000|declines|<verb>|<present>|delcine|decline|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving:d330_d349_comProducing
 CP0000|declining|<verb>|<prespart>|delcine|decline|CognitiveActivities:d177_MakingDecisions
-CP0000|declined|<verb>|<past>|delcine|decline|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving
+CP0000|declined|<verb>|<past>|delcine|decline|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving:d330_d349_comProducing
 
 CP0000|agree|<verb>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|agrees|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions
+CP0000|agrees|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
 CP0000|agreeing|<verb>|<prespart>|agree|agree|CognitiveActivities:d177_MakingDecisions
 CP0000|agreed|<verb>|<past>|agree|agree|CognitiveActivities:d177_MakingDecisions
 CP0000|agree to|<verb>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|agrees to|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|agreeing to|<verb>|<prespart>|agree|agree|CognitiveActivities:d177_MakingDecisions
+CP0000|agrees to|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
+CP0000|agreeing to|<verb>|<prespart>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
 CP0000|agreed to|<verb>|<past>|agree|agree|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving
 CP0000|agree with|<verb>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|agrees with|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions
+CP0000|agrees with|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
 CP0000|agreeing with|<verb>|<prespart>|agree|agree|CognitiveActivities:d177_MakingDecisions
 CP0000|agreed with|<verb>|<past>|agree|agree|CognitiveActivities:d177_MakingDecisions
 CP0000|agreement|<noun>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
 CP0000|understanding/agreement|<noun>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
 CP0000|verbalized understanding/agreement|<noun>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving
+CP0000|verbalized understanding|<noun>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving
+CP0000|understanding|<noun>|<base>|understanding|understanding|CognitiveActivities:d310_d329_comReceiving
 CP0000|verbalized agreement|<noun>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving
 CP0000|agreeable|<adj>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions:d310_d329_comReceiving
 
 
 CP0000|disagree|<verb>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|disagrees|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions
+CP0000|disagrees|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
 CP0000|disagreeing|<verb>|<prespart>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|disagreed|<verb>|<past>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|disagree with|<verb>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|disagrees with|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|disagreeing with|<verb>|<prespart>|agree|agree|CognitiveActivities:d177_MakingDecisions
-CP0000|disagreed with|<verb>|<past>|agree|agree|CognitiveActivities:d177_MakingDecisions
+CP0000|disagreed|<verb>|<past>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
+CP0000|disagree with|<verb>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
+CP0000|disagrees with|<verb>|<present>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
+CP0000|disagreeing with|<verb>|<prespart>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
+CP0000|disagreed with|<verb>|<past>|agree|agree|CognitiveActivities:d177_MakingDecisions:d330_d349_comProducing
 CP0000|disagreement with|<noun>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
 CP0000|disagreeable|<adj>|<base>|agree|agree|CognitiveActivities:d177_MakingDecisions
 
 
-CP0000|accept|<verb>|<base>|accept|accept|CognitiveActivities:d177_MakingDecisions
-CP0000|accepts|<verb>|<present>|accept|accept|CognitiveActivities:d177_MakingDecisions
-CP0000|accepting|<verb>|<prespart>|accept|accept|CognitiveActivities:d177_MakingDecisions
-CP0000|accepted|<verb>|<past>|accept|accept|CognitiveActivities:d177_MakingDecisions
+CP0000|accept|<verb>|<base>|accept|accept|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|accepts|<verb>|<present>|accept|accept|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|accepting|<verb>|<prespart>|accept|accept|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|accepted|<verb>|<past>|accept|accept|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
 
-CP0000|accept instuctions|<verb>|<base>|accept instuctions|accept instuctions|CognitiveActivities:d177_MakingDecisions
-CP0000|accepts instuctions|<verb>|<present>|accept instuctions|accept instuctions|CognitiveActivities:d177_MakingDecisions
-CP0000|accepted instuctions|<verb>|<past>|accept instuctions|accept instuctions|CognitiveActivities:d177_MakingDecisions
+CP0000|accept instuctions|<verb>|<base>|accept instuctions|accept instuctions|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|accepts instuctions|<verb>|<present>|accept instuctions|accept instuctions|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|accepted instuctions|<verb>|<past>|accept instuctions|accept instuctions|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
 
 
 CP0000|want to|<verb>|<base>|want to|want to|CognitiveActivities:d177_MakingDecisions
@@ -1185,10 +1508,23 @@ CP0000|defers use of|<verb>|<present>|defer|defer|CognitiveActivities:d177_Makin
 CP0000|defering|<verb>|<prespart>|defer|defer|CognitiveActivities:d177_MakingDecisions
 CP0000|defered|<verb>|<past>|defer|defer|CognitiveActivities:d177_MakingDecisions
 
-CP0000|concur|<verb>|<base>|concur|concur|CognitiveActivities:d177_MakingDecisions
-CP0000|concurs|<verb>|<present>|concur|concur|CognitiveActivities:d177_MakingDecisions
-CP0000|concuring|<verb>|<prespart>|concur|concur|CognitiveActivities:d177_MakingDecisions
-CP0000|concured|<verb>|<past>|concur|concur|CognitiveActivities:d177_MakingDecisions
+#d310-d329_comReceiving
+CP0000|concur|<verb>|<base>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|concurs|<verb>|<present>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|concuring|<verb>|<prespart>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|concured|<verb>|<past>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+
+CP0000|say yes|<verb>|<base>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|says yes|<verb>|<present>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|saying yes|<verb>|<prespart>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|said yes|<verb>|<past>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+
+CP0000|say no|<verb>|<base>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|says no|<verb>|<present>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|saying no|<verb>|<prespart>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+CP0000|said no|<verb>|<past>|concur|concur|CognitiveActivities:d177_MakingDecisions:d310-d329_comReceiving
+
+
 
 #
 # Pace
@@ -1214,19 +1550,19 @@ CP0000|does not recall|<verb>|<past>|recall|recall|CognitiveActivities:d163_thin
 CP0000|doesn't recall|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
 CP0000|did not recall|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
 CP0000|didn't recall|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|remembers|<verb>|<present>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|remembering|<verb>|<prespart>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|remembered|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|does not remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|did not remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|doesn't remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|didn't remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|recollection|<noun>|<base>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|recollections|<noun>|<plural>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|recollecting|<verb>|<prespart>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|recollects|<verb>|<present>|recall|recall|CognitiveActivities:d163_thinking
-CP0000|recollected|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking
+CP0000|remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|remembers|<verb>|<present>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|remembering|<verb>|<prespart>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|remembered|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|does not remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|did not remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|doesn't remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|didn't remember|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|recollection|<noun>|<base>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|recollections|<noun>|<plural>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|recollecting|<verb>|<prespart>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|recollects|<verb>|<present>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|recollected|<verb>|<past>|recall|recall|CognitiveActivities:d163_thinking:appliedMemory
 CP0000|demonstrate|<verb>|<base>|demonstrate|demonstrate|CognitiveActivities:d163_thinking
 CP0000|demonstrates|<verb>|<present>|demonstrate|demonstrate|CognitiveActivities:d163_thinking
 CP0000|demonstrating|<verb>|<prespart>|demonstrate|demonstrate|CognitiveActivities:d163_thinking
@@ -1361,6 +1697,120 @@ CP0000|plans and completes|<verb>|<present>|planned and completed|planned and co
 CP0000|planned and completed|<verb>|<past>|planned and completed|planned and completed|CognitiveActivities:d163_thinking
 CP0000|planning and completing|<verb>|<past>|planned and completed|planned and completed|CognitiveActivities:d163_thinking
 CP0000|racing thoughts|<noun>|<plural>|racing thoughts|racing thoughts|CognitiveActivities:d163_thinking
+#----------------
+# d163 From guidelines
+#----------------
+CP0000|brainstorm|<verb>|<base>|brainstorm|brainstorm|CognitiveActivities:d163_thinking:appliedMembory
+CP0000|brainstorms|<verb>|<present>|brainstorm|brainstorm|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|brainstorming|<verb>|<prespart>|brainstorm|brainstorm|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|brainstormed|<verb>|<past>|brainstorm|brainstorm|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|meditate|<verb>|<base>|meditate|meditate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|meditates|<verb>|<present>|meditate|meditate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|meditating|<verb>|<prespart>|meditate|meditate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|meditated|<verb>|<past>|meditate|meditate|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|ponder|<verb>|<base>|ponder|ponder|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|ponders|<verb>|<present>|ponder|ponder|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|pondering|<verb>|<prespart>|ponder|ponder|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|pondered|<verb>|<past>|ponder|ponder|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|speculate|<verb>|<base>|speculate|speculate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|speculates|<verb>|<present>|speculate|speculate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|speculating|<verb>|<prespart>|speculate|speculate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|speculated|<verb>|<past>|speculate|speculate|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|reflect upon|<verb>|<base>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|reflects upon|<verb>|<present>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|reflecting upon|<verb>|<prespart>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|reflected upon|<verb>|<past>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|reflect on|<verb>|<base>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|reflects on|<verb>|<present>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|reflecting on|<verb>|<prespart>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|reflected on|<verb>|<past>|reflect|reflect|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|think|<verb>|<base>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|thinks|<verb>|<present>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|thinking|<verb>|<prespart>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|thought|<verb>|<past>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|contemplate|<verb>|<base>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|contemplates|<verb>|<present>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|contemplating|<verb>|<prespart>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|contemplated|<verb>|<past>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|contemplative|<adj>|<base>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|precontemplate|<verb>|<base>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|precontemplates|<verb>|<present>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|precontemplating|<verb>|<prespart>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|precontemplated|<verb>|<past>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|precontemplative|<adj>|<base>|contemplate|contemplate|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|realize|<verb>|<base>|realize|realize|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|realizes|<verb>|<present>|realize|realize|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|realizing|<verb>|<prespart>|realize|realize|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|realized|<verb>|<past>|realize|realize|CognitiveActivities:d163_thinking:appliedMemory
+
+#CP0000|attribute|<verb>|<base>|attribute|attribute|CognitiveActivities:d163_thinking
+CP0000|attributes|<verb>|<present>|attribute|attribute|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|attributing|<verb>|<prespart>|attribute|attribute|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|attributed|<verb>|<past>|attribute|attribute|CognitiveActivities:d163_thinking:appliedMemory
+
+
+CP0000|notice|<verb>|<base>|notice|notice|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|notices|<verb>|<present>|notice|notice|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|noticing|<verb>|<prespart>|notice|notice|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|noticed|<verb>|<past>|notice|notice|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|notes|<verb>|<present>|notice|notice|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|noting|<verb>|<prespart>|notice|notice|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|noted|<verb>|<past>|notice|notice|CognitiveActivities:d163_thinking:appliedMemory
+
+
+CP0000|aware of|<verb>|<base>|is aware of|is aware of|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|is aware of|<verb>|<present>|is aware of|is aware of|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|was aware of|<verb>|<past>|is aware of|is aware of|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|has awareness of|<verb>|<present>|is aware of|is aware of|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|had awareness of|<verb>|<past>|is aware of|is aware of|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|believe|<verb>|<base>|believe|believe|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|believes|<verb>|<present>|believe|believe|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|believing|<verb>|<prespart>|believe|believe|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|believed|<verb>|<past>|believe|believe|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|his opinion|<noun>|<singular>|opinion|opinion|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|her opinion|<noun>|<singular>|opinion|opinion|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|perceive|<verb>|<base>|perceive|perceive|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|perceives|<verb>|<present>|perceive|perceive|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|perceiving|<verb>|<prespart>|perceive|perceive|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|perceived|<verb>|<past>|perceive|perceive|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|intend|<verb>|<base>|intend|intend|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|intends|<verb>|<present>|intend|intend|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|intending|<verb>|<prespart>|intend|intend|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|intended|<verb>|<past>|intend|intend|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|intent|<noun>|<singular>|intend|intend|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|memory and concentration|<noun>|<singular>|memory and concentration|memory and concentration|CognitiveActivities:d163_thinking:appliedMemory
+
+# ---------------
+# from ssa validate set
+# ---------------
+
+CP0000|behavior and affect|<noun>|<singular>|behavior and affect|behavior and affect|CognitiveActivities:d163_thinking:appliedMemory
+
+CP0000|think|<verb>|<base>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|thinks|<verb>|<present>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|thinking|<verb>|<prespart>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+#CP0000|thought|<verb>|<past>|think|think|CognitiveActivities:d163_thinking:appliedMemory
+CP0000|awareness of|<noun>|<singular>|aware|aware|CognitiveActivities:d163_thinking:appliedMemory
+
+CP00000|admits to|noun|count(thr_sing)|admits to|admits to|CommunicationActivities:d310_d329_comReceiving
+CP0000|respond|<verb>|<base>|respond|respond|CognitiveActivities:d163_thinking:appliedMemory:d310_d329_comReceiving
+CP0000|responds|<verb>|<present>|respond|respond|CognitiveActivities:d163_thinking:appliedMemory:d310_d329_comReceiving
+CP0000|responding|<verb>|<prespart>|respond|respond|CognitiveActivities:d163_thinking:appliedMemory:d310_d329_comReceiving
+CP0000|responded|<verb>|<past>|respond|respond|CognitiveActivities:d163_thinking:appliedMemory:d310_d329_comReceiving
 #
 #  Applied Memory
 #
@@ -1390,3 +1840,19 @@ CP0000|history provided by patient|<verb>|<past>|history provided by patient|pro
 CP0000|spoke with|<verb>|<past>|spoke with|spoke with|CognitiveActivities:appliedMemory
 CP0000|ability to follow|<verb>|<past>|ability to follow|ability to follow|CognitiveActivities:appliedMemory
 CP0000|ability to comply|<verb>|<past>|ability to follow|ability to follow|CognitiveActivities:appliedMemory
+#
+# d110-d129 - Purposeful sensory experiences  CognitiveActivities:d110-d129
+#
+CP0000|needs redirection|<verb>|<base>|needs redirection|needs redirection|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|needed redirection|<verb>|<past>|needs redirection|needs redirection|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|needing redirection|<verb>|<prespart>|needs redirection|needs redirection|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|need redirection|<verb>|<prespart>|needs redirection|needs redirection|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|receive help|<verb>|<base>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|receiving help|<verb>|<prespart>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|received help|<verb>|<past>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|receives help|<verb>|<base>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|follows instructions|<verb>|<base>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory:d330_d349_comProducing
+CP0000|followed instructions|<verb>|<base>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory:d330_d349_comProducing
+CP0000|following instructions|<verb>|<base>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory:d330_d349_comProducing
+CP0000|listened to instructions|<verb>|<base>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory
+CP0000|listens to instructions|<verb>|<base>|receive help|receive help|CognitiveActivities:d110_d129_purposefulSensoryExperiences:appliedMemory

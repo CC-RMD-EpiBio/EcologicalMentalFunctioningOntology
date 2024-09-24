@@ -121,7 +121,7 @@ CCV00035|interacting|<verb>|<presPart>|interact|interact|GeneralTasksAndDemands:
 CCV00035|interacts|<verb>|<pres3s>|interact|interact|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:d350_d369_comDiscussion:appliedMemory|act-114|OntologyID000000|E0034967
 CCV00035|interact|<verb>|<base+infinitive+pres1p23p>|interact|interact|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:d350_d369_comDiscussion:appliedMemory|act-114|OntologyID000000|E0034967
 #CCV00036|made|<verb>|<past+pastPart>|make|make|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:d210_d220_tasks:d350_d369_comDiscussion:appliedMemory|act-114|OntologyID000000|E0038623
-CCV00036|made|<verb>|<past+pastPart>|make|make|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:d210_d220_tasks:d350_d369_comDiscussion|act-114|OntologyID000000|E0038623
+CCV00036|made|<verb>|<past+pastPart>|make|make|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:d210_d220_tasks|act-114|OntologyID000000|E0038623
 CCV00036|making|<verb>|<presPart>|make|make|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:d210_d220_tasks:d350_d369_comDiscussion:appliedMemory|act-114|OntologyID000000|E0038623
 CCV00037|make|<verb>|<past+pastPart>|make|make|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:IPIRActivities:d210_d220_tasks:appliedMemory|act-114|OntologyID000000|E0038623
 CCV00037|making|<verb>|<presPart>|make|make|GeneralTasksAndDemands:DomesticLifeActivities:MobilityActivities:SelfCareActivities:IPIRActivities:d210_d220_tasks:appliedMemory|act-114|OntologyID000000|E0038623
@@ -356,6 +356,10 @@ CCV00102|admitted|<verb>|<past+pastPart>|admit|admit|Behavior_:CognitiveActiviti
 CCV00102|admitting|<verb>|<presPart>|admit|admit|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0007437
 CCV00102|admit|<verb>|<base+infinitive+pres1p23p>|admit|admit|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0007437
 CCV00103|denied|<verb>|<past+pastPart>|deny|deny|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
+CCV00103|denied any|<verb>|<past+pastPart>|deny|deny|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
+CCV00103|denied only|<verb>|<past+pastPart>|deny|deny|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
+CCV00103|denied some|<verb>|<past+pastPart>|deny|deny|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
+CCV00103|denied one|<verb>|<past+pastPart>|deny|deny|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
 #CCV00103|denies|<verb>|<pres3s>|deny|deny|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
 CCV00103|denies|<verb>|<pres3s>|deny|deny|CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
 CCV00103|denying|<verb>|<presPart>|deny|deny|Behavior_:CognitiveActivities:d330_d349_comProducing|admit-64.3|OntologyID000000|E0021749
@@ -1859,7 +1863,8 @@ CCV00544|converses|<verb>|<pres3s>|converse|converse|CommunicationActivities:d35
 CCV00544|conversing|<verb>|<presPart>|converse|converse|CommunicationActivities:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0018880
 CCV00545|debated|<verb>|<past+pastPart>|debate|debate|CommunicationActivities:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0020934
 CCV00545|debating|<verb>|<presPart>|debate|debate|CommunicationActivities:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0020934
-CCV00546|discussed|<verb>|<past+pastPart>|discuss|discuss|CommunicationActivities:d330_d349_comProducing:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0023261
+#CCV00546|discussed|<verb>|<past+pastPart>|discuss|discuss|CommunicationActivities:d330_d349_comProducing:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0023261
+CCV00546|discussed|<verb>|<past+pastPart>|discuss|discuss|CommunicationActivities:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0023261
 CCV00546|long conversation about|<verb>|<past+pastPart>|discuss|discuss|CommunicationActivities:d330_d349_comProducing:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0023261
 CCV00546|in conversation|<verb>|<past+pastPart>|discuss|discuss|CommunicationActivities:d330_d349_comProducing:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0023261
 CCV00546|conversation|<verb>|<past+pastPart>|discuss|discuss|CommunicationActivities:d330_d349_comProducing:d350_d369_comDiscussion:appliedMemory|chit_chat-37.6|OntologyID000000|E0023261
@@ -3978,7 +3983,7 @@ CCV01134|surveyed|<verb>|<past+pastPart>|survey|survey|LearningAndApplyingKnowle
 CCV01134|surveying|<verb>|<presPart>|survey|survey|LearningAndApplyingKnowledge:d330_d349_comProducing:d350_d369_comDiscussion|investigate-35.4|OntologyID000000|E0059348
 CCV01135|tested|<verb>|<past+pastPart>|test|test|LearningAndApplyingKnowledge:d177_MakingDecisions|investigate-35.4|OntologyID000000|E0060349
 CCV01135|testing|<verb>|<presPart>|test|test|LearningAndApplyingKnowledge:d177_MakingDecisions|investigate-35.4|OntologyID000000|E0060349
-CCV01136|related|<verb>|<past+pastPart>|relate|relate|CommunicationActivities:d330_d349_comProducing|involve-107.1|OntologyID000000|E0052603
+#CCV01136|related|<verb>|<past+pastPart>|relate|relate|CommunicationActivities:d330_d349_comProducing|involve-107.1|OntologyID000000|E0052603
 CCV01136|relates|<verb>|<pres3s>|relate|relate|CommunicationActivities:d330_d349_comProducing|involve-107.1|OntologyID000000|E0052603
 CCV01136|relate|<verb>|<base+infinitive+pres1p23p>|relate|relate|CommunicationActivities:d330_d349_comProducing|involve-107.1|OntologyID000000|E0052603
 CCV01136|relating|<verb>|<presPart>|relate|relate|CommunicationActivities:d330_d349_comProducing|involve-107.1|OntologyID000000|E0052603
@@ -4597,9 +4602,9 @@ CCV01335|revisits|<verb>|<pres3s>|revisit|revisit|CommunicationActivities:IPIRAc
 CCV01335|revisit|<verb>|<base+infinitive+pres1p23p>|revisit|revisit|CommunicationActivities:IPIRActivities:d163_thinking:d350_d369_comDiscussion|meet-36.3|OntologyID000000|E0053355
 CCV01336|visited|<verb>|<past+pastPart>|visit|visit|CommunicationActivities:IPIRActivities:d179_ApplingKnowledgeOther:d330_d349_comProducing|meet-36.3|OntologyID000000|E0064747
 CCV01336|visiting|<verb>|<presPart>|visit|visit|CommunicationActivities:IPIRActivities:d179_ApplingKnowledgeOther:d330_d349_comProducing|meet-36.3|OntologyID000000|E0064747
-CCV01337|added|<verb>|<past+pastPart>|add|add|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0007247
-CCV01337|adding|<verb>|<presPart>|add|add|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0007247
-CCV01337|adds|<verb>|<pres3s>|add|add|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0007247
+#CCV01337|added|<verb>|<past+pastPart>|add|add|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0007247
+#CCV01337|adding|<verb>|<presPart>|add|add|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0007247
+#CCV01337|adds|<verb>|<pres3s>|add|add|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0007247
 #CCV01337|add|<verb>|<base+infinitive+pres1p23p>|add|add|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0007247
 CCV01338|averaged|<verb>|<past+pastPart>|average|average|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0011413
 CCV01338|averaging|<verb>|<presPart>|average|average|CommunicationActivities:CognitiveActivities:d172_cogCalculating:appliedMemory|multiply-108|OntologyID000000|E0011413
@@ -5257,8 +5262,8 @@ CCV01546|uptaked|<verb>|<past+pastPart>|uptake|uptake|CommunicationActivities:d1
 CCV01546|uptaking|<verb>|<presPart>|uptake|uptake|CommunicationActivities:d163_thinking:d310_d329_comReceiving|require-103|OntologyID000000|E0331774
 CCV01548|added|<verb>|<past+pastPart>|add|add|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0007247
 CCV01548|adding|<verb>|<presPart>|add|add|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0007247
-CCV01548|adds|<verb>|<pres3s>|add|add|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0007247
-CCV01548|add|<verb>|<base+infinitive+pres1p23p>|add|add|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0007247
+#CCV01548|adds|<verb>|<pres3s>|add|add|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0007247
+#CCV01548|add|<verb>|<base+infinitive+pres1p23p>|add|add|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0007247
 CCV01549|advised|<verb>|<past+pastPart>|advise|advise|CommunicationActivities:d310_d329_comReceiving:d330_d349_comProducing|say-37.7|OntologyID000000|E0007583
 CCV01549|advises|<verb>|<pres3s>|advise|advise|CommunicationActivities:d310_d329_comReceiving:d330_d349_comProducing|say-37.7|OntologyID000000|E0007583
 CCV01549|advise|<verb>|<base+infinitive+pres1p23p>|advise|advise|CommunicationActivities:d310_d329_comReceiving:d330_d349_comProducing|say-37.7|OntologyID000000|E0007583
@@ -5474,7 +5479,7 @@ CCV01610|reiterated|<verb>|<past+pastPart>|reiterate|reiterate|CommunicationActi
 CCV01610|reiterates|<verb>|<pres3s>|reiterate|reiterate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052585
 CCV01610|reiterate|<verb>|<base+infinitive+pres1p23p>|reiterate|reiterate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052585
 CCV01610|reiterating|<verb>|<presPart>|reiterate|reiterate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052585
-CCV01611|related|<verb>|<past+pastPart>|relate|relate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052603
+#CCV01611|related|<verb>|<past+pastPart>|relate|relate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052603
 CCV01611|relates|<verb>|<pres3s>|relate|relate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052603
 CCV01611|relate|<verb>|<base+infinitive+pres1p23p>|relate|relate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052603
 CCV01611|relating|<verb>|<presPart>|relate|relate|CommunicationActivities:d330_d349_comProducing|say-37.7|OntologyID000000|E0052603
