@@ -1,0 +1,41 @@
+#
+# These terms indicate a mental functioning is coming 
+# or already here.
+#
+#   trigger + next phrase  == mental functioning mention
+#
+#   GD - 2022-09-15
+#
+MFT0000|able to|<verb>|<base>|able to|able to|MentalFunctioningTrigger|
+MFT0000|ability to|<verb>|<base>|able to|able to|MentalFunctioningTrigger|
+MFT0001|able to make|<verb>|<base>|able to make|able to make|MentalFunctioningTrigger|
+MFT0001|ability to make|<verb>|<base>|able to make|able to make|MentalFunctioningTrigger|
+MFT0002|understand and respond to|<verb>|<base>|understand and respond to|understand and respond to|MentalFunctioningTrigger|
+MFT0003|free of|<verb>|<base>|free of|free of|MentalFunctioningTrigger|
+MFT0004|know how to|<verb>|<base>|know how to|know how to|MentalFunctioningTrigger|
+MFT0004|knowing how to|<verb>|<pres_part>|know how to|know how to|MentalFunctioningTrigger|
+MFT0004|knew how to|<verb>|<past>|know how to|know how to|MentalFunctioningTrigger|
+MFT0004|knows how to|<verb>|<pres(thr_sing)>|know how to|know how to|MentalFunctioningTrigger|
+MFT0005|with being|<adv>|<base>|with being|with being|MentalFunctioningTrigger|
+MFT0006|without being|<adv>|<base>|without being|without being|MentalFunctioningTrigger|
+MFT0007|easily|<adv>|<base>|easily|easily|MentalFunctioningTrigger|
+MFT0008|not easily|<adv>|<base>|easily|easily|MentalFunctioningTrigger|
+MFT0009|difficulty|<adv>|<base>|difficulty|difficulty|MentalFunctioningTrigger|
+MFT0010|excessive<adv>|<base>|excessive|excessive|MentalFunctioningTrigger|
+MFT0011|at work|<noun>|<base>|at work|at work|ContextualFactors|
+MFT0012|adapting to|<verb>|<base>|adapting to|adapting to|MentalFunctioningTrigger|
+MFT0013|unable to perform|<verb>|<base>|unable to perform|unable to perform|MentalFunctioningTrigger|
+MFT0014|unable to|<verb>|<base>|unable to|unable to|MentalFunctioningTrigger|
+MFT0015|able to perform|<verb>|<base>able to perform|able to perform|MentalFunctioningTrigger|
+MFT0016|distinguishing between|<verb>|<base>|distinguishing between|distinguishing between|MentalFunctioningTrigger|
+MFT0017|taking appropriate|<verb>|<base>|taking appropriate|MentalFunctioningTrigger|
+MFT0018|understand how to|<verb>|<base>|understand how to|understand how to|MentalFunctioningTrigger|
+MFT0018|understood how to |<verb>|<past>|understand how to|understand how to|MentalFunctioningTrigger|
+MFT0018|understands how to |<verb>|<pres(thr-sing)>|understand how to|understand how to|MentalFunctioningTrigger|
+MFT0018|understanding how to|<verb>|<prespart>|understand how to|understand how to|MentalFunctioningTrigger|
+MFT0019|understand|<verb>|<base>|understand how to|understand how to|MentalFunctioningTrigger|
+MFT0020|performed|<verb>|<past>|perform|perform|MentalFunctioningTrigger|
+MFT0021|performing|<verb>|<prespart>|perform|perform|MentalFunctioningTrigger|
+MFT0022|avoid|<verb>|<base>|avoid|avoid|MentalFunctioningTrigger|
+MFT0023|responded to|<verb>|<base>|respond to|respond to|MentalFunctioningTrigger|
+MFT0023|respond to|<verb>|<base>|respond to|respond to|MentalFunctioningTrigger|
