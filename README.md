@@ -7,15 +7,25 @@
 | ------------ |------------- |
 |emfo.owl      | The official RDF/XML OWL file           |
 |emfo.owl.json | The OWL file rendered in JSON for WebVOWL visualization |
-|EMFOConceptsAndRelationships.xlsx     | The spreadsheet with the ontology in it |
-|EMFOCON.CSV   | The Classes sheet in CSV format         |
-|EMFOREL.CSV   | The Relationships sheet in CSV format   |
-|EMFODEFC.CSV  | The Classes Definitions in CSV format   |
-|EMFODEFR.CSV  | The Relations Definitions in CSV format |
+
+
 |LICENSE.MD    | The License agreement for the EMFO's use|
 |EMFO_Picture.pptx| A visual Representation of the top Levels of the Ontology |
+|EMFO_Picture.png  |A visual snapshot taken from the pptx |
 |Derived Terminologies | Terminologies derived from the Ontology |
+|resources   | A directory containing the curated spreadsheets that make up the ontology content |
+|utilities   | Directory containing helper exes to build the owl file from the excel sheets |
 
+# Resources Contents #
+| FileName     | Description  |
+| ------------ |------------- |
+|EMFOConceptsAndRelationships.xlsx     | The spreadsheet with the ontology curated classes, relations, relation definitions, and relationships as separate sheets |
+|OntologyTopLevelDefinitions.xlsx      | The spreadsheet with curated class definitions, examples of use and notes |
+|BasicEcologicalMentalFunctioningOntology.owl | A manually created OWL file with  classes, relations, and properties we use that are borrowed from other ontologies.  This owl file is the starting point we use when we regenerate the final owl file from our curated excel spreadsheets. |
+
+
+
+|EMFOAddClassesRelationshipsAndDefinitionsToOWL-jar-with-dependencies.jar| Java exe that creates the owl file from the excel spreadsheets |
 
 ## Summary
 The Ecological Mental Functioning Ontology (EMFO) is a representation of mental functioning based on the Ecological Model of Mental Functioning (EMMF) (Sacco et al. 2024) that integrates concepts taken from the International Classification of Functioning, Disability and Health (ICF) (World Health Organization, 2001); person-environment-activities transactive models (Dean et al., 2019; Dunn et al., 1994; Law et al., 1996), social-ecological theories (Stineman & Streim, 2010; Van Assche et al., 2019); and Open System Theory (von Bertalanffy, 1968).   
@@ -77,7 +87,7 @@ See the [***License file***](https://github.com/CC-RMD-EpiBio/EcologicalMentalFu
  - B. Smith et al. "The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration," Nature biotechnology, vol. 25, no. 11, pp. 1251-1255, 2007. 
  - J. Cimino, "Desiderata for controlled medical vocabularies in the twenty-first century," Methods of information in medicine, vol. 37, no. 04/05, pp. 393-403, 1998. 
  - A. burgun, "Desiderata for domain reference ontologies in biomedicine," Journal of biomedical informatics, vol. 39, no. 3, pp. 307-313, 2006. 
- - M. J. Sacco, G. Divita, H. Goldman, K. Coale and C. P. Rosé, "An Ecological Model in Support of an Ontology of Mental Functioning," Unpublished manuscript, 2024. 
+ - M. J. Sacco, G. Divita, H. Goldman, K. Coale and C. P. RosÃ©, "An Ecological Model in Support of an Ontology of Mental Functioning," Unpublished manuscript, 2024. 
  - G. Divita, "Java-NLP-Framework," NIH Clinical Center Rehabilitation Medicine Department EpiBio Branch, 29 07 2022. [Online]. Available: https://github.com/CC-RMD-EpiBio/java-nlp-framework. [Accessed 29 March 2024].
  - "Medical Subject Headings (MeSH)," National Libarary of Medicine, National Institutes of Health, 2022. [Online]. Available: https://www.nlm.nih.gov/mesh/meshhome.html. [Accessed 20 March 2024].
  - "SNOMED CT," National Library of Medicine, National Institutes of Health, 2019. [Online]. Available: https://www.nlm.nih.gov/healthit/snomedct/index.html. 
