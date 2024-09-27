@@ -65,7 +65,7 @@ This work stems from the Epidemiology and Biostatistics section of the Rehabilit
 # Publications #
 Sacco, M. J., Divita, G., & Rasch, E. (2023). Development of an ontology to characterize mental functioning. Disabil Rehabil, 1-10. [(Paper)https://doi.org/10.1080/09638288.2023.2252337](https://doi.org/10.1080/09638288.2023.2252337)
 
-Divita, G, Sacco, M.J., Coale, K, Parks, R., Rasch, E (2024) Building an ecological mental functioning ontology: An Informatics Perspective, ([Abstract](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/publications/BuildingAnEMFO_InformaticsPerspectiveAbstract.CEURFormat.final.pdf) & [Poster](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/publications/OntologyPoster_v2Elephant.pdf ),
+Divita, G, Sacco, M.J., Coale, K, Parks, R., Rasch, E (2024) Building an ecological mental functioning ontology: An Informatics Perspective, ([Abstract](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/publications/BuildingAnEMFO_InformaticsPerspectiveAbstract.CEURFormat.final.pdf) & [Poster](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/publications/OntologyPoster_v2Elephant.pdf ) ),
 Proceedings of the International Conference on Biomedical Ontologies 2024, July 17-19, 2024, Enschede, The Netherlands
 
 # License #
