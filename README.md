@@ -7,7 +7,7 @@
 | ------------ |------------- |
 |./resources   | A directory containing the curated spreadsheets that make up the ontology content |
 |./utilities   | Directory containing helper exes to build the owl file from the excel sheets |
-|./Derived Terminologies | Terminologies derived from the Ontology |
+|./derivedTerminology | Terminologies/dictionaries derived from the Ontology, used in the Ontology NER |
 |emfo.owl      | The official RDF/XML OWL file           |
 |emfo.owl.json | The OWL file rendered in JSON for WebVOWL visualization |
 |LICENSE.MD    | The License agreement for the EMFO's use|
@@ -44,18 +44,26 @@ The initial use case was to support the United States Social Security Administra
 <p>
 We are using the EMFO as a rhetorical device to foster a dialog to garner consensus.
 <p>
-The Ontology has been packaged into a set of csv and excel files, an RDF/XML Owl file, and a webVowl json file.
+The Ontology has been packaged into a set of excel files, an RDF/XML Owl file, and a webVowl json file.
 
 
 ![image](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/EMFO_Picture.png)
 Figure 1: Visualization of the Upper Levels of the Ecological Mental Functioning Ontology
 <p>
+# About OWL Files #
+The ontology curated content are the excel spreadsheets found in the resources directory.  However, we chose to distribute the ontology in the de-facto standard ontology format, known as OWL (Web Ontology Language). This format is used by Protege, the defacto ontology visualization and curation tool. 
+Our goal is to have the ontology adopted by the OBO foundry as one of our distribution mechanisms, which requires distribution in the OWL format. 
+The
+[wikipedia page about Web Ontology Language](https://en.wikipedia.org/wiki/Web_Ontology_Language) is a good place to start to learn more about OWL. 
 
 # About Us #
 This work stems from the Epidemiology and Biostatistics section of the Rehabilitation Medicine Department, National Institutes of Health (NIH) Clinical Center that uses the ICF as a framework to develop analytic tools for clinical natural language processing and the development of functional assessment measures. The group is composed of professionals from behavioral health, rehabilitation, medicine, computer science, and health services researchers. The ontology team, in particular, is made up of individuals representing computer science, occupational and physical therapy, medicine, and psychiatry, with consults from speech and language pathology. 
 
 # Publications #
-Sacco, M. J., Divita, G., & Rasch, E. (2023). Development of an ontology to characterize mental functioning. Disabil Rehabil, 1-10. https://doi.org/10.1080/09638288.2023.2252337
+Sacco, M. J., Divita, G., & Rasch, E. (2023). Development of an ontology to characterize mental functioning. Disabil Rehabil, 1-10. [(Paper)https://doi.org/10.1080/09638288.2023.2252337](https://doi.org/10.1080/09638288.2023.2252337)
+
+Divita, G, Sacco, M.J., Coale, K, Parks, R., Rasch, E (2024) Building an ecological mental functioning ontology: An Informatics Perspective, ([Abstract](link here) & [Poster] (link here ),
+Proceedings of the International Conference on Biomedical Ontologies 2024, July 17-19, 2024, Enschede, The Netherlands
 
 # License #
 See the [***License file***](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/LICENSE.txt)
