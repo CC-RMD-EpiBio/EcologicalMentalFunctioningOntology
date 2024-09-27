@@ -5,9 +5,11 @@
 # Repository Contents #
 | FileName     | Description  |
 | ------------ |------------- |
-|./resources   | A directory containing the curated spreadsheets that make up the ontology content |
-|./utilities   | Directory containing helper exes to build the owl file from the excel sheets |
+|./resources          | A directory containing the curated spreadsheets that make up the ontology content |
+|./utilities          | Directory containing helper exes to build the owl file from the excel sheets |
 |./derivedTerminology | Terminologies/dictionaries derived from the Ontology, used in the Ontology NER |
+|./publications       | Directory of published papers and posters about this ontology |
+|./NER                | Named Entity Recognition Tools using this Ontology |
 |emfo.owl      | The official RDF/XML OWL file           |
 |emfo.owl.json | The OWL file rendered in JSON for WebVOWL visualization |
 |LICENSE.MD    | The License agreement for the EMFO's use|
@@ -50,6 +52,7 @@ The Ontology has been packaged into a set of excel files, an RDF/XML Owl file, a
 ![image](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/EMFO_Picture.png)
 Figure 1: Visualization of the Upper Levels of the Ecological Mental Functioning Ontology
 <p>
+
 # About OWL Files #
 The ontology curated content are the excel spreadsheets found in the resources directory.  However, we chose to distribute the ontology in the de-facto standard ontology format, known as OWL (Web Ontology Language). This format is used by Protege, the defacto ontology visualization and curation tool. 
 Our goal is to have the ontology adopted by the OBO foundry as one of our distribution mechanisms, which requires distribution in the OWL format. 
@@ -62,7 +65,7 @@ This work stems from the Epidemiology and Biostatistics section of the Rehabilit
 # Publications #
 Sacco, M. J., Divita, G., & Rasch, E. (2023). Development of an ontology to characterize mental functioning. Disabil Rehabil, 1-10. [(Paper)https://doi.org/10.1080/09638288.2023.2252337](https://doi.org/10.1080/09638288.2023.2252337)
 
-Divita, G, Sacco, M.J., Coale, K, Parks, R., Rasch, E (2024) Building an ecological mental functioning ontology: An Informatics Perspective, ([Abstract](link here) & [Poster] (link here ),
+Divita, G, Sacco, M.J., Coale, K, Parks, R., Rasch, E (2024) Building an ecological mental functioning ontology: An Informatics Perspective, ([Abstract](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/publications/BuildingAnEMFO_InformaticsPerspectiveAbstract.CEURFormat.final.pdf) & [Poster](https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/blob/main/publications/OntologyPoster_v2Elephant.pdf ),
 Proceedings of the International Conference on Biomedical Ontologies 2024, July 17-19, 2024, Enschede, The Netherlands
 
 # License #
