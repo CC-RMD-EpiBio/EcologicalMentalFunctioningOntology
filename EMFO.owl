@@ -188,7 +188,7 @@
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processing -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processing">
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Output"/>
           <Imported_From>RMD</Imported_From>
           <OntologyClassID>EMFO_C034419</OntologyClassID>
           <Source_ID>EMFO_S0006</Source_ID>
@@ -249,7 +249,7 @@
           <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions"/>
      </owl:Restriction>
      </owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processing"/>
           <IAO_0000115:Definition xml:lang="en-us">Mind-directed observable external behaviors of what the person actually decides to do (or not do), and does (or does not do), in relation to real-time transactions with environmental factors and contextual situations as they unfold moment by moment in daily life and over time. (Expert consensus)
 
 "mind-directed observable external behaviors that represent what people actually do (or do not do) in response to decisions occurring during
@@ -292,7 +292,7 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processing"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functioning"/>
           <IAO_0000115:Definition xml:lang="en-us">Purposeful and volitional act or actions done by a person within a particular context and environment     </IAO_0000115:Definition>
      <IAO_0000115:Definition xml:lang="en-us">see above     </IAO_0000115:Definition>
 
@@ -310,7 +310,7 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
           <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior(1)"/>
      </owl:Restriction>
 </owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Output"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior"/>
           <IAO_0000115:Definition xml:lang="en-us">Behaviors a person does that can be seen and described by others     </IAO_0000115:Definition>
 
           <Imported_From>ICF</Imported_From>
@@ -1479,15 +1479,6 @@ In the ontology the determination of what constitutes maladaptive behavior will 
 
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C927379</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Temporal nature -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Temporal nature">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>tmp_id</OntologyClassID>
           <Source_ID>EMFO_S0009</Source_ID>
      </owl:Class>
 
