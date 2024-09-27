@@ -31,6 +31,6 @@ This assumes that the classes from the excel spreadsheet have already been curat
 # Caveats
 
 1. I have not (yet) added the relation definitions to the owl file.
-2.  I've included the fat jar file with the *EMFOAddClassesRelationshipsAndDefinitionsToOWL* in this directory.  The source code for this program is embedded in the distributed source code in the 85_09-emfo_utilities-Application project.  
+2.  I've included the fat jar file with the *EMFOAddClassesRelationshipsAndDefinitionsToOWL* in the utilities directory.  The source code for this program is embedded in the distributed source code in the 85_09-emfo_utilities-Application project.  
 
  
