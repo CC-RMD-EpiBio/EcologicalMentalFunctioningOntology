@@ -5,9 +5,9 @@
 # Repository Contents #
 | FileName     | Description  |
 | ------------ |------------- |
-|resources   | A directory containing the curated spreadsheets that make up the ontology content |
-|utilities   | Directory containing helper exes to build the owl file from the excel sheets |
-|Derived Terminologies | Terminologies derived from the Ontology |
+|./resources   | A directory containing the curated spreadsheets that make up the ontology content |
+|./utilities   | Directory containing helper exes to build the owl file from the excel sheets |
+|./Derived Terminologies | Terminologies derived from the Ontology |
 |emfo.owl      | The official RDF/XML OWL file           |
 |emfo.owl.json | The OWL file rendered in JSON for WebVOWL visualization |
 |LICENSE.MD    | The License agreement for the EMFO's use|
