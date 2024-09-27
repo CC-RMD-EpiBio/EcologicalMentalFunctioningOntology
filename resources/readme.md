@@ -6,29 +6,31 @@ that transforms the content within the Excel spreadsheets into the production OW
 # Workflow and Pedigree of the files
 
  
+# Materials
+ There are two manually curated excel spreadsheets that contain the cognitive material that is rendered in the Protege owl representation: 
 
-1. The beginning of the workflow is the spreadsheet containing the classes and relationships.
-2. Open Protégé and start with the *BasicEcologicalMentalFunctioningOntology* RDF/XML Owl file. This file has the attributes and relations populated but not the classes.  See [Note 1]
-3. Use the Protégé Cellfie plugin to load the json rules to load the classes from the *emfoOntologyRules.json* file.
-4. Run the generate axioms in the cellfie window (to add the classes from the spreadsheet to Protégé's current ontology, and add the axioms to the current ontology.
-5. Save the resulting ontology as an RDF/XML flavor of OWL
+1. *EMFOConceptsAndRelationships.xlsx* which holds the concepts, relations, relation definitions[1], and the relationships.
+2. *OntologyTopLevelDefinitions.xlsx* which holds the definitions for the classes.
 
-----------
-## Human intervention is needed here ##
-<p> When Protégé saves the OWL file, the names that were borrowed from other ontologies, if the names contained a representation that differs than the name we used in the excel spreadsheet, Protégé ignores what was absorbed by cellfie, and saves the version of each name as it was in the borrowed ontology.  This becomes a problem as we desire to have multi-word names replace spaces with underbars.  There are a number of borrowed names where the name was a multi-word name, but the original form had the spaces removed.  This becomes a problem when matching names in relationship tuples back to the classes.  These get missed. 
-<p>
- 6. Go into the resulting owl file, and alter the borrowed names that had the spaces removed. An example is *bodily process* being munged into *bodilyProcess*.
+In addition, there is a manually created owl file, *BasicEcologicalMentalFunctioningOntology.owl*,  containing classes we are either mapping to, or borrowed from the Basic Formal Ontology (BFO), object properties, we refer to as relations, we've borrowed from the Relation Ontology (RO), as well as some class attributes we've borrowed from mostly the BFO.  
 
-----------
+# Transform Program 
+The Java program *EMFOAddClassesRelationshipsAndDefinitionsToOWL*[2] opens up the RDF owl file, and injects the classes from the classes excel sheet and relationships from the relationships sheet into an OWL file.  The program also extracts definitions from the definitions excel spreadsheet into the OWL file as well.
+ 
+This assumes that the classes from the excel spreadsheet have already been curated to insure all the definitions refer to existing classes, and the classes are all consistently named across the sheets.  (a spelling difference creates duplicate classes).
+
+
 ### Do this Next ##
 
- 7. Run the EMFOAddRelationshipssToOWL program to inject the relationships into the owl file.
  8. Then move the resulting file into the github repo
  9. Load the resulting file into WEBVowl 
  10. OPTIONAL: Add a title, author, and description into the right side tab manually
  11. Export the resulting state as a json file.
  12. Copy the resulting json file (maybe going to the downloads dir) to the github
 
-# Notes
-[1] The *BasicEcologicalMentalFunctioningOntology* was hand crafted to include the attributes and relations.  If we need a new attribute or new relation, this file needs to be updated.
+# Caveats
+
+1. I have not (yet) added the relation definitions to the owl file.
+2.  I've included the fat jar file with the *EMFOAddClassesRelationshipsAndDefinitionsToOWL* in this directory.  The source code for this program is embedded in the distributed source code in the 85_09-emfo_utilities-Application project.  
+
  

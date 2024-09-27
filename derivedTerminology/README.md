@@ -64,8 +64,6 @@ be found by looking into the source code directly.
 |          131 | denies.lragr                                |  A bunch of ways that negation evidence is seen                                                                    |
 |          734 | emotion.lragr                               |  Emotions pulled from UMLS sources                                                                                 |
 |         1075 | workRoles.lragr                             |  Work Roles, Occupations from BLS, SSA, ONGIG sources                                                              |
-|
-
 
 <p>
 Last Updated 2024/09/24
