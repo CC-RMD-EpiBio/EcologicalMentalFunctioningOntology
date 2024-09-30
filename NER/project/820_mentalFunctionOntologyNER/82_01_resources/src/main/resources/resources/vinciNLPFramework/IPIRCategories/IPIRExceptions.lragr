@@ -1,0 +1,17 @@
+#
+# These are snippets that indicate
+# something other than IPIR
+E00000|case number|<noun>|<base>|||NotMFO
+E00000|contract number|<noun>|<base>|||NotMFO
+E00000|services agency|<noun>|<base>|||NotMFO
+E00000|department of social services|<noun>|<base>|||NotMFO
+E00000|health service|<noun>|<base>|||NotMFO
+E00000|social security act|<noun>|<base>|||NotMFO
+E00000|medicine|<noun>|<base>|||NotMFO
+E00000|swelling|<noun>|<base>|||NotMFO
+E00000|abdominal|<noun>|<base>|||NotMFO
+E00000|please|<noun>|<base>|||NotMFO
+E00000|invoice|<noun>|<base>|||NotMFO
+E00000|bill|<noun>|<base>|||NotMFO
+E00000|fax|<noun>|<base>|||NotMFO
+E00000|your|<noun>|<base>|||NotIPIR

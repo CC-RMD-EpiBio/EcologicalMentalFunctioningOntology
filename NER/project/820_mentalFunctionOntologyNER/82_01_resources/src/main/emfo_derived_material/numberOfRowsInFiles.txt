@@ -1,0 +1,31 @@
+|Number of Rows | FileName | Description |
+| 7439 | 001_TopExternalFactors.lragr  |  Top External Factors were terms extracted from 26 seed UMLS concepts that had external factors as a semantic type |
+| 36168 | 002_TopPersonFactors.lragr  |  Derived Person Factor inflected forms from 32 seed UMLS concepts |
+| 9825 | 003_TopActivitiesAndParticipation.lragr  |  Derived Activities and Particiaption inflected forms from 17 seed UMLS concepts |
+| 19657 | 004_TopBehavior.lragr  |  Dervied Behavior inflected forms from 31 seed UMLS concepts |
+| 27176 | 005_TopActivitiesOfDailyLiving.lragr  |  Derived ADL inflected forms from 6 seed UMLS Concepts |
+| 41 | 006_TopGeneralTasksAndDemands.lragr  |  Derived General tasks and demands from 1 UMLS Concept |
+| 4494 | 007_TopLearningAndApplyingKnowledge.lragr  |  Derived Learning and Applying Knowledge from 2 UMLS Concepts |
+| 5169 | 008_TopCommunicationActivities.lragr  |  Derived Communication Activities from 8 UMLS Concepts |
+| 20567 | 009_TopCognitiveActivities.lragr  |  Derived Cognitive Activities from 5 UMLS Concepts |
+| 35869 | 010_TopVerbNetClasses.lragr  |  IPIR, Comcog inflected forms from VerbNet Classes that were manually annotated with IPIR and/or ComCog subclasses |
+| 36 | 011_TopIPIRNominalizations.lragr  |  Nominalizations of IPIR Classes from chosen VerbNet Classes |
+| 164 | ComCogUMLSTermsAndVariants.lragr  |  ComCog UMLS inflected forms with ComCog subclassifications |
+| 6146 | ComCogVerbNetCategories.lragr  |  Verbnet ComCog inflected forms with curated ComCog sub-classifications |
+| 14 | IPIRExceptions.lragr  |  Confounding IPIR-like terms that are not IPIR terms |
+| 1238 | IPIRInteractions.lragr  |  IPIR (and not IPIR) forms from traversals through thesauri around seed IPIR interaction defintional terms |
+| 1755 | MoreComProducing.lragr  |  Additional ComCog inflected forms from manual training annotations not found in other sources |
+| 198 | OtherIPIRVerbs.lragr  |  IPIR forms identified from VerbNet that got missed on the first pass thru VerbNet |
+| 349 | SSAListingTerms.lragr  |  Comcog, IPIR terms from manual training annotations not in other sources |
+| 131 | denies.lragr  |  A bunch of ways that negation evidence is seen |
+| 734 | emotion.lragr  |  Emotions pulled from UMLS sources |
+| 112 | informalRelationships.lragr  |  Informal Relationships from traversals through thesauri around seed IPIR informal relationship definital terms |
+| 118 | intimateRelationships.lragr  |  Intimate Relationships from traversals through thesauri around seed IPIR intimate relationship definital terms |
+| 12630 | lvg_Verbs_inflected.lragr  |  lvg generated inflections from the top seed files |
+| 7825 | lvg_verbs_DerivationsAndNomilizations.lragr  |  lvg generated derived forms from the top seed files |
+| 2947 | lvg_verbs_Synonyms.lragr  |  lvg generated synonym forms from the top seed files |
+| 12692 | lvg_verbs_spellingVariants_inflections_FACTS.lragr  |  lvg gnenerated spelling variants and inflections from the top seed files |
+| 33 | mentalFunctionTriggerTerms.lragr  |  Triggering function mentions like "able to" |
+| 115 | missingTerms.lragr  |  Variants manually created from existing forms that otherwise would have been missed |
+| 119 | strangerRelationships.lragr  |  Stranger Relationships from traversals through thesauri around seed IPIR stranger relationship definital terms |
+| 1075 | workRoles.lragr  |  Work Roles, Occupations from BLS, SSA, ONGIG sources |

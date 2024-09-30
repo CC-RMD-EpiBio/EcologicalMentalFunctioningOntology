@@ -1,0 +1,232 @@
+E0023370|disobeyed|verb|past|disobey|disobey|IPIRActivities:NonAuthority
+E0023370|disobeyed|verb|past_part|disobey|disobey|IPIRActivities:NonAuthority
+E0023370|disobeying|verb|pres_part|disobey|disobey|IPIRActivities:NonAuthority
+E0023370|disobeys|verb|pres(thr_sing)|disobey|disobey|IPIRActivities:NonAuthority
+E0023370|disobey|verb|infinitive|disobey|disobey|IPIRActivities:NonAuthority
+E0023370|disobey|verb|pres(fst_sing,fst_plur,thr_plur,second)|disobey|disobey|IPIRActivities:NonAuthority
+E0043334|obeyed|verb|past|obey|obey|IPIRActivities:NonAuthority
+E0043334|obeyed|verb|past_part|obey|obey|IPIRActivities:NonAuthority
+E0043334|obeying|verb|pres_part|obey|obey|IPIRActivities:NonAuthority
+E0043334|obeys|verb|pres(thr_sing)|obey|obey|IPIRActivities:NonAuthority
+E0043334|obey|verb|infinitive|obey|obey|IPIRActivities:NonAuthority
+E0043334|obey|verb|pres(fst_sing,fst_plur,thr_plur,second)|obey|obey|IPIRActivities:NonAuthority
+E0018188|complied|verb|past|comply|comply|IPIRActivities:NonAuthority
+E0018188|complied|verb|past_part|comply|comply|IPIRActivities:NonAuthority
+E0018188|complies|verb|pres(thr_sing)|comply|comply|IPIRActivities:NonAuthority
+E0018188|complying|verb|pres_part|comply|comply|IPIRActivities:NonAuthority
+E0018188|comply|verb|infinitive|comply|comply|IPIRActivities:NonAuthority
+E0018188|comply|verb|pres(fst_sing,fst_plur,thr_plur,second)|comply|comply|IPIRActivities:NonAuthority
+E0726466|pseudo-complied|verb|past_part|pseudo-comply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudocomplied|verb|past_part|pseudocomply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudo-complied|verb|past|pseudo-comply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudocomplied|verb|past|pseudocomply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudo-complies|verb|pres(thr_sing)|pseudo-comply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudocomplies|verb|pres(thr_sing)|pseudocomply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudo-complying|verb|pres_part|pseudo-comply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudocomplying|verb|pres_part|pseudocomply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudo-comply|verb|infinitive|pseudo-comply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudocomply|verb|infinitive|pseudocomply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudo-comply|verb|pres(fst_sing,fst_plur,thr_plur,second)|pseudo-comply|pseudocomply|IPIRActivities:NonAuthority
+E0726466|pseudocomply|verb|pres(fst_sing,fst_plur,thr_plur,second)|pseudocomply|pseudocomply|IPIRActivities:NonAuthority
+E0006488|abided by|verb|past|abide|abide|IPIRActivities:NonAuthority
+E0006488|abided by|verb|past_part|abide|abide|IPIRActivities:NonAuthority
+E0006488|abides by|verb|pres(thr_sing)|abide|abide|IPIRActivities:NonAuthority
+E0006488|abide by|verb|infinitive|abide|abide|IPIRActivities:NonAuthority
+E0006488|abide by|verb|pres(fst_sing,fst_plur,thr_plur,second)|abide|abide|IPIRActivities:NonAuthority
+E0006488|abiding by|verb|pres_part|abide|abide|IPIRActivities:NonAuthority
+E0006488|abode by|verb|past|abide|abide|IPIRActivities:NonAuthority
+E0006488|abode by|verb|past_part|abide|abide|IPIRActivities:NonAuthority
+E0018432|conformed to|verb|past|conform|conform|IIRActivities:NonAuthority
+E0018432|conformed to|verb|past_part|conform|conform|IIRActivities:NonAuthority
+E0018432|conforming to|verb|pres_part|conform|conform|IIRActivities:NonAuthority
+E0018432|conforms to|verb|pres(thr_sing)|conform|conform|IIRActivities:NonAuthority
+E0018432|conform to|verb|infinitive|conform|conform|IIRActivities:NonAuthority
+E0018432|conform to|verb|pres(fst_sing,fst_plur,thr_plur,second)|conform|conform|IIRActivities:NonAuthority
+
+#E0043389|observed|verb|past|observe|observe|
+#E0043389|observed|verb|past_part|observe|observe|
+#E0043389|observes|verb|pres(thr_sing)|observe|observe|
+#E0043389|observe|verb|infinitive|observe|observe|
+#E0043389|observe|verb|pres(fst_sing,fst_plur,thr_plur,second)|observe|observe|
+#E0043389|observing|verb|pres_part|observe|observe|
+
+E0053009|respect for|noun|count(thr_sing)|respect|respect|IPIRActivities:NonAuthority
+E0053009|respect for|noun|uncount(thr_sing)|respect|respect|IPIRActivities:NonAuthority
+E0053009|respects|noun|count(thr_plur)|respect|respect|IPIRActivities:NonAuthority
+E0053010|respected|verb|past_part|respect|respect|IPIRActivities:NonAuthority
+E0053010|respected|verb|past|respect|respect|IPIRActivities:NonAuthority
+E0053010|respecting|verb|pres_part|respect|respect|IPIRActivities:NonAuthority
+E0053010|respects|verb|pres(thr_sing)|respect|respect|IPIRActivities:NonAuthority
+E0053010|respect|verb|infinitive|respect|respect|IPIRActivities:NonAuthority
+E0053010|respect|verb|pres(fst_sing,fst_plur,thr_plur,second)|respect|respect|IPIRActivities:NonAuthority
+
+E0018588|consented to|verb|past|consent|consent|IPIRActivities:NonAuthority
+E0018588|consented to|verb|past_part|consent|consent|IPIRActivities:NonAuthority
+E0018588|consenting to|verb|pres_part|consent|consent|IPIRActivities:NonAuthority
+E0018588|consents to|verb|pres(thr_sing)|consent|consent|IPIRActivities:NonAuthority
+E0018588|consent to|verb|infinitive|consent|consent|IPIRActivities:NonAuthority
+E0018588|consent to|verb|pres(fst_sing,fst_plur,thr_plur,second)|consent|consent|IPIRActivities:NonAuthority
+E0018589|consent to|noun|count(thr_sing)|consent|consent|IPIRActivities:NonAuthority
+E0018589|consent to|noun|uncount(thr_sing)|consent|consent|IPIRActivities:NonAuthority
+E0018589|consents to|noun|count(thr_plur)|consent|consent|IPIRActivities:NonAuthority
+
+#E0457634|non-consent|noun|uncount(thr_sing)|non-consent|nonconsent|IPIRActivities:NonAuthority
+#E0457634|nonconsent|noun|uncount(thr_sing)|nonconsent|nonconsent|IPIRActivities:NonAuthority
+#E0515471|informed consent|noun|count(thr_sing)|informed consent|informed consent|IPIRActivities:NonAuthority
+#E0515471|informed consent|noun|uncount(thr_sing)|informed consent|informed consent|IPIRActivities:NonAuthority
+#E0515471|informed consents|noun|count(thr_plur)|informed consent|informed consent|IPIRActivities:NonAuthority
+#E0616132|post-consent|adj|positive|post-consent|postconsent|
+#E0616132|postconsent|adj|positive|postconsent|postconsent|
+#E0616133|post-consent|adv|positive|post-consent|postconsent|
+#E0616133|postconsent|adv|positive|postconsent|postconsent|
+#E0692067|re-consent|noun|count(thr_sing)|re-consent|reconsent|
+#E0692067|reconsent|noun|count(thr_sing)|reconsent|reconsent|
+#E0692067|re-consents|noun|count(thr_plur)|re-consent|reconsent|
+#E0692067|reconsents|noun|count(thr_plur)|reconsent|reconsent|
+#E0692068|re-consented|verb|past_part|re-consent|reconsent|
+#E0692068|reconsented|verb|past_part|reconsent|reconsent|
+#E0692068|re-consented|verb|past|re-consent|reconsent|
+#E0692068|reconsented|verb|past|reconsent|reconsent|
+#E0692068|re-consenting|verb|pres_part|re-consent|reconsent|
+#E0692068|reconsenting|verb|pres_part|reconsent|reconsent|
+#E0692068|re-consents|verb|pres(thr_sing)|re-consent|reconsent|
+#E0692068|reconsents|verb|pres(thr_sing)|reconsent|reconsent|
+#E0692068|re-consent|verb|infinitive|re-consent|reconsent|
+#E0692068|reconsent|verb|infinitive|reconsent|reconsent|
+#E0692068|re-consent|verb|pres(fst_sing,fst_plur,thr_plur,second)|re-consent|reconsent|
+#E0692068|reconsent|verb|pres(fst_sing,fst_plur,thr_plur,second)|reconsent|reconsent|
+E0031024|heeded|verb|past|heed|heed|IPIRActivities:NonAuthority
+E0031024|heeded|verb|past_part|heed|heed|IPIRActivities:NonAuthority
+E0031024|heeding|verb|pres_part|heed|heed|IPIRActivities:NonAuthority
+E0031024|heeds|verb|pres(thr_sing)|heed|heed|IPIRActivities:NonAuthority
+E0031024|heed|verb|infinitive|heed|heed|IPIRActivities:NonAuthority
+E0031024|heed|verb|pres(fst_sing,fst_plur,thr_plur,second)|heed|heed|IPIRActivities:NonAuthority
+E0031025|heed|noun|uncount(thr_sing)|heed|heed|IPIRActivities:NonAuthority
+E0058575|submits|verb|pres(thr_sing)|submit|submit|IPIRActivities:NonAuthority
+E0058575|submitted|verb|past_part|submit|submit|IPIRActivities:NonAuthority
+E0058575|submitted|verb|past|submit|submit|IPIRActivities:NonAuthority
+E0058575|submitting|verb|pres_part|submit|submit|IPIRActivities:NonAuthority
+E0058575|submit|verb|infinitive|submit|submit|IPIRActivities:NonAuthority
+E0058575|submit|verb|pres(fst_sing,fst_plur,thr_plur,second)|submit|submit|IPIRActivities:NonAuthority
+E0021191|deferred|verb|past|defer|defer|IPIRActivities:NonAuthority
+E0021191|deferred|verb|past_part|defer|defer|IPIRActivities:NonAuthority
+E0021191|deferring|verb|pres_part|defer|defer|IPIRActivities:NonAuthority
+E0021191|defers|verb|pres(thr_sing)|defer|defer|IPIRActivities:NonAuthority
+E0021191|defer|verb|infinitive|defer|defer|IPIRActivities:NonAuthority
+E0021191|defer|verb|pres(fst_sing,fst_plur,thr_plur,second)|defer|defer|IPIRActivities:NonAuthority
+E0013856|bow|noun|count(thr_sing)|bow|bow|IPIRActivities:NonAuthority
+E0013856|bows|noun|count(thr_plur)|bow|bow|IPIRActivities:NonAuthority
+E0013857|bowed|verb|past|bow|bow|IPIRActivities:NonAuthority
+E0013857|bowed|verb|past_part|bow|bow|IPIRActivities:NonAuthority
+E0013857|bowing|verb|pres_part|bow|bow|IPIRActivities:NonAuthority
+E0013857|bows|verb|pres(thr_sing)|bow|bow|IPIRActivities:NonAuthority
+E0013857|bow|verb|infinitive|bow|bow|IPIRActivities:NonAuthority
+E0013857|bow|verb|pres(fst_sing,fst_plur,thr_plur,second)|bow|bow|IPIRActivities:NonAuthority
+E0059339|surrendered|verb|past_part|surrender|surrender|IPIRActivities:NonAuthority
+E0059339|surrendered|verb|past|surrender|surrender|IPIRActivities:NonAuthority
+E0059339|surrendering|verb|pres_part|surrender|surrender|IPIRActivities:NonAuthority
+E0059339|surrenders|verb|pres(thr_sing)|surrender|surrender|IPIRActivities:NonAuthority
+E0059339|surrender|verb|infinitive|surrender|surrender|IPIRActivities:NonAuthority
+E0059339|surrender|verb|pres(fst_sing,fst_plur,thr_plur,second)|surrender|surrender|IPIRActivities:NonAuthority
+E0059340|surrender|noun|count(thr_sing)|surrender|surrender|IPIRActivities:NonAuthority
+E0059340|surrender|noun|uncount(thr_sing)|surrender|surrender|IPIRActivities:NonAuthority
+E0059340|surrenders|noun|count(thr_plur)|surrender|surrender| IPIRActivities:NonAuthority
+00000000|tests limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|test limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|testing limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|tested limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|testing his limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|tested his limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|tests his limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|tests her limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|testing her limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|tested her limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|tests their limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|testing their limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+00000000|tested their limits|<verb>|<base>|test limit|test limit|IPIRActivities:NonAuthority
+#
+# from the ipir training set  2023-08-31
+#
+00000000|good eye contact|<verb>|<base>|||IPIRActivities:
+00000000|eye contact was fair|<verb>|<base>|||IPIRActivities:
+00000000|eye contact was appropriate |<verb>|<base>|||IPIRActivities:
+00000000|appropriate eye contact |<verb>|<base>|||IPIRActivities:
+00000000|eye contact adequate|<verb>|<base>|||IPIRActivities:
+00000000|fair eye contact|<verb>|<base>|||IPIRActivities:
+00000000|fair historian|<verb>|<base>|||IPIRActivities:
+00000000|well groomed|<verb>|<base>|||IPIRActivities:
+
+00000000|hygiene|<verb>|<base>|||IPIRActivities:
+00000000|groomed|<verb>|<base>|||IPIRActivities:
+00000000|clean|<verb>|<base>|||IPIRActivities:
+00000000|effort|<verb>|<base>|||IPIRActivities:
+00000000|eye contact|<verb>|<base>|||IPIRActivities
+00000000|grooming|<verb>|<base>|||IPIRActivities:
+00000000|repport|<verb>|<base>|||IPIRActivities:AuthorityPosition
+00000000|participation|<verb>|<base>|||IPIRActivities:
+00000000|cooperation|<verb>|<base>|||IPIRActivities:
+00000000|cooperated|<verb>|<base>|||IPIRActivities:
+00000000|cooperative|<verb>|<base>|||IPIRActivities:
+00000000|uncooperative|<verb>|<base>|||IPIRActivities:
+00000000|appropriately dressed|<verb>|<base>|||IPIRActivities:
+00000000|good eye|<verb>|<base>|||IPIRActivities:
+00000000|hostile|<verb>|<base>|||IPIRActivities:
+00000000|irritable|<verb>|<base>|||IPIRActivities:
+00000000|guarded|<verb>|<base>|||IPIRActivities:
+00000000|attitude|<verb>|<base>|||IPIRActivities:
+00000000|attentive|<verb>|<base>|||IPIRActivities:
+00000000|disoriented|<verb>|<base>|||IPIRActivities:
+00000000|casually dressed|<verb>|<base>|||IPIRActivities:
+00000000|casual dress|<verb>|<base>|||IPIRActivities:
+00000000|stated age|<verb>|<base>|||IPIRActivities:
+00000000|speech is soft|<verb>|<base>|||IPIRActivities:
+00000000|pleasant|<verb>|<base>|||IPIRActivities:
+00000000|calm|<verb>|<base>|||IPIRActivities:
+00000000|violent|<verb>|<base>|||IPIRActivities:
+00000000|personal appearance|<verb>|<base>|||IPIRActivities:
+00000000|self-deprecatory|<verb>|<base>|||IPIRActivities:
+00000000|speaking with physician|<verb>|<base>|||IPIRActivities:AuthorityPosition
+
+00000000|good|<verb>|<base>|||IPIRActivities:
+00000000|neatly|<verb>|<base>|||IPIRActivities:
+00000000|neat|<verb>|<base>|||IPIRActivities:
+00000000|appropriate|<verb>|<base>|||IPIRActivities:
+00000000|appropriately|<verb>|<base>|||IPIRActivities:
+00000000|adequate|<verb>|<base>|||IPIRActivities:
+00000000|intermittent|<verb>|<base>|||IPIRActivities:
+00000000|fair|<verb>|<base>|||IPIRActivities:
+00000000|fair progress|<verb>|<base>|||IPIRActivities:
+00000000|fairly|<verb>|<base>|||IPIRActivities:
+00000000|not direct|<verb>|<base>|||IPIRActivities:
+00000000|normal|<verb>|<base>|||IPIRActivities:
+00000000|intense|<verb>|<base>|||IPIRActivities:
+00000000|I|<verb>|<base>|||IPIRActivities:
+00000000|I met with the patient|<verb>|<base>|||IPIRActivities:
+
+00000000|patient|<verb>|<base>|||IPIRActivities:
+00000000|claimant|<verb>|<base>|||IPIRActivities:
+00000000|behavior|<verb>|<base>|||IPIRActivities:
+00000000|appearance|<verb>|<base>|||IPIRActivities:
+00000000|appears|<verb>|<base>|||IPIRActivities:
+00000000|appeared|<verb>|<base>|||IPIRActivities:
+00000000|stated|<verb>|<base>|||IPIRActivities:
+00000000|contact|<verb>|<base>|||IPIRActivities:
+00000000|examination|<verb>|<base>|||IPIRActivities:
+00000000|speech|<verb>|<base>|||IPIRActivities:
+00000000|manner|<verb>|<base>|||IPIRActivities:
+00000000|interview|<verb>|<base>|||IPIRActivities:
+00000000|questions|<verb>|<base>|||IPIRActivities:AuthorityPosition
+00000000|alert|<verb>|<base>|||IPIRActivities:
+00000000|engaged|<verb>|<base>|||IPIRActivities:
+00000000|personal|<verb>|<base>|||IPIRActivities:
+00000000|general|<verb>|<base>|||IPIRActivities:
+00000000|therapist|<verb>|<base>|||IPIRActivities:
+00000000|posture|<verb>|<base>|||IPIRActivities:
+00000000|nourished|<verb>|<base>|||IPIRActivities:AuthorityPosition
+00000000|psychomotor|<verb>|<base>|||IPIRActivities:
+00000000|authority figure|<noun>|<base>|||IPIRActivities:
+00000000|authority figures|<noun>|<plural>|||IPIRActivities:AuthorityPosition
+00000000|supervisory instructions|<noun>|<base>|||IPIRActivities:AuthorityPosition
+00000000|supervisory instruction|<noun>|<plural>|||IPIRActivities:AuthorityPosition
+00000000|supervision|<noun>|<base>|||IPIRActivities:AuthorityPosition
+00000000|supervise|<noun>|<base>|||IPIRActivities:AuthorityPosition

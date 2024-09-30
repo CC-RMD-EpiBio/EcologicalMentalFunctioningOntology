@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+   <name>gov.nih.cc.rmd.inFACT.ComCogCategories</name>
+   <description>Labels specific to the Communication and Cognition Categorization tasks</description>
+   <version>2023.03.0</version>
+    <vendor/>
+      
+  <imports>
+     <import name="gov.nih.cc.rmd.mentalFunctionOntologyNER.Model"/>
+  </imports>
+  
+  <types>
+	  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.ComCogCategories</name>
+      <description> Classes that are part of the Communication and Cognition sub categorization task</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+    </typeDescription>
+ 
+  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D110_D129_PurposefulSensoryExperiences</name>
+      <description>Purposeful sensory experiences; includes watching and listening, touching, smelling,tasting</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Learning_ </supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D130_D159_BasicLearning</name>
+      <description> Basic learning, imitating, through actions with single or multiple objects (i.e. playing) </description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Learning_ </supertypeName>
+    </typeDescription>
+            
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D160_FocusingAttention</name>
+      <description>Focusing attention </description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D163_Thinking</name>
+      <description>Thinking </description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D166_Reading</name>
+      <description>Reading</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_ </supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D170_Writing</name>
+      <description>Writing</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_ </supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D172_Calculating</name>
+      <description>Calculating</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_ </supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D175_SolvingProblems</name>
+      <description>Solving Problems</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_ </supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D177_MakingDecisions</name>
+      <description>Making Decisions</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_ </supertypeName>
+    </typeDescription>
+    
+      <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D179_ApplyingKnowledgeOther</name>
+      <description>ApplyingKnowledge; other</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_ </supertypeName>
+    </typeDescription>
+            
+            
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D210_D220_UndertakingTasks</name>
+      <description>Undertaking Tasks</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.GeneralTasksAndDemands</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D230_CarryingOutDailyRoutine</name>
+      <description>Carrying OutDaily Routine</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.GeneralTasksAndDemands</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D240_HandlingStress</name>
+      <description>Handling stress and other psychological demands</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.GeneralTasksAndDemands</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D310_D329_ReceivingCommunication</name>
+      <description>Receiving Communication</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunicationActivities</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D330_D349_ProducingCommunication</name>
+      <description>Producing Communication</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunicationActivities</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D350_D369_ConversationAndDiscussion</name>
+      <description>ConversationAndDiscussion</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunicationActivities</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.AppliedMemory</name>
+      <description>AppliedMemory</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.FunctionalActivityPerformance</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Adaptation</name>
+      <description>Adaptation</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.FunctionalActivityPerformance</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Pacing</name>
+      <description>Pacing</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.FunctionalActivityPerformance</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Persistence</name>
+      <description>Persistence</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.FunctionalActivityPerformance</supertypeName>
+    </typeDescription>
+    
+   
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.ComcogEvidence</name>
+      <description>Comcog evidence</description>
+       <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+    </typeDescription>
+          
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.bstract.Comcog_no</name>
+      <description>ComCog_no</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+     </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.bstract.Comcog_yes</name>
+      <description>ComCog_yes</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+      
+       <features>
+     
+       
+	     <featureDescription>
+          <name>d110_d129</name>
+          <description>ICF d110_d129: Purposeful sensory experiences</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d130_d159</name>
+          <description>ICF d130_d159:Basic learning</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+        <featureDescription>
+          <name>d160</name>
+          <description>ICF d160: Focusing Attention</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+          <featureDescription>
+          <name>d163</name>
+          <description>ICF d163: Thinking</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+          <featureDescription>
+          <name>d166</name>
+          <description>ICF d166: Reading</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d170</name>
+          <description>ICF d170: Writing </description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+        <featureDescription>
+          <name>d172</name>
+          <description>ICF d172: Calculating</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+        <featureDescription>
+          <name>d175</name>
+          <description>ICF d175: Solving Problems</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d177</name>
+          <description>ICF d177: Making Decisions</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+          <featureDescription>
+          <name>d179</name>
+          <description>ICF d179: Applying knowledge; other</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+
+        <featureDescription>
+          <name>d210_d220</name>
+          <description>ICF d210_d220: Undertaking tasks</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d230</name>
+          <description>ICF d230: Carrying out daily routine</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d240</name>
+          <description>ICF d240: Handling Stress</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d310_d329</name>
+          <description>ICF d310_d329: Receiving Communication</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d330_d349</name>
+          <description>ICF d330_d349: Producing Communication</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d350_d369</name>
+          <description>ICF d350_d369: Conversation and Discussion</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>applied_memory</name>
+          <description>Applied Memory</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>adaptation</name>
+          <description>Adaptation</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>pacing</name>
+          <description>Pacing</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>persistence</name>
+          <description>Persistence</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>TimeBucket</name>
+	        <description>TimeBucket </description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        
+         <featureDescription>
+          <name>difficult_to_determine</name>
+          <description>difficult to determine </description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+       </features>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.manual.Comcog_no</name>
+      <description>Comcog no</description>
+       <supertypeName>gov.nih.cc.rmd.inFACT.bstract.Comcog_no</supertypeName>   
+     </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.manual.Comcog_yes</name>
+      <description>Comcog Yes</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.bstract.Comcog_yes</supertypeName>  
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.x.Comcog_no</name>
+      <description>Comcog no</description>
+       <supertypeName>gov.nih.cc.rmd.inFACT.bstract.Comcog_no</supertypeName>   
+     </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.x.Comcog_yes</name>
+      <description>Comcog Yes</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.bstract.Comcog_yes</supertypeName>  
+    </typeDescription>
+
+                                  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D110_D129_PurposefulSensoryExperiences</name>
+      <description>Purposeful sensory experiences; includes watching and listening, touching, smelling,tasting</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D110_D129_PurposefulSensoryExperiences</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D130_D159_BasicLearning</name>
+      <description> Basic learning, imitating, through actions with single or multiple objects (i.e. playing) </description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D130_D159_BasicLearning</supertypeName>
+    </typeDescription>
+            
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D160_FocusingAttention</name>
+      <description>Focusing attention </description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D160_FocusingAttention</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D163_Thinking</name>
+      <description>Thinking </description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D163_Thinking</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D166_Reading</name>
+      <description>Reading</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D166_Reading</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D170_Writing</name>
+      <description>Writing</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D170_Writing</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D172_Calculating</name>
+      <description>Calculating</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D172_Calculating </supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D175_SolvingProblems</name>
+      <description>Solving Problems</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D175_SolvingProblems</supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D177_MakingDecisions</name>
+      <description>Making Decisions</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D177_MakingDecisions </supertypeName>
+    </typeDescription>
+    
+      <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D179_ApplyingKnowledgeOther</name>
+      <description>ApplyingKnowledge; other</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D179_ApplyingKnowledgeOther </supertypeName>
+    </typeDescription>
+            
+            
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D210_D220_UndertakingTasks</name>
+      <description>Undertaking Tasks</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D210_D220_UndertakingTasks</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D230_CarryingOutDailyRoutine</name>
+      <description>Carrying OutDaily Routine</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D230_CarryingOutDailyRoutine</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D240_HandlingStress</name>
+      <description>Handling stress and other psychological demands</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D240_HandlingStress</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D310_D329_ReceivingCommunication</name>
+      <description>Receiving Communication</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D310_D329_ReceivingCommunication</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D330_D349_ProducingCommunication</name>
+      <description>Producing Communication</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D330_D349_ProducingCommunication</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_D350_D369_ConversationAndDiscussion</name>
+      <description>ConversationAndDiscussion</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.D350_D369_ConversationAndDiscussion</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_AppliedMemory</name>
+      <description>AppliedMemory</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.AppliedMemory</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_Adaptation</name>
+      <description>Adaptation</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.Adaptation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_Pacing</name>
+      <description>Pacing</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.Pacing</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.Manual_Persistence</name>
+      <description>Persistence</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.Persistence</supertypeName>
+    </typeDescription>
+    
+
+
+  </types>
+</typeSystemDescription>

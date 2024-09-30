@@ -1,0 +1,41 @@
+-------
+Header
+-------
+
+------
+Demographics
+------
+
+
+------
+Report Type:  
+------
+
+
+Chief Complaint:
+ 1. Hypertension
+ 2. Migraine headaches
+ 3. Sore throat 
+ 
+
+Medications:
+some medications here
+
+
+Allergies:
+
+Subjective:
+Patient is a 37 year-old female seen today and complaining of severe headache for the last three days.  Patient also complains 
+about sore throat which started on Friday.  Has been taking NyQuil and ibuprofen.  The ibuprofen was not at all helpful. 
+States that because of her symptoms she has difficulty concentrating and focusing on what people are telling her. 
+
+Physical Examination
+Vital Signs
+General: Patient is awake, alert, oriented to situation and purpose.
+HEENT
+HEART:  Regular rate and rythm with no murmers.
+
+
+------
+Footer
+------

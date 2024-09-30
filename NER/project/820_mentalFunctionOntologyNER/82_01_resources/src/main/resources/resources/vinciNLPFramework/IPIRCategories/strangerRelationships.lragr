@@ -1,0 +1,124 @@
+SR00000|adventurer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|ambulator|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|backpacker|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|bicycler|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|bicyclist|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|biker|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|bum|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|others|<noun>|<base>|||OtherRelationshipEvidence
+SR00000|other commuter|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|other commuters|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|commuter|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|customer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|cyclist|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|displaced person|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|drifter|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|excursionist|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|explorer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|gypsy|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|hiker|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|hitchhiker|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|hobo|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|horseman|<noun>|<base>|||StrangerRelationshipEvidence
+#SR00000|individual|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|itinerant|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|jet-setter|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|journeyer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|junketer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|migrent|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|motorcycer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|motorcyclist|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|motorist|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|navigator|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|nomad|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|people|<noun>|<base>|||OtherRelationshipEvidence
+SR00000|passenger|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|passer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|passerby|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|patron|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|peddler|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|pedestrian|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|perambulator|<noun>|<base>|||StrangerRelationshipEvidence
+#SR00000|person|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|person|<noun>|<base>|||OtherRelationshipEvidence
+SR00000|pilgrim|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|rambler|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|rider|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|rider|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|roamer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|sightseer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|somebody|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|someone|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|stranger|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|stroller|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|tourer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|tourist|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|traveler|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|traveller|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|trekker|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|tripper|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|trouper|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|truant|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|vagabond|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|vagrant|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|visitor|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|walker|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|wanderer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|wayfarer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|witness|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|general public|<noun>|<base>|||OtherRelationshipEvidence:StrangerRelationshipEvidence
+SR00000|the public|<noun>|<base>|||OtherRelationshipEvidence:StrangerRelationshipEvidence
+SR00000|in public|<noun>|<base>|||StrangerRelationshipEvidence:OtherRelationshipEvidence
+SR00000|public|<noun>|<base>|||StrangerRelationshipEvidence:OtherRelationshipEvidence
+SR00000|public places|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|out in public|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|out in the public|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|interact with the public|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|with public|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|spectator|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|attendant|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|shopper|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|viewer|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|large group|<noun>|<base>|||StrangerRelationshipEvidence
+#SR00000|group|<noun>|<base>|||StrangerRelationshipEvidence
+#SR00000|groups|<noun>|<base>|||StrangerRelationshipEvidence:person
+SR00000|groups of people|<noun>|<base>|||StrangerRelationshipEvidence:person
+#IR00000|individual|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|grocery store|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|the store|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|the mall|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|the gas station|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|on the street|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|nobody|<noun>|<base>|||OtherRelationshipEvidence
+IR00000|clubs|<noun>|<base>|||OtherRelationshipEvidence
+IR00000|men|<noun>|<base>|||OtherRelationshipEvidence
+IR00000|women|<noun>|<base>|||OtherRelationshipEvidence
+IR00000|isolate himself|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|isolates himself|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|isolate herself|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|isolates herself|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|isolating himself|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|isolating herself|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|taken advantage of|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|withdrawn|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|socially withdrawn|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|social withdrawl|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|social environment|<noun>|<base>|||OtherRelationshipEvidence
+IR00000|social environments|<noun>|<plural>|||OtherRelationshipEvidence
+IR00000|social situations|<noun>|<plural>|||OtherRelationshipEvidence
+IR00000|social situation|<noun>|<base>|||OtherRelationshipEvidence
+IR00000|social|<noun>|<plural>|||OtherRelationshipEvidence
+IR00000|socializing|<verb>|<prespart>|||OtherRelationshipEvidence
+IR00000|socialized|<verb>|<past>|||OtherRelationshipEvidence
+IR00000|socializes|<verb>|<present>|||OtherRelationshipEvidence
+IR00000|socialization|<noun>|<base>|||OtherRelationshipEvidence
+IR00000|social interaction|<noun>|<base>|||StrangerRelationshipEvidence:OtherRelationshipEvidence
+IR00000|interact with the public|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|ability to relate and interact|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|interact appropriately|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|interact adequately|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|could not interact well|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|interaction with public|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|ability to interact|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|ability to relate|<noun>|<base>|||StrangerRelationshipEvidence
+

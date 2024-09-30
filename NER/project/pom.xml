@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- =========================================================== -->
+  <!-- Framework Multi-module pom                                  -->
+  <!-- =========================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>EMFO_NER-Top</artifactId>
+  <version>2022.03.0</version>
+  <packaging>pom</packaging>
+  <description>Top level project for MentalFunctionOntologyNER </description>
+
+  <organization>
+    <name>NIH Clinical Center Rehabilitation Department</name>
+    <url>http:// </url>
+  </organization>
+
+  <!-- ======================================================= -->
+  <!-- Modules                                                 -->
+  <!-- ======================================================= -->
+  <modules>
+
+    <!-- =================================================== -->
+    <!-- overarching global projects -->
+    <!-- =================================================== -->
+
+    <!-- module>     00_0_parent               module -->
+    <module>     00_1_ThirdParty-jars          </module>
+    <module>     00_2_framework-jars           </module>
+    <module>     820_mentalFunctionOntologyNER </module>
+
+  </modules>
+
+
+
+</project>

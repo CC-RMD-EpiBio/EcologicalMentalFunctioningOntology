@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<GateDocument version="3">
+<!-- The document's features-->
+
+<GateDocumentFeatures>
+<Feature>
+  <Name className="java.lang.String">gate.SourceURL</Name>
+  <Value className="java.lang.String">file:/C:/Users/divitag2/work/softwareRepos/framework-legacy/01_Sandboxes/820_mentalFunctionOntologyNER/82_01_data/examples/example_1.txt</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">MimeType</Name>
+  <Value className="java.lang.String">text/plain</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">docNewLineType</Name>
+  <Value className="java.lang.String">LF</Value>
+</Feature>
+</GateDocumentFeatures>
+<!-- The document content area with serialized nodes -->
+
+<TextWithNodes><Node id="0"/>-------
+Header
+-------<Node id="22"/>
+
+<Node id="24"/>-------
+Report Type:  Group Note
+-------<Node id="64"/>
+
+
+<Node id="67"/>Patient 6: "I<Node id="80"/> want to learn<Node id="94"/> how to decrease the depression and anxiety so I don't feel so sad and have thoughts of harming myself"
+Patient 6: "I<Node id="211"/> completed<Node id="221"/> individual counseling."  <Node id="247"/>
+
+<Node id="249"/>Counceler : Explored stressors and strategies patient is using to reduce depressive symptoms.<Node id="342"/>
+
+<Node id="344"/>Counceler: Patient was pleasant and cooperative.<Node id="392"/>
+
+<Node id="394"/>Mr. Patient was seen in group conseling session to explore stressors and strategies to manage depressive symptoms. Mr. Patient<Node id="520"/> particpated in the group<Node id="545"/> and<Node id="549"/> was pleasant<Node id="562"/> and <Node id="567"/>attentive<Node id="576"/> toward other group members.  He <Node id="609"/>expressed<Node id="618"/>, "I <Node id="623"/>want to learn<Node id="636"/> how to decrease the depression and anxiety so I don't feel so sad and have thoughts of harming myself".  <Node id="742"/>
+
+
+<Node id="745"/>Patient 7: "I am feeling better, less hopeless.  Work is a little better.  The 'stop thought process' is helpful. I<Node id="860"/> practice<Node id="869"/> daily. <Node id="877"/>
+
+<Node id="879"/>Counceler: Provided active listening to give patient the chance to explore and express her thoughts and feelings.  Patient<Node id="1001"/> is open
+           to helping<Node id="1031"/> herself. Patient <Node id="1049"/>agreed<Node id="1055"/> to keep using the relax and stop thought exercises.<Node id="1107"/>
+
+
+<Node id="1110"/>Ms. Patient was seen in group conseling session to explore stressors and strategies to manage depressive symptoms. Provided active listening to give patients the chance to explore and express thoughts and feelings. Ms. Patient was open to helping herself. She <Node id="1370"/>agreed<Node id="1376"/> to keep using the relax and stop thought exercises.
+<Node id="1429"/></TextWithNodes>
+<!-- The default annotation set -->
+
+<AnnotationSet>
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="Original markups">
+<Annotation Id="0" Type="paragraph" StartNode="0" EndNode="22">
+</Annotation>
+<Annotation Id="1" Type="paragraph" StartNode="24" EndNode="64">
+</Annotation>
+<Annotation Id="2" Type="paragraph" StartNode="67" EndNode="247">
+</Annotation>
+<Annotation Id="3" Type="paragraph" StartNode="249" EndNode="342">
+</Annotation>
+<Annotation Id="4" Type="paragraph" StartNode="344" EndNode="392">
+</Annotation>
+<Annotation Id="5" Type="paragraph" StartNode="394" EndNode="742">
+</Annotation>
+<Annotation Id="6" Type="paragraph" StartNode="745" EndNode="877">
+</Annotation>
+<Annotation Id="7" Type="paragraph" StartNode="879" EndNode="1107">
+</Annotation>
+<Annotation Id="8" Type="paragraph" StartNode="1110" EndNode="1429">
+</Annotation>
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="MentalFunctionOntolgoy">
+<Annotation Id="16" Type="Behavior" StartNode="860" EndNode="869">
+</Annotation>
+<Annotation Id="17" Type="CognitiveActivities" StartNode="1001" EndNode="1031">
+</Annotation>
+<Annotation Id="18" Type="CognitiveActivities" StartNode="1049" EndNode="1055">
+</Annotation>
+<Annotation Id="19" Type="CommunicationActivities" StartNode="1370" EndNode="1376">
+</Annotation>
+<Annotation Id="9" Type="CognitiveFacilities" StartNode="80" EndNode="94">
+</Annotation>
+<Annotation Id="10" Type="CognitiveFacilities" StartNode="211" EndNode="221">
+</Annotation>
+<Annotation Id="11" Type="ActivitiesAndParticipation" StartNode="520" EndNode="545">
+</Annotation>
+<Annotation Id="12" Type="Behavior" StartNode="549" EndNode="562">
+</Annotation>
+<Annotation Id="13" Type="Behavior" StartNode="567" EndNode="576">
+</Annotation>
+<Annotation Id="14" Type="CommunicationActivities" StartNode="609" EndNode="618">
+</Annotation>
+<Annotation Id="15" Type="CognitiveActivities" StartNode="623" EndNode="636">
+</Annotation>
+</AnnotationSet>
+
+</GateDocument>

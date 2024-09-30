@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<GateDocument version="3">
+<!-- The document's features-->
+
+<GateDocumentFeatures>
+<Feature>
+  <Name className="java.lang.String">gate.SourceURL</Name>
+  <Value className="java.lang.String">file:/C:/Users/divitag2/work/softwareRepos/framework-legacy/01_Sandboxes/820_mentalFunctionOntologyNER/82_01_data/examples/example_2.txt</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">MimeType</Name>
+  <Value className="java.lang.String">text/plain</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">docNewLineType</Name>
+  <Value className="java.lang.String">LF</Value>
+</Feature>
+</GateDocumentFeatures>
+<!-- The document content area with serialized nodes -->
+
+<TextWithNodes><Node id="0"/>-------
+Header
+-------<Node id="22"/>
+
+<Node id="24"/>------
+Demographics
+------<Node id="50"/>
+
+
+<Node id="53"/>------
+Report Type:  
+------<Node id="81"/>
+
+
+<Node id="84"/>Chief Complaint:
+ 1. Hypertension
+ 2. Migraine headaches
+ 3. Sore throat 
+ <Node id="159"/>
+
+<Node id="161"/>Medications:
+some medications here<Node id="195"/>
+
+
+<Node id="198"/>Allergies:<Node id="208"/>
+
+<Node id="210"/>Subjective:
+Patient is a 37 year-old female seen today and complaining of severe headache for the last three days.  Patient also complains 
+about sore throat which started on Friday.  Has been taking NyQuil and ibuprofen.  The ibuprofen was not at all helpful. 
+States that because of her symptoms she has difficulty concentrating and focusing on what people are telling her. <Node id="586"/>
+
+<Node id="588"/>Physical Examination
+Vital Signs
+General: Patient is awake, alert, oriented to situation and purpose.
+HEENT
+HEART:  Regular rate and rythm with no murmers.<Node id="743"/>
+
+
+<Node id="746"/>------
+Footer
+------
+<Node id="767"/></TextWithNodes>
+<!-- The default annotation set -->
+
+<AnnotationSet>
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="Original markups">
+<Annotation Id="0" Type="paragraph" StartNode="0" EndNode="22">
+</Annotation>
+<Annotation Id="1" Type="paragraph" StartNode="24" EndNode="50">
+</Annotation>
+<Annotation Id="2" Type="paragraph" StartNode="53" EndNode="81">
+</Annotation>
+<Annotation Id="3" Type="paragraph" StartNode="84" EndNode="159">
+</Annotation>
+<Annotation Id="4" Type="paragraph" StartNode="161" EndNode="195">
+</Annotation>
+<Annotation Id="5" Type="paragraph" StartNode="198" EndNode="208">
+</Annotation>
+<Annotation Id="6" Type="paragraph" StartNode="210" EndNode="586">
+</Annotation>
+<Annotation Id="7" Type="paragraph" StartNode="588" EndNode="743">
+</Annotation>
+<Annotation Id="8" Type="paragraph" StartNode="746" EndNode="767">
+</Annotation>
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="MentalFunctionOntology">
+</AnnotationSet>
+
+</GateDocument>

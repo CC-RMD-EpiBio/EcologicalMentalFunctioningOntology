@@ -1,0 +1,118 @@
+C0597431|helping herself|<verb>|<prespart>|self help|help herself|CognitiveActivities|OntologyID_000000|local:CHV|Individual Behavior|cui|seedTerm||||
+C0597431|helping himself|<verb>|<prespart>|self help|help himself|CognitiveActivities|OntologyID_000000|local:CHV|Individual Behavior|cui|seedTerm||||
+C0597431|helped herself|<verb>|<prespart>|self help|help himself|CognitiveActivities|OntologyID_000000|local:CHV|Individual Behavior|cui|seedTerm||||
+C0597431|helped himself|<verb>|<prespart>|self help|help himself|CognitiveActivities|OntologyID_000000|local:CHV|Individual Behavior|cui|seedTerm||||
+C0597431|self help|<verb>|<prespart>|self help|help himself|CognitiveActivities|OntologyID_000000|local:CHV|Individual Behavior|cui|seedTerm||||
+C1527374|group therapy|<noun>|<base>|group therapy|group therapy
+|Interpersonal Interations and Relationships|OntologyID_000000|local:MSH:MEDCIN:PSY:AOD|Therapeutic or Preventive Procedure|cui|seedTerm||||
+C1317396|group note|<noun>|<base>|group counceling note|group counceling note|confoundingTerm|local:LNC||||||
+C1317396|group counceling note|<noun>|<base>|group counceling note|group counceling note|confoundingTerm|local:LNC||||||
+MT000000|group members|<noun>|<plural>|group member|group member|confoundingTerm|local||||||
+C0199393|group conseling session|<noun>|<base>|specific patient counseling session|group counseling session|Interpersonal Interations and Relationships|OntologyID_000000|local:SNOMEDCT_US:PSY:AOD|Therapeutic or Preventive Procedure|cui|seedTerm||||
+C0237547|group counseling|<verb>|<base>|group counceling|group counseling|Interpersonal Interations and Relationships|OntologyID_000000|local:SNOMEDCT_US:PSY:AOD|Therapeutic or Preventive Procedure|cui|seedTerm||||
+C0199393|group counseling session|<verb>|<base>|group counceling|group counseling|Interpersonal Interations and Relationships|OntologyID_000000|local:SNOMEDCT_US:PSY:AOD|Therapeutic or Preventive Procedure|cui|seedTerm||||
+C0237547|group counselling|<verb>|<base>|group counceling|group counseling|Interpersonal Interations and Relationships|OntologyID_000000|local:SNOMEDCT_US:PSY:AOD|Therapeutic or Preventive Procedure|cui|seedTerm||||
+C0237547|group counceling|<verb>|<base>|group counceling|group counseling|Interpersonal Interations and Relationships|OntologyID_000000|local:SNOMEDCT_US:PSY:AOD|Therapeutic or Preventive Procedure|cui|seedTerm||||
+C0237547|group counciling|<verb>|<base>|group counceling|group counseling|Interpersonal Interations and Relationships|OntologyID_000000|local:SNOMEDCT_US:PSY:AOD|Therapeutic or Preventive Procedure|cui|seedTerm||||
+MT000000|relax and stop thought process|<verb>|<base>|relax and stop thought process|relax and stop thought process|CognitiveActivities|OntologyID_00000|Therapeutic or Preventive Procedure|cui|seedTerm||||
+MT000000|relax and stop thought exercise|<verb>|<base>|relax and stop thought process|relax and stop thought process|CognitiveActivities|OntologyID_00000|Therapeutic or Preventive Procedure|cui|seedTerm||||
+MT000000|relax and stop thought exercises|<verb>|<base>|relax and stop thought process|relax and stop thought process|CognitiveActivities|OntologyID_00000|Therapeutic or Preventive Procedure|cui|seedTerm||||
+C1286920|thought process|<noun>|<base>|thought process - finding|thought process - finding|CognitiveActivities|OntologyID_000000|local:SNOMEDCT_US|Individual Behavior|cui|seedTerm||
+C1286920|thought exercises|<noun>|<base>|thought process - finding|thought process - finding|CognitiveActivities|OntologyID_000000|local:SNOMEDCT_US|Individual Behavior|cui|seedTerm||
+C1286920|thought exercise|<noun>|<base>|thought process - finding|thought process - finding|CognitiveActivities|OntologyID_000000|local:SNOMEDCT_US|Individual Behavior|cui|seedTerm||
+C0870113|patient is open to|<verb>|<base>|agreeableness|agreeableness|CognitiveActivities|OntologyID_000000|local:ICF|Mental Process|||
+C0870113|agreeableness|<verb>|<base>|agreeableness|agreeableness|CognitiveActivities|OntologyID_000000|local:ICF|Mental Process|||
+C0870113|agreeable|<verb>|<base>|agreeableness|agreeableness|CognitiveActivities|OntologyID_000000|local:ICF|Mental Process|||
+C0870113|agreed to|<verb>|<base>|agreeableness|agreeableness|CommunicationActivities:CognitiveActivities|OntologyID_000000|local:ICF|Mental Process|||
+C0150122|active listening|<verb>|<base>|active listening|active listening|confounding term||local:SNOMEDCT_US|Health Care Activity|||
+C4715871|make new friend|<verb>|<base>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C4715871|make new friends|<verb>|<plural>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C4715871|made new friends|<verb>|<past>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C4715871|made new friend|<verb>|<past>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C4715871|making new friend|<verb>|<past>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C4715871|making new friends|<verb>|<past>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C4715871|makes new friend|<verb>|<past>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C4715871|makes new friends|<verb>|<past>|develops new friendships|make new friend|Interpersonal Interations and Relationships|OntologyID_000000|local:NOC|Finding|cui|seedTerm|||
+C0679947|individual counselling|<noun>|<base>|individual counselling|individual counselling|Interpersonal Interations and Relationships|ONTOLOGYID_00000|local:PSY:AOD|Therapeutic or Preventitive Procedure|C1563342|Counselling, advice and education||||
+C0679947|individual counseling|<noun>|<base>|individual counselling|individual counselling|Interpersonal Interations and Relationships|ONTOLOGYID_00000|local:PSY:AOD|Therapeutic or Preventitive Procedure|C1563342|Counselling, advice and education||||
+C0332272|feeling better|<verb>|<base>|better|better|BodyFunctions|ONTOLOGY_ID_00000|local:SNOMEDCT_US|Qualitative Concept|C0332272|Better||||
+C4032672|want to learn how to|<verb>|<base>|ready to learn|want to learn how to|LearningAndApplyingKnowledge|ONTOLOGY_ID_00000|local:SNOMEDCT_US|Finding|cui|seedTerm||||
+C4032672|wanted to learn how to|<verb>|<base>|ready to learn|want to learn how to|LearningAndApplyingKnowledge|ONTOLOGY_ID_00000|local:SNOMEDCT_US|Finding|cui|seedTerm||||
+C4032672|learn how to|<verb>|<base>|ready to learn|want to learn how to|LearningAndApplyingKnowledge|ONTOLOGY_ID_00000|local:SNOMEDCT_US|Finding|cui|seedTerm||||
+C0302826|explore and express|<verb>|<base>|expressed emotion|explore and express|CommunicaitonActivities|ONTOLOGYID_00000|local:MSH,PSY:CHV|Mental or Behavioral Dysfunction|cui|seedTerm|||
+C0302826|thoughts and feelings|<verb>|<base>|expressed emotion|explore and express|CommunicaitonActivities|ONTOLOGYID_00000|local:MSH,PSY:CHV|Mental or Behavioral Dysfunction|cui|seedTerm|||
+#
+# rough words to filter out
+#
+0000000|depresssion|<noun>|<base>|||none|
+0000000|pathological fractures|<noun>|<base>|||none
+0000000|Physical examination report|<noun>|<base>|||none
+0000000|medical complications|<noun>|<base>|||none
+0000000|responses to treatment|<noun>|<base>|||none
+0000000|response to treatment|<noun>|<base>|||none
+0000000|absent body part|<noun>|<base>|||BodyStructure
+0000000|physical therapy|<noun>|<base>|||none
+0000000|effect of surgery|<noun>|<base>|||none
+0000000|functional criteria|<noun>|<base>|||BodyFunction
+0000000|musculoskeletal functioning|<noun>|<base>|||BodyFunction
+0000000|imparement-related limitations|<noun>|<base>|||LevelOfEffort
+0000000|active rom against gravity|<noun>|<base>|||none
+0000000|Public Health Service Act|<noun>|<base>|||none
+0000000|national public health emergency|<noun>|<base>|||none
+0000000|myocardial function|<noun>|<base>|||BodyFunction
+0000000|radionuclide scanning|<noun>|<base>|||none
+0000000|the act|<noun>|<base>|||none
+0000000|ANKYLOSIS OF THE JAW DUE TO FIXATION OF THE TEMPORAL MUSCLE|<noun>|<base>|||none
+0000000|ankylosis fixation|<noun>|<base>|||none
+0000000|TMJ|<noun>|<base>|||none
+0000000|medical practice|<noun>|<base>|||SubjectIsOtherEvidence|pre|
+0000000|medical opinion|<noun>|<base>|||SubjectIsOtherEvidence|pre|
+0000000|medical opinions|<noun>|<base>|||SubjectIsOtherEvidence|pre|
+0000000|the existence of|<noun>|<base>|||none
+0000000|the following|<noun>|<base>|||none
+0000000|the prevailing state of medical knowledge and clinical practice|<noun>|<base>|||none
+0000000|clinical practice|<noun>|<base>|||none
+0000000|objective medical evidence|<noun>|<base>|||none
+0000000|medical evidence|<noun>|<base>|||none
+0000000|objective evidence|<noun>|<base>|||none
+0000000|pathology reports|<noun>|<base>|||none
+0000000|chest tube placement|<noun>|<base>|||none
+0000000|stent placement|<noun>|<base>|||none
+0000000|predicted normal value|<noun>|<base>|||none
+0000000|providing oxygen|<noun>|<base>|||none
+0000000|providing pressure|<noun>|<base>|||none
+0000000|qualified specialist|<noun>|<base>|||none
+0000000|medical consultant|<noun>|<base>|||none
+0000000|Regarding the Evaluation of Medical Evidence Disability Evaluation|<noun>|<base>|||none
+0000000|statement by a physician|<noun>|<base>|||none
+0000000|statement by the physician|<noun>|<base>|||none
+0000000|hospital discharge|<noun>|<base>|||none
+0000000|hospital discharge|<noun>|<base>|||none
+0000000|medical documentation|<noun>|<base>|||none
+0000000|medical source documentation|<noun>|<base>|||none
+0000000|medical source confirming|<noun>|<base>|||none
+0000000|individualized education program|<noun>|<base>|||none
+0000000|individualized education programs|<noun>|<base>|||none
+0000000|iep|<noun>|<base>|||none
+0000000|objective measures|<noun>|<base>|||none
+0000000|acceptable imaging|<noun>|<base>|||none
+0000000|acceptable pulse wave|<noun>|<base>|||none
+0000000|acceptable pulsewave|<noun>|<base>|||none
+0000000|acceptable test|<noun>|<base>|||none
+0000000|acceptable tests|<noun>|<base>|||none
+0000000|acceptable perimeter|<noun>|<base>|||none
+0000000|acceptable spirometry|<noun>|<base>|||none
+0000000|attainment of age|<noun>|<base>|||none 
+0000000|compromise of a nerve root|<noun>|<base>|||none 
+0000000|compromise of a bilateral nerve root|<noun>|<base>|||none 
+0000000|compromise of a unilateral nerve root|<noun>|<base>|||none 
+0000000|compromise of the cauda equina|<noun>|<base>|||none 
+0000000|compromise of the affected nerve root|<noun>|<base>|||none 
+0000000|supports the conclusion|<noun>|<base>|||none 
+0000000|continuing disability review|<noun>|<base>|||none 
+0000000|persistent or recurrent|<noun>|<base>|||none 
+0000000|persistent or intermittent|<noun>|<base>|||none 
+0000000|to be persuasive this report must include|<noun>|<base>|||none 
+0000000|must include the following information|<noun>|<base>|||none 
+0000000|severe medically determinable impairment(s)|<noun>|<base>|||none
+0000000|disease causing abnormal|<noun>|<base>|||none

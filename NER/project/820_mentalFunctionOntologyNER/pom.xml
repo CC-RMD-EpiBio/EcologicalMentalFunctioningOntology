@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- =========================================================== -->
+  <!-- Framework Multi-module pom                                  -->
+  <!-- =========================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>82_00-mentalFunctionOntologyNER-Top</artifactId>
+  <version>2022.03.0</version>
+  <packaging>pom</packaging>
+  <description>Top level project for MentalFunctionOntologyNER </description>
+
+  <organization>
+    <name>NIH Clinical Center Rehabilitation Department</name>
+    <url>http:// </url>
+  </organization>
+
+  <!-- ======================================================= -->
+  <!-- Modules                                                 -->
+  <!-- ======================================================= -->
+  <modules>
+
+    <!-- =================================================== -->
+    <!-- overarching global projects -->
+    <!-- =================================================== -->
+
+    <module>     82_01_parent            </module>
+    <module>     82_01_resources         </module>
+    <module>     82_03_type-descriptors  </module>
+    <module>     82_05_annotators        </module>
+    <module>     82_06_marshallers       </module>
+    <module>     82_08_pipelines         </module>
+    <module>     82_09_applications      </module>
+    <module>     82_09_03_inFACT_IPIR_And_ComCog_Categories_Application </module>
+
+  </modules>
+
+
+
+</project>

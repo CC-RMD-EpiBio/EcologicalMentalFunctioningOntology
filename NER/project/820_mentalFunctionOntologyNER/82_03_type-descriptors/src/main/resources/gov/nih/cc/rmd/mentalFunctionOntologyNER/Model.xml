@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+     <name>gov.nih.cc.rmd.mentalFunctionOntologyNERModel</name>
+     <description>Labels specific to the mentalFunctionOntologyNER tasks</description>
+     <version>2022.03.0</version>
+     <vendor/>
+  
+  <imports>
+    <import name="gov.nih.cc.rmd.framework.Model"/>
+    <import name="gov.nih.cc.rmd.framework.GateNlpModel"/>
+  </imports>
+       
+  
+  <types>
+  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</name>
+      <description>Everything relating to mental function and functioning</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+       <features>
+        <featureDescription>
+          <name>ontologyId</name>
+          <description>The Mental Functioning Ontology Id</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>sab</name>
+          <description>The (UMLS) source terminology's abbreviation</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>seedConceptName</name>
+          <description>The (UMLS) concept name that was the top ansestor </description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>seedCUI</name>
+          <description>The (UMLS) concept cui that was the top ansestor</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        
+         <featureDescription>
+          <name>mentalFunctionEvidences</name>
+          <description>An array of mental function evidences for this span</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</elementType>
+       </featureDescription>
+        
+      </features>
+    </typeDescription>
+   
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningMention</name>
+      <description>Mental functioning mention (at the sentence level) </description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+      <features>
+       
+      </features>
+    </typeDescription>
+  
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Input</name>
+      <description>Concepts relating to the inputs to mental functioning</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+    </typeDescription>
+  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Throughput</name>
+      <description>The elements relating to mental functioning processing and throughput </description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Output</name>
+      <description>The elements relating to mental functioning processing and output</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Feedback_</name>
+      <description>The elements relating to mental functioning processing and output</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ExternalFactors</name>
+      <description>Mental Functioning Ontology Input external factors category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Input</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Context_</name>
+      <description>Mental Functioning Ontology Input external context category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ContextualFactors</name>
+      <description>Mental Functioning Ontology Input external contextual factors category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ExternalFactors</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Environment_</name>
+      <description>Mental Functioning Ontology Input external environmental factors category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.EnvironmentalFactors</name>
+      <description>Mental Functioning Ontology Input external environmental factors category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ExternalFactors</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Person</name>
+      <description>Mental Functioning Ontology Throughput person category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonFactors</name>
+      <description>Mental Functioning Ontology Throughput person factors category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Throughput</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyStructures</name>
+      <description>Mental Functioning Ontology Throughput person factors body structure category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonFactors</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyFunctions</name>
+      <description>Mental Functioning Ontology Throughput person factors body functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonFactors</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctions_</name>
+      <description>Mental Functioning Ontology Throughput person factors mental body functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyFunctions</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.NeuroCognitiveProcessing</name>
+      <description>Mental Functioning Ontology Throughput person factors neuro-cognitive processing, body functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyFunctions</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.SensoryMotorFunctionFunctions</name>
+      <description>Mental Functioning Ontology Throughput person factors sensory motor body functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyFunctions</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.SensoryProcessing</name>
+      <description>Mental Functioning Ontology Throughput person factors sensory processing category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyFunctions</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.HealthCondition_</name>
+      <description>Mental Functioning Ontology Throughput person health condition category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Person</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.HealthConditionFactors</name>
+      <description>Mental Functioning Ontology Throughput person health condition factors category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonFactors</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonalBackgroundFactors</name>
+      <description>Mental Functioning Ontology Throughput person background factors category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonFactors</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.GlobalMentalFunctions</name>
+      <description>Mental Functioning Ontology Throughput person factors mental cognitive functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctions_</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.SpecificMentalFunctions</name>
+      <description>Mental Functioning Ontology Throughput person factors mental cognitive functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctions_</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.CognitiveFunctions</name>
+      <description>Mental Functioning Ontology Throughput person factors mental cognitive functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctions_</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunicationFunctions</name>
+      <description>Mental Functioning Ontology Throughput person factors mental cognitive communication functions category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.CognitiveFunctions</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.FeedbackAppraisal</name>
+      <description>Mental Functioning Ontology Throughput person factors feedback appraisal category</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctions_</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioning</name>
+      <description>The elements relating to mental functioning processing and output</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Output</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ObservableBehavior</name>
+      <description>The elements relating to mental functioning processing and output</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioning</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</name>
+      <description>The elements relating to mental functioning processing and output in the form of activities and participation</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ObservableBehavior</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Behavior_</name>
+      <description>The elements relating to mental functioning processing and output in the form of behaviors </description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Activities_</name>
+      <description>The elements relating to mental functioning processing and output in the form of activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Participation_</name>
+      <description>The elements relating to mental functioning processing and output in the form of participation</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.NonActions</name>
+      <description>The elements relating to mental functioning processing and output in the form of non actions</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Behavior_</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.AdaptiveBehavior</name>
+      <description>The elements relating to mental functioning processing and output in the form of adaptive behavior</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Behavior_</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.MaladaptiveBehavior</name>
+      <description>The elements relating to mental functioning processing and output in the form of maladaptive behavior</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Behavior_</supertypeName>
+    </typeDescription>
+
+
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesOfDailyLiving</name>
+      <description>The elements relating to mental functioning processing and output in the form of activities of daily living</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.GeneralTasksAndDemands</name>
+      <description>The elements relating to mental functioning processing and output in the form of participating in general tasks and demands</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.LearningAndApplyingKnowledge</name>
+      <description>The elements relating to mental functioning processing and output in the form of learning and applying knowledge</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.Learning_</name>
+      <description>The elements relating to mental functioning processing and output in the form of learning </description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.LearningAndApplyingKnowledge</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ApplyingKnowledge_</name>
+      <description>The elements relating to mental functioning processing and output in the form of applying knowledge</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.LearningAndApplyingKnowledge</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of com cog activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunicationActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of communication activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.CognitiveActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of cognitive activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of communication activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.CognitiveActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of cognitive activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.MobilityActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of mobility activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.SelfCareActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of self care activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.DomesticLifeActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of domestic life activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of IPIR activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.MajorLifeAreasActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of major life areas activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunityActivities</name>
+      <description>The elements relating to mental functioning processing and output in the form of community, social and civic life activities</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.mentalFunctionOntologyNER.FunctionalActivityPerformance</name>
+      <description>Activity Performance (attributes of functional activities)</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.Activities_</supertypeName>
+    </typeDescription>
+
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.BehaviorEvidence</name>
+      <description>Behavior evidence</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>       
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.EmotionEvidence</name>
+      <description>Emotion evidence</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>       
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.SupportEvidence</name>
+      <description>Support evidence</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>       
+    </typeDescription>
+    
+       
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.IPIRParticipationEvidence</name>
+      <description>IPIR Participation evidence</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>       
+    </typeDescription>
+
+
+
+  </types>
+      
+
+      
+</typeSystemDescription>

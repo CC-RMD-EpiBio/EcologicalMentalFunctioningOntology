@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+   <name>gov.nih.cc.rmd.inFACT.IPIRCategories</name>
+   <description>Labels specific to the IPIR Categorization tasks</description>
+   <version>2023.03.0</version>
+    <vendor/>
+      
+  <imports>
+     <import name="gov.nih.cc.rmd.mentalFunctionOntologyNER.Model"/>
+  </imports>
+  
+  <types>
+	  
+   <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.IPIRCategories</name>
+      <description> Classes that are part of the IPIR sub categorization task</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D710_D720IPIRInteractions</name>
+      <description>Interacting with people in a contextually and socially appropriate manner, such as by showing consideration and esteem when appropriate, or responding to the feelings of others.</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+    </typeDescription>
+            
+     <typeDescription>
+     <name>gov.nih.cc.rmd.inFACT.D730_D770RelationshipsIPIR</name>
+     <description>Relating with straingers IPIR</description>
+     <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+    </typeDescription>
+    
+    
+    <typeDescription>
+     <name>gov.nih.cc.rmd.inFACT.D730RelatingWithStrangers</name>
+     <description>Relating with straingers IPIR</description>
+     <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+    </typeDescription>
+            
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D740FormalRelationships</name>
+      <description>Formal relationships IPIR</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+    </typeDescription>
+            
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D7400AuthorityRelationships</name>
+      <description>Relationships with persons in Authority IPIR</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+    </typeDescription>
+          
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D750InformalRelationships</name>
+      <description>Informal, social relationships IPIR</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+     </typeDescription>
+          
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.D760FamilyRelationships</name>
+      <description>Family relationships IPIR</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+     </typeDescription>
+    
+    <typeDescription>
+     <name>gov.nih.cc.rmd.inFACT.D770IntimateRelationships</name>
+      <description>Intimate relationships IPIR</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+    </typeDescription>
+          
+          
+    <typeDescription>
+     <name>gov.nih.cc.rmd.inFACT.D779OtherRelationships</name>
+      <description>Other (residual) relationships IPIR</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.IPIRCategories</supertypeName>
+    </typeDescription>
+          
+          
+     <typeDescription>           
+      <name>gov.nih.cc.rmd.inFACT.D710_D720IPIRInteractionsEvidence</name>
+      <description>IPIR Interaction evidence</description>
+       <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>
+    </typeDescription>
+          
+    <typeDescription>             
+      <name>gov.nih.cc.rmd.inFACT.D730RelatingWithStrangersEvidence</name>
+      <description>Stranger relationships evidence</description>
+       <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>   
+    </typeDescription>
+      
+     <typeDescription>            
+      <name>gov.nih.cc.rmd.inFACT.D750InformalRelationshipsEvidence</name>
+      <description>Informal social relationships evidence</description>
+       <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>      
+    </typeDescription>
+      
+     
+    <typeDescription>             
+      <name>gov.nih.cc.rmd.inFACT.D740FormalRelationshipsEvidence</name>
+      <description>Formal relationships evidence</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>      
+    </typeDescription>
+    
+   
+   
+      <typeDescription>             
+      <name>gov.nih.cc.rmd.inFACT.D7400AuthorityRelationships</name>
+      <description>Authority relationships evidence</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>      
+    </typeDescription>
+      
+    <typeDescription>             
+      <name>gov.nih.cc.rmd.inFACT.D760FamilyRelationshipsEvidence</name>
+      <description>Family relationships evidence</description>
+       <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>
+    </typeDescription>
+  
+    <typeDescription>            
+      <name>gov.nih.cc.rmd.inFACT.D770IntimateRelationshipsEvidence</name>
+      <description>Intimate relationships evidence</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>    
+    </typeDescription>
+    
+     <typeDescription>           
+      <name>gov.nih.cc.rmd.inFACT.D779OtherRelationshipsEvidence</name>
+      <description>Other (residual) relationships evidence</description>
+       <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>  
+    </typeDescription>
+
+   
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.SupportEvidence</name>
+      <description>Support evidence</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>       
+    </typeDescription>
+    
+ 
+        <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.D730_Manual</name>
+          <description>ICF d730  Relating with Strangers</description>
+          <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+
+        <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.D740_Manual</name>
+          <description>ICF d740 Formal Relationships</description>
+           <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+        
+        <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.D7400_Manual</name>
+          <description>ICF d7400 Formal Relationships: Relating with persons in authority</description>
+           <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+        
+          <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.D750_Manual</name>
+          <description>ICF d750 Informal Social Relationships</description>
+           <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+        
+          <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.D760_Manual</name>
+          <description>ICF d760 Family Relationships</description>
+          <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+
+        <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.D770_Manual</name>
+          <description>ICF d770 Intimate Relationships</description>
+           <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+        
+        <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.D779_Manual</name>
+          <description>ICF d779 Other Relationships unspecified</description>
+          <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+        
+         <typeDescription>
+          <name>gov.nih.cc.rmd.inFACT.Interaction_Manual</name>
+          <description>ICF d710-729  Interpersonal interactions</description>
+          <supertypeName>uima.tcas.Annotation</supertypeName> 
+        </typeDescription>
+
+
+    
+
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.bstract.IPIR_no</name>
+      <description>IPIR no</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>     
+     </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.bstract.IPIR_yes</name>
+      <description>IPIR Yes</description>
+      <supertypeName>gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities</supertypeName>   
+       
+       
+      
+       <features>
+	     <featureDescription>
+          <name>d730</name>
+          <description>ICF d730  Relating with Strangers</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d740</name>
+          <description>ICF d740 Formal Relationships</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+        <featureDescription>
+          <name>d7400</name>
+          <description>ICF d7400 Formal Relationships: Relating with persons in authority</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+          <featureDescription>
+          <name>d750</name>
+          <description>ICF d750 Informal Social Relationships</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+          <featureDescription>
+          <name>d760</name>
+          <description>ICF d760 Family Relationships</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>d770</name>
+          <description>ICF d770 Intimate Relationships</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+        <featureDescription>
+          <name>d779</name>
+          <description>ICF d779 Other Relationships unspecified</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+         <featureDescription>
+          <name>interaction</name>
+          <description>ICF d710-729  Interpersonal interactions</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        
+        <featureDescription>
+          <name>TimeBucket</name>
+          <description>TimeBucket </description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        
+          <featureDescription>
+          <name>difficult_to_determine</name>
+          <description>An extra bit of info that this sentence is a boarder case</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+       
+ 
+       </features>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.manual.IPIRno</name>
+      <description>IPIR no</description>
+       <supertypeName>gov.nih.cc.rmd.inFACT.bstract.IPIR_no</supertypeName>   
+     </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.manual.IPIRyes</name>
+      <description>IPIR Yes</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.bstract.IPIR_yes</supertypeName>  
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.x.IPIR_no</name>
+      <description>IPIR no (machine marked)</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.bstract.IPIR_no</supertypeName>      
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.inFACT.x.IPIR_yes</name>
+      <description>IPIR Yes (machine marked)</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.bstract.IPIR_yes</supertypeName>         
+    </typeDescription>
+
+  </types>
+</typeSystemDescription>

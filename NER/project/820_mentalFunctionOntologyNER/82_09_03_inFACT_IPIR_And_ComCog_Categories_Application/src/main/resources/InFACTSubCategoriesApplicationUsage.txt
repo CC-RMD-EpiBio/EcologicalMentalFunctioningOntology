@@ -1,0 +1,86 @@
+
+InFACT Sub Categories Application
+
+Description
+The program inFACT Sub Categories Application-jar-with-dependencies.jar reads in text, gate or uima xmi files and finds 
+Communication and Cognition (ComCog) and Interpersonal Interactions and Relationships (IPIR) mentions and 
+sub categorizes them. 
+
+If GATE or Interlingua files are the input, and that input includes ComCog and/or IPIR marked sentences, as might
+come from upstream models that identify those sentences, this application sub classifies them into sub categories.
+See the ComCog and the IPIR guidelines for the sub classification categories.
+
+
+
+Output Types/Labels
+  See the mentalFunctionOntology/Model.xml and SubCategoriesModel.xml type descriptor for the 144 output types.
+  All should be descendants of *MentalFunctioningMention*.  The output types can be filtered in by using
+  the command line option --outputTypes=  to list, using colon delimiters, the list of output types
+  to be filtered in. List using simple names (no namespaces).
+  
+Input Formats
+  The application can read in from text, gate, vtt, or xmi file formats.  The file formats are specified
+  using the --inputFormat= command line option.  These can be one of the following:
+      GATE_READER
+      TEXT_READER
+      XMI_READER
+      VTT_READER
+  
+Output Formats
+  The output files format types can be specified by the --outputFormat= and can be a colon delimited list of
+  one or more the following:
+    XMI_WRITER       UIMA's xml output format, and is the default output writer
+    GATE_WRITER      The GATE NLP Developers output (this is also the RMD's interlingua format).
+    VTT_WRITER       NIH/NLM's VTT format used with the VTT viewer.
+    KNOWTATOR_WRITER Used with the Knowtator and eHOST applications. (Warning: this has not been tested in years)
+    BIOC_WRITER      Used with NIH/NLM's BIOC writer. (Warning: this has not been tested in years)
+    NONE_WRITER      Does not produce anything
+    SNIPPET_WRITER   Used with NIH/NLM's VTT viewer, creates snippet samples.  [This writer needs additional 
+                     command line arguments to specify the focus annotation to make the snippets around, and
+                     the sample rate, and the amount of left and right context lines.]
+    TEXT_WRITER      This writer only outputs the original text that was worked on.  It's useful when
+                     the reader reads in a format that it is difficult to see the text directly, and 
+                     you want to know what text the machine saw when processing.
+                     
+   
+
+Program
+java -jar $FRAMEWORK_HOME/10_libs/MentalFunctionSentenceFromMentionsApplication-jar-with-dependencies.jar 
+   
+   Options:
+    --inputDir=        The directory with input files in it.  The program will read files to process
+                       from this directory.  Files are not always read in in the order they appear
+                       in the directory. The program will recurse through sub directories to retrieve
+                       files that are of the type being processed.
+                       
+    --outputDir=       This is where the processed files are deposited.  
+    --outputTypes=     Explained above
+    
+    Scale-out Options:
+    This program can be scaled out to run multiple instances/treads.  The following are options to control the scale out parameters
+
+  --threaded=[false|true]                If threaded=true, the application will fork off multiple, independent threads 
+                                         to process the files.  Threading is done at the file level.  The default is threaded
+                                         is false.
+  --initialNumberOfApplications=1        This is the number of threads/processes to spin up initially.  It's a good
+                                         practice to have this be a low'sh number and gradually spin up threads over time.
+  --maxNumberOfApplications=1            This shouldn't be larger than twice the number of threads you have to spare
+                                         on the machine its run on. If you don't want to cripple the machine,
+                                         don't make it larger than the number of threads -1 you have on the machine.
+  --metric=100                           Report progress every 100 milliseconds - The larger this number the
+                                         less lines of progress output you'll get.
+  --maxSystemLoad=80                     The program will start to kill processes if the system load goes
+                                         over this threshold.  This is to allow this program to play "nice"
+                                         when it's on a server where other processes need to run as well.
+  --recycleAt=1000                       This kills threads and restarts them at X number of files processed.
+                                         This was a cludge to keep processing when some of the underlying third
+                                         party functionality would crap out at some point. 
+  
+
+   
+  Notes:  Currently, the program has limits of how big an individual file can be processed, when outputting to GATE format. 
+          that limit is around .5 gig. It's an issue with GATE's distributed writer, hopefully to be fixed soon.
+    
+    
+2024/09/30
+   
