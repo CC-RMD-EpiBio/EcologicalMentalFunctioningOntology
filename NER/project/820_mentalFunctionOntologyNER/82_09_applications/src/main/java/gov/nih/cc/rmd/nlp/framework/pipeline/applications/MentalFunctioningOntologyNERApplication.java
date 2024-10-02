@@ -3,7 +3,7 @@
  * MentalFunctioningOntologyNERApplication kicks off the MentalFunctionOntologyNER pipeline on a corpus
  * This application runs from annotated gate files and creates vtt and xmi output files.
  * 
- * @author  G.o.d.
+ * @author  divitag2
  * @created 2022.03.28
  * 
  */
@@ -13,6 +13,7 @@ package gov.nih.cc.rmd.nlp.framework.pipeline.applications;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.MentalFunctionOntologyNERAnnotator;
+import gov.nih.cc.rmd.nlp.framework.pipeline.InFACTSubCategorizationBySentenceComcogMachinePipeline;
 import gov.nih.cc.rmd.nlp.framework.pipeline.MentalFunctioningOntologyNERPipeline;
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
 import gov.nih.cc.rmd.nlp.framework.utils.PerformanceMeter;
@@ -212,7 +213,7 @@ public class MentalFunctioningOntologyNERApplication {
        // -------------------
       // Create a BaselineFrameworkApplication instance
       // -------------------
-      FrameworkBaselineApplicationAux application = new FrameworkBaselineApplicationAux();
+      FrameworkBaselineApplication application = new FrameworkBaselineApplication();
 
       // -------------------
       // Add a performance meter to the application (This is optional)
@@ -304,7 +305,7 @@ public class MentalFunctioningOntologyNERApplication {
     String    inputDir  = U.getOption(pArgs, "--inputDir=", "/82_01_data/examples");
     String    outputDir = U.getOption(pArgs, "--outputDir=", inputDir + "_MentalFunctionOntologyNER_" + dateStamp);
     String       logDir = U.getOption(pArgs, "--logDir=",   outputDir + "/logs" ); 
-    String   printToLog = U.getOption(pArgs, "--printToLog=", "true");
+    String   printToLog = U.getOption(pArgs, "--printToLog=", "false");
     String   printToConsole = U.getOption(pArgs, "--printToConsole=", "true");
     String silenceGLogMsgs = U.getOption(pArgs, "--silenceGLogMsgs=",  "true");
     String INFACT_MODE= U.getOption(pArgs, "--INFACT_MODE=", "true" );
@@ -348,10 +349,10 @@ public class MentalFunctioningOntologyNERApplication {
     String        fileSizeThreshold = U.getOption(pArgs,  "--fileSizeThreshold=",  "80769" ); // 1508000" ); //"1508000");  // largest cdr: 1,574,050 cpd: 1,526,853 
     String    memorySizeThresholdMb = U.getOption(pArgs, "--memorySizeThresholdMb=", "100");  
     String sentenceSizeThreshold = U.getOption( pArgs,  "--sentenceSizeThreshold=",  "100");
-    String  threaded = U.getOption(pArgs, "--threaded=", "true"); 
+    String  threaded = U.getOption(pArgs, "--threaded=", "false"); 
     
     
-    String version = "2024-09-26.1";
+    String version = "2024-10-01.12";
     
     
   

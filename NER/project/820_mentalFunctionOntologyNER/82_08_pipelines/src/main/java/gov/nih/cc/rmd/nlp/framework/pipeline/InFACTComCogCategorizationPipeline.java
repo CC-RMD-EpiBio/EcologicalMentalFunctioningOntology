@@ -81,7 +81,7 @@ import gov.nih.cc.rmd.nlp.framework.utils.U;
       pipeline.add(              UseInFACTSentencesAnnotator.class.getCanonicalName(), argsParameter);
       
       
-   //   pipeline.add(              POSAnnotator.class.getCanonicalName(), argsParameter);
+      //pipeline.add(              POSAnnotator.class.getCanonicalName(), argsParameter);
   
       pipeline.add(              BehaviorEvidenceAnnotator.class.getCanonicalName(), argsParameter);
       pipeline.add(              EmotionEvidenceAnnotator.class.getCanonicalName(), argsParameter);

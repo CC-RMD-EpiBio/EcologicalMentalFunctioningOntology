@@ -37,7 +37,7 @@
       <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_01-mentalFunctionOntologyNER-resources       </artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_03-mentalFunctionOntologyNER-type-descriptors</artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_05-mentalFunctionOntologyNER-annotators      </artifactId> <version>2022.03.0</version></dependency>
-      <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_06-mentalFunctionOntologyNER-nlp-marshallers     </artifactId> <version>2022.03.0</version></dependency>
+      <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_06-mentalFunctionOntologyNER-nlp-marshallers </artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_07-mentalFunctionOntologyNER-nlp-pUtils      </artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_08-mentalFunctionOntologyNER-pipelines       </artifactId> <version>2022.03.0</version></dependency>
       <dependency><groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>01-nlp-resources                                         </artifactId>  </dependency>

@@ -34,24 +34,20 @@
     <!-- gov.va.vinci.nlp.framework     utils.general        -->
     <!-- =================================================== -->
     <dependencies>
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>82_01-mentalFunctionOntologyNER-resources       </artifactId> <version>2022.03.0</version>
-                   <scope>provided</scope>
-
-      </dependency>
+      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>82_01-mentalFunctionOntologyNER-resources       </artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>82_03-mentalFunctionOntologyNER-type-descriptors</artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>82_05-mentalFunctionOntologyNER-annotators      </artifactId> <version>2022.03.0</version></dependency>
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>82_06-mentalFunctionOntologyNER-nlp-marshallers </artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>82_07-mentalFunctionOntologyNER-nlp-pUtils      </artifactId> <version>2022.03.0</version></dependency>
       <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>82_08-mentalFunctionOntologyNER-pipelines       </artifactId> <version>2022.03.0</version></dependency>
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>04.2-tCmdlineUtils                              </artifactId> <version>2021.02.0</version></dependency>
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>01-nlp-resources                                </artifactId>  
-                   <scope>provided</scope>
-      </dependency>
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>06-nlp-marshallers                              </artifactId>  </dependency>
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>04.0-nlp-util                                   </artifactId>  </dependency>
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>04.2-nlp-tUtil                                  </artifactId>  </dependency>
-      <dependency> <groupId>org.apache.uima          </groupId> <artifactId>uimaj-core                                      </artifactId>  </dependency> 
-      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>07.0-nlp-pUtils                                 </artifactId>  </dependency>
+      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>01-nlp-resources                                </artifactId>                             </dependency>
+      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>06-nlp-marshallers                              </artifactId>                             </dependency>
+      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>04.0-nlp-util                                   </artifactId>                             </dependency>
+      <dependency> <groupId>org.apache.uima          </groupId> <artifactId>uimaj-core                                      </artifactId>                             </dependency> 
+      <dependency> <groupId>gov.nih.cc.rmd.framework </groupId> <artifactId>07.0-nlp-pUtils                                 </artifactId>                             </dependency>
+
+      <!-- dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>82_06-mentalFunctionOntologyNER-nlp-marshallers     </artifactId> <version>2022.03.0</version></dependency -->
+      <!-- dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>73_01-sectionizingProject-resources             </artifactId> <version>2021.02.0</version></dependency> -->
+
     </dependencies>
 
 
@@ -74,7 +70,6 @@
               <version>2.4</version>
               <executions>
 
- 
                <execution>
                 <id>executable_1</id>
                   <configuration>
@@ -86,7 +81,30 @@
                      <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                      </descriptorRefs>
-                     <finalName>InFACTSubCategoriesApplication</finalName>
+                     <finalName>InFactSubCategoriesApplication</finalName>
+                     <outputDirectory>${project.build.directory}/../10_libs</outputDirectory>
+                     <dependencies>
+                       <dependency><groupId>gov.nih.cc.rmd.mentalFunctionOntologyNER.nlp.framework</groupId><artifactId>${project.artifactId}</artifactId></dependency>
+                     </dependencies>
+                  </configuration>
+                  <phase>install</phase>
+                  <goals>
+                    <goal>single</goal>
+                  </goals>
+               </execution>
+<!--
+               <execution>
+                <id>executable_5</id>
+                  <configuration>
+                     <archive>
+                        <manifest>
+                          <mainClass>gov.nih.cc.rmd.nlp.framework.pipeline.applications.inFACT.InFACT_SubCategoriesAPI</mainClass> 
+                        </manifest>
+                     </archive>
+                     <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                     </descriptorRefs>
+                     <finalName>InFACT_SubCategoriesAPI</finalName>
                      <outputDirectory>${project.build.directory}/../10_libs</outputDirectory>
                   </configuration>
                   <phase>install</phase>
@@ -94,7 +112,7 @@
                     <goal>single</goal>
                   </goals>
                </execution>
-
+ -->
              </executions>
 
       </plugin>

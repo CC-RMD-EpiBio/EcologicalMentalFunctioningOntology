@@ -920,16 +920,13 @@ private void uniqueAnnotations(JCas pJCas, Annotation pSentence) {
        String buff = activity.getCoveredText();
       
       if (otherPersonsEvidence != null && otherPersonsEvidence.size() >= 1) {
-        if ( 1 == 0 ) { 
-          
-          // this is taken out because it's of limited use, and calling the pos
-          // tagger makes the exe too big. 
-          
-        // if ( PosFixes01Annotator.isVerb(pJCas, activity) 
-        //	  && !isOther( pJCas,pSomeMentions ) 
-        //     && !weSeen ) {
-          //    && !isConditional( pJCas, activity)) {
+        
+         if ( // PosFixes01Annotator.isVerb(pJCas, activity) 
+        	    // && 
+        	  !isOther( pJCas,pSomeMentions ) 
+              && !weSeen ) {
            ;;
+           
          } else {
            if (  !moreCalvinRules( pJCas, pSentence, activity, otherPersonsEvidence ) ) 
              activity.removeFromIndexes();      

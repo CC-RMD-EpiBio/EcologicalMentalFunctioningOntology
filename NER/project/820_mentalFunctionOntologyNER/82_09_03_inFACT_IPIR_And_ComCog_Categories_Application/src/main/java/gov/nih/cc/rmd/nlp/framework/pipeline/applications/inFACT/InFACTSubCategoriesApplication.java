@@ -314,14 +314,17 @@ public class InFACTSubCategoriesApplication {
     // -------------------------------------
     // Input and Output
 
+    boolean threaded = Boolean.valueOf(U.getOption(pArgs, "--threaded=", "false")); 
+    
     String    inputDir  = U.getOption(pArgs, "--inputDir=", "/projects/fy23_nlp_a/data/interlingua/nlp_predictions_IPIR_COMCOG");
     String productionInputDir = U.getOption(pArgs, "--productionInputDir=", "/projects/fy23_nlp_a/data/interlingua/nlp_predictions");
     		   
     String    outputDir = U.getOption(pArgs, "--outputDir=", inputDir + "_SubCategories_" + dateStamp);
     String       logDir = U.getOption(pArgs, "--logDir=",   outputDir + "/logs" ); 
-    String   printToLog = U.getOption(pArgs, "--printToLog=", "true");
-    String   printToConsole = U.getOption(pArgs, "--printToConsole=", "true");
-    String  detailedSummary = U.getOption(pArgs, "--detailedSummary=", "true");
+    String   printToLog = U.getOption(pArgs, "--printToLog=", "false");
+   String   printToConsole = U.getOption(pArgs, "--printToConsole=", "false");
+    String silenceGLogMsgs = U.getOption(pArgs, "--silenceGLogMsgs=",  "true");
+  String  detailedSummary = U.getOption(pArgs, "--detailedSummary=", "true");
    String INFACT_MODE= U.getOption(pArgs, "--INFACT_MODE=", "true" );
    String inFACTFileNamingConvention =  U.getOption(pArgs, "--inFACTFileNamingConvention=", "true" );
     
@@ -378,9 +381,10 @@ public class InFACTSubCategoriesApplication {
     
     
     
-    String version = "2024-09-12.4.moreFiltered";
+    String version = "2024-10-02-threaded.37";
     String args[] = {
         
+        "--threaded=" + threaded,
         "--productionInputDir=" + productionInputDir,
         "--inputDir=" + inputDir,
         "--outputDir=" + outputDir,
@@ -400,6 +404,7 @@ public class InFACTSubCategoriesApplication {
         
         "--logDir=" + logDir,
         "--printToLog=" + printToLog,
+        "--silenceGLogMsgs=" + silenceGLogMsgs,
         "--profilePerformanceLogging=" + profilePerformanceLogging,
         "--printToConsole=" + printToConsole,
         

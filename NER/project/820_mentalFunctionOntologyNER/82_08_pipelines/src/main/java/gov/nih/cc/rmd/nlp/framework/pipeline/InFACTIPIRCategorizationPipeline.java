@@ -9,9 +9,7 @@ import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.IPIRCate
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.InFACT_IPIRCategoriesPostProcessing;
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.MentalFunctionOntologyCategoryFilter;
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.MentalFunctionOntologyNERAnnotator;
-import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.MentalFunctionOntologyNERCSVWriterObs;
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.PageClassifierAnnotator;
-import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.SSAListingsSectionizer;
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.SupportEvidenceAnnotator;
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.UseInFACTSentencesAnnotator;
 //import gov.nih.cc.rmd.nlp.framework.annotator.pos.POSAnnotator;
@@ -81,7 +79,7 @@ import gov.nih.cc.rmd.nlp.framework.utils.U;
       pipeline.add(              UseInFACTSentencesAnnotator.class.getCanonicalName(), argsParameter);
       
       
-   //   pipeline.add(              POSAnnotator.class.getCanonicalName(), argsParameter);
+ //     pipeline.add(              POSAnnotator.class.getCanonicalName(), argsParameter);
   
       pipeline.add(              BehaviorEvidenceAnnotator.class.getCanonicalName(), argsParameter);
       pipeline.add(              EmotionEvidenceAnnotator.class.getCanonicalName(), argsParameter);

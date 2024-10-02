@@ -77,8 +77,10 @@ import gov.nih.cc.rmd.nlp.framework.utils.U;
       
       
       FrameworkRMDSentenceNoFilterPipeline.setPipeline(pipeline, pArgs);
+      
+    
        
-      //pipeline.add(              POSAnnotator.class.getCanonicalName(), argsParameter);
+    //  pipeline.add(              POSAnnotator.class.getCanonicalName(), argsParameter);
       pipeline.add(              BehaviorEvidenceAnnotator.class.getCanonicalName(), argsParameter);
       pipeline.add(              EmotionEvidenceAnnotator.class.getCanonicalName(), argsParameter);
       pipeline.add(              SupportEvidenceAnnotator.class.getCanonicalName(), argsParameter);

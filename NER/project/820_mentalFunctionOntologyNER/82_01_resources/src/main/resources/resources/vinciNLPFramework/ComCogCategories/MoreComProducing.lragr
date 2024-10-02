@@ -75,7 +75,7 @@ CP00000|no reported|noun|count(thr_sing)|no reported|no reported|CommunicationAc
 CP00000|noted to be negative|noun|count(thr_sing)|noted to be negative|noted to be negative|CommunicationActivities:d330_d349_comProducing
 CP00000|noted to be neg|noun|count(thr_sing)|noted to be neg|noted to be neg|CommunicationActivities:d330_d349_comProducing
 CP00000|notes|noun|count(thr_sing)|noted|noted|CommunicationActivities:d330_d349_comProducing
-CP00000|all notes|noun|count(ploral)|note|note|NMFO
+CP00000|all notes|noun|ploral|note|note|NMFO
 CP00000|told by your|<verb>|<base>|told by your|told by your|NMFO
 KS000000|written concent obtained for communication|<noun>|<base>|||SLOT:CommunicationActivities:d330_d349_comProducing|process
 KS000000|w ritten concent obtained for communication|<noun>|<base>|||SLOT:CommunicationActivities:d330_d349_comProducing|process
