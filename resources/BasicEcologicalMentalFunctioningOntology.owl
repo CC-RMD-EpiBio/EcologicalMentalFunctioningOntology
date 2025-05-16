@@ -16,7 +16,7 @@
      xmlns:IAO_0000412="http://purl.obolibrary.org/obo/IAO_0000412#"
      xmlns:EcologicalMentalFunctioningOntology="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#">
     <owl:Ontology rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO">
-        <owl:versionIRI rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioning_2025_02_19"/>
+        <owl:versionIRI rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioning_2025_05_16"/>
     </owl:Ontology>
     
 
@@ -181,13 +181,6 @@
     </owl:ObjectProperty>
     
     
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054#realized_in -->
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054#realized_in">
-         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017#realizable_entity"/>
-         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015#process"/>
-         <IAO_0000115:Definition>"(forall (x y z t) (if (and (RealizableEntity x) (Process y) (realizesAt y x t) (bearerOfAt z x t)) (hasParticipantAt y z t))) "</IAO_0000115:Definition>
-    </owl:ObjectProperty>
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000055#realizes -->
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055#realizes">
          <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015#process"/>
@@ -202,12 +195,27 @@
          <IAO_0000115:Definition>"A relation between a process and a continuant, in which the continuant is somehow involved in the process"</IAO_0000115:Definition>
     </owl:ObjectProperty>
 
-    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#observed_by-->
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#observes-->
     <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#observed_by">
          <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
          <rdfs:range rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
          <IAO_0000115:Definition>"Ascertained or determined through monitoring or observation."</IAO_0000115:Definition>
     </owl:ObjectProperty>
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#gives_context_to-->
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#gives_context_to">
+         <rdfs:domain rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors"/>
+         <rdfs:range rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Function-ing"/>
+         <IAO_0000115:Definition>"Ascertained or determined through monitoring or observation."</IAO_0000115:Definition>
+    </owl:ObjectProperty>
+
+    <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processed_by-->
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processed_by">
+         <rdfs:domain rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Input"/>
+         <rdfs:range rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Throughput"/>
+         <IAO_0000115:Definition>"TBD"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
+
 
 
     <!-- 
@@ -219,8 +227,6 @@
      -->
 
     
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000001#entity -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001#entity">

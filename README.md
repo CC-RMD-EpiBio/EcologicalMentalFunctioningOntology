@@ -62,6 +62,12 @@ The
 # About Us #
 This work stems from the Epidemiology and Biostatistics section of the Rehabilitation Medicine Department, National Institutes of Health (NIH) Clinical Center that uses the ICF as a framework to develop analytic tools for clinical natural language processing and the development of functional assessment measures. The group is composed of professionals from behavioral health, rehabilitation, medicine, computer science, and health services researchers. The ontology team, in particular, is made up of individuals representing computer science, occupational and physical therapy, medicine, and psychiatry, with consults from speech and language pathology. 
 
+# Versions #
+ | Version     | Description  |
+| ------------ |------------- |
+| 2024-09-30          | Initial Release |
+| 2025-05-16   | Owl file and csv updates based on work around function-ing |
+
 # Publications #
 Sacco, M. J., Divita, G., & Rasch, E. (2023). Development of an ontology to characterize mental functioning. Disabil Rehabil, 1-10. [(Paper)https://doi.org/10.1080/09638288.2023.2252337](https://doi.org/10.1080/09638288.2023.2252337)
 

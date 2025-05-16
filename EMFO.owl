@@ -16,7 +16,7 @@
      xmlns:IAO_0000412="http://purl.obolibrary.org/obo/IAO_0000412#"
      xmlns:EcologicalMentalFunctioningOntology="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology#">
     <owl:Ontology rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO">
-        <owl:versionIRI rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioning_2024_09_30"/>
+        <owl:versionIRI rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioning_2025_05_16"/>
     </owl:Ontology>
      <!-- 
      ///////////////////////////////////////////////////////////////////////////////////////
@@ -62,61 +62,150 @@
      ///////////////////////////////////////////////////////////////////////////////////////
      --> 
 
-     <!-- http://purl.obolibrary.org/obo/RO_0000086#has_qualifier -->
+     <!-- http://purl.obolibry.org/obo/BFO_0000050#part_of" -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086#has_qualifier"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibry.org/obo/BFO_0000050#part_of">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <rdfs:range  rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <IAO_0000115:Definition>A core relation that holds between a part and its whole</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- http://purl.obolibrary.org/obo/RO_0002328#functionally_related_to -->
+     <!-- http://purl.obolibry.org/obo/BFO_0000051#has_part" -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002328#functionally_related_to"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibry.org/obo/BFO_0000051#has_part">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <rdfs:range  rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <IAO_0000115:Definition>Inverse of part-of</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- http://purl.obolibrary.org/obo/RO_0002350#member_of -->
+     <!-- http://purl.obolibry.org/obo/BFO_0000087#has_role" -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350#member_of"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibry.org/obo/BFO_0000087#has_role">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004#independent_continuant"/>
+         <rdfs:range  rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023#role"/>
+         <IAO_0000115:Definition>A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- http://purl.obolibrary.org/obo/RO_0002413#provides_input_for -->
+     <!-- http://purl.obolibrary.org/obo/RO_0002418#influences" -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002413#provides_input_for"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002418#influences">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <rdfs:range  rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <IAO_0000115:Definition>p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- http://purl.obolibrary.org/obo/RO_0002418#influences -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO_R00011#bearer_of" -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002418#influences"/>
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO_R00011#bearer_of">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <rdfs:range  rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <IAO_0000115:Definition>"BFO:a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence. </IAO_0000115:Definition>
+         <IAO_0000115:Definition>"EMFO: the bearer refers to the entity or concept that a definition describes, applies, carries, is obligated to, or is responsible for." </IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- http://purl.obolibry.org/obo/BFO_0000050#part_of -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#experiences" -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibry.org/obo/BFO_0000050#part_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#experiences">
+         <rdfs:domain rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Lived_Experience_Of_Participation"/>
+         <rdfs:range  rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mind"/>
+         <IAO_0000115:Definition>"To undergo"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#dependent_on_integrity_of -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#integrates" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#dependent_on_integrity_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#integrates">
+         <rdfs:domain  rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mind"/>
+         <rdfs:range  rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
+         <IAO_0000115:Definition>"to form, coordinate, or blend into a functioning or unified whole : unite"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#experiences -->
+     <!-- http://purl.obolibrary.org/obo/RO_0000086#has_qualifier" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#experiences"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086#has_qualifier">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <IAO_0000115:Definition>"Synonym of has_quality.  A relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#has_a -->
+     <!-- http://purl.obolibrary.org/obo/RO_0002413#provides_input_for" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#has_a"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002413#provides_input_for">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
+         <IAO_0000115:Definition>"p provides input for q iff p is immediately causally upstream of q, and there exists some c such that p has_output c and q has_input c."</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#integrates -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#uses" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#integrates"/>
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#uses">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+         <IAO_0000115:Definition>"p provides input for q iff p is immediately causally upstream of q, and there exists some c such that p has_output c and q has_input c."</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is_a_non_anatomical_phenomenon_within -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is_a_non_anatomical_phenomenon_within" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is_a_non_anatomical_phenomenon_within"/>
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is_a_non_anatomical_phenomenon_within">
+         <rdfs:domain  rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mind"/>
+         <rdfs:range  rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
+         <IAO_0000115:Definition>"[TBD]"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is_necessary_for -->
+     <!-- http://purl.obolibrary.org/obo/RO_0002328#functionally_related_to" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is_necessary_for"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002328#functionally_related_to">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <rdfs:range  rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
+         <IAO_0000115:Definition>"A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities."</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#some_have -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#has_agent" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#some_have"/>
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#has_agent">
+         <rdfs:domain rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Function-ing"/>
+         <rdfs:range rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
+         <IAO_0000115:Definition>"An agent realizes some specific function-ing at some time.  Has-agent is the relation that binds function-ing to the agent.  Inverse-of( agent-of)"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#uses -->
+     <!-- http://purl.obolibrary.org/obo/BFO_0000055#realizes" -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#uses"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055#realizes">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015#process"/>
+         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017#realizable_entity"/>
+         <IAO_0000115:Definition>"Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
+
+     <!-- http://purl.obolibrary.org/obo/RO_0000057#has_participant" -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057#has_participant">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
+         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+         <IAO_0000115:Definition>"A relation between a process and a continuant, in which the continuant is somehow involved in the process"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#observed_by" -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#observed_by">
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
+         <rdfs:range rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
+         <IAO_0000115:Definition>"Ascertained or determined through monitoring or observation."</IAO_0000115:Definition>
+    </owl:ObjectProperty>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#gives_context_to" -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#gives_context_to">
+         <rdfs:domain rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors"/>
+         <rdfs:range rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Function-ing"/>
+         <IAO_0000115:Definition>"Ascertained or determined through monitoring or observation."</IAO_0000115:Definition>
+    </owl:ObjectProperty>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processed_by" -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processed_by">
+         <rdfs:domain rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Input"/>
+         <rdfs:range rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Throughput"/>
+         <IAO_0000115:Definition>"TBD"</IAO_0000115:Definition>
+    </owl:ObjectProperty>
 
      <!-- 
      ///////////////////////////////////////////////////////////////////////////////////////
@@ -128,9 +217,8 @@
 
      <!-- http://purl.obolibrary.org/obo/BFO_0000001#entity" -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
-
-
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001#entity">
+     </owl:Class>
 
      <!-- http://purl.obolibrary.org/obo/BFO_0000002#continuant" -->
 
@@ -144,9 +232,6 @@
           <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
           <IAO_0000115:Definition xml:lang="en-us">A domain ontology that covers mental functioning from the perspective of an external observer such as a clinician.  This ontology provides the framework for funcioning in the context of an environment, personal factors, for point-in-time observations and the ability to quantify and qualify those observations.      </IAO_0000115:Definition>
 
-          <Imported_From>RMD</Imported_From>
-          <OntologyClassID>EMFO_C016694</OntologyClassID>
-          <Source_ID>EMFO_S0006</Source_ID>
      </owl:Class>
 
      <!-- http://purl.obolibrary.org/obo/BFO_0000003#occurrent" -->
@@ -155,10 +240,22 @@
              <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001#entity"/>
      </owl:Class>
 
+     <!-- http://purl.obolibrary.org/obo/BFO_0000020#specifically_dependent_continuant" -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020#specifically_dependent_continuant">
+             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+     </owl:Class>
+
+     <!-- http://purl.obolibrary.org/obo/BFO_0000017#realizable_entity" -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017#realizable_entity">
+             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020#specifically_dependent_continuant"/>
+     </owl:Class>
+
      <!-- http://purl.obolibrary.org/obo/BFO_0000015#process" -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015#process">
-             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
      </owl:Class>
 
      <!-- http://purl.obolibrary.org/obo/BFO_0000004#independent_continuant" -->
@@ -170,7 +267,7 @@
      <!-- http://purl.obolibrary.org/obo/BFO_0000040#material_entity" -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040#material_entity">
-             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004#independent_continuant"/>
+             <rdfs:subClassOf rdf:resource= "http://purl.obolibrary.org/obo/BFO_0000004#independent_continuant"/>
      </owl:Class>
 
      <!-- http://purl.obolibrary.org/obo/OGMS_0000087#extended_organism" -->
@@ -185,19 +282,34 @@
              <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087#extended_organism"/>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processing -->
+     <!-- http://purl.obolibrary.org/obo/BFO_0000016#disposition" -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processing">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Output"/>
-          <Imported_From>RMD</Imported_From>
-          <OntologyClassID>EMFO_C034419</OntologyClassID>
-          <Source_ID>EMFO_S0006</Source_ID>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016#disposition">
+             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017#realizable_entity"/>
+     </owl:Class>
+
+     <!-- http://purl.obolibrary.org/obo/BFO_0000034#function" -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034#function">
+             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016#disposition"/>
+     </owl:Class>
+
+     <!-- http://purl.obolibrary.org/obo/BFO_0000023#role" -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023#role">
+             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017#realizable_entity"/>
+     </owl:Class>
+
+     <!-- http://purl.obolibrary.org/obo/BFO_0000019#quality" -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#quality">
+             <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020#specifically_dependent_continuant"/>
      </owl:Class>
 
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes">
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#quality"/>
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C012595</OntologyClassID>
           <Source_ID>EMFO_S0004</Source_ID>
@@ -206,24 +318,6 @@
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Output -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Output">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Ecological_Mental_Functioning_Ontology"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Occurrent"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#provides_input_for"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#uses"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Throughput"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
           <IAO_0000115:Definition xml:lang="en-us">What the human actually does or does not do in response to his or her current environment (ICF, 2001).  Output is the outward manifestation of internal mental functions as observable behaviors named as mental functioning.        </IAO_0000115:Definition>
 
@@ -232,24 +326,19 @@
           <Source_ID>EMFO_S0004</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Function-ing -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Function-ing">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Output"/>
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C622689</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functioning -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functioning">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#has_qualifier"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Level_of_Performance"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#uses"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#processing"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Functioning_Performance"/>
           <IAO_0000115:Definition xml:lang="en-us">Mind-directed observable external behaviors of what the person actually decides to do (or not do), and does (or does not do), in relation to real-time transactions with environmental factors and contextual situations as they unfold moment by moment in daily life and over time. (Expert consensus)
 
 "mind-directed observable external behaviors that represent what people actually do (or do not do) in response to decisions occurring during
@@ -261,27 +350,28 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
           <Source_ID>EMFO_S0008</Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Activity_Limitations -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Functioning_Performance -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Activity_Limitations">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#(some)_have"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Level_of_Performance"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
-          <IAO_0000115:Definition xml:lang="en-us">Difficulties a person may have in mental functioning due to either impairments in mental body structures or functions, or environments that hinder optimal mental functioning.        </IAO_0000115:Definition>
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Functioning_Performance">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Function-ing"/>
+          <Imported_From></Imported_From>
+          <OntologyClassID>EMFO_C283254</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
 
-          <Imported_From>ICF</Imported_From>
-          <OntologyClassID>EMFO_C688861</OntologyClassID>
-          <Source_ID>EMFO_S0007</Source_ID>
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Performance_Metrics -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Performance_Metrics">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
+          <Imported_From>?</Imported_From>
+          <OntologyClassID>EMFO_C149655</OntologyClassID>
+          <Source_ID></Source_ID>
      </owl:Class>
 
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Level_of_Performance -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Level_of_Performance">
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Performance_Metrics"/>
           <IAO_0000115:Definition xml:lang="en-us">A word, description, measurement or value about the individuals ability to execute a task or activity     </IAO_0000115:Definition>
 
           <Imported_From>ICF</Imported_From>
@@ -289,28 +379,37 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
           <Source_ID>EMFO_S0007</Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Independence -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functioning"/>
-          <IAO_0000115:Definition xml:lang="en-us">Purposeful and volitional act or actions done by a person within a particular context and environment     </IAO_0000115:Definition>
-     <IAO_0000115:Definition xml:lang="en-us">see above     </IAO_0000115:Definition>
-
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Independence">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Performance_Metrics"/>
           <Imported_From>ICF</Imported_From>
-          <OntologyClassID>EMFO_C011176</OntologyClassID>
+          <OntologyClassID>EMFO_C662842</OntologyClassID>
           <Source_ID></Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Difficulty -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is-a"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior(1)"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior"/>
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Difficulty">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Performance_Metrics"/>
+          <Imported_From></Imported_From>
+          <OntologyClassID>EMFO_C237030</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Assistance -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Assistance">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Performance_Metrics"/>
+          <Imported_From></Imported_From>
+          <OntologyClassID>EMFO_C735541</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Behavior"/>
           <IAO_0000115:Definition xml:lang="en-us">Behaviors a person does that can be seen and described by others     </IAO_0000115:Definition>
 
           <Imported_From>ICF</Imported_From>
@@ -318,10 +417,40 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
           <Source_ID>EMFO_S0007</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Behavior -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Behavior">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Function-ing"/>
+          <IAO_0000115:Definition xml:lang="en-us">Purposeful and volitional act or actions done by a person within a particular context and environment     </IAO_0000115:Definition>
+     <IAO_0000115:Definition xml:lang="en-us">see above     </IAO_0000115:Definition>
+
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C381905</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Self_Reported_Functioning -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Self_Reported_Functioning">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C322443</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Functioning_Observed_By_Others -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Functioning_Observed_By_Others">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C870384</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
           <IAO_0000115:Definition xml:lang="en-us">Doing tasks or actions that are part of the steps or process for participation in a life situation     </IAO_0000115:Definition>
 
           <Imported_From>ICF</Imported_From>
@@ -329,15 +458,20 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
           <Source_ID>EMFO_S0007</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <IAO_0000115:Definition xml:lang="en-us">Engaging in meaningful and purposeful activities one wants, needs and/or is expected to do within their roles, environment, and cultural context (AOTA, 2014).     </IAO_0000115:Definition>
+
+          <Imported_From>ICF</Imported_From>
+          <OntologyClassID>EMFO_C042870</OntologyClassID>
+          <Source_ID>EMFO_S0007</Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Physical_Functioning -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Physical_Functioning">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities"/>
           <IAO_0000115:Definition xml:lang="en-us">Motor or bodily actions a person does to perform basic and complex life activities      </IAO_0000115:Definition>
 
@@ -415,7 +549,7 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Major_Life_Areas_Activities -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Major_Life_Areas_Activities">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation"/>
           <IAO_0000115:Definition xml:lang="en-us">Activities one does or has done to engage in formal or informal education, productive activities including paid or unpaid employment, conducting economic transactions, and financial management.     </IAO_0000115:Definition>
 
           <Imported_From>ICF</Imported_From>
@@ -426,7 +560,7 @@ life and over time" (Sacco, Divita, Rasch, 2023).     </IAO_0000115:Definition>
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Community,_Social_and_Civic_Life_Activities -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Community,_Social_and_Civic_Life_Activities">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation"/>
           <IAO_0000115:Definition xml:lang="en-us">Engaging in aspects of community social life, such as engaging in charitable organizations, services clubs or professional social organizations.  
 Engaging in any form of play, recreational or leisure pursuit, such as informal or organized play and sports, programs of physical fitness, relaxation, amusement or diversion, going to art galleries, museums, cinemas or theatres; engaging in crafts or hobbies, reading or singing for enjoyment, playing musical instruments; sightseeing, tourism and travelling for pleasure. 
 Engaging in religious or spiritual activities, organizations and practices for self-fulfillment, finding meaning, religious or spiritual value and establishing connection with a divine power, such as is involved in attending a church, temple, mosque or synagogue, praying or chanting for a religious purpose, and spiritual contemplation.
@@ -440,40 +574,6 @@ Participating as a citizen in one's society by engaging in civic activities such
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Learning_and_Applying_Knowledge"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Communication_Activities"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mobility_Activities"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Self_Care_Activities"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Domestic_Life_Activities"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Interpersonal_Interactions_and_Relationships"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Major_Life_Areas_Activities"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Community,_Social_and_Civic_Life_Activities"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
           <IAO_0000115:Definition xml:lang="en-us">Attributes of all activities that include task set-up (Preparing, initiating and arranging the time and space), meeting demands imposed by the nature of the  task (i.e., a simple to complex task, single or multiple step task, social demands such as done alone or with others); and meeting psychological demands of the task (plan, manage, and complete daily activities and self-regulation).      </IAO_0000115:Definition>
 
@@ -482,9 +582,9 @@ Participating as a citizen in one's society by engaging in civic activities such
           <Source_ID>EMFO_S0007</Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Alone_or_with_others_Requires_set-up_Level_of_stress -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Alone_Or_With_Others_Requires_Set-Up_Level_Of_Stress -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Alone_or_with_others_Requires_set-up_Level_of_stress">
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Alone_Or_With_Others_Requires_Set-Up_Level_Of_Stress">
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
           <IAO_0000115:Definition xml:lang="en-us">Remove it's own category.  This is part of general tasks/demands.     </IAO_0000115:Definition>
 
@@ -496,12 +596,6 @@ Participating as a citizen in one's society by engaging in civic activities such
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Activity_Demands -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Activity_Demands">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
           <IAO_0000115:Definition xml:lang="en-us">Cognitive, psychological and social skills that are required to complete an age-appropriate activity successfully and independently.     </IAO_0000115:Definition>
 
@@ -513,12 +607,6 @@ Participating as a citizen in one's society by engaging in civic activities such
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Nature_of_Task -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Nature_of_Task">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
           <IAO_0000115:Definition xml:lang="en-us">Aspects of the activity/task that can be graded for mental demands such as task complexity (cognitive demands),  emotional demands, sensory demands (texture, odor, etc.), physical/motor demands including materials of the task (size, weight, texture, etc.), temporal aspect (brief, sustained etc.), environmental demand (alone/with others; indoors/outdoors, etc.)     </IAO_0000115:Definition>
 
@@ -527,9 +615,9 @@ Participating as a citizen in one's society by engaging in civic activities such
           <Source_ID>EMFO_S0007</Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Simple_to_complex_Temporal_brief_or_sustained_Single_or_multiple -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Simple_To_Complex_Temporal_Brief_Or_Sustained_Single_or_Multiple -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Simple_to_complex_Temporal_brief_or_sustained_Single_or_multiple">
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Simple_To_Complex_Temporal_Brief_Or_Sustained_Single_or_Multiple">
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
           <IAO_0000115:Definition xml:lang="en-us">Don't think you need this separate.  Is part of the nature of the task. If you want to do     </IAO_0000115:Definition>
 
@@ -538,54 +626,178 @@ Participating as a citizen in one's society by engaging in civic activities such
           <Source_ID>EMFO_S0007</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Abnormal_Behavior -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Abnormal_Behavior">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <IAO_0000115:Definition xml:lang="en-us">Abnormal behavior may create distress, make it difficult to function, and may be socially disruptive. It may violate social norms and make it difficult for people to function in social settings and maintain social relationships. (Cherry, 2022)     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C972246</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities_and_Participation -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities_and_Participation">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+     
+     <IAO_0000115:Definition xml:lang="en-us">Performing the tasks or actions needed for engagement in life situations considered meaningful and purposeful by the individual     </IAO_0000115:Definition>
+
+          <Imported_From>ICF</Imported_From>
+          <OntologyClassID>EMFO_C025152</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Adaptive_Behavior -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Adaptive_Behavior">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <IAO_0000115:Definition xml:lang="en-us">Actions a person takes that produce favorable functional outcomes for that person in relation to the contextual situation and environment they are in.
+In the ontology adaptive behavior will be understood from the perspective of the person, and not from the perspective of  others in the environment (i.e., what could be considered adaptive behavior for the individual could also be perceived as maladaptive by others within that environment)     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C041963</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#inappropriate_behavior -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#inappropriate_behavior">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <IAO_0000115:Definition xml:lang="en-us">Behavior that is considered to be unsuitable, improper or unacceptable by the social environment within a particular context.     </IAO_0000115:Definition>
+
+          <Imported_From>UMLS</Imported_From>
+          <OntologyClassID>EMFO_C191549</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#maladaptive_behavior -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#maladaptive_behavior">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <IAO_0000115:Definition xml:lang="en-us">Actions a person takes that produce poor or less-favorable functional outcomes for that person in relation to the contextual situation and environment they are in.
+In the ontology the determination of what constitutes maladaptive behavior will be understood and considered from the perspective of the sociocultural environment (such as others), and not from the perspective of  the person.     </IAO_0000115:Definition>
+
+          <Imported_From>UMLS</Imported_From>
+          <OntologyClassID>EMFO_C658354</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Non_Actions -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Non_Actions">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <IAO_0000115:Definition xml:lang="en-us">A volitional choice of not to act resulting in not doing or not participating in activities      </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C836426</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Normal_Behavior -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Normal_Behavior">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observed_Behavior"/>
+          <IAO_0000115:Definition xml:lang="en-us">Behavior that is considered appropriate in relation to the current  context and environmental situation the person is in.     </IAO_0000115:Definition>
+
+          <Imported_From>UMLS</Imported_From>
+          <OntologyClassID>EMFO_C587017</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Temporal_Nature -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Temporal_Nature">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
+          <IAO_0000115:Definition xml:lang="en-us">Time the activity will take to complete including the number of major steps and length of time to complete each step, potential for delays in the process, sequence of activity is fixed or flexible, speed of the activity is fixed or flexible.     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C560058</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Demands_of_Task -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Demands_of_Task">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
+          <IAO_0000115:Definition xml:lang="en-us">Visual discrimination for color or texture, auditory discrimination for sound or language, tactile discrimination for temperature or texture, olfactory discrimination for different smells, gustatory discrimination for different tastes, proprioceptive discrimination for positioning and movement, vestibular demands of positioning and movement, and pain considerations.     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C598078</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Perceptual_Demands_of_Task -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Perceptual_Demands_of_Task">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
+          <IAO_0000115:Definition xml:lang="en-us">Perceptual factors that can impose activity demands include spatial relationships, visual perception (visual closure, visual memory and sequential memory, figure-ground, visual discrimination), stereognosis, sensory touch, depth perception, right/left discrimination, body scheme, topographical orientation, position in space, visual pattern recognition, eye-hand coordination and size and/or color matching.     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C427656</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Demands -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Demands">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
+          <IAO_0000115:Definition xml:lang="en-us">Number of steps involved and if directions are simple or complex, level of comprehension needed, memory skills needed, concentration and attention needed, level of arousal needed, recognition skills needed, cognitive motor skills needed, problem-solving and decision making, time-management skills, sequencing skills, other executive functioning skills.     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C569080</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_Demands -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_Demands">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
+          <IAO_0000115:Definition xml:lang="en-us">Compete or cooperate with others, how much social interaction required, time with others (constant, intermittent), chance for breaks from others,      </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C927379</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Throughput -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Throughput">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Occurrent"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#functionally_related_to"/>
-          <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015#process"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015#process"/>
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034#function"/>
           <IAO_0000115:Definition xml:lang="en-us">Internal mental functions in the brain that perceive input of sensory information, and use neurocognitive processes to perceive, process, organize and interpret the sensory information received from their environment, and from the internal body, and decide how to act upon it. Personal factors such as one’s life experience, values, beliefs, likes, dislikes, and interests are superimposed upon the processing of information. The mind is viewed as part of the brain that integrates mental functions (cognition, affective) and personal factors (life experiences, temperament, values, etc.), while considering environmental and contextual factors, and decides upon a response that directs one’s actions about whether or how to respond.     </IAO_0000115:Definition>
 
-          <Imported_From>ICF</Imported_From>
+          <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C056395</OntologyClassID>
-          <Source_ID>EMFO_S0007</Source_ID>
+          <Source_ID></Source_ID>
      </owl:Class>
 
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Throughput"/>
           <IAO_0000115:Definition xml:lang="en-us">Aspects that are unique to the individual and ultimately influence thoughts, decision-making and actions.  Person factors include one's body (type, structures, and functions), and health condition; demographic aspects such as age, gender, race, etc.,; autobiographical factors such as one's  personal background, history, life experiences; psychosocial factors such as relationships and roles, locus of control, behavioral patterns and habits; and one's spirituality and beliefs including meaning making, ethics and morals and personal culture.     </IAO_0000115:Definition>
      <IAO_0000115:Definition xml:lang="en-us">Person factors are different aspects of an individual that make up and are internal to the individual, and, when considered together, provide a complete view of the  person as a whole.  Person factors are made up of demographic (age, developmental stage, etc.), autobiographical (roles, past life experiences, etc.), and psychological factors (values, beliefs, habits, etc.); and also include the person's health condition, and one's unique and particular body structures and body functions.     </IAO_0000115:Definition>
 
-          <Imported_From>ICF</Imported_From>
+          <Imported_From></Imported_From>
           <OntologyClassID>EMFO_C051998</OntologyClassID>
           <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Activity_Limitations -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Activity_Limitations">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
+          <IAO_0000115:Definition xml:lang="en-us">Difficulties a person may have in mental functioning due to either impairments in mental body structures or functions, or environments that hinder optimal mental functioning.        </IAO_0000115:Definition>
+
+          <Imported_From>ICF</Imported_From>
+          <OntologyClassID>EMFO_C688861</OntologyClassID>
+          <Source_ID>EMFO_S0007</Source_ID>
      </owl:Class>
 
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Impairments -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Impairments">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#(some)_have"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Activity_Limitations"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
           <IAO_0000115:Definition xml:lang="en-us">Problems in mental body function or structure as a result of significant deviation or loss (ICF, 2001).     </IAO_0000115:Definition>
 
@@ -597,12 +809,6 @@ Participating as a citizen in one's society by engaging in civic activities such
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Health_Condition_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Health_Condition_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Health conditoins particular to the individual that can include acute or chronic disease, disorders, injuries, or trauma.  This can also include other circumstantial factors such as pregnancy, aging, stress, congenital anomaly or genetic predispositon.  These facotrs can be assigned the most updated ICD codes (ICD-11 currently).     </IAO_0000115:Definition>
 
@@ -614,20 +820,6 @@ Participating as a citizen in one's society by engaging in civic activities such
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Structures -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Structures">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#(some)_have"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Impairments"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#inverse-is-a"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_functioning_related_anitomical_structures"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">as below     </IAO_0000115:Definition>
      <IAO_0000115:Definition xml:lang="en-us">The anatomical parts of the body that (1) receive sensory input from the external environment (2) receive sensory information internally from the body, and (3) process the external and internal sensory information as throughput in the brain.
@@ -642,24 +834,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mind -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mind">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#uses"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#experiences"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#integrates"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is_a_non_anatomical_phenomenon_within"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Brain"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
           <IAO_0000115:Definition xml:lang="en-us">A non-anatomical aspect of the brain that integrates mental functions and person factors, while considering environmental and contextual factors, and decides upon a response that directs one’s actions.     </IAO_0000115:Definition>
 
@@ -679,19 +853,18 @@ Body structures that receive sensory information from the external environment a
           <Source_ID></Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Lived_Experience_Of_Participation -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Lived_Experience_Of_Participation">
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C335152</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#influences"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Person background factors are made up of demographic (age, developmental stage, etc.), autobiographical (roles, past life experiences, etc.), and psychological factors (values, beliefs, habits, etc.).     </IAO_0000115:Definition>
 
@@ -703,12 +876,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Functions -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Functions">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
           <IAO_0000115:Definition xml:lang="en-us">Body functions relating to the sensory afferent neurons (auditory, visual, gustatory, olfactory, tactile sensors), that provide information about sound, light, taste, odors, feel; and by the body’s internal environment that senses body position in space, balance and movement through vestibular and proprioceptive sensors, and afferent neurons from internal organs and organ systems (i.e., cardiopulmonary system, digestive system, etc.).     </IAO_0000115:Definition>
 
@@ -720,12 +887,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions"/>
           <Imported_From>ICF</Imported_From>
           <OntologyClassID>EMFO_C017957</OntologyClassID>
@@ -735,12 +896,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback_Appraisal -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback_Appraisal">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions"/>
           <IAO_0000115:Definition xml:lang="en-us">Evaluation of the internal and external sensory feedback information received that  informs the person so behavioral adjustments can be made in order to adapt to a dynamic and constantly changing life world situations and experiences (Sacco et al., 2023)      </IAO_0000115:Definition>
 
@@ -752,12 +907,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Communication_Functions -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Communication_Functions">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions"/>
           <IAO_0000115:Definition xml:lang="en-us">the capacity to produce, encode, transmit, receive, decode, and interpret information. Communication occurs through a variety of channels, using a variety of signal types. This includes but is not limited to pheromone signals involving chemical channels, body language signals involving musculoskeletal and sensory perceptual channels, written, and sensory spoken language using physiological, mental and physical environmental channel. The realization of this function is the exchange of information between persons, other living organisms, and environments.  (SNOWNEDCT_US)     </IAO_0000115:Definition>
 
@@ -769,16 +918,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#functionally_related_to"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_process"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
           <IAO_0000115:Definition xml:lang="en-us">The internal neuro-cognitive and sensorimotor processes in the brain that organize and make sense of sensory and motor information received from the external world.     </IAO_0000115:Definition>
 
@@ -790,12 +929,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Demographic_Personal_Background_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Demographic_Personal_Background_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Demographic person factors may include aspects such as age, gender, race, living situation, developmental stage, etc. (Sacco et al., 2023)     </IAO_0000115:Definition>
 
@@ -804,15 +937,18 @@ Body structures that receive sensory information from the external environment a
           <Source_ID>EMFO_S0004</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Disability_Status -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Disability_Status">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Demographic_Personal_Background_Factors"/>
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C175985</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Biographical_Personal_Background_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Biographical_Personal_Background_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Biographical factors represent one’s life history, personal context, life experiences, relationships and roles, personal culture, education, profession, etc. (Sacco et al., 2023)     </IAO_0000115:Definition>
 
@@ -824,12 +960,6 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Psychological_Personal_Background_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Psychological_Personal_Background_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Personal_Background_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Psychological factors involve such things as one’s locus of control, personal causation, interests, volition, behavioral patterns and habits, will and intent and one’s spirituality and beliefs including values, ethics and moral compass.(AOTA, 2020; Sacco et al., 2023)      </IAO_0000115:Definition>
 
@@ -838,52 +968,212 @@ Body structures that receive sensory information from the external environment a
           <Source_ID>EMFO_S0004</Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Participation">
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
-          <IAO_0000115:Definition xml:lang="en-us">Engaging in meaningful and purposeful activities one wants, needs and/or is expected to do within their roles, environment, and cultural context (AOTA, 2014).     </IAO_0000115:Definition>
-
-          <Imported_From>ICF</Imported_From>
-          <OntologyClassID>EMFO_C042870</OntologyClassID>
-          <Source_ID>EMFO_S0007</Source_ID>
-     </owl:Class>
-
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#has"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#is-a"/>
-          <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016#human_being"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016#human_being"/>
           <IAO_0000115:Definition xml:lang="en-us">An individual human being made up of a composite of biological, psychological and social characteristics     </IAO_0000115:Definition>
 
-          <Imported_From>EMMF</Imported_From>
+          <Imported_From>EMFO</Imported_From>
           <OntologyClassID>EMFO_C034289</OntologyClassID>
           <Source_ID>EMFO_S0004</Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Patient -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Patient">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
+          <IAO_0000115:Definition xml:lang="en-us">Person under a clinician's care     </IAO_0000115:Definition>
+
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C895326</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_of_Focus -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_of_Focus">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C940962</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observer -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observer">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C573853</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Clinician -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Clinician">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person"/>
+          <IAO_0000115:Definition xml:lang="en-us">A professional having direct contact with patients     </IAO_0000115:Definition>
+
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C603221</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process">
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015#process"/>
+          <Imported_From>OGMS</Imported_From>
+          <OntologyClassID>OGMS_0000060</OntologyClassID>
+          <Source_ID>EMFO_S0003</Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_functioning_related_anitomical_structures -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_functioning_related_anitomical_structures">
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004#independent_continuant"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>mf:MF_0000000</OntologyClassID>
+          <Source_ID>EMFO_S0009</Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_process -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_process">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>mf:MF_0000020</OntologyClassID>
+          <Source_ID>EMFO_S0009</Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
+          <IAO_0000115:Definition xml:lang="en-us">The physiological functions of body systems (including psychological functions). (ICF, 2001).     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C113323</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Metrics -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Metrics">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C855770</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Capacity -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Capacity">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Metrics"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C312100</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Imparment_Metric -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Imparment_Metric">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Capacity"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C154803</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Limitation_Metric -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Limitation_Metric">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Capacity"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C028229</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Level -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Level">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Capacity"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C087536</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Neuro-Cognitive_Processing -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Neuro-Cognitive_Processing">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
+          <IAO_0000115:Definition xml:lang="en-us">Neurological activity in the brain devoted to the processing of sensorimotor input in specialized parts of the brain, and use cognitive mental functions to interpret, understand and make sense of the information.     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C097066</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Information -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Information">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
+          <IAO_0000115:Definition xml:lang="en-us">Stimulation that arises from one's body and the external environment and received in the brain using sensory afferent neurons (auditory, visual, gustatory, olfactory, tactile sensors), that provide information about sound, light, taste, odors, feel; and by the body's internal environment that senses body position in space, balance and movement through vestibular and proprioceptive sensors, and afferent neurons from internal organs and organ systems (i.e., cardiopulmonary system, digestive system, etc.).       </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C648367</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Motor_Function -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Motor_Function">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
+          <IAO_0000115:Definition xml:lang="en-us">The result or action in response to the processing of  sensory stimuli received in the brain through the internal body or external world, resulting in a motor output (the doing) - such as seeing a curb (visual sensory function) and judging how high you need to lift your leg to clear the curb (motor function), or feeling fatigued and deciding to laying down to rest and doing the action.     </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C462792</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Processing -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Processing">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
+          <IAO_0000115:Definition xml:lang="en-us">Neuronal activity in the brain that receives visual, auditory, olfactory, gustatory, tactile, proprioceptive and vestibular  stimuli from the external world and internal body, distributes the stimuli in an organized manner to the relevant specialized areas in the brain for interpretation, and integrates the  sensory information in preparation for higher level cognitive functions to proceed      </IAO_0000115:Definition>
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C270344</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Facilities -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Facilities">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions"/>
+          <IAO_0000115:Definition xml:lang="en-us">The mental functions in the brain that are responsible for processing, organizing,  and interpreting the sensorimotor information received using body functions of consciousness, awareness, attention, memory and executive function skills of reasoning,  thinking, judgement, planning, decision-making,  problem-solving and language.      </IAO_0000115:Definition>
+
+
+
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C374881</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_function -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_function">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions"/>
+          <IAO_0000115:Definition xml:lang="en-us">A specific internal neuro-cognitive and sensorimotor process in the brain that organizes and make sense of specific information received from the external world , such as visual perception to decipher the written words when reading a book and using cognition to understand its meaning     </IAO_0000115:Definition>
+
+          <Imported_From>UMLS</Imported_From>
+          <OntologyClassID>EMFO_C634541</OntologyClassID>
+          <Source_ID></Source_ID>
      </owl:Class>
 
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Input -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Input">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Ecological_Mental_Functioning_Ontology"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002#continuant"/>
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
           <IAO_0000115:Definition xml:lang="en-us">Sensory information that is received by the person through body structures to do with sensory reception including the spinal cord and peripheral nervous system; eye, ear and related structures; musculoskeletal structures; and skin and related structures.     </IAO_0000115:Definition>
      <IAO_0000115:Definition xml:lang="en-us">Input refers to the sensory information the person directly receives through the body from two sources: one’s immediate and proximal external environment and contextual situation; and internally from one’s body (EMMF paper)        </IAO_0000115:Definition>
 
@@ -895,26 +1185,20 @@ Body structures that receive sensory information from the external environment a
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Input"/>
           <IAO_0000115:Definition xml:lang="en-us">Contextual and environmental factors that exist outside of the individual person that may impose demands and exert influence at some level upon the person.  External factors have potential to support or hinder the individual's performance and participation in activities.  
 
 All things outside of the individual person that may influence the person directly or indirectly     </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C031158</OntologyClassID>
-          <Source_ID>EMFO_S0004</Source_ID>
+          <Source_ID> </Source_ID>
      </owl:Class>
 
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Context -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Context">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors"/>
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004#independent_continuant"/>
           <IAO_0000115:Definition xml:lang="en-us">the universe of discourse that surrounds a language unit and helps determine its interpretation (NCI)     </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
@@ -925,13 +1209,7 @@ All things outside of the individual person that may influence the person direct
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environment -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environment">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Context"/>
           <IAO_0000115:Definition xml:lang="en-us">The external elements and conditions which surround, influence and affect the life and development of an organism or population MTH.
 The physical and social aspects of one's immediate life space that the person interacts with and can influence.     </IAO_0000115:Definition>
 
@@ -940,10 +1218,19 @@ The physical and social aspects of one's immediate life space that the person in
           <Source_ID>EMFO_S0004</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_Environment -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_Environment">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environment"/>
+          <Imported_From>EMFO</Imported_From>
+          <OntologyClassID>EMFO_C418571</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Intangible features that include a person’s life circumstance within a particular situation that can influence participation. These include cultural factors such, social norms, practices and ideologies; temporal factors such as historical situation and natural weather seasons; sociopolitical factors such as societal attitudes, government policies, laws, health and social systems; and situational factors that include the current life event of the person.
 
 Contextual factors can define what constitutes appropriate behaviors in a given situation. For example, during the situation of war time, killing another human is considered appropriate to the role of soldier.  However, killing another human being in the situation of civilian life is considered unlawful and punished.
@@ -952,12 +1239,12 @@ Contextual factors are less mailable for the individual person to change and inf
 
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C074894</OntologyClassID>
-          <Source_ID>EMFO_S0004</Source_ID>
+          <Source_ID></Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contextual_Factors -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts">
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contextual_Factors">
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Distal contextual features influence the person and their behaviors, but they are less tangible, more abstract, and less malleable for the person to change and influence.  The ICF societal environmental level is considered a distal context to the individual.  Distal contexts have an impact on a person’s life and living and includes formal and informal social structures and networks, ideologies and attitudes, policies and laws; communication and transportation services; community and social services; and health care systems among others (ICF, 2001).     </IAO_0000115:Definition>
 
@@ -969,12 +1256,6 @@ Contextual factors are less mailable for the individual person to change and inf
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sociopolitical_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sociopolitical_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">components related to both social and political conditions/situations? Merriam Webster     </IAO_0000115:Definition>
 
@@ -986,13 +1267,7 @@ Contextual factors are less mailable for the individual person to change and inf
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Cultural_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Cultural_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Cultural factors such, social norms, practices and ideologies     </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
@@ -1003,13 +1278,7 @@ Contextual factors are less mailable for the individual person to change and inf
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Temporal_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Temporal_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Temporal factors such as historical situation and natural weather seasons     </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
@@ -1020,13 +1289,7 @@ Contextual factors are less mailable for the individual person to change and inf
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Situational_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Situational_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contexts"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Distal_Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">Sociopolitical factors such as societal attitudes, government policies, laws, health and social systems     </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
@@ -1034,15 +1297,9 @@ Contextual factors are less mailable for the individual person to change and inf
           <Source_ID>EMFO_S0004</Source_ID>
      </owl:Class>
 
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts -->
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contextual_Factors -->
 
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contextual_Factors">
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">The immediate context of day-to-day life to the individual.  The person has greater agency to change and influence their proximal contextual situation, such as leaving an unsatisfying job for one that is more rewarding (changing the job context) or limiting the number of friends one goes out to dinner with for a more quiet and intimate evening (changing the social activities context). Proximal contexts provide more possibilities and opportunities for the individual to exert an influence as they are more tangible and malleable than contexts that are more distal. abstract, or far-removed from the individual. (Sacco et al., 2023)     </IAO_0000115:Definition>
 
@@ -1054,13 +1311,7 @@ Contextual factors are less mailable for the individual person to change and inf
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Situational_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Situational_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">A person’s immediate life world situation or circumstance     </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
@@ -1071,13 +1322,7 @@ Contextual factors are less mailable for the individual person to change and inf
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Temporal_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Temporal_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">A persons immediate situation that relates to the time and timing of activities that structure and impact one's day and immediate life, such as day and night, time of day, the length of time involved in particular activities (such as a work day), being "ontime" to appointments, etc.     </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
@@ -1088,13 +1333,7 @@ Contextual factors are less mailable for the individual person to change and inf
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Cultural_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Cultural_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts"/>
-     </owl:Restriction>
-</owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contexts"/>
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Proximal_Contextual_Factors"/>
           <IAO_0000115:Definition xml:lang="en-us">A person's own personal culture      </IAO_0000115:Definition>
 
           <Imported_From>EMMF</Imported_From>
@@ -1119,54 +1358,60 @@ Environmental factors are dynamic and impact and exert influence directly upon t
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_Environment_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_Environment_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environmental_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environmental_Factors"/>
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C044109</OntologyClassID>
           <Source_ID>EMFO_S0004</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Physical_Environment -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Physical_Environment">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environmental_Factors"/>
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C592475</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Physical_Environment_Factors -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Physical_Environment_Factors">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environmental_Factors"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Environmental_Factors"/>
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C094572</OntologyClassID>
           <Source_ID>EMFO_S0004</Source_ID>
      </owl:Class>
 
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors_Metrics -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors_Metrics">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Attributes"/>
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C907771</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Barriers -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Barriers">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors_Metrics"/>
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C161386</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
+     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Facilitators -->
+
+<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Facilitators">
+     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Factors_Metrics"/>
+          <Imported_From>EMMF</Imported_From>
+          <OntologyClassID>EMFO_C236637</OntologyClassID>
+          <Source_ID></Source_ID>
+     </owl:Class>
+
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Ecological_Mental_Functioning_Ontology"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Occurrent"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Input"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#provides_input_for"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Input"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003#occurrent"/>
           <IAO_0000115:Definition xml:lang="en-us">Feedback provides moment by moment continual sensory information about the results of one's actions within one's current context and environmental situation  (Sacco et al., 2023)     </IAO_0000115:Definition>
 
@@ -1178,12 +1423,6 @@ Environmental factors are dynamic and impact and exert influence directly upon t
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Internal_Feedback -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Internal_Feedback">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback"/>
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C024741</OntologyClassID>
@@ -1193,293 +1432,10 @@ Environmental factors are dynamic and impact and exert influence directly upon t
      <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Feedback -->
 
 <owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#External_Feedback">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback"/>
-     </owl:Restriction>
-</owl:equivalentClass>
      <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Feedback"/>
           <Imported_From>EMMF</Imported_From>
           <OntologyClassID>EMFO_C029317</OntologyClassID>
           <Source_ID>EMFO_S0004</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process">
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015#process"/>
-          <Imported_From>OGMS</Imported_From>
-          <OntologyClassID>OGMS_0000060</OntologyClassID>
-          <Source_ID>EMFO_S0003</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_functioning_related_anitomical_structures -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_functioning_related_anitomical_structures">
-     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004#independent_continuant"/>
-          <Imported_From>MFO</Imported_From>
-          <OntologyClassID>mf:MF_0000000</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior(1) -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#behavior(1)">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process"/>
-          <Imported_From>GO</Imported_From>
-          <OntologyClassID>go:GO_0007610</OntologyClassID>
-          <Source_ID>EMFO_S0010</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_process -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_process">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process"/>
-          <Imported_From>MFO</Imported_From>
-          <OntologyClassID>mf:MF_0000020</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Abnormal_Behavior -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Abnormal_Behavior">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-          <IAO_0000115:Definition xml:lang="en-us">Abnormal behavior may create distress, make it difficult to function, and may be socially disruptive. It may violate social norms and make it difficult for people to function in social settings and maintain social relationships. (Cherry, 2022)     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C972246</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities_and_Participation -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Activities_and_Participation">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-     
-     <IAO_0000115:Definition xml:lang="en-us">Performing the tasks or actions needed for engagement in life situations considered meaningful and purposeful by the individual     </IAO_0000115:Definition>
-
-          <Imported_From>ICF</Imported_From>
-          <OntologyClassID>EMFO_C025152</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Adaptive_Behavior -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Adaptive_Behavior">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-          <IAO_0000115:Definition xml:lang="en-us">Actions a person takes that produce favorable functional outcomes for that person in relation to the contextual situation and environment they are in.
-In the ontology adaptive behavior will be understood from the perspective of the person, and not from the perspective of  others in the environment (i.e., what could be considered adaptive behavior for the individual could also be perceived as maladaptive by others within that environment)     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C041963</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Facilities -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Facilities">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_Functions"/>
-          <IAO_0000115:Definition xml:lang="en-us">The mental functions in the brain that are responsible for processing, organizing,  and interpreting the sensorimotor information received using body functions of consciousness, awareness, attention, memory and executive function skills of reasoning,  thinking, judgement, planning, decision-making,  problem-solving and language.      </IAO_0000115:Definition>
-
-
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C374881</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Context_and_Enviornmental_Factors -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Context_and_Enviornmental_Factors">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Context"/>
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C498790</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#inappropriate_behavior -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#inappropriate_behavior">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-          <IAO_0000115:Definition xml:lang="en-us">Behavior that is considered to be unsuitable, improper or unacceptable by the social environment within a particular context.     </IAO_0000115:Definition>
-
-          <Imported_From>UMLS</Imported_From>
-          <OntologyClassID>EMFO_C191549</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#maladaptive_behavior -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#maladaptive_behavior">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-          <IAO_0000115:Definition xml:lang="en-us">Actions a person takes that produce poor or less-favorable functional outcomes for that person in relation to the contextual situation and environment they are in.
-In the ontology the determination of what constitutes maladaptive behavior will be understood and considered from the perspective of the sociocultural environment (such as others), and not from the perspective of  the person.     </IAO_0000115:Definition>
-
-          <Imported_From>UMLS</Imported_From>
-          <OntologyClassID>EMFO_C658354</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_function -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#mental_function">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Mental_Functions"/>
-          <IAO_0000115:Definition xml:lang="en-us">A specific internal neuro-cognitive and sensorimotor process in the brain that organizes and make sense of specific information received from the external world , such as visual perception to decipher the written words when reading a book and using cognition to understand its meaning     </IAO_0000115:Definition>
-
-          <Imported_From>UMLS</Imported_From>
-          <OntologyClassID>EMFO_C634541</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions">
-     <owl:equivalentClass>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#part_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#(some)_have"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Impairments"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#dependent_on_integrity_of"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Structures"/>
-     </owl:Restriction>
-     <owl:Restriction>
-          <owl:onProperty rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#functionally_related_to"/>
-          <owl:allValuesFrom rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#bodily_process"/>
-     </owl:Restriction>
-     </owl:equivalentClass>
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Person_Factors"/>
-          <IAO_0000115:Definition xml:lang="en-us">The physiological functions of body systems (including psychological functions). (ICF, 2001).     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C113323</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Neuro-cognitive_processing -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Neuro-cognitive_processing">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
-          <IAO_0000115:Definition xml:lang="en-us">Neurological activity in the brain devoted to the processing of sensorimotor input in specialized parts of the brain, and use cognitive mental functions to interpret, understand and make sense of the information.     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C097066</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Non_Actions -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Non_Actions">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-          <IAO_0000115:Definition xml:lang="en-us">A volitional choice of not to act resulting in not doing or not participating in activities      </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C836426</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Normal_Behavior -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Normal_Behavior">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Observable_Behavior"/>
-          <IAO_0000115:Definition xml:lang="en-us">Behavior that is considered appropriate in relation to the current  context and environmental situation the person is in.     </IAO_0000115:Definition>
-
-          <Imported_From>UMLS</Imported_From>
-          <OntologyClassID>EMFO_C587017</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Information -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Information">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
-          <IAO_0000115:Definition xml:lang="en-us">Stimulation that arises from one's body and the external environment and received in the brain using sensory afferent neurons (auditory, visual, gustatory, olfactory, tactile sensors), that provide information about sound, light, taste, odors, feel; and by the body's internal environment that senses body position in space, balance and movement through vestibular and proprioceptive sensors, and afferent neurons from internal organs and organ systems (i.e., cardiopulmonary system, digestive system, etc.).       </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C648367</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_motor_function -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_motor_function">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
-          <IAO_0000115:Definition xml:lang="en-us">The result or action in response to the processing of  sensory stimuli received in the brain through the internal body or external world, resulting in a motor output (the doing) - such as seeing a curb (visual sensory function) and judging how high you need to lift your leg to clear the curb (motor function), or feeling fatigued and deciding to laying down to rest and doing the action.     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C462792</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Processing -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_Processing">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Body_Functions"/>
-          <IAO_0000115:Definition xml:lang="en-us">Neuronal activity in the brain that receives visual, auditory, olfactory, gustatory, tactile, proprioceptive and vestibular  stimuli from the external world and internal body, distributes the stimuli in an organized manner to the relevant specialized areas in the brain for interpretation, and integrates the  sensory information in preparation for higher level cognitive functions to proceed      </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C270344</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Temporal_nature -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Temporal_nature">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-          <IAO_0000115:Definition xml:lang="en-us">Time the activity will take to complete including the number of major steps and length of time to complete each step, potential for delays in the process, sequence of activity is fixed or flexible, speed of the activity is fixed or flexible.     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C560058</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_demands_of_task -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Sensory_demands_of_task">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-          <IAO_0000115:Definition xml:lang="en-us">Visual discrimination for color or texture, auditory discrimination for sound or language, tactile discrimination for temperature or texture, olfactory discrimination for different smells, gustatory discrimination for different tastes, proprioceptive discrimination for positioning and movement, vestibular demands of positioning and movement, and pain considerations.     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C598078</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Perceptual_demands_of_task -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Perceptual_demands_of_task">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-          <IAO_0000115:Definition xml:lang="en-us">Perceptual factors that can impose activity demands include spatial relationships, visual perception (visual closure, visual memory and sequential memory, figure-ground, visual discrimination), stereognosis, sensory touch, depth perception, right/left discrimination, body scheme, topographical orientation, position in space, visual pattern recognition, eye-hand coordination and size and/or color matching.     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C427656</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_demands -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Cognitive_demands">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-          <IAO_0000115:Definition xml:lang="en-us">Number of steps involved and if directions are simple or complex, level of comprehension needed, memory skills needed, concentration and attention needed, level of arousal needed, recognition skills needed, cognitive motor skills needed, problem-solving and decision making, time-management skills, sequencing skills, other executive functioning skills.     </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C569080</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
-     </owl:Class>
-
-     <!-- https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_demands -->
-
-<owl:Class rdf:about="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#Social_demands">
-     <rdfs:subClassOf rdf:resource="https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO#General_Tasks_and_Demands"/>
-          <IAO_0000115:Definition xml:lang="en-us">Compete or cooperate with others, how much social interaction required, time with others (constant, intermittent), chance for breaks from others,      </IAO_0000115:Definition>
-
-          <Imported_From>EMMF</Imported_From>
-          <OntologyClassID>EMFO_C927379</OntologyClassID>
-          <Source_ID>EMFO_S0009</Source_ID>
      </owl:Class>
 
 </rdf:RDF>
