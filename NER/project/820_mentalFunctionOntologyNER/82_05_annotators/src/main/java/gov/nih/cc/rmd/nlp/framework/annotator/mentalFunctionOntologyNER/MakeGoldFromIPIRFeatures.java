@@ -305,7 +305,7 @@ public class MakeGoldFromIPIRFeatures extends JCasAnnotator_ImplBase {
   // ---------------------------------------
    private PerformanceMeter performanceMeter = null;
    String evalGoldFocus = null;
-   String annotationSetName = "ipir_subcategory_model";
+   String annotationSetName = "ipir_category";
   
    
   

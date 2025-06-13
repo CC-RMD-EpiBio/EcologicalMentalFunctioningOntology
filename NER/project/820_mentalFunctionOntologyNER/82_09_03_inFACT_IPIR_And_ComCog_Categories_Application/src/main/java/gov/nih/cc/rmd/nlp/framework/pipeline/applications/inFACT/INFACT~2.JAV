@@ -19,7 +19,8 @@ import org.apache.uima.analysis_engine.AnalysisEngine;
 
 import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.MentalFunctionOntologyNERAnnotator;
 import gov.nih.cc.rmd.nlp.framework.marshallers.frameworkObject.FrameworkObject;
-import gov.nih.cc.rmd.nlp.framework.pipeline.InFACTSubCategorizationBySentencePipeline;
+import gov.nih.cc.rmd.nlp.framework.pipeline.InFACTSubCategorizationBySentenceComcogMachinePipeline;
+
 import gov.nih.cc.rmd.nlp.framework.pipeline.applications.ApplicationAPI;
 import gov.nih.cc.rmd.nlp.framework.pipeline.applications.FrameworkBaselineApplication;
 import gov.nih.cc.rmd.nlp.framework.pipeline.applications.FrameworkReadersAux;
@@ -95,7 +96,7 @@ public class InFACT_SubCategoriesAPI extends ApplicationAPI {
       // -------------------
       // Create an engine with a pipeline, attach it to the application
       // -------------------
-      InFACTSubCategorizationBySentencePipeline aPipeline = new InFACTSubCategorizationBySentencePipeline(args );
+      InFACTSubCategorizationBySentenceComcogMachinePipeline aPipeline = new InFACTSubCategorizationBySentenceComcogMachinePipeline(args );
     
       AnalysisEngine ae = aPipeline.getAnalysisEngine( );
       super.initializeApplication( this.args, ae);
@@ -131,7 +132,7 @@ public class InFACT_SubCategoriesAPI extends ApplicationAPI {
 
     try {
       String[] args = InFACTSubCategoriesApplication.setArgs( pArgs);
-      String   platformBasePath  = U.getOption(pArgs, "--platformBasePath=", "/softwareRepos");
+      String   platformBasePath  = U.getOption(pArgs, "--platformBasePath=", "/media/dgx2_nfs1/nlp/divitag/softwareRepos");
       GLog.set(args);
       InFACT_SubCategoriesAPI anApplication = new InFACT_SubCategoriesAPI( args);
       String payloadAnnotationSetName = "comcog:ipir";

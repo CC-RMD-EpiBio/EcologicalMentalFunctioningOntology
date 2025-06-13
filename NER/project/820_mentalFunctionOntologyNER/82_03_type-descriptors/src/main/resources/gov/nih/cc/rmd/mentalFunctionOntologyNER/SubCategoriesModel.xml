@@ -311,6 +311,17 @@
       <supertypeName>gov.nih.cc.rmd.inFACT.bstract.IPIR_yes</supertypeName>         
     </typeDescription>
     
+  <typeDescription>
+      <name>gov.nih.cc.rmd.ontology.IPIR_no</name>
+      <description>IPIR no (machine marked)</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.bstract.IPIR_no</supertypeName>      
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.ontology.IPIR_yes</name>
+      <description>IPIR Yes (machine marked)</description>
+      <supertypeName>gov.nih.cc.rmd.inFACT.bstract.IPIR_yes</supertypeName>         
+    </typeDescription>
  
      <typeDescription>
       <name>gov.nih.cc.rmd.inFACT.ComCogCategories</name>

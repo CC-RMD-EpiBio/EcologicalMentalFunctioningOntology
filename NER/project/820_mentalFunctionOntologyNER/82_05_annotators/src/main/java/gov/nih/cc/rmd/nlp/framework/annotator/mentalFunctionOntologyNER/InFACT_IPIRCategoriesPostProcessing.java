@@ -23,9 +23,10 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import gate.FeatureMap;
 import gov.nih.cc.rmd.inFACT.manual.IPIRyes;
 import gov.nih.cc.rmd.inFACT.x.Comcog_yes;
-
+import gov.nih.cc.rmd.nlp.framework.marshallers.gate.GateUtils;
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
 import gov.nih.cc.rmd.nlp.framework.utils.PerformanceMeter;
 import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
@@ -154,6 +155,58 @@ public class InFACT_IPIRCategoriesPostProcessing extends JCasAnnotator_ImplBase 
      
    } // end Method processIPIRSentence() ------------
 
+
+// =================================================
+  /**
+   * getOriginalValue 
+   * 
+   * @param pAnnotation
+   * @param string
+   * @return pFeatureName
+   * @throws Exception 
+  */
+  // =================================================
+  private String getOriginalValue(gov.nih.cc.rmd.gate.Annotation pAnnotation, String pFeatureName) throws Exception {
+    String returnVal = "";
+    
+   String blob = pAnnotation.getGateSerializedAnnotation();
+    gate.Annotation gateAnnotation = GateUtils.deSerializeAnnotation(blob);
+    
+    if ( gateAnnotation != null ) {
+      FeatureMap gateFeatureMap = gateAnnotation.getFeatures();
+      if ( gateFeatureMap != null )
+        if ( (gateFeatureMap != null ) && (gateFeatureMap.size() > 0 )) {
+          Set<Object> featureNames = gateFeatureMap.keySet();
+          if (( featureNames != null ) && (featureNames.size() > 0) ) {
+       
+            for ( Object featureName : featureNames ) {
+              if ( pFeatureName.equals( ( String )featureName)) {
+                
+                try {
+                returnVal = (String )  gateFeatureMap.get( featureName);
+                break;
+                } catch (Exception e ) {
+                  try { 
+                    boolean tt = (Boolean) gateFeatureMap.get( featureName);
+                    returnVal = String.valueOf( tt);
+                    break;
+                  } catch (Exception e2) {
+                    
+                    try {
+                      int tt = (Integer) gateFeatureMap.get(featureName);
+                      returnVal = String.valueOf(tt);
+                    } catch (Exception e3) {}
+                  }
+                }
+              }
+            }
+          }
+        }
+    }
+    
+    
+    return returnVal;
+  } // end Method getOriginalValue() -----------------
 
 
 //----------------------------------

@@ -149,8 +149,8 @@ public class MakeXFromMachineFeatures extends JCasAnnotator_ImplBase {
   public void initialize(String[] pArgs) throws ResourceInitializationException {
        
     this.performanceMeter = new ProfilePerformanceMeter( pArgs, this.getClass().getSimpleName() );
-    this.comcogAnnotationSetName = U.getOption(pArgs, "--comcogAnnotationSetName=", "comcog_subcategory_model");
-    this.ipirAnnotationSetName = U.getOption(pArgs, "--ipirAnnotationSetName=", "ipir_subcategory_model");
+    this.comcogAnnotationSetName = U.getOption(pArgs, "--comcogAnnotationSetName=", "comcog_category");
+    this.ipirAnnotationSetName = U.getOption(pArgs, "--ipirAnnotationSetName=", "ipir_category");
 
     
   } // end Method initialize() -------
@@ -162,8 +162,8 @@ public class MakeXFromMachineFeatures extends JCasAnnotator_ImplBase {
   // ---------------------------------------
    private PerformanceMeter performanceMeter = null;
    
-   private String comcogAnnotationSetName = "comcog_subcategory_model";
-   private String ipirAnnotationSetName = "pir_subcategory_model";
+   private String comcogAnnotationSetName = "comcog_category";
+   private String ipirAnnotationSetName = "pir_category";
  
    
   

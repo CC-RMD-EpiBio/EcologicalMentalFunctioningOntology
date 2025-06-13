@@ -1,7 +1,7 @@
 // =================================================
 /**
- * MakeXFromManualFeataures creates X annotations from
- * the machine and manual features for the IPIR_yes 
+ * MakeManualFromXFeatures creates manual annotations from
+ * the x   features for the IPIR_yes 
  * and ComCog_yes Annotations.
  * 
  * Downstream annotators are looking for the x.__yes
@@ -43,7 +43,7 @@ import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.MakeGold
 
 
 
-public class MakeXFromManualFeatures extends JCasAnnotator_ImplBase {
+public class MakeManualFromXFeatures extends JCasAnnotator_ImplBase {
  
   
   // -----------------------------------------
@@ -60,55 +60,23 @@ public class MakeXFromManualFeatures extends JCasAnnotator_ImplBase {
     GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process","started MakeXFromManualFeatures");
     
     String documentId = VUIMAUtil.getDocumentId(pJCas);
-    // System.err.println("documentID=" + documentId);
     // ----------------------------
     // IPIR
     // ---------------------------
-                                                                      
-    // remove framework generated x ipir's 
-    List<Annotation> ontologyIPIRYess = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.ontology.IPIR_yes.typeIndexID , false);
     
-    
-    if (ontologyIPIRYess != null && !ontologyIPIRYess.isEmpty() )
-        for ( Annotation ontologyIPIRYes : ontologyIPIRYess ) {
-          // we remove all annotations that come from "framework" annotation set that are comcog yes?
-          String annotationSetName = ((gov.nih.cc.rmd.ontology.IPIR_yes) ontologyIPIRYes).getAnnotationSetName();
-          if ( annotationSetName != null && annotationSetName.contains("framework"))
-            ontologyIPIRYes.removeFromIndexes();
-       }
-    
+   
     // turn manual ipir mentions into x ipir sentence mentions
     List<Annotation> IPIRYess = getManual_IPIR_Yesses( pJCas );
+    
+    // turn manual comcog mentions into x comcog sentence mentions
+    List<Annotation> ComcogYess = getManual_Comcog_Yesses( pJCas );
    
     
-    if (IPIRYess != null && !IPIRYess.isEmpty() )
-      for ( Annotation ipirYes : IPIRYess ) 
-        try {
-          MakeGoldFromIPIRFeatures.createIPIRYes( pJCas, (gov.nih.cc.rmd.inFACT.bstract.IPIR_yes) ipirYes, this.ipirAnnotationSetName);
-        } catch (Exception e3) {
-         // MakeGoldFromIPIRFeatures.createIPIRYes( pJCas, (gov.nih.cc.rmd.inFACT.bstract.IPIR_yes) ipirYes, this.ipirAnnotationSetName);
-          
-        }
-    
-
-    // ----------------------------
-    // ComCog
-    //   first, remove the comcog_yes sentences that were created by the ontology pipeline.
-    //   use the manual ones instead
-    // ----------------------------
-    List<Annotation> ontologyComCogYess = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.inFACT.x.Comcog_yes.typeIndexID , false);
-    if (ontologyComCogYess != null && !ontologyComCogYess.isEmpty() )
-      for ( Annotation ontologyComCogYes : ontologyComCogYess ) {
-        // we remove all annotations that come from "framework" annotation set that are comcog yes?
-        String annotationSetName = ((gov.nih.cc.rmd.inFACT.x.Comcog_yes) ontologyComCogYes).getAnnotationSetName();
-        if ( annotationSetName != null && annotationSetName.contains(this.comcogAnnotationSetName))
-          ontologyComCogYes.removeFromIndexes();
-     }
-        
-  
+   
+     
+  //   Not needed ? 
+    /*
     List<Annotation> comCogYess = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.inFACT.manual.Comcog_yes.typeIndexID , false);
-  //  if ( comCogYess == null  || comCogYess.isEmpty() )
-  //   comCogYess = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.inFACT.x.Comcog_yes.typeIndexID , false);
     
     if (comCogYess != null && !comCogYess.isEmpty() )
 
@@ -118,6 +86,8 @@ public class MakeXFromManualFeatures extends JCasAnnotator_ImplBase {
     GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process"," End MakeXFromManualFeatures");
     this.performanceMeter.stopCounter();
     
+    */
+    
     } catch (Exception e) {
       e.printStackTrace();
       System.err.println("Issue with " + this.getClass().getName() + " " + e.toString());
@@ -125,7 +95,30 @@ public class MakeXFromManualFeatures extends JCasAnnotator_ImplBase {
     }
   } // end Method Process() ---------------------------
   
+  
    // =================================================
+  /**
+   * getManual_Comcog_Yesses finds either framework comcog_yes, or manual comcog_yes
+   * mentions and turns them into x comcog_yes sentences
+   * 
+   * 
+   * @param pJCas
+   * @return List<Annotation>
+  */
+  // =================================================
+  private final List<Annotation> getManual_Comcog_Yesses(JCas pJCas) {
+    List<Annotation> returnList = null;
+    
+    try {
+      
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return returnList;
+  } // end getManual_Comcog_yesses() -----------------
+
+
+  // =================================================
   /**
    * getManual_IPIR_Yesses returns the manually annotated
    * ipir yes's to be turned into x ipir yes's.  
@@ -165,12 +158,12 @@ public class MakeXFromManualFeatures extends JCasAnnotator_ImplBase {
         List<Annotation> manualYesses = new ArrayList<Annotation>(IPIRYess.size());
         for ( Annotation reallyAManualYes : IPIRYess ) {
           String annotationSetName = ((gov.nih.cc.rmd.inFACT.x.IPIR_yes) reallyAManualYes).getAnnotationSetName() ;
-          if ( annotationSetName != null && !annotationSetName.equals("framework")) {
+          if ( annotationSetName != null && !annotationSetName.equals(this.ontology_ipir_extraction_annotationSetName)) {
             Annotation aManualIPIRAnnotation = createManualIPIRYes( pJCas, reallyAManualYes);
             manualYesses.add( aManualIPIRAnnotation);
             reallyAManualYes.removeFromIndexes();
            
-          } // end if the setname is not framework
+          } // end if the setname is not this.ontology_ipir_extraction 
         } // end loop thru ipir yess
         // clear the manual but x ipir x's, then move the manual ipir yes's to IPIRYess
         if ( manualYesses != null && !manualYesses.isEmpty()) {
@@ -277,9 +270,7 @@ public class MakeXFromManualFeatures extends JCasAnnotator_ImplBase {
   public void initialize(String[] pArgs) throws ResourceInitializationException {
        
     this.performanceMeter = new ProfilePerformanceMeter( pArgs, this.getClass().getSimpleName() );
-    this.comcogAnnotationSetName = U.getOption(pArgs, "--comcogAnnotationSetName=", "comcog_category");
-    this.ipirAnnotationSetName = U.getOption(pArgs, "--ipirAnnotationSetName=", "ipir_category");
-
+  
     
   } // end Method initialize() -------
  
@@ -289,9 +280,10 @@ public class MakeXFromManualFeatures extends JCasAnnotator_ImplBase {
   // Global Variables
   // ---------------------------------------
    private PerformanceMeter performanceMeter = null;
+   private String ontology_ipir_extraction_annotationSetName = "ontology_ipir_extraction";
    
-   private String comcogAnnotationSetName = "comcog_category";
-   private String ipirAnnotationSetName = "ipir_category";
+ //  private String comcogAnnotationSetName = "comcog_category";
+  // private String ipirAnnotationSetName = "ipir_category";
  
    
   

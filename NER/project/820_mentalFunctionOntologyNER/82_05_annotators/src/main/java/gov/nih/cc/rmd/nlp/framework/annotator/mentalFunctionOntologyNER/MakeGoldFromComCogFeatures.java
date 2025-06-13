@@ -128,7 +128,7 @@ public class MakeGoldFromComCogFeatures extends JCasAnnotator_ImplBase {
         if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getD310_d329   () )  { D310_D329_ReceivingCommunication       statement = new Manual_D310_D329_ReceivingCommunication( pJCas);        createComCogAnnotation(pJCas, "d310_d329", statement, comcogYes ); }
         if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getD330_d349   () )  { D330_D349_ProducingCommunication       statement = new Manual_D330_D349_ProducingCommunication( pJCas);        createComCogAnnotation(pJCas, "d330_d349", statement, comcogYes ); }
         if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getD350_d369   () )  { D350_D369_ConversationAndDiscussion    statement = new Manual_D350_D369_ConversationAndDiscussion( pJCas);     createComCogAnnotation(pJCas, "d350_d369", statement, comcogYes ); }
-        if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getApplied_memory()) { AppliedMemory                          statement = new Manual_AppliedMemory( pJCas);                           createComCogAnnotation(pJCas, "AppliedMemory", statement, comcogYes ); }
+        if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getApplied_memory()) { AppliedMemory                          statement = new Manual_AppliedMemory( pJCas);                           createComCogAnnotation(pJCas, "applied_memory", statement, comcogYes ); }
         if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getAdaptation   () ) { Adaptation                             statement = new Manual_Adaptation( pJCas);                              createComCogAnnotation(pJCas, "Adaption",      statement, comcogYes ); }
         if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getPacing       () ) { Pacing                                 statement = new Manual_Pacing( pJCas);                                  createComCogAnnotation(pJCas, "Pacing",        statement, comcogYes ); }
         if ( ((gov.nih.cc.rmd.inFACT.manual.Comcog_yes) comcogYes).getPersistence  () ) { Persistence                            statement = new Manual_Persistence( pJCas);                             createComCogAnnotation(pJCas, "Persistence",   statement, comcogYes ); }
@@ -170,7 +170,7 @@ public class MakeGoldFromComCogFeatures extends JCasAnnotator_ImplBase {
 	  gov.nih.cc.rmd.inFACT.x.Comcog_yes statement = new gov.nih.cc.rmd.inFACT.x.Comcog_yes( pJCas);
 	  statement.setBegin( comcogYes.getBegin());
 	  statement.setEnd( comcogYes.getEnd());
-	  statement.setId( comcogYes.getId());
+	  statement.setId( "MakeGoldFromComCogFeatures.createComCogYes_" + comcogYes.getId());
 	  statement.setAnnotationSetName(pAnnotationSetName);
 	  statement.setD110_d129  ( false );
 	  statement.setD130_d159  ( false );      

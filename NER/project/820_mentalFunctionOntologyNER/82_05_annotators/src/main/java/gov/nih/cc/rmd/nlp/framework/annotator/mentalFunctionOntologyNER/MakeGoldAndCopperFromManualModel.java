@@ -77,6 +77,8 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
       String copperEvaluateAnnotationName = U.getOption(this.args, "--copperEvaluateAnnotationName=", "gov.nih.cc.rmd.inFACT.x.Comcog_yes");
       String goldEvaluateAnnotationName = U.getOption(this.args, "--goldEvaluateAnnotationName=", "gov.nih.cc.rmd.inFACT.manual.Comcog_yes");
       String evaluateAttributeName = U.getOption(this.args, "--evaluateAttributeName=", "");
+      String copperEvaluateAttributeName = U.getOption(this.args, "--copperEvaluateAttributeName=", "");
+      
      
       
       // This code is there because there are differences between the annotation set names 
@@ -96,7 +98,8 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
       for (Annotation anAnnotation : goldSetAnnotations) {
    
           String featureValue = UIMAUtil.getFeatureValueByName(anAnnotation, evaluateAttributeName);
-          if (featureValue != null && featureValue.toLowerCase().equals("true")) {
+          String goldAnnotationName = goldEvaluateAnnotationName;
+          if ((featureValue != null && featureValue.toLowerCase().equals("true")) || goldAnnotationName.endsWith( evaluateAttributeName )) {
             createGold(pJCas, anAnnotation);
           } 
       } // loop through gold Annotations
@@ -109,8 +112,11 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
             // find the model comcog/ipir to create the copper
             String copperFeatureValue = UIMAUtil.getFeatureValueByName(aCopperAnnotation, evaluateAttributeName);
 
-            if (copperFeatureValue != null && copperFeatureValue.toLowerCase().equals("true"))
-              createCopper(pJCas, aCopperAnnotation);
+           // if (copperFeatureValue != null && copperFeatureValue.toLowerCase().equals("true"))
+            if ((copperFeatureValue != null && copperFeatureValue.toLowerCase().equals("true")) || copperEvaluateAnnotationName.endsWith( copperEvaluateAttributeName )) {
+                
+              createCopper(pJCas, aCopperAnnotation, evaluateAttributeName);
+            }
             
           } // end if a copper Annotation was found
 
@@ -539,7 +545,7 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
    * @param pMention
    */
   // =================================================
-  private final Annotation createCopper(JCas pJCas, Annotation pMention) {
+  private final Annotation createCopper(JCas pJCas, Annotation pMention, String pSemanticType) {
 
     Copper statement = new Copper(pJCas);
     statement.setBegin(pMention.getBegin());
@@ -547,7 +553,7 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
     ((Concept) statement).setAnnotationSetName(this.annotationSetName);
 
     // statement.setEvidence(evalGoldFocus);
-    String evidence = getLexEvidence( pJCas, pMention);
+    String evidence = getLexEvidenceAux( pJCas, pMention, pSemanticType);
     statement.setEvidence(evidence);
     statement.setAssertionStatus(((Concept) pMention).getAssertionStatus());
     statement.setSectionName(((Concept) pMention).getSectionName());
@@ -623,7 +629,7 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
   * 
   **/
  // ----------------------------------
- private final String getLexEvidence(JCas pJCas, Annotation pMention) {
+ private final String getLexEvidenceObs(JCas pJCas, Annotation pMention) {
    HashSet<String> activityHash = new HashSet<String>();
    String returnVal = "";
 
@@ -633,14 +639,16 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
   
    if (terms != null && !terms.isEmpty()) {
      for (Annotation term : terms) {
-     String semanticTypes = ((LexicalElement) term).getSemanticTypes();
-     if ( semanticTypes != null && !semanticTypes.isEmpty()) {
-       String[] someTypes = U.split ( semanticTypes, ":");
-       if ( someTypes != null && someTypes.length > 0  ) 
-         for ( String aType: someTypes )
-           someTypesHash.add( aType );
-       }
-     }
+       String termName = term.getCoveredText();
+       termName = U.normalize(termName);
+       String semanticTypes = ((LexicalElement) term).getSemanticTypes();
+       if ( semanticTypes != null && !semanticTypes.isEmpty()) {
+         String[] someTypes = U.split ( semanticTypes, ":");
+         if ( someTypes != null && someTypes.length > 0  ) 
+           for ( String aType: someTypes )
+             someTypesHash.add( aType );
+       } // if there are semantic types 
+     } // end loop thru terms
      if ( !someTypesHash.isEmpty()) {
        StringBuffer buff2 = new StringBuffer();
        String[] buff = new String[ someTypesHash.size() ];
@@ -653,12 +661,69 @@ public class MakeGoldAndCopperFromManualModel extends JCasAnnotator_ImplBase {
             buff2.append(":");
         } // end loop thru sorted, uniq'd buffer 
        returnVal = buff2.toString();
+      
      } // end if there are some entries in the hash
    } // if there are terms in this mention
   
    return returnVal;
 
  } // end Method getLexEvidence() --------------
+ 
+//----------------------------------
+/**
+ * getLexEvidence returns the semantic types for the terms participating in this copper statement
+ * 
+ * 
+ * @return String
+ * 
+ **/
+// ----------------------------------
+private final String getLexEvidenceAux(JCas pJCas, Annotation pMention, String pMatchedSemanticType) {
+  HashSet<String> activityHash = new HashSet<String>();
+  String returnVal = "";
+
+  String matchedSemanticType = pMatchedSemanticType;
+  if ( matchedSemanticType.equals("applied_memory"))
+    matchedSemanticType = "appliedMemory";
+  // get the d codes this mention has
+  List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pMention.getBegin(), pMention.getEnd(), true);
+  HashSet<String> someTypesHash = new HashSet<String>(5);
+ 
+  if (terms != null && !terms.isEmpty()) {
+    for (Annotation term : terms) {
+      String termName = term.getCoveredText();
+      termName = U.normalize(termName);
+      String semanticTypes = ((LexicalElement) term).getSemanticTypes();
+      if ( semanticTypes != null && !semanticTypes.isEmpty()) {
+        String[] someTypes = U.split ( semanticTypes, ":");
+     
+        if ( someTypes != null && someTypes.length > 0  ) 
+          for ( String aType: someTypes ) {
+            someTypesHash.add( aType );
+            if ( aType.contains(matchedSemanticType))
+              returnVal = returnVal + "~~" + termName + "*" + matchedSemanticType ;
+          } // loop thru term semantic types
+      } // if there are semantic types 
+    } // end loop thru terms
+    if ( !someTypesHash.isEmpty()) {
+      StringBuffer buff2 = new StringBuffer();
+      String[] buff = new String[ someTypesHash.size() ];
+      buff = someTypesHash.toArray( buff );
+        
+      Arrays.sort( buff );
+      for ( int i = 0; i < buff.length; i++) {
+         buff2.append(buff[i]);
+         if ( i < buff.length -1 )
+           buff2.append(":");
+       } // end loop thru sorted, uniq'd buffer 
+      // returnVal = buff2.toString();
+     
+    } // end if there are some entries in the hash
+  } // if there are terms in this mention
+ 
+  return returnVal;
+
+} // end Method getLexEvidence() --------------
 
   // ----------------------------------
   /**

@@ -147,52 +147,88 @@ E0059340|surrenders|noun|count(thr_plur)|surrender|surrender| IPIRActivities:Non
 #
 # from the ipir training set  2023-08-31
 #
-00000000|good eye contact|<verb>|<base>|||IPIRActivities:
-00000000|eye contact was fair|<verb>|<base>|||IPIRActivities:
-00000000|eye contact was appropriate |<verb>|<base>|||IPIRActivities:
-00000000|appropriate eye contact |<verb>|<base>|||IPIRActivities:
-00000000|eye contact adequate|<verb>|<base>|||IPIRActivities:
-00000000|fair eye contact|<verb>|<base>|||IPIRActivities:
-00000000|fair historian|<verb>|<base>|||IPIRActivities:
-00000000|well groomed|<verb>|<base>|||IPIRActivities:
+00000000|good eye contact|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|poor eye contact|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|eye contact was fair|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|eye contact was appropriate |<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|appropriate eye contact |<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|eye contact adequate|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|fair eye contact|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintained eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintains eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintaining eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintain eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintained appropriate eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintains appropriate eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintaining appropriate eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|maintain appropriate eye contact|verb|base|||NotComcog:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
 
-00000000|hygiene|<verb>|<base>|||IPIRActivities:
-00000000|groomed|<verb>|<base>|||IPIRActivities:
-00000000|clean|<verb>|<base>|||IPIRActivities:
+00000000|fair historian|<verb>|<base>|||IPIRActivities:
+00000000|well groomed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|well-groomed|<verb>|<base>|||IPIRActivities:  ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|neatly groomed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|neatly dressed and groomed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|neatly dressed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|casually groomed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dressed and groomed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dressed appropriately|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|mode of dress was appropriate|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dress was appropriate and casual|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dressed in shorts|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dressed in jeans|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dressed in t-shirt and jeans|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dressed in|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|collared shirt|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|dressed in season appropriate clothing|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|wearing a|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+#
+00000000|good hygiene|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|poor hygiene|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|hygiene|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|personal hygiene|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|personal hygiene and/or dress|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|groomed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|clean|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
 00000000|effort|<verb>|<base>|||IPIRActivities:
-00000000|eye contact|<verb>|<base>|||IPIRActivities
-00000000|grooming|<verb>|<base>|||IPIRActivities:
-00000000|repport|<verb>|<base>|||IPIRActivities:AuthorityPosition
-00000000|participation|<verb>|<base>|||IPIRActivities:
-00000000|cooperation|<verb>|<base>|||IPIRActivities:
-00000000|cooperated|<verb>|<base>|||IPIRActivities:
-00000000|cooperative|<verb>|<base>|||IPIRActivities:
-00000000|uncooperative|<verb>|<base>|||IPIRActivities:
-00000000|appropriately dressed|<verb>|<base>|||IPIRActivities:
-00000000|good eye|<verb>|<base>|||IPIRActivities:
-00000000|hostile|<verb>|<base>|||IPIRActivities:
-00000000|irritable|<verb>|<base>|||IPIRActivities:
-00000000|guarded|<verb>|<base>|||IPIRActivities:
+00000000|eye contact|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|good grooming|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|grooming|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|repport|<verb>|<base>|||IPIRActivities:AuthorityPosition:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|participation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|participant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|participated|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|participates|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|cooperation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|cooperated|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|cooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|follows commands|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|uncooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|appropriately dressed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|good eye|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|hostile|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|irritable|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|guarded|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
 00000000|attitude|<verb>|<base>|||IPIRActivities:
-00000000|attentive|<verb>|<base>|||IPIRActivities:
-00000000|disoriented|<verb>|<base>|||IPIRActivities:
-00000000|casually dressed|<verb>|<base>|||IPIRActivities:
-00000000|casual dress|<verb>|<base>|||IPIRActivities:
+00000000|attentive|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|disoriented|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|casually dressed|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
+00000000|casual dress|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
 00000000|stated age|<verb>|<base>|||IPIRActivities:
-00000000|speech is soft|<verb>|<base>|||IPIRActivities:
+00000000|speech is soft|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|spoke|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
 00000000|pleasant|<verb>|<base>|||IPIRActivities:
 00000000|calm|<verb>|<base>|||IPIRActivities:
-00000000|violent|<verb>|<base>|||IPIRActivities:
-00000000|personal appearance|<verb>|<base>|||IPIRActivities:
+#00000000|violent|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|violent|<verb>|<base>|||IPIRActivities
+00000000|personal appearance|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
 00000000|self-deprecatory|<verb>|<base>|||IPIRActivities:
 00000000|speaking with physician|<verb>|<base>|||IPIRActivities:AuthorityPosition
-
 00000000|good|<verb>|<base>|||IPIRActivities:
-00000000|neatly|<verb>|<base>|||IPIRActivities:
-00000000|neat|<verb>|<base>|||IPIRActivities:
-00000000|appropriate|<verb>|<base>|||IPIRActivities:
-00000000|appropriately|<verb>|<base>|||IPIRActivities:
-00000000|adequate|<verb>|<base>|||IPIRActivities:
+00000000|neatly|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
+00000000|neat|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
+#00000000|appropriate|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
+00000000|appropriately|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
+00000000|adequate|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
 00000000|intermittent|<verb>|<base>|||IPIRActivities:
 00000000|fair|<verb>|<base>|||IPIRActivities:
 00000000|fair progress|<verb>|<base>|||IPIRActivities:
@@ -201,23 +237,39 @@ E0059340|surrenders|noun|count(thr_plur)|surrender|surrender| IPIRActivities:Non
 00000000|normal|<verb>|<base>|||IPIRActivities:
 00000000|intense|<verb>|<base>|||IPIRActivities:
 00000000|I|<verb>|<base>|||IPIRActivities:
-00000000|I met with the patient|<verb>|<base>|||IPIRActivities:
-
+00000000|I met with the patient|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships:AuthorityPosition
+00000000|during session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|during the session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|throughout the entire session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|throughout the session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|tolerated the session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|continue the session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|continue session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|therapy sessions|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|with sw|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|with staff|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|some staff|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+00000000|this writer|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:AuthorityPosition
+#
 00000000|patient|<verb>|<base>|||IPIRActivities:
 00000000|claimant|<verb>|<base>|||IPIRActivities:
 00000000|behavior|<verb>|<base>|||IPIRActivities:
-00000000|appearance|<verb>|<base>|||IPIRActivities:
+00000000|appearance|<verb>|<base>|||IPIRActivities:ICF_d740_formal_relationships
 00000000|appears|<verb>|<base>|||IPIRActivities:
 00000000|appeared|<verb>|<base>|||IPIRActivities:
-00000000|stated|<verb>|<base>|||IPIRActivities:
 00000000|contact|<verb>|<base>|||IPIRActivities:
 00000000|examination|<verb>|<base>|||IPIRActivities:
-00000000|speech|<verb>|<base>|||IPIRActivities:
+00000000|speech|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
 00000000|manner|<verb>|<base>|||IPIRActivities:
-00000000|interview|<verb>|<base>|||IPIRActivities:
 00000000|questions|<verb>|<base>|||IPIRActivities:AuthorityPosition
-00000000|alert|<verb>|<base>|||IPIRActivities:
-00000000|engaged|<verb>|<base>|||IPIRActivities:
+00000000|alert|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|awake|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|oriented|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|alert and oriented|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|alert, oriented x3|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|x3|<verb>|<base>|||IPIRActivities::ICF_d740_formal_relationships
+00000000|engaged|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|engage|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
 00000000|personal|<verb>|<base>|||IPIRActivities:
 00000000|general|<verb>|<base>|||IPIRActivities:
 00000000|therapist|<verb>|<base>|||IPIRActivities:
@@ -226,7 +278,344 @@ E0059340|surrenders|noun|count(thr_plur)|surrender|surrender| IPIRActivities:Non
 00000000|psychomotor|<verb>|<base>|||IPIRActivities:
 00000000|authority figure|<noun>|<base>|||IPIRActivities:
 00000000|authority figures|<noun>|<plural>|||IPIRActivities:AuthorityPosition
+00000000|accept instructions|<noun>|<base>|||IPIRActivities:AuthorityPosition:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|accepted instructions|<noun>|<base>|||IPIRActivities:AuthorityPosition:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|accepts instructions|<noun>|<base>|||IPIRActivities:AuthorityPosition:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|accepting instructions|<noun>|<base>|||IPIRActivities:AuthorityPosition:ICF_d710-d729:d710_basic_interpersonal_interactions
 00000000|supervisory instructions|<noun>|<base>|||IPIRActivities:AuthorityPosition
 00000000|supervisory instruction|<noun>|<plural>|||IPIRActivities:AuthorityPosition
 00000000|supervision|<noun>|<base>|||IPIRActivities:AuthorityPosition
 00000000|supervise|<noun>|<base>|||IPIRActivities:AuthorityPosition
+#
+#### from ipir training
+00000000|gets along|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|got along|<verb>|<past>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|getting along|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|get along|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|appeared to|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interact with|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interacts with|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interacted with|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interacting with|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interactions|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|conversation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|did not share|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:NegationEvidence|pre
+00000000|did share|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|shared|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|sharing|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|self disclosure|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|disclose|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|disclosed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|disclosing|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|demonstrated|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|demonstrating|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|ask simple questions|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|ask|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|asked|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|asking|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|asking for help|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|chewed her out|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|chewed him out|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interact|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interacts|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interacted|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interacting|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|says|<verb>|<base>|||IPIRActivities
+#00000000|said|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|stating|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+#00000000|stated|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+#00000000|states|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+#00000000|reports|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+#00000000|reported|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|reporting|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|apeared to|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|collaboration with|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|discheveled|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|disheveled|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|good eye contact|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|causes conflict|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|caused conflict|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|cause conflict|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|causing conflict|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+#00000000|comment|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+#00000000|comments|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|commented|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|commenting|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|maintain peer|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|gain peer|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|respond|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responds|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responded|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responding|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|indicate|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+#00000000|indicates|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|indicating|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|indicated|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|arrived ontime|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|arrived late|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|arrives late|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|arrives ontime|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|attended session|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|verbalizes|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|verbalized|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:
+00000000|expresses|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|expressed|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|expressing|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|use of social support|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|interpersonal interactions|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|fights|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|fought|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|physically agressive|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|offered|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|offers|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|denies|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|denied|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|denying|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|supportive of|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|communicates|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|communicating|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|initiated|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|initiates|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|initiating|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|inappropriate language|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|inappropriate behavior|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|appropriate behavior|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|behavior appropriate|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|behavior appropriate to situation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|speech normal|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|around people|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|outbursts|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|connection with|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|have a connection|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|socializes|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|verbally aggressive|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|polite|<noun>|<base>|polite|polite|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|engabeable|<adj>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|respond to questions|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responds to questions|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responded to questions|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responding to questions|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|respond to question|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responds to question|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responded to question|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|responding to question|<verb>|<base>|engabeale|engabeale|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|listen|<verb>|<base>|listen|listen|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|listens|<verb>|<present>|listen|listen|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|listening|<verb>|<pastpart>|listen|listen|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|listened|<verb>|<past>|listen|listen|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|discussing|<verb>|<pastPart>|discuss|discuss|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|discussed|<verb>|<past>|discuss|discuss|IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|rapport|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|gratitude|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|stated age|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|responsive to prompting|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|responsive to questions|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|responsiveness to questions|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|self-deprecatory|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|engaging|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|engaged in group discussion|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|engaged in spontaneous conversation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|engaged in conversation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|engaged in class discussion|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|engaged in|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|interview|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|along with co-workers|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|with co-workers or peers|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|along appropiately with co-workers|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|adhere to basic neatness and cleanliness|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|neatness and cleanliness|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|basic neatness|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|during this contact period|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|respond appropriately to changes in a routine work setting|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|resigned|<verb>|<past>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships:ICF_d7400_formal_relationships
+00000000|quit|<verb>|<past>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|the interview|<verb>|<past>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|seeing a psychiatrist|<verb>|<past>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|able to have a good conversation|<verb>|<past>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|able to have a conversation|<verb>|<past>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|social appropriateness|<noun>|<base>|||SLOT:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|displays|<noun>|<base>|||VALUE:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|frustration tolerance|<noun>|<base>|||SLOT:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|responds to support|<noun>|<base>|||SLOT:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|required writer to redirect|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|patients response to education|<noun>|<base>|||SLOT:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|patient presents|<noun>|<base>|||SLOT:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|patient presented|<noun>|<base>|||SLOT:IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she presented with|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she presented as|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she observed as|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she has expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she vented|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she verbalized|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she speaks|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she became|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she denies|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she denied|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she declined to answer|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she has declined|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she presents|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she presents with|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she asked|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she laughed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she smiled|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she smiles|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+#00000000|she is alert|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is fiendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is a fiendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she appears|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she agreed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she acknowledged|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was bright and alert|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was very|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was tearful|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was grateful|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was cooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was uncooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was reluctant|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was unwilling|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was articulate|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was able to answer|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was able to hold a meaningful conversation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was agreeable|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was pleasant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is friendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is a friendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she previously asked|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she reported|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|she reports|<noun>|<base>|||IPIRActivities
+00000000|she was withdrawn|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she responds well to|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she pleasantly greets ot|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is very|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is often|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is able to respond|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she exhibits|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is able to guide the conversations|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she has displayed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she displays|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+
+00000000|she presented with|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she presented as|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she observed as|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she has expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she vented|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she verbalized|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she speaks|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she became|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she denies|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she denied|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she declined to answer|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she has declined|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she presents|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she presents with|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she asked|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she laughed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she smiled|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she smiles|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+#00000000|she is alert|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is fiendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is a fiendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she appears|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she agreed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she acknowledged|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was bright and alert|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was very|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was tearful|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was grateful|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was cooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was uncooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was reluctant|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was unwilling|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was articulate|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was able to answer|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was able to hold a meaningful conversation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was agreeable|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she was pleasant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is friendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is a friendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she previously asked|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she reported|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions
+00000000|she reports|<noun>|<base>|||IPIRActivities
+00000000|she was withdrawn|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she responds well to|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she pleasantly greets ot|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is very|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is often|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is able to respond|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she exhibits|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she is able to guide the conversations|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she has displayed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|she displays|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+
+00000000|he presented with|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he presented as|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he observed as|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he has expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he vented|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he verbalized|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he speaks|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he became|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he denies|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he denied|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he declined to answer|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he has declined|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he presents|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he presents with|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he asked|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he laughed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he smiled|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he smiles|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is|<noun>|<base>|||IPIRActivities:ICF_d740_formal_relationships
+#00000000|he is alert|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is fiendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is a fiendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he appears|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he agreed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he acknowledged|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was bright and alert|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was very|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was tearful|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was grateful|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was cooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was uncooperative|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was reluctant|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was unwilling|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was articulate|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was able to answer|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was able to hold a meaningful conversation|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was agreeable|<verb>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was pleasant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is friendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is a friendly|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he previously asked|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he reported|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he reports|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he was withdrawn|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he responds well to|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he pleasantly greets ot|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is very|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is often|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he expressed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is able to respond|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he exhibits|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he is able to guide the conversations|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he has displayed|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|he displays|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+
+
+
+00000000|pleasant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|follow simple|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|during the interview|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|friendly and pleasant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|a very pleasant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|is a very pleasant|<noun>|<base>|||IPIRActivities:ICF_d710-d729:d710_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|individual interaction skills comments|<noun>|<base>|||SLOT:IPIRActivities:ICF_d710-d729_basic_interpersonal_interactions:ICF_d740_formal_relationships
+00000000|rtfa group interaction skills|<noun>|<base>|||SLOT:IPIRActivities:ICF_d740_formal_relationships:OtherRelationshipEvidence

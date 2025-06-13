@@ -326,19 +326,21 @@ public class InFACTSubCategoriesApplication {
     String silenceGLogMsgs = U.getOption(pArgs, "--silenceGLogMsgs=",  "true");
   String  detailedSummary = U.getOption(pArgs, "--detailedSummary=", "true");
    String INFACT_MODE= U.getOption(pArgs, "--INFACT_MODE=", "true" );
+   String usePronounsInD750 = U.getOption( pArgs, "--usePronounsInD750=", "true");
+   String segmentRelevantFilter =  U.getOption(pArgs, "--segmentRelevantFilter=", "true" );
    String inFACTFileNamingConvention =  U.getOption(pArgs, "--inFACTFileNamingConvention=", "true" );
     
  //   String inputFormatType  = U.getOption(pArgs, "--inputFormat=",  FrameworkReadersAux.MULTI_PAGE_TEXT_READER_);
     String inputFormatType  = U.getOption(pArgs, "--inputFormat=", FrameworkReadersAux.GATE_READER_);
     // if this is coming from a GATE/Interlingua source, set the payloadAnnotationSetName to comcog
     String payloadAnnotationSetName = U.getOption(pArgs, "--payloadAnnotationSetName=", "ipir_sentence_model:comcog_sentence_manual:comcog_sentence_model:ipir:comcog:comcog_sentence:ipir_sentence");
-    String  comcogAnnotationSetName = U.getOption(pArgs, "--comcogAnnotationSetName=", "comcog_subcategory_model");
-    String    ipirAnnotationSetName = U.getOption(pArgs, "--ipirAnnotationSetName=", "ipir_subcategory_model");
+    String  comcogAnnotationSetName = U.getOption(pArgs, "--comcogAnnotationSetName=", "comcog_classification");
+    String    ipirAnnotationSetName = U.getOption(pArgs, "--ipirAnnotationSetName=", "ipir_classification");
     String  modelAnnotationSetName = U.getOption(pArgs,  "--modelAnnotationSetName=", comcogAnnotationSetName);
     // note: for the threaded version, make this staticOutputFormat if you want this to be synchronized 
     String outputFormatType = U.getOption(pArgs, "--outputFormat=", 
       //  FrameworkBaselineApplication.VTT_WRITER_  + ":" +                  
-        FrameworkBaselineApplication.XMI_WRITER_ + ":" +
+    //    FrameworkBaselineApplication.XMI_WRITER_ + ":" +
         FrameworkBaselineApplication.INTERLINGUA_WRITER_   + ":"   
         );
     
@@ -381,7 +383,7 @@ public class InFACTSubCategoriesApplication {
     
     
     
-    String version = "2024-10-02-threaded.37";
+    String version = "2025-06_06_segmentFilter_flag_added";
     String args[] = {
         
         "--threaded=" + threaded,
@@ -400,6 +402,8 @@ public class InFACTSubCategoriesApplication {
         
         "--detailedSummary=" + detailedSummary,
         "--INFACT_MODE=" + INFACT_MODE,
+        "--segmentRelevantFilter=" + segmentRelevantFilter,
+        "--usePronounsInD750=" + usePronounsInD750,
         "--inFACTFileNamingConvention=" + inFACTFileNamingConvention,
         
         "--logDir=" + logDir,

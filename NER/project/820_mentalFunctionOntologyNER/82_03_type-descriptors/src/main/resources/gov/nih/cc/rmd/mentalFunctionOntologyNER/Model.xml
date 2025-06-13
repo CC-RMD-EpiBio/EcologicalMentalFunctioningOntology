@@ -38,6 +38,7 @@
           <name>seedCUI</name>
           <description>The (UMLS) concept cui that was the top ansestor</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
         </featureDescription>
         
          <featureDescription>
@@ -45,6 +46,7 @@
           <description>An array of mental function evidences for this span</description>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
        </featureDescription>
         
       </features>

@@ -279,9 +279,63 @@ private void filterOutSeeSection(JCas pJCas, Annotation pSentence, List<Annotati
 // =================================================
 private void make_yes_sentence(JCas pJCas, Annotation pSentence) {
 	
-	make_comcog_yes_sentence( pJCas, pSentence);
-	make_ipir_yes_sentence( pJCas, pSentence);
+  
+	Annotation comcogYes = make_comcog_yes_sentence( pJCas, pSentence);
+	Annotation ipirYes = make_ipir_yes_sentence( pJCas, pSentence);
+	
+	if ( comcogYes != null ) 
+	  filterOutNonRelevantContext( pJCas, comcogYes, "NotComcog" );
+	
+	if ( ipirYes != null )
+	  filterOutNonRelevantContext( pJCas, ipirYes,  "NotIPIR" );
+	
 } // end Method make_yes_sentence() ------------------
+
+// =================================================
+/**
+ * filterOutNonRelevantContext removes this annotation if it contains
+ * non relevant information in it
+ * 
+ * @param pJCas
+ * @param pSentence
+ * @param pType1
+ 
+ * @return boolean (true if the sentence was filtered out)
+*/
+// =================================================
+private final boolean filterOutNonRelevantContext(JCas pJCas, Annotation pYes, String pType1) {
+  
+  boolean returnVal = false;
+  try {
+    List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pYes.getBegin(), pYes.getEnd(), true );
+    if ( terms != null && !terms.isEmpty()) {
+      for ( Annotation term: terms ) {
+        String categories = ((LexicalElement)term).getSemanticTypes();
+        if ( categories != null && 
+            (
+                ( categories.contains("NMFO") ||
+                ( pType1 != null && categories.contains(pType1)) 
+            )
+         )) {
+          pYes.removeFromIndexes();
+          returnVal = true;
+          break;
+        }
+          
+        
+      } // loop thru terms
+      
+    } // end if there are terms in this sentence
+    
+    
+  } catch (Exception e) {
+    e.printStackTrace();
+    
+  }
+  return returnVal ;
+  
+} // end Method filterOutNonRelevantContext
+
 
 //=================================================
 /**
@@ -292,32 +346,38 @@ private void make_yes_sentence(JCas pJCas, Annotation pSentence) {
 * @param pSentence
 */
 //=================================================
-private void make_comcog_yes_sentence(JCas pJCas, Annotation pSentence) {
+private Annotation make_comcog_yes_sentence(JCas pJCas, Annotation pSentence) {
 	
+  Annotation returnVal = null;
 	try {
+	  if ( INFACT_MODE) return null;
+	      
 		 List<Annotation> mentions = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas,  ComCogActivities.typeIndexID,pSentence.getBegin(), pSentence.getEnd(), true );
 		 if ( mentions != null && !mentions.isEmpty()) {
 			 
 			 // filter out any manual activities
 			 boolean found = false;
 			 for ( Annotation mention : mentions ) {
+			  
 				 String setName = null;
 				 try {
 			 	  setName = ((ComCogActivities) mention).getAnnotationSetName();
 			 	  if ( setName == null )  {
 			 		  found = true;
-			 		  break;
+			 		
 			 	  }
-			 	  if ( INFACT_MODE) continue;
+			 	
 			 	  if ( setName.toLowerCase().contains("manual")) continue;
 			 	  if ( setName.toLowerCase().contains("model")) continue;
 			 	  if ( setName.toLowerCase().contains("comcog_sentence")) continue;
 			 	
 				 } catch (Exception e) {}
 			 
+			 } // end loop
+			 if ( found ) {
+				returnVal = createComCogYes( pJCas, pSentence);
+	
 			 }
-			 if ( found )
-				 createComCogYes( pJCas, pSentence);
 		 }
 		 	 
 	} catch (Exception e) {
@@ -325,7 +385,7 @@ private void make_comcog_yes_sentence(JCas pJCas, Annotation pSentence) {
 		String msg = "Issue making comcog yes sentence " + e.toString();
 		GLog.println(GLog.ERROR_LEVEL, this.getClass(), "make_comcog_yes_sentence", msg);
 	}
-	
+	return returnVal;
 } // end Method make_yes_sentence() ------------------
 
 //=================================================
@@ -337,14 +397,17 @@ private void make_comcog_yes_sentence(JCas pJCas, Annotation pSentence) {
 * @param pSentence
 */
 //=================================================
-private void make_ipir_yes_sentence(JCas pJCas, Annotation pSentence) {
+private Annotation make_ipir_yes_sentence(JCas pJCas, Annotation pSentence) {
 	
+  Annotation returnVal = null;
 	try {
 		if ( ! this.INFACT_MODE ) {
 		
 		 List<Annotation> mentions = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas,  IPIRActivities.typeIndexID,pSentence.getBegin(), pSentence.getEnd(), true );
-		 if ( mentions != null && !mentions.isEmpty())
-			 createIPIRYes( pJCas, pSentence);
+		 if ( mentions != null && !mentions.isEmpty()) {
+		   returnVal = createIPIRYes( pJCas, pSentence);
+		 
+		 }
 		}
 	  
 	} catch (Exception e) {
@@ -352,6 +415,8 @@ private void make_ipir_yes_sentence(JCas pJCas, Annotation pSentence) {
 		String msg = "Issue making ipir yes sentence " + e.toString();
 		GLog.println(GLog.ERROR_LEVEL, this.getClass(), "make_ipir_yes_sentence", msg);
 	}
+	
+	return returnVal;
 	
 } // end Method make_yes_sentence() ------------------
 
@@ -370,8 +435,8 @@ private void make_ipir_yes_sentence(JCas pJCas, Annotation pSentence) {
 	  gov.nih.cc.rmd.inFACT.x.Comcog_yes statement = new gov.nih.cc.rmd.inFACT.x.Comcog_yes( pJCas);
 	  statement.setBegin( pManual_ComCog_yes.getBegin());
 	  statement.setEnd( pManual_ComCog_yes.getEnd());
-	  statement.setId( "createComCogYes_" + this.annotationCtr++);
-	  statement.setAnnotationSetName(this.annotationSetName);
+	  statement.setId( "MentalFunctioningOntology.createComCogYes_" + this.annotationCtr++);
+	  statement.setAnnotationSetName(this.comcogAnnotationSetName);
 	  statement.setD110_d129  ( false );
 	  statement.setD130_d159  ( false );      
 	  statement.setD160  ( false );              
@@ -392,7 +457,7 @@ private void make_ipir_yes_sentence(JCas pJCas, Annotation pSentence) {
 	  statement.setAdaptation    ( false );   
 	  statement.setPacing        ( false );
 	  statement.setPersistence   ( false );
-	  statement.setAnnotationSetName(this.annotationSetName);
+	
 	  
 	  // statement.setTimeBucket( "false" );
 	  statement.setDifficult_to_determine( false);
@@ -430,7 +495,7 @@ final  Annotation createIPIRYes(JCas pJCas, Annotation pManual_IPIR_yes) {
 
   statement.setTimeBucket("false");
   statement.setDifficult_to_determine(false);
-  statement.setAnnotationSetName(this.annotationSetName);
+  statement.setAnnotationSetName(this.ipirAnnotationSetName);
   statement.addToIndexes();
 
   return statement;
@@ -1461,7 +1526,10 @@ public void destroy() {
   public void initialize(String[] pArgs) throws ResourceInitializationException {
        
     this.performanceMeter = new ProfilePerformanceMeter( pArgs, this.getClass().getSimpleName() );
-    this.annotationSetName = U.getOption(pArgs, "--AnnotationSetName=" ,"framework") ;
+   // this.annotationSetName = U.getOption(pArgs, "--emfoAnnotationSetName=" ,"framework") ;
+    this.comcogAnnotationSetName = U.getOption(pArgs, "--comcogAnnotationSetName=", "ontology_comcog_extraction");
+    this.ipirAnnotationSetName = U.getOption(pArgs, "--ipirAnnotationSetName=", "ontology_ipir_extraction");
+    
     this.INFACT_MODE = Boolean.valueOf( U.getOption(pArgs, "--INFACT_MODE=", "false"));
       
   } // end Method initialize() -------
@@ -1474,7 +1542,11 @@ public void destroy() {
   private boolean INFACT_MODE =false;
   
   private static HashSet<String> staticPosessiveHash = null;
-  private String annotationSetName = null;
+ // private String annotationSetName = null;
+  private String comcogAnnotationSetName = null;
+  private String ipirAnnotationSetName = null;
+  
+  
   public static final String MentalFunctioningOntologyNERLexicaSMALL =  "resources/vinciNLPFramework/mentalFunctionOntologyNER/010_TopVerbNetClasses.lragr" ;
       
   public static final String MentalFunctioningOntologyNERLexica = 
@@ -1529,6 +1601,7 @@ public void destroy() {
     + "resources/vinciNLPFramework/ComCogCategories/ComCogVerbNetCategories.lragr" + ":"
     + "resources/vinciNLPFramework/ComCogCategories/ComCogUMLSTermsAndVariants.lragr" + ":"
     + "resources/vinciNLPFramework/ComCogCategories/MoreComProducing.lragr" + ":"
+    +  "resources/vinciNLPFramework/mentalFunctionOntologyNER/NMFO.lragr" + ":" 
     
     
    

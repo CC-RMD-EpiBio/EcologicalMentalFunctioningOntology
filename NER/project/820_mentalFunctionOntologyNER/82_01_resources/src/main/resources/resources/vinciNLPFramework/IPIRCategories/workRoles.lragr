@@ -132,6 +132,8 @@ RO00039|lead|<noun>|<base>|lead|lead|OccupationPiece:person
 RO00040|assistant|<noun>|<base>|assistant|assistant|NonAuthority:OccupationPiece:person
 RO00041|coordinator|<noun>|<base>|coordinator|coordinator|NonAuthority:OccupationPiece:person
 RO00042|staff|<noun>|<base>|staff|staff|NonAuthority:OccupationPiece:person
+RO00042|staff members|<noun>|<base>|staff|staff|AuthorityPosition:OccupationPiece:person
+RO00042|medical team|<noun>|<base>|staff|staff|AuthorityPosition:OccupationPiece:person
 RO00043|administrator|<noun>|<base>|administrator|administrator|NonAuthority:OccupationPiece:person
 #RO00044|therapist|<noun>|<base>|therapist|therapist|AuthorityPosition:OccupationPiece:person
 RO00044|therapist|<noun>|<base>|therapist|therapist|OccupationPiece:person
@@ -220,7 +222,6 @@ RO00122|state|<noun>|<base>|state|state|NonAuthority:OccupationPiece:person
 RO00123|operations|<noun>|<base>|operations|operations|NonAuthority:OccupationPiece:person
 RO00124|attendant|<noun>|<base>|attendant|attendant|NonAuthority:OccupationPiece:person
 RO00125|adjuster|<noun>|<base>|adjuster|adjuster|NonAuthority:OccupationPiece:person
-RO00126|writer|<noun>|<base>|writer|writer|NonAuthority:OccupationPiece:person
 RO00127|secretary|<noun>|<base>|secretary|secretary|SometimesAuthority:OccupationPiece:person
 RO00128|producer|<noun>|<base>|producer|producer|AuthorityPosition:OccupationPiece:person
 #RO00129|managment|<noun>|<base>|managment|managment|AuthorityPosition:OccupationPiece:person
@@ -255,6 +256,7 @@ RO00154|cleric|<noun>|<base>|cleric|cleric|AuthorityPosition:Religious:person
 RO00155|deacon|<noun>|<base>|deacon|deacon|AuthorityPosition:Religious:person
 RO00156|elder|<noun>|<base>|elder|elder|Religious:person
 RO00157|elders|<noun>|<base>|elders|elders|AuthorityPosition:Religious:person
+RO00158|rabbi|<noun>|<base>|priest|priest|AuthorityPosition:Religious:person
 RO00158|priest|<noun>|<base>|priest|priest|AuthorityPosition:Religious:person
 RO00159|bishop|<noun>|<base>|bishop|bishop|AuthorityPosition:Religious:person
 RO00160|preacher|<noun>|<base>|preacher|preacher|AuthorityPosition:Religious:person
@@ -437,7 +439,11 @@ RO00328|pa|<noun>|<base>|pa|pa|SometimesAuthority:Medicine:person
 RO00329|surgeon|<noun>|<base>|surgeon|surgeon|AuthorityPosition:Medicine:person
 RO00330|gynaecologist|<noun>|<base>|gynaecologist|gynaecologist|AuthorityPosition:Medicine:person
 RO00331|dentist|<noun>|<base>|dentist|dentist|AuthorityPosition:Medicine:person
+RO00332|professional caregiver|<noun>|<base>|caregiver|caregiver|AuthorityPosition:Medicine:person
+RO00332|treatment team|<noun>|<base>|caregiver|caregiver|AuthorityPosition:Medicine:person
 RO00332|caregiver|<noun>|<base>|caregiver|caregiver|AuthorityPosition:Medicine:person
+RO00332|caregivers|<noun>|<base>|caregiver|caregiver|AuthorityPosition:Medicine:person
+RO00332|appearance of caregivers|<noun>|<base>|caregiver|caregiver|AuthorityPosition:Medicine:person
 RO00333|caretaker|<noun>|<base>|caretaker|caretaker|AuthorityPosition:Medicine:person
 RO00334|nurse|<noun>|<base>|nurse|nurse|SometimesAuthority:Medicine:person
 RO00335|practioner|<noun>|<base>|practioner|practioner|AuthorityPosition:Medicine:person
@@ -994,7 +1000,7 @@ RO00850|correspondents|<noun>|<base>|correspondents|correspondents|AuthorityPosi
 RO00851|public relations specialist|<noun>|<base>|public relations specialist|public relations specialist|NonAuthority:MediaAndThePress:person
 RO00852|editor|<noun>|<base>|editor|editor|AuthorityPosition:MediaAndThePress:person
 RO00853|technical writer|<noun>|<base>|technical writer|technical writer|NonAuthority:MediaAndThePress:person
-RO00854|writer|<noun>|<base>|writer|writer|NonAuthority:MediaAndThePress:person
+RO00854|writer|<noun>|<base>|writer|writer|AuthorityPosition:person
 RO00855|author|<noun>|<base>|author|author|NonAuthority:MediaAndThePress:person
 RO00856|broadcast engineer|<noun>|<base>|broadcast engineer|broadcast engineer|NonAuthority:MediaAndThePress:person
 RO00857|sound engineer|<noun>|<base>|sound engineer|sound engineer|SometimesAuthority:MediaAndThePress:person
@@ -1182,3 +1188,9 @@ RO01000|positions of authority|<noun>|<plural>|authority figure|authority figure
 RO01000|authority|<noun>|<base>|authority|authority|AuthorityPosition:person
 RO00580|landlord|<noun>|<base>|landlord|landlord|person
 RO00580|landlords|<noun>|<plural>|landlord|landlord|person
+RO01001|employer|<noun>|<base>|employer|employer|AuthorityPosition:OccupationPiece:person:Business
+RO01001|former employer|<noun>|<base>|employer|employer|AuthorityPosition:OccupationPiece:person:Business
+RO01001|friend/employer|<noun>|<base>|employer|employer|AuthorityPosition:OccupationPiece:person:Business
+RO01001|employer/friend|<noun>|<base>|employer|employer|AuthorityPosition:OccupationPiece:person:Business
+RO01001|home health aid|<noun>|<base>|employer|employer|SometimesAuthority:OccupationPiece:person:Business
+

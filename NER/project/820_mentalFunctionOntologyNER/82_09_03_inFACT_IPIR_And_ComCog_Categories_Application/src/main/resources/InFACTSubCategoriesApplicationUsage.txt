@@ -42,10 +42,19 @@ Output Formats
                      the reader reads in a format that it is difficult to see the text directly, and 
                      you want to know what text the machine saw when processing.
                      
+ Other Options
+  --segmentRelevantFilter=  This attribute is turned on by default.  When on, if there are any non-relevant
+                            terms in the sentence being processed, this whole sentence is deemed non-relevant and
+                            no mentions get made from this sentence.  For example, if "signed by" was seen, 
+                            this whole sentence is stopped out.   There are occations to turn this filter
+                            off, as when all the sentences being processed are known to contain relevant
+                            ipir or comcog content, such as when this program is used in conjunction
+                            with the inFACT comcog and ipir models.
+                     
    
 
 Program
-java -jar $FRAMEWORK_HOME/10_libs/MentalFunctionSentenceFromMentionsApplication-jar-with-dependencies.jar 
+java -jar $FRAMEWORK_HOME/10_libs/InFactSubcategoriesApplication-jar-with-dependencies.jar 
    
    Options:
     --inputDir=        The directory with input files in it.  The program will read files to process

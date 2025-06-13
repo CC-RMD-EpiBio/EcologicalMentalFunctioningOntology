@@ -22,6 +22,7 @@ import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceInitializationException;
+import org.junit.experimental.categories.Categories;
 
 import gov.nih.cc.rmd.framework.model.Person;
 import gov.nih.cc.rmd.inFACT.BehaviorEvidence;
@@ -60,6 +61,7 @@ import gov.nih.cc.rmd.nlp.framework.utils.U;
 import gov.nih.cc.rmd.nlp.framework.utils.framework.uima.VUIMAUtil;
 import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
 import gov.nih.cc.rmd.nlp.lexUtils.LRPRN;
+import gov.va.chir.model.DependentContent;
 import gov.va.chir.model.LexicalElement;
 import gov.va.chir.model.Sentence;
 import gov.va.chir.model.SlotValue;
@@ -83,8 +85,7 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
    
     try {
     this.performanceMeter.startCounter();
-    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process"," Started IPIRCategories");
-
+   
    // Loop through utterances  (that's the span we won't cross) 
     
     
@@ -105,7 +106,6 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
     			processIPIRMention ( pJCas, mention);
     }
      
-    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process"," End IPIRCategories");
     this.performanceMeter.stopCounter();
     
     } catch (Exception e) {
@@ -148,7 +148,6 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
     }
   } // end Method processIPIRMention() ---------------
 
-
   // =================================================
   /**
    * processIPIRSentence creates ipir sub category annotations an IPIR Sentence
@@ -159,58 +158,112 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
   // =================================================
    private final void processIPIRYesSentence(JCas pJCas, Annotation pIPIRYesSentence) {
     
-     // find all the ipir Evidence, IPIRActivities within this IPIR Sentence
-     String aSent = pIPIRYesSentence.getCoveredText();
      
-     if ( !hasNonRelevantEvidence( pJCas, pIPIRYesSentence ) ) {
-    	 
-     
-     List<Annotation> ipirMentions = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, IPIRActivities.typeIndexID, pIPIRYesSentence.getBegin(), pIPIRYesSentence.getEnd(), true );
-     List<Annotation> ipirParticipationEvidence = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, IPIRParticipationEvidence.typeIndexID, pIPIRYesSentence.getBegin(), pIPIRYesSentence.getEnd(), true );
-     List<Annotation> behaviorEvidence = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, BehaviorEvidence.typeIndexID, pIPIRYesSentence.getBegin(), pIPIRYesSentence.getEnd() , true);
-     List<Annotation> supportEvidence = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas,  SupportEvidence.typeIndexID, pIPIRYesSentence.getBegin(), pIPIRYesSentence.getEnd() , true);
-     List<Annotation> peopleFound = MentalFunctionOntologyNERAnnotator.findPeople( pJCas, pIPIRYesSentence );
-     
-     List<Annotation> someMentions = new ArrayList<Annotation>();
-     
-     if ( ipirMentions != null && !ipirMentions.isEmpty())  someMentions.addAll(ipirMentions); 
-     if ( ipirParticipationEvidence != null && !ipirParticipationEvidence.isEmpty())  someMentions.addAll(ipirParticipationEvidence); 
-     if ( behaviorEvidence != null && !behaviorEvidence.isEmpty())  someMentions.addAll(behaviorEvidence); 
-     if ( supportEvidence != null && !supportEvidence.isEmpty())  someMentions.addAll(supportEvidence); 
-     
-     List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pIPIRYesSentence.getBegin(), pIPIRYesSentence.getEnd(), true );
-     
-     
-     boolean someRelationshipFound = false;
-     if ( !someMentions.isEmpty()) {
-    	 
-       for ( Annotation aMention : someMentions ) {
-        if ( processIPIRSentence( pJCas,  pIPIRYesSentence,  aMention) )
-        	someRelationshipFound = true;
-       } // end loop through mentions
-     } // end if there are mentions
-     // -------------------------------------------------------
-     // this is a catch all if we know we've got an IPIR statement, but couldn't find a subcategory for it
-     //
-     
-     if ( !someRelationshipFound )
-    	 if (  (peopleFound == null ||  peopleFound.isEmpty() || peopleFound.size() <  2) ) {
-    	 
-    	 // if there are any D7400 annotations already assigned for this sentence, then quit
-    	    List<Annotation> existingIpirCategories = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, D7400AuthorityRelationships.typeIndexID, pIPIRYesSentence.getBegin(), pIPIRYesSentence.getEnd(), false );
-    	    if (!( existingIpirCategories != null && !existingIpirCategories.isEmpty() )) {
-    	    	IPIRActivities statement = new D740FormalRelationships( pJCas);
-    	    	createIPIRSubcategory( pJCas, pIPIRYesSentence, pIPIRYesSentence, statement, "default");
-    	    } // end if there are not d7400 annotations already made
-          
-    	 }
-     }
-    
-     setIPIRYesAttributes( pJCas, pIPIRYesSentence );
-     
-   } // end Method processIPIRSentence() ------------
-
+     // The ipirYesSentence may be a part of a slot value, or a question/answer so expand 
+     // the ipirYesSentence to the larger utterance to process
    
+     
+     List<Annotation>     largerChunks = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, SlotValue.typeIndexID, pIPIRYesSentence.getBegin(), pIPIRYesSentence.getEnd(), true );
+     
+     if ( largerChunks != null && !largerChunks.isEmpty()) {
+       for (Annotation aChunk : largerChunks ) {
+         processIPIRYesSentence( pJCas,  pIPIRYesSentence, aChunk);
+       } // loop thru the slotValues around the ipIRYesSentence
+     } else {
+       processIPIRYesSentence( pJCas,  pIPIRYesSentence, pIPIRYesSentence );
+     }
+     
+     
+   } // end Method processIPIRYesSentenceObs() ----------
+
+  
+   // =================================================
+   /**
+    * processIPIRSentence creates ipir sub category annotations an IPIR Sentence if 
+    * any subcategories were found
+    * 
+    * @param pJCas
+    * @param pIPIRYesSentence
+    * @returns boolean
+   */
+   // =================================================
+    protected final boolean processIPIRYesSentence(JCas pJCas, Annotation pKnownIPIRYesSentence, Annotation pSpanningChunk) {
+      
+      // find all the ipir Evidence, IPIRActivities within this IPIR Sentence
+      String aSent = pSpanningChunk.getCoveredText();
+      boolean someRelationshipFound = false;
+      
+      if ( segmentRelevantFilter )
+        if ( !hasNonRelevantEvidence( pJCas, pSpanningChunk ) ) 
+          someRelationshipFound = processIPIRYesSentenceAux( pJCas,  pKnownIPIRYesSentence,  pSpanningChunk) ;
+         else
+           someRelationshipFound = processIPIRYesSentenceAux( pJCas,  pKnownIPIRYesSentence,  pSpanningChunk) ;
+      
+      return someRelationshipFound;
+    } // end Method processIPIRYesSentence() ----------
+
+   // =================================================
+   /**
+    * processIPIRSentence creates ipir sub category annotations an IPIR Sentence if 
+    * any subcategories were found
+    * 
+    * @param pJCas
+    * @param pIPIRYesSentence
+    * @returns boolean
+   */
+   // =================================================
+    protected final boolean processIPIRYesSentenceAux(JCas pJCas, Annotation pKnownIPIRYesSentence, Annotation pSpanningChunk) {
+     
+      boolean someRelationshipFound = false;
+      
+      List<Annotation> ipirMentions = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, IPIRActivities.typeIndexID, pSpanningChunk.getBegin(), pSpanningChunk.getEnd(), true );
+      List<Annotation> ipirParticipationEvidence = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, IPIRParticipationEvidence.typeIndexID, pSpanningChunk.getBegin(), pSpanningChunk.getEnd(), true );
+      List<Annotation> behaviorEvidence = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, BehaviorEvidence.typeIndexID, pSpanningChunk.getBegin(), pSpanningChunk.getEnd() , true);
+      List<Annotation> supportEvidence = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas,  SupportEvidence.typeIndexID, pSpanningChunk.getBegin(), pSpanningChunk.getEnd() , true);
+      List<Annotation> peopleFound = MentalFunctionOntologyNERAnnotator.findPeople( pJCas, pSpanningChunk );
+      
+      List<Annotation> someMentions = new ArrayList<Annotation>();
+      
+      if ( ipirMentions != null && !ipirMentions.isEmpty())  someMentions.addAll(ipirMentions); 
+      if ( ipirParticipationEvidence != null && !ipirParticipationEvidence.isEmpty())  someMentions.addAll(ipirParticipationEvidence); 
+      if ( behaviorEvidence != null && !behaviorEvidence.isEmpty())  someMentions.addAll(behaviorEvidence); 
+      if ( supportEvidence != null && !supportEvidence.isEmpty())  someMentions.addAll(supportEvidence); 
+      
+      // List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSpanningChunk.getBegin(), pSpanningChunk.getEnd(), true );
+      
+      
+    
+      if ( !someMentions.isEmpty()) {
+        
+        for ( Annotation aMention : someMentions ) {
+         if ( processIPIRSentence( pJCas,  pSpanningChunk,  aMention) )
+           someRelationshipFound = true;
+        } // end loop through mentions
+      } // end if there are mentions
+      // -------------------------------------------------------
+      // this is a catch all if we know we've got an IPIR statement, but couldn't find a subcategory for it
+      //
+      
+      if ( !someRelationshipFound )
+        if (  (peopleFound == null ||  peopleFound.isEmpty() || peopleFound.size() <  2) ) {
+        
+        // if there are any D7400 annotations already assigned for this sentence, then quit
+           List<Annotation> existingIpirCategories = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, D7400AuthorityRelationships.typeIndexID, pSpanningChunk.getBegin(), pSpanningChunk.getEnd(), false );
+           if (!( existingIpirCategories != null && !existingIpirCategories.isEmpty() )) {
+             IPIRActivities statement = new D740FormalRelationships( pJCas);
+             createIPIRSubcategory( pJCas, pSpanningChunk, pSpanningChunk, statement, "default");
+             someRelationshipFound = true;
+           } // end if there are not d7400 annotations already made
+           
+        }
+      
+     
+      setIPIRYesAttributes( pJCas, pKnownIPIRYesSentence );
+      return someRelationshipFound;
+      
+    } // end Method processIPIRSentence() ------------
+
+       
 
 // =================================================
   /**
@@ -225,6 +278,8 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
   private final boolean hasNonRelevantEvidence(JCas pJCas, Annotation pSentence) {
 	boolean returnVal = false;
 	
+   String buff2 = pSentence.getCoveredText();
+  
    List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), true );
 	   
 	if ( terms != null && !terms.isEmpty())
@@ -234,7 +289,8 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
 				if ( categories.contains("NotMFO") || categories.contains("NotIPIR")) {
 					returnVal = true;
 					 String buff = term.getCoveredText();
-					GLog.println(GLog.INFO_LEVEL, this.getClass(), "hasNonRelevantEvidence:IPIR", "Ruling this out as non mental functioning |" + buff + "|");
+					 System.err.println("hasNonRelevantEvidenceIPIR|" + buff + "|");
+					GLog.println(GLog.INFO_LEVEL, this.getClass(), ":hasNonRelevantEvidenceIPIR", "Ruling this out as non mental functioning |" + buff + "|");
 					
 				}
 		}
@@ -259,7 +315,7 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
    * @param pIPIRYesSentence
   */
   // =================================================
- private void setIPIRYesAttributes(JCas pJCas, Annotation pIPIRYesSentence) {
+ protected void setIPIRYesAttributes(JCas pJCas, Annotation pIPIRYesSentence) {
     
    
 	  
@@ -308,15 +364,19 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
  // =================================================
   private final void setAtLeastOneIPIRAttribute ( IPIR_yes pStatement ){
 	  
-	  if (    !pStatement.getInteraction() &&
+	  if ( // !pStatement.getInteraction() &&   // <----- the annotations have many interactions and d779's this hurt backing it off
 			  !pStatement.getD730() &&
 			  !pStatement.getD740() &&
 			  !pStatement.getD7400() &&
 			  !pStatement.getD750() &&
 			  !pStatement.getD760() &&
 			  !pStatement.getD770() &&
-			  !pStatement.getD779() )
+			  !pStatement.getD779() ) {
 		  pStatement.setD779(true);   //  set to "other"  //  should be the most popular one
+	  
+		  //String buff = pStatement.getCoveredText();
+		  
+	  }
 	  
   } //end Method setAtLeastOneIPIRAttribute() --------
 
@@ -330,37 +390,155 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
    * @return boolean   someRelationship found
   */
   // =================================================
-   private final boolean processIPIRSentence(JCas pJCas, Annotation pSentence, Annotation pMention) {
+   protected final boolean processIPIRSentence(JCas pJCas, Annotation pSentence, Annotation pMention) {
     
    
     
-     
+     boolean returnVal = false;
      boolean relationshipFound[] = new boolean[6];
      boolean someRelationshipFound = false;
+     boolean interactionRelationshipFound = false;
      
     
-     relationshipFound[0] =categorizeD730RelatingWithStrangers ( pJCas, pSentence, pMention);
-     relationshipFound[1] =categorizeD740FormalRelationships( pJCas, pSentence, pMention);
-     relationshipFound[2] =categorizeD760FamilyRelationships( pJCas, pSentence, pMention);
-     relationshipFound[3] =categorizeD770IntimateRelationships( pJCas, pSentence, pMention);
-     relationshipFound[4] =categorizeD779OtherRelationships( pJCas, pSentence, pMention);
+     // if the mention is in a slot value, make sure the value has an asserted value 
+     // otherwise, we cannot assert the slot
+     
+     boolean assertedValueOrSentence = isAssertedValueOrSentence(pJCas, pMention );
+     
+     if ( assertedValueOrSentence ) {
+     
+       relationshipFound[0] =categorizeD730RelatingWithStrangers ( pJCas, pSentence, pMention);
+       relationshipFound[1] =categorizeD740FormalRelationships( pJCas, pSentence, pMention);
+       relationshipFound[2] =categorizeD760FamilyRelationships( pJCas, pSentence, pMention);
+       relationshipFound[3] =categorizeD770IntimateRelationships( pJCas, pSentence, pMention);
+       relationshipFound[4] =categorizeD779OtherRelationships( pJCas, pSentence, pMention);
      
      
-     // ------------- informal relationships is a default, and has to be computed last!!! ----
-     relationshipFound[5] =categorizeD750InformalRelationships( pJCas, pSentence, pMention);
+       // ------------- informal relationships is a default, and has to be computed last!!! ----
+       relationshipFound[5] =categorizeD750InformalRelationships( pJCas, pSentence, pMention);
      
-     for ( int i = 0; i < relationshipFound.length; i++)
-       if ( relationshipFound[i]) {
-         someRelationshipFound = true;
-         break;
-       }
+       for ( int i = 0; i < relationshipFound.length; i++)
+         if ( relationshipFound[i]) {
+           someRelationshipFound = true;
+           break;
+         }
     
-     boolean interactionRelationshipFound = categorizeIPIRInteractions( pJCas, pSentence, pMention);
+        interactionRelationshipFound = categorizeIPIRInteractions( pJCas, pSentence, pMention);
+    
+     } // end if this is not a slot value or it is and the value was asserted
     
     
-    
-     return someRelationshipFound;
+     returnVal = someRelationshipFound || interactionRelationshipFound;
+     return returnVal;
   } // end Method processIPIRSentence() --------------
+
+
+// =================================================
+  /**
+   * isAssertedValueOrSentence returns true if this mention is within a slot value 
+   *                           and the value is explicitly asserted or the mention
+   *                           is not within a slotValue
+   * @param pJCas
+   * @param pMention
+   * @return boolean
+  */
+  // =================================================
+  private final boolean isAssertedValueOrSentence(JCas pJCas, Annotation pMention) {
+    
+    boolean returnVal = false;
+    Annotation aSlotValue =  getSlotValue( pJCas, pMention);
+    boolean assertedValue = false;
+    if ( aSlotValue != null )
+      assertedValue = isValueAsserted(pJCas, aSlotValue);
+    
+   if ( aSlotValue == null  || assertedValue ) 
+     returnVal = true;
+   
+   return returnVal;
+  } // end Method isAssertedValueOrSentence() -----------
+
+
+
+// =================================================
+  /**
+   * getSlotValue returns the slotvalue if it overlaps with the mention 
+   * 
+   * @param pJCas
+   * @param pSentence
+   * @return  Annotation (null if there is none)
+  */
+  // =================================================
+  private final Annotation getSlotValue(JCas pJCas, Annotation pMention) {
+    Annotation returnVal = null;
+    
+    List<Annotation> someSlots = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, SlotValue.typeIndexID, pMention.getBegin(), pMention.getEnd(),true );
+    if ( someSlots != null && !someSlots.isEmpty())
+      returnVal = someSlots.get(0);
+    
+    return returnVal;
+  } // end Method getSlotValue() --------------------
+
+
+
+// =================================================
+  /**
+   * isValueAsserted returns true if the value has an explicit asserted
+   * value like "yes"  or [X]
+   * @param pJCas 
+   * 
+   * @param pSlotvalue
+   * @return boolean
+  */
+  // =================================================
+   private boolean isValueAsserted(JCas pJCas, Annotation pSlotValue) {
+     boolean returnVal = false;
+     
+     DependentContent value = ((SlotValue) pSlotValue).getDependentContent();
+     if ( value != null ) {
+       String content = value.getCoveredText();
+       if ( content != null && content.trim().length() > 0 ) {
+         String lowercaseContent = content.trim().toLowerCase();
+         /*
+         switch ( lowercaseContent ) {
+           case "[x]" : returnVal = true; break;
+           case "yes" : returnVal = true; break;
+           case "y"   : returnVal = true; break;
+           case "good"   : returnVal = true; break;
+           case "appropriate"   : returnVal = true; break;
+           case "moderately"  : returnVal = true; break;
+           case "limited"     : returnVal = true; break;
+           case "improved"     : returnVal = true; break;
+           case "well"     : returnVal = true; break;
+          }
+           */
+         switch ( lowercaseContent ) {
+           case "0" : returnVal = false; break;
+           default : returnVal = true; break;
+         }
+         
+       }
+     }
+       
+     return returnVal;
+     
+   } // end Method isValueAsserted() -----------------
+
+
+
+  // =================================================
+  /**
+   * isSentenceSlotValue [TBD] summary
+   * 
+   * @param pSentence
+   * @return
+  */
+  // =================================================
+  
+  private boolean isSentenceSlotValue(Annotation pSentence) {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
 
 
 // =================================================
@@ -430,8 +608,9 @@ public class IPIRCategories extends JCasAnnotator_ImplBase {
            
            if ( categories.contains("NotIPIR") || categories.contains("NotMFO")) continue;
 
-         
+                                    
            if ( categories.contains("ICF_d710-d729") ||
+                categories.contains("d710_basic_interpersonal_interactions") ||    
                 categories.contains("IPIRAbility") ||                        //    these will already have IPIRParticipationEvidence created    
                 categories.contains("IPIRParticipation") ) {                 //    these will already have IPIRParticipationEvidence created 
                
@@ -547,6 +726,7 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
     boolean strangerFound = false;
     try {
       
+     
       
       // if there are any D730RelatingWithStrangers already assigned for this sentence, then quit
       List<Annotation> existingIpirCategories = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, D730RelatingWithStrangers.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
@@ -559,6 +739,7 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
       
       if ( terms != null && !terms.isEmpty()) {
         
+        List<Annotation> statementList = new ArrayList<Annotation>();
         terms = UIMAUtil.uniqueAnnotations(terms);
         for ( Annotation term : terms ) {
           String categories = ((LexicalElement) term).getSemanticTypes();
@@ -570,11 +751,23 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
               IPIRActivities statement = new   D730RelatingWithStrangers( pJCas);
               createIPIRSubcategory( pJCas, pSentence, pSentence, statement, categories);
               strangerFound = true;
+              statementList.add( statement);
+              
             }
               
             D730RelatingWithStrangersEvidence evidenceStatement = new   D730RelatingWithStrangersEvidence ( pJCas);
             createIPIRSubcategory( pJCas, pSentence, term, evidenceStatement, categories);
+            statementList.add( evidenceStatement);
             
+            if ( categories != null && !statementList.isEmpty() && ( 
+                categories.contains("FamilyHistoryEvidence") ||
+                categories.contains("InformalRelationshipEvidence") ||
+                categories.contains("AuthorityPosition") ) ) {
+              for ( Annotation statement : statementList )
+                statement.removeFromIndexes();
+              strangerFound = false;  
+              break;
+            } // end if we had to backtrack because there was also mention of a friend or family
           } // end if !stranger found
         } // end loop through terms
       } // end if there are terms
@@ -634,6 +827,9 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
      
   try {
     
+	 String buff = pMention.getCoveredText();
+	
+	 
     // if there are any D740FormalRelationships already assigned for this sentence, then quit
     List<Annotation> existingIpirCategories = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, D740FormalRelationships.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
     if ( existingIpirCategories != null && !existingIpirCategories.isEmpty() )
@@ -652,10 +848,24 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
        
        boolean authorityfound = false;
        boolean nonAuthorityFound = false;
+       boolean inferredAuthorityFound = false;
+       boolean familySeen = false;
+       boolean interactionsFound = false;
+       List<Annotation> questionableMentions = new ArrayList<Annotation>();
+       List<Annotation> questionableEvidence = new ArrayList<Annotation>();
        if ( terms != null && !terms.isEmpty()) {
          for ( Annotation term : terms ) {
            String buf = term.getCoveredText();
            String categories = ((LexicalElement) term).getSemanticTypes();
+           
+           if ( categories != null && (
+               categories.contains("IntimateRelationshipEvidence") ||
+               categories.contains("InformalRelationshipEvidence") ||
+               categories.contains("FamilyHistoryEvidence"))) {
+             familySeen = true;
+           }
+             
+               
            
            // ------------------Formal relationships - like dealing with your pumber -----------
            if      (  categories != null && ( categories.contains("NonAuthority")  || categories.contains("SometimesAuthority"))) {
@@ -664,36 +874,74 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
                IPIRActivities statement = new D740FormalRelationships( pJCas);
                createIPIRSubcategory( pJCas, pSentence, pSentence, statement, categories);
                nonAuthorityFound = true;
+               questionableMentions.add ( statement );
              
              }
              D740FormalRelationshipsEvidence evidenceStatement = new   D740FormalRelationshipsEvidence ( pJCas);
              createIPIRSubcategory( pJCas, pSentence, term, evidenceStatement, categories);
+             questionableEvidence.add ( evidenceStatement );
+            
+             
              
            }
+           if      (  categories != null && ( categories.contains("ICF_d710-d729") || 
+                                              categories.contains("d710_basic_interpersonal_interactions") )) {
+             interactionsFound = true;
+           }
+              
+           
+           if      (  categories != null && ( categories.contains("ICF_d740_formal_relationships") )) {
+             IPIRActivities statement = new D740FormalRelationships( pJCas);
+             questionableMentions.add ( statement );
+             createIPIRSubcategory( pJCas, pSentence, pSentence, statement, categories);
+             D740FormalRelationshipsEvidence evidenceStatement = new   D740FormalRelationshipsEvidence ( pJCas);
+             createIPIRSubcategory( pJCas, pSentence, term, evidenceStatement, categories);
+             inferredAuthorityFound = true;
+             questionableEvidence.add ( evidenceStatement );
              
+             
+           }
+           
            // ------------------Formal relationships - like dealing with your boss -------------
-           if      ( categories != null && categories.contains("AuthorityPosition")) {
+           //                   or inferred from snippets of forms given to claimants by an authority person
+           if      ( categories != null && categories.contains("AuthorityPosition") || ( categories.contains("ICF_d7400_formal_relationships")) ) {
              if  (!authorityfound ) {
-            	 GLog.println(" d7400 trigger-->" + term.getCoveredText() + "|" + categories );
+               
                IPIRActivities statement = new D7400AuthorityRelationships( pJCas);
                createIPIRSubcategory( pJCas, pSentence, pSentence, statement, categories);
+               questionableMentions.add ( statement );
+               
                IPIRActivities statement2 = new D740FormalRelationships( pJCas);
+               questionableMentions.add ( statement2 );
                createIPIRSubcategory( pJCas, pSentence, pSentence, statement2, categories);
                authorityfound = true;
+              
              }
-             D7400AuthorityRelationships evidenceStatement = new   D7400AuthorityRelationships ( pJCas);
+             D7400AuthorityRelationshipsEvidence evidenceStatement = new   D7400AuthorityRelationshipsEvidence ( pJCas);
              createIPIRSubcategory( pJCas, pSentence, term, evidenceStatement, categories);
+             questionableEvidence.add ( evidenceStatement );
              D7400AuthorityRelationshipsEvidence evidenceStatement2 = new   D7400AuthorityRelationshipsEvidence ( pJCas);
              createIPIRSubcategory( pJCas, pSentence, term, evidenceStatement2, categories);
+             questionableEvidence.add ( evidenceStatement2 );
            }
              
          }
            
        }
        
-       if  (authorityfound || nonAuthorityFound )
-         found = true;
-   
+       if ( familySeen && !questionableMentions.isEmpty()) {
+        for ( Annotation mention: questionableMentions)   mention.removeFromIndexes();
+        for ( Annotation evidence: questionableEvidence ) evidence.removeFromIndexes();
+       } else {
+         if  (authorityfound || nonAuthorityFound ) 
+           found = true;
+         else if ( inferredAuthorityFound  && interactionsFound )
+           found = true;
+         else if ( inferredAuthorityFound  && !interactionsFound && !questionableMentions.isEmpty()) {
+           for ( Annotation mention: questionableMentions)   mention.removeFromIndexes();
+           for ( Annotation evidence: questionableEvidence ) evidence.removeFromIndexes();
+         }
+       }
     } catch ( Exception e ) {
        e.printStackTrace();
        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "processIPIRMention", "issue with processing the IPIR mention " + e.toString());
@@ -727,14 +975,18 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
        if ( existingIpirCategories != null && !existingIpirCategories.isEmpty() )
          return true;
        
-       
+      String buff = pSentence.getCoveredText().toLowerCase();
+      
        // find the sentence this mention is within
        List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
        
-     
+      boolean patientSeen = false;
+      boolean sessionSeen = false;
+      Annotation lastSessionTerm = null;
        if ( terms != null && !terms.isEmpty()) {
          for ( Annotation term : terms ) {
            String termString = term.getCoveredText();
+           
            String categories = ((LexicalElement) term).getSemanticTypes();
            
            // ------------------interacting with informal social relationships ------------
@@ -760,7 +1012,38 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
                lastPronounFound = term;
              }
            }
+           if (termString.contains("patient") || 
+                    termString.contains("veteran") || 
+                    termString.contains("claimant") || 
+                    termString.contains("resident") || 
+                    termString.contains("participant") || 
+                    termString.contains("client") ) {
+             patientSeen = true;
+           }
+            if (termString.contains("discussion") || 
+               termString.contains("group") || 
+               termString.contains("session") || 
+               termString.contains("prompt") || 
+               termString.contains("feedback") ||
+               termString.contains("share") || 
+               termString.contains("engaged") ) {
+              sessionSeen = true;
+              lastSessionTerm = term;
+            }
+           
          } // end loop through terms
+         
+         if ( patientSeen && sessionSeen ) {
+           if ( !informalRelationshipFound  ) {
+             IPIRActivities statement = new   D750InformalRelationships( pJCas);
+             createIPIRSubcategory( pJCas, pSentence, pSentence, statement, "InformalRelationshipEvidence");
+             informalRelationshipFound = true;
+           }
+           
+           D750InformalRelationshipsEvidence evidenceStatement = new   D750InformalRelationshipsEvidence ( pJCas);
+           createIPIRSubcategory( pJCas, pSentence, lastSessionTerm, evidenceStatement, "InformalRelationshipEvidence");
+           
+         } // end if patientSeen and sessionSeen 
        } // end if there are terms
        
        // -----------------------
@@ -771,13 +1054,17 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
        
        // make a new   IPIRActivities statement = new   D750InformalRelationships( pJCas);
        
+       if ( this.usePronouns ) {
        if ( !informalRelationshipFound && pronounHash.size() > 1 && !otherRelationshipsFound( pJCas, pSentence) ) {
-         IPIRActivities statement = new   D750InformalRelationships( pJCas);
+          buff = pSentence.getCoveredText();
+        
+    	   IPIRActivities statement = new   D750InformalRelationships( pJCas);
          String categories = "InformalRelationshipEvidence:Pronoun";
          createIPIRSubcategory( pJCas, pSentence, pSentence, statement, categories);
          informalRelationshipFound = true;
          D750InformalRelationshipsEvidence evidenceStatement = new   D750InformalRelationshipsEvidence ( pJCas);
          createIPIRSubcategory( pJCas, pSentence, lastPronounFound, evidenceStatement, categories);
+       }
        }
         
       
@@ -874,7 +1161,10 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
 
   // =================================================
   /**
-   * categorizeD770IntimateRelationships
+   * categorizeD770IntimateRelationships  find the d770 terms,  
+   *                                         tempered by family history counter evidence  (mother, father, daughter, ...) 
+   *                                         tempered by informal relationships (classmate, buddy ... )
+   *                                         tempered by formal relationships (boss, supervisor ...)
    * 
    * @param pJCas
    * @param pSentence
@@ -892,25 +1182,51 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
        if ( existingIpirCategories != null && !existingIpirCategories.isEmpty() )
          return true;
        
+     
+       
        // find the sentence this mention is within
        List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
-       
-    
+       boolean familyFound = false;
+       boolean partnerFound = false;
+       List<Annotation> statementList = new ArrayList<Annotation>();
        if ( terms != null && !terms.isEmpty()) {
          for ( Annotation term : terms ) {
            String categories = ((LexicalElement) term).getSemanticTypes();
+                                                          
            if ( categories != null && categories.contains("IntimateRelationshipEvidence")) {
              
              if ( !intimateRelationshipFound) {
                IPIRActivities statement = new D770IntimateRelationships( pJCas);
                createIPIRSubcategory( pJCas, pSentence, pMention, statement, categories);
                intimateRelationshipFound = true;
+               statementList.add( statement);
              }
              D770IntimateRelationshipsEvidence evidence = new   D770IntimateRelationshipsEvidence ( pJCas);
              createIPIRSubcategory( pJCas, pSentence, term, evidence, categories);
+             statementList.add( evidence);
            }
-         }
-       }
+           
+           if ( categories != null && !statementList.isEmpty() && ( 
+                               categories.contains("FamilyHistoryEvidence") ||
+                               categories.contains("InformalRelationshipEvidence") ||
+                               categories.contains("AuthorityPosition") ) ) 
+             familyFound = true;
+             
+              if ( categories != null && !statementList.isEmpty() && 
+                  categories.contains("IntimatePartner"))
+                partnerFound = true;
+         
+                                 
+         } // end loop thru terms
+         
+         // if family and friends are present, but not an intimate partner, roll this back.
+         if ( statementList != null && !statementList.isEmpty() && !partnerFound && familyFound) 
+           for ( Annotation statement : statementList ) {
+             statement.removeFromIndexes();
+             intimateRelationshipFound = false;
+           }
+       
+       } // end if there are any terms
        
        
      } catch ( Exception e ) {
@@ -937,8 +1253,12 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
    private boolean categorizeD779OtherRelationships(JCas pJCas, Annotation pSentence, Annotation pMention) {
    
      boolean otherRelationshipFound = false;
+    
      try {
-       
+    	 String buff = pSentence.getCoveredText();
+    	 if ( buff.contains("other"))
+    	   System.err.println("other found");
+      
        // if there are any D779IntimateRelationships already assigned for this sentence, then quit
        List<Annotation> existingIpirCategories = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, D779OtherRelationships.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
        if ( existingIpirCategories != null && !existingIpirCategories.isEmpty() )
@@ -947,9 +1267,11 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
        // find the sentence this mention is within
        List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
        
-    
+       List<Annotation> statements = new ArrayList<Annotation>();
+       boolean retractD779 = false;
        if ( terms != null && !terms.isEmpty()) {
          for ( Annotation term : terms ) {
+           Annotation aStatement = null;
         	 String termName = term.getCoveredText();
         	 
            String categories = ((LexicalElement) term).getSemanticTypes();
@@ -958,12 +1280,31 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
              if ( !otherRelationshipFound) {
                IPIRActivities statement = new D779OtherRelationships( pJCas);
                createIPIRSubcategory( pJCas, pSentence, pMention, statement, categories);
+               statements.add( statement);
                otherRelationshipFound = true;
              }
              D779OtherRelationshipsEvidence evidence = new   D779OtherRelationshipsEvidence ( pJCas);
              createIPIRSubcategory( pJCas, pSentence, term, evidence, categories);
+             statements.add( evidence);
            }
+           
+         //  if ( categories != null && categories.contains("NotIPIR") || categories.contains("NotMFO") )
+         //  if ( categories != null && categories.contains("InformalRelationshipEvidence")  )  //   like friend
+         //  
+           if ( termName.toLowerCase().contains("friend")  || termName.toLowerCase().equals("cooperative") || categories.contains("notIPIR")) {
+             retractD779 = true;
+           }
+           
+         } // end loop thru terms of the mention
+         
+         
+         if ( retractD779 ) {
+           for ( Annotation badStatement : statements )
+             badStatement.removeFromIndexes();
          }
+       
+        
+       
        }
        
        
@@ -973,7 +1314,7 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
        throw e;
      }
      
-   //  STopped here
+   
      return otherRelationshipFound;
     
   } // end Method categorizeD770IntimateRelationships()--------
@@ -1011,6 +1352,8 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
     pStatement.setSubjectStatus(subject);
     pStatement.addToIndexes();
     
+    
+    
   } // end Method createIPIRSubcategory() ------------
 
 
@@ -1022,7 +1365,8 @@ private boolean categorizeIPIRBehaviorInteractions(JCas pJCas, Annotation pSente
  **/
 // ----------------------------------
 public void destroy() {
-  this.performanceMeter.writeProfile( this.getClass().getSimpleName());
+  if ( this.performanceMeter != null )
+    this.performanceMeter.writeProfile( this.getClass().getSimpleName());
 }
 
   
@@ -1074,6 +1418,9 @@ public void destroy() {
     this.annotationSetName = U.getOption(pArgs, "--ipirAnnotationSetName=", "ipir_categories_rulebased_model");
   
     this.INFACT_MODE = Boolean.valueOf( U.getOption(pArgs, "--INFACT_MODE=", "false"));
+    this.segmentRelevantFilter = Boolean.parseBoolean( U.getOption(pArgs, "--segmentRelevantFilter=", "true" ));
+    
+    this.usePronouns = Boolean.valueOf(U.getOption( pArgs, "--usePronounsInD750=", "true"));
       
   } // end Method initialize() -------
  
@@ -1112,6 +1459,8 @@ public void destroy() {
        ;
   
    	boolean INFACT_MODE = false; 
+   	boolean usePronouns = true;
+   	boolean  segmentRelevantFilter = true;
    
   
 } // end Class LineAnnotator() ---------------

@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-import gov.nih.cc.rmd.nlp.framework.annotator.mentalFunctionOntologyNER.MentalFunctionOntologyNERAnnotator;
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
@@ -27,7 +26,6 @@ import org.apache.uima.resource.ResourceInitializationException;
 
 import gov.nih.cc.rmd.inFACT.Adaptation;
 import gov.nih.cc.rmd.inFACT.AppliedMemory;
-import gov.nih.cc.rmd.inFACT.BehaviorEvidence;
 import gov.nih.cc.rmd.inFACT.ComcogEvidence;
 import gov.nih.cc.rmd.inFACT.D110_D129_PurposefulSensoryExperiences;
 import gov.nih.cc.rmd.inFACT.D130_D159_BasicLearning;
@@ -67,8 +65,6 @@ import gov.nih.cc.rmd.inFACT.Manual_Pacing;
 import gov.nih.cc.rmd.inFACT.Manual_Persistence;
 import gov.nih.cc.rmd.inFACT.Pacing;
 import gov.nih.cc.rmd.inFACT.Persistence;
-import gov.nih.cc.rmd.inFACT.SupportEvidence;
-import gov.nih.cc.rmd.inFACT.manual.IPIRyes;
 import gov.nih.cc.rmd.mentalFunctionOntologyNER.ComCogActivities;
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
 import gov.nih.cc.rmd.nlp.framework.utils.PerformanceMeter;
@@ -79,7 +75,6 @@ import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
 import gov.va.chir.model.ContentHeading;
 import gov.va.chir.model.LexicalElement;
 import gov.va.chir.model.Utterance;
-import gov.va.chir.model.VAnnotation;
 import gov.va.vinci.model.Concept;
 
 
@@ -99,38 +94,21 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
    
     try {
       this.performanceMeter.startCounter();
-      GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process"," Started ComCogCategories");
-
+      
      // Loop through utterances  (that's the span we won't cross) 
-      
-      
-     List<Annotation> comcogMentions = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.inFACT.x.Comcog_yes.typeIndexID , false);
+      List<Annotation> comcogMentions = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.inFACT.x.Comcog_yes.typeIndexID , false);
      
+     if ( comcogMentions == null || comcogMentions.isEmpty()) {
+       comcogMentions = getOntologyComcogMentions( pJCas );
      
-     // if we are running in inFACT mode, and ...
-     //    we've picked up x.Comcog yes's that came from manual annotations
-     //    These will have a annotationSetName=comcog_subcatory_model  and the ontology built ones
-     //    will have a annotaitonSetname=framework
-     // Then
-     //   remove the framework based ones
-     List<Annotation> newComcogMentions = null;
-     if  (INFACT_MODE &&  (comcogMentions != null && !comcogMentions.isEmpty()) ) {
-       newComcogMentions = new ArrayList<Annotation>(comcogMentions.size());
-       for ( Annotation comcogYesSentence : comcogMentions ) {
-         String annotationSetName = ((gov.nih.cc.rmd.inFACT.x.Comcog_yes) comcogYesSentence).getAnnotationSetName();
-           if ( annotationSetName == null || annotationSetName.toLowerCase().contains("framework")) {
-             comcogYesSentence.removeFromIndexes();
-            // comcogMentions.remove(comcogYesSentence);
-           }
-           else {
-             newComcogMentions.add(comcogYesSentence);
-           }
-       }
-     }
-     if (newComcogMentions != null && !newComcogMentions.isEmpty())  {
        
-       comcogMentions = newComcogMentions;
-    }
+     } // else {  // remove the ontology comcog sentences if there are manual mentions
+       // List<Annotation> ontologyComcogMentions = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.inFACT.x.Comcog_yes.typeIndexID , false);
+       // if (ontologyComcogMentions != null && !ontologyComcogMentions.isEmpty())
+       //  for ( Annotation anOntologyMention : ontologyComcogMentions)
+       //    anOntologyMention.removeFromIndexes();
+     // }
+     
       
       // ----------------------------------------------
       // If there are Comcog yes annotations, iterate through these sentences 
@@ -148,9 +126,6 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
     			  processComcogMention ( pJCas, mention);
          
       }
-      
-      GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process"," End ComCogCategories");
-
       this.performanceMeter.stopCounter();
       
       } catch (Exception e) {
@@ -161,6 +136,52 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
   
   } // end Method process() ----------------
    
+
+
+  // =================================================
+  /**
+   * getOntologyComcogMentions [TBD] summary
+   * 
+   * @param pJCas
+   * @return
+  */
+  // =================================================
+  private final List<Annotation> getOntologyComcogMentions(JCas pJCas) {
+    
+    List<Annotation>comcogMentions = UIMAUtil.getAnnotations(pJCas, gov.nih.cc.rmd.inFACT.x.Comcog_yes.typeIndexID , false);
+    
+    
+    // if we are running in inFACT mode, and ...
+    //    we've picked up x.Comcog yes's that came from manual annotations
+    //    These will have a annotationSetName=comcog_subcatory_model  and the ontology built ones
+    //    will have a annotaitonSetname=framework
+    // Then
+    //   remove the framework based ones
+    List<Annotation> newComcogMentions = null;
+    if  (INFACT_MODE &&  (comcogMentions != null && !comcogMentions.isEmpty()) ) {
+      newComcogMentions = new ArrayList<Annotation>(comcogMentions.size());
+     
+      for ( Annotation comcogYesSentence : comcogMentions ) {
+        String annotationSetName = ((gov.nih.cc.rmd.inFACT.x.Comcog_yes) comcogYesSentence).getAnnotationSetName();
+        if ( !annotationSetName.equals("comcog_classification"))
+         
+          if ( annotationSetName == null ||  !this.payloadAnnotationSetName.contains( annotationSetName  )) {
+            comcogYesSentence.removeFromIndexes();
+           // comcogMentions.remove(comcogYesSentence);
+          }
+          else {
+            newComcogMentions.add(comcogYesSentence);
+          }
+      }
+    }
+    if (newComcogMentions != null && !newComcogMentions.isEmpty())  {
+      
+      comcogMentions = newComcogMentions;
+   }
+    
+    return comcogMentions;
+  } // end Method getOntologyComcogMentions() --------
+
 
 
   // =================================================
@@ -213,11 +234,15 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
     
     String buff = pComcogYesSentence.getCoveredText();
    
-    
-    if ( !hasNonRelevantEvidence( pJCas, pComcogYesSentence ) )
+                                   
+    if ( segmentRelevantFilter  ) {
+      if (  !hasNonRelevantEvidence( pJCas, pComcogYesSentence )  )
+        if ( processComcogSentence( pJCas,  pComcogYesSentence ) )
+          someComCogFound = true;
+    } else {
       if ( processComcogSentence( pJCas,  pComcogYesSentence ) )
-         someComCogFound = true;
-  
+        someComCogFound = true;
+    }
    
     setComcogYesAttributes( pJCas, pComcogYesSentence );
     
@@ -249,7 +274,7 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
        if ( categories != null && !categories.isEmpty())
          if ( categories.contains("NotMFO") || categories.contains("NotComCog")) {
         	 String buff = term.getCoveredText();
-        	 GLog.println(GLog.INFO_LEVEL, this.getClass(), "hasNonRelevantEvidence:ComCog", "Ruling this out as non mental functioning |" + buff + "|");
+        	 // GLog.println(GLog.INFO_LEVEL, this.getClass(), "hasNonRelevantEvidence:ComCog", "Ruling this out as non mental functioning |" + buff + "|");
            returnVal = true;
          
          }
@@ -272,7 +297,7 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
    * @throws Exception 
   */
   // =================================================
-   private boolean processComcogSentence(JCas pJCas, Annotation pComcogYesSentence ) throws Exception {
+   protected final boolean processComcogSentence(JCas pJCas, Annotation pComcogYesSentence ) throws Exception {
     
     
     boolean comcogFound[] = new boolean[20];
@@ -280,6 +305,7 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
     boolean someComcogFound = false;
    
     String buff2 = pComcogYesSentence.getCoveredText();
+    
    
     try {
     comcogFound[ D110_CAT_SENSORY] =categorize ( pJCas, pComcogYesSentence,  D110_D129_PurposefulSensoryExperiences.class, D110_D129_PurposefulSensoryExperiences.typeIndexID,      ComcogEvidence.class );
@@ -359,7 +385,7 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
    //  else if  ( pCategoriesFound[  D177_CAT_DECISIONS ]) returnVal = true;
      else if  ( pCategoriesFound[  D179_CAT_OTHER     ]) returnVal = true;
      else if  ( pCategoriesFound[  D210_CAT_TASKS          ]) returnVal = true;
-  //   else if  ( pCategoriesFound[  D230_CAT_DAILY_ROUTINES ]) returnVal = true;
+     else if  ( pCategoriesFound[  D230_CAT_DAILY_ROUTINES ]) returnVal = true;
      else if  ( pCategoriesFound[  D240_CAT_STRESS         ]) returnVal = true;
  //  else if  ( pCategoriesFound[  D310_CAT_COM_RECEIVING  ]) returnVal = true;
  //    else if  ( pCategoriesFound[  D330_CAT_COM_PRODUCTING ]) returnVal = true;
@@ -437,14 +463,19 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
     String documentId = VUIMAUtil.getDocumentId(pJCas);
     
     try {
-      
-    	//if ( pComcogClass.equals( D310_D329_ReceivingCommunication.class))
-    	//	GLog.println("looking for comcog d310");
+       String buff2 = pSentence.getCoveredText();
+       
+      //   If you are looking to trace specific things - uncomment out this 
+    	// if ( buff2.toLowerCase().contains("demonstrated understanding") &&  
+      //  (
+      //     pComcogClass.equals( D310_D329_ReceivingCommunication.class)
+      //      
+      //    ))
+    	  
     		
     	String lexicalSemanticType = translateComCogClassToLRAGRSemanticType( pComcogClass.getSimpleName());
-    	//if ( lexicalSemanticType == null)
-    	//	System.err.println("not supposed to be here with");
-      // if there are any comcog categories already assigned for this sentence, then quit
+   
+    	// if there are any comcog categories already assigned for this sentence, then quit
       List<Annotation> existingIpirCategories = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, pCategoryTypeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
       if ( existingIpirCategories != null && !existingIpirCategories.isEmpty() )
         return true;
@@ -452,43 +483,100 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
       
       // find the sentence this mention is within
       List<Annotation> terms = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
-      
+    
       if ( terms != null && !terms.isEmpty()) {
         
         terms = UIMAUtil.uniqueAnnotations(terms);
+        List<Annotation> mentions = new ArrayList<Annotation>();
+        boolean counterEvidence = false;
+        boolean d230Seen = false;
+        boolean adlsSeen = false;
+        
+        // Tough one - this spans across slot: value, can't make it a context excpetion
+        // 
+        if ( buff2.equals("memory: recalls")) return false ;
+        int ctr = 0;
         for ( Annotation term : terms ) {
         	String buff = term.getCoveredText();
+        	ctr++;
         	
         	
           String categories = ((LexicalElement) term).getSemanticTypes();
-          
+           
           // ------------------interacting with stranger relationships - like being a traveler on a bus -----------
-          if      (  categories != null && ( categories.contains(lexicalSemanticType))) {
+          if      (  categories != null && lexicalSemanticType != null && aCategoryMatches(  lexicalSemanticType, categories)) {
             
             if ( !categoryFound ) {
            
               Constructor<?> constructor = pComcogClass.getConstructor(JCas.class);
                Object statement = constructor.newInstance(pJCas );
            
+               mentions.add( (Annotation) statement);
               createComcogSubcategory( pJCas, pSentence, pSentence,  (Concept) statement, categories);
               categoryFound = true;
             }
-            
-            // System.err.println("Sentence; " + pSentence.getCoveredText() );
+         
             // check to see if the term is not a slot, like "signed by:" 
-            if ( isPartOfSlotOrSectionName( pJCas, term ) || ((LexicalElement)term).getConditional()) {
+            if ( isPartOfSlotOrSectionName( pJCas, term ) || 
+                (
+                ((LexicalElement)term).getConditional() 
+                && !pComcogClass.equals( D163_Thinking.class) 
+                && !pComcogClass.equals(D230_CarryingOutDailyRoutine.class)
+                && !pComcogClass.equals(Pacing.class))  ) {
               continue;
             }
           
             Constructor<?> constructor = pComcogEvidenceClass.getConstructor(JCas.class);
             Object evidenceStatement   = constructor.newInstance ( pJCas);
+            mentions.add((Annotation) evidenceStatement);
             createComcogSubcategory( pJCas, pSentence, term, (Concept) evidenceStatement, categories);
             
+            
+            if (lexicalSemanticType.contains("d230_dailyRoutine")) {
+              if ( categories.contains("d230_dailyRoutine")) 
+                d230Seen = true;
+              if ( categories.contains("ActivitiesOfDailyLiving")) 
+                adlsSeen = true;
+              
+            }
+            // --------------------------------------
+            // coping stratigies needs to be specific for d240 - 
+            if ( categories.contains("d240") && (buff.contains("coping strategies") || buff.contains("coping strategy"))) {
+              int numberOfWordsToRightOfCopingStrategies = terms.size() - ctr;
+              if (numberOfWordsToRightOfCopingStrategies < 4 ) {
+                ((Annotation)evidenceStatement).removeFromIndexes();
+              }
+            }
+            
+              
+            
           } // end if !aCategory was found
+          
+          if ( categories.contains( "NotComcog") || categories.contains("NotMFO")) {
+            counterEvidence = true;
+            break;
+          }
         } // end loop through terms
+        
+        if ( lexicalSemanticType.contains("d163_thinking") && 
+            ( buff2.contains(" denies ") ||  buff2.contains(" denied ") )) {
+          counterEvidence = true; 
+        }
+        
+        // ----- if looking at d230, need to see both d230 terms and adl terms, otherwise, retract this 
+        if (lexicalSemanticType.contains("d230_dailyRoutine")) 
+          if (!( d230Seen && adlsSeen ))
+            counterEvidence = true;
+      
+        // retract any mentions if there is counter evidence
+        if ( counterEvidence ) {
+          if ( mentions != null && !mentions.isEmpty())
+            for ( Annotation mention: mentions ) 
+              mention.removeFromIndexes();
+        }
+     
       } // end if there are terms
       
-     
     } catch ( Exception e ) {
       e.printStackTrace();
       GLog.println(GLog.ERROR_LEVEL, this.getClass(), "categorize", "issue categorizing a comcog mention " + e.toString());
@@ -499,6 +587,39 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
     
   } // end Method categorize() ----------
   
+// =================================================
+  /**
+   * aCategoryMatches returns true if any of the categories in a match any of the categories in b
+   * Each of the inputs will be a colon delimited set
+   * @param pSetA
+   * @param pSetB
+   * @return boolean
+  */
+  // =================================================
+  private boolean aCategoryMatches(String pSetA, String pSetB) {
+    boolean returnVal = false;
+    
+    if ( pSetA != null && pSetB != null ) {
+      HashSet<String> hashA = new HashSet<String>();
+    
+      String[] setA = U.split(pSetA, ":");
+      if ( setA != null && setA.length > 0 )
+        for ( String aMember : setA )  hashA.add(aMember.trim());
+    
+      String[] setB = U.split(pSetB, ":");
+      if ( setB != null && setB.length > 0 )
+        for ( String bMember : setB) {
+          if (hashA.contains(bMember)) {
+            returnVal = true;
+            break;
+          }
+        }
+      }    
+    return returnVal;
+  } // end Method aCategoryMatches() ---------------
+
+
+
 // =================================================
   /**
    * isPartOfSlotOrSectionName returns true if this term is part of a slot:value slot location
@@ -513,8 +634,8 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
     
     List<Annotation> slots = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, ContentHeading.typeIndexID, pTerm.getBegin(), pTerm.getEnd(), false);
     
-    if ( slots != null && !slots.isEmpty())
-      returnVal = true;
+    if ( slots != null && !slots.isEmpty()) 
+       returnVal = true;
     
     
     
@@ -637,8 +758,8 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
 	  String returnVal = null;
 	  
 	if      ( pClassName.equals("D110_D129_PurposefulSensoryExperiences"))returnVal = "d110_d129_purposefulSensoryExperiences";
-    else if ( pClassName.equals("D130_D159_BasicLearning"))               returnVal =                "d130_d159_basicLearning";
-    else if ( pClassName.equals("D160_FocusingAttention"))                returnVal =                          "d160_focusing";
+  else if ( pClassName.equals("D130_D159_BasicLearning"))               returnVal =                "d130_d159_basicLearning";
+  else if ( pClassName.equals("D160_FocusingAttention"))              returnVal =                            "d160_focusing";
 	else if ( pClassName.equals("D163_Thinking"))                         returnVal =                          "d163_thinking";
 	else if ( pClassName.equals("D166_Reading"))                          returnVal =                        "d166_cogReading";
 	else if ( pClassName.equals("D170_Writing"))                          returnVal =                        "d170_cogWriting";
@@ -646,8 +767,8 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
 	else if ( pClassName.equals("D175_SolvingProblems"))                  returnVal =                    "d175_ProblemSolving";
 	else if ( pClassName.equals("D177_MakingDecisions"))                  returnVal =                   "d177_MakingDecisions";
 	else if ( pClassName.equals("D179_ApplyingKnowledgeOther"))           returnVal =            "d179_ApplyingKnowledgeOther";
-	else if ( pClassName.equals("D210_D220_UndertakingTasks"))            returnVal =                        "d210_d220_tasks";
-	else if ( pClassName.equals("D230_CarryingOutDailyRoutine"))          returnVal =                      "d230_dailyRoutine";                    //  "d230_dailyRoutine:ActivitiesOfDailyLiving:SelfCareActivities:DomesticLifeActivities";
+	else if ( pClassName.equals("D210_D220_UndertakingTasks"))            returnVal = "d210_d220_tasks";
+	else if ( pClassName.equals("D230_CarryingOutDailyRoutine"))          returnVal = "d230_dailyRoutine:ActivitiesOfDailyLiving";                    //  "d230_dailyRoutine:ActivitiesOfDailyLiving:SelfCareActivities:DomesticLifeActivities";
 	else if ( pClassName.equals("D240_HandlingStress"))                   returnVal =                    "d240_handlingStress";
 	else if ( pClassName.equals("D310_D329_ReceivingCommunication"))      returnVal =                 "d310_d329_comReceiving";
 	else if ( pClassName.equals("D330_D349_ProducingCommunication"))      returnVal =                 "d330_d349_comProducing";
@@ -809,25 +930,10 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
    * @param pComcogYesSentence
   */
   // =================================================
-  private void setComcogYesAttributes(JCas pJCas, Annotation pComcogYesSentence) {
+  protected final void setComcogYesAttributes(JCas pJCas, Annotation pComcogYesSentence) {
     
-    // create a new annotation from the manual or original one
-    // make sure it goes into the right annotation set
-    //   Comcog_yes statement = new Comcog_yes( pJCas);
-	   gov.nih.cc.rmd.inFACT.x.Comcog_yes statement = (gov.nih.cc.rmd.inFACT.x.Comcog_yes)pComcogYesSentence;
-    //  statement.setBegin( pComcogYesSentence.getBegin());
-    //  statement.setEnd( pComcogYesSentence.getEnd());
-    //  statement.setId( ((Comcog_yes) pComcogYesSentence).getId() );
-    // System.err.println("The original Annotation setName = " + statement.getAnnotationSetName() );
-    // if ( statement.getAnnotationSetName().contains("model") )
-    //   System.err.println(" really here: " + statement.getAnnotationSetName());
-	 //  statement.setAnnotationSetName( this.annotationSetName);
-    //  statement.setDifficult_to_determine( ((Comcog_yes) pComcogYesSentence).getDifficult_to_determine() );       
-        
-	   String documentId = VUIMAUtil.getDocumentId(pJCas);
-	 
+     gov.nih.cc.rmd.inFACT.x.Comcog_yes statement = (gov.nih.cc.rmd.inFACT.x.Comcog_yes)pComcogYesSentence;
      
-      
       ((gov.nih.cc.rmd.inFACT.x.Comcog_yes)statement).setD110_d129   ( UIMAUtil.mentionsExist(  pJCas, D110_D129_PurposefulSensoryExperiences.typeIndexID,   pComcogYesSentence.getBegin(), pComcogYesSentence.getEnd(), true ));
       ((gov.nih.cc.rmd.inFACT.bstract.Comcog_yes)statement).setD130_d159   ( UIMAUtil.mentionsExist(  pJCas, D130_D159_BasicLearning               .typeIndexID,   pComcogYesSentence.getBegin(), pComcogYesSentence.getEnd(), true ));
       ((gov.nih.cc.rmd.inFACT.x.Comcog_yes)statement).setD160        ( UIMAUtil.mentionsExist(  pJCas, D160_FocusingAttention                .typeIndexID,   pComcogYesSentence.getBegin(), pComcogYesSentence.getEnd(), true ));
@@ -861,9 +967,7 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
      
       setAtLeastOneComcogAttribute( statement);
     
-     // statement.addToIndexes();
-     // pComcogYesSentence.removeFromIndexes();
-      
+   
   } // end Method setComcogYesAttributes() ------------
 
 
@@ -913,54 +1017,10 @@ public class ComCogCategories extends JCasAnnotator_ImplBase {
  **/
 // ----------------------------------
 public void destroy() {
-  this.performanceMeter.writeProfile( this.getClass().getSimpleName());
+  if ( this.performanceMeter != null )
+    this.performanceMeter.writeProfile( this.getClass().getSimpleName());
   
-  String msg0  = "-------------------------------------------------------------------------------------------------------------------------\n";
-  String msg1 = 
-		  U.spacePadLeft(4,"d110") + "|" + 
-          U.spacePadLeft(4,"d130") + "|" +
-		  U.spacePadLeft(4,"d160") + "|" +
-		  U.spacePadLeft(4,"d163") + "|" +
-		  U.spacePadLeft(4,"d166") + "|" +
-		  U.spacePadLeft(4,"d170") + "|" +
-		  U.spacePadLeft(4,"d172") + "|" +
-		  U.spacePadLeft(4,"d175") + "|" +
-		  U.spacePadLeft(4,"d177") + "|" +
-		  U.spacePadLeft(4,"d179") + "|" +
-		  U.spacePadLeft(4,"d210") + "|" +
-		  U.spacePadLeft(4,"d230") + "|" +
-		  U.spacePadLeft(4,"d240") + "|" +
-		  U.spacePadLeft(4,"d310") + "|" +
-		  U.spacePadLeft(4,"d330") + "|" +
-		  U.spacePadLeft(4,"d350") + "|" +
-		  U.spacePadLeft(4,"adap") + "|" +
-		  U.spacePadLeft(4,"aplm") + "|" +
-		  U.spacePadLeft(4,"pace") + "|" +
-		  U.spacePadLeft(4,"pers") + "\n";
   
-  String msg2 = 
-		  U.zeroPad(this.d110_count,4) + "|" + 
-          U.zeroPad(this.d130_count,4) + "|" +
-		  U.zeroPad(this.d160_count,4) + "|" +
-		  U.zeroPad(this.d163_count,4) + "|" +
-		  U.zeroPad(this.d166_count,4) + "|" +
-		  U.zeroPad(this.d170_count,4) + "|" +
-		  U.zeroPad(this.d172_count,4) + "|" +
-		  U.zeroPad(this.d175_count,4) + "|" +
-		  U.zeroPad(this.d177_count,4) + "|" +
-		  U.zeroPad(this.d179_count,4) + "|" +
-		  U.zeroPad(this.d210_count,4) + "|" +
-		  U.zeroPad(this.d230_count,4) + "|" +
-		  U.zeroPad(this.d240_count,4) + "|" +
-		  U.zeroPad(this.d310_count,4) + "|" +
-		  U.zeroPad(this.d330_count,4) + "|" +
-		  U.zeroPad(this.d350_count,4) + "|" +
-		  U.zeroPad(this.adap_count,4) + "|" +
-		  U.zeroPad(this.aplm_count,4) + "|" +
-		  U.zeroPad(this.pacing_count,4) + "|" +
-		  U.zeroPad(this.pers_count,4) + "\n";
-  
-  //System.err.print(msg0 + msg1 + msg0 + msg2 + msg0);
   
 }
 
@@ -1012,6 +1072,10 @@ public void destroy() {
     
     this.annotationSetName = U.getOption(pArgs, "--comcogAnnotationSetName=", "comcog_categories_rulebased_model");
     
+    this.payloadAnnotationSetName = U.getOption(pArgs, "--payloadAnnotationSetName=", "ipir_sentence_model:comcog_sentence_manual:comcog_sentence_model:ipir:comcog:comcog_sentence:ipir_sentence");
+    
+    this.segmentRelevantFilter = Boolean.parseBoolean( U.getOption(pArgs, "--segmentRelevantFilter=", "true" ));
+    
     this.INFACT_MODE = Boolean.valueOf( U.getOption(pArgs, "--INFACT_MODE=", "false"));
   
     loadCategories( mentalFunctioningOntologyCategories );
@@ -1048,7 +1112,9 @@ public void destroy() {
    private HashSet<String> keptCategories = new HashSet<String>();
    private int categoryCtr = 0;
    private String annotationSetName = "comcog_categories_rulebased_model";
+   private String payloadAnnotationSetName = "comcog_sentence";
    private boolean INFACT_MODE = false;
+   private boolean segmentRelevantFilter = true;
    
    int D110_CAT_SENSORY = 0;
    int D130_CAT_LEARNING = 1;
