@@ -1,0 +1,385 @@
+#
+# this file holds exceptions to making comcog and ipir
+# _yes mentions
+#
+#
+NMFO00001|progress notes|noun|plural|progress notes|progress notes|NotIPIR:NotComcog
+NMFO00002|urgency|noun|plural|||NotIPIR
+NMFO00003|exp cosigner|noun|singular|||NotIPIR
+NMFO00004|dob|noun|singular|||NotIPIR:NotComcog
+NMFO00004|d.o.b.|noun|singular|||NotIPIR:NotComcog
+NMFO00004|d ob|noun|singular|||NotIPIR:NotComcog
+NMFO00004|dob/age/sex|noun|singular|||NotIPIR:NotComcog
+NMFO00004|dob/age/gender|noun|singular|||NotIPIR:NotComcog
+NMFO00004|date of birth|noun|singular|||NotIPIR:NotComcog
+NMFO00004|birth date|noun|singular|||NotIPIR:NotComcog
+NMFO00004|birthdate|noun|singular|||NotIPIR:NotComcog
+NMFO00004|vital signs|noun|singular|||NotIPIR:NotComcog
+NMFO00004|signed|noun|singular|||SLOT:NotIPIR:NotComcog
+NMFO00004|signed by|noun|singular|||SLOT:NotIPIR:NotComcog
+NMFO00004|signature #1|noun|singular|||SLOT:NotIPIR:NotComcog
+NMFO00004|performed by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|performed on|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|verified by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|electronically signed by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|electronically signed|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|authorized by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|authored by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|cosigned by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|cosigned|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|amended by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|signed in full|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|dictated by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+#NMFO00004|by|noun|singular|||SLOT:NotIPIR
+NMFO00004|authenticated by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|vitals entered by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00004|entered by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+
+NMFO00005|standard title|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|title|noun|singular|||SLOT:NMFO;NotIPIR:NotComcog
+NMFO00005|document name|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|document type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|author type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|patient type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|visit type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type/amount|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of treatement|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of medical opinion provided|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of job|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of information to be released|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of exam|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of evaluation|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of discharge|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of report|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|report type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|recreational drug type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|pt type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|patient type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|treatment plan type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|therapy type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|session type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|service type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|service duration|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|event time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|tech time out|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|service start time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|monitoring start time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|monitoring end time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|service end time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|end time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|service setting|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|service program|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|discharge type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of visit|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|work type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|olin doc|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|note type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|type of note|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|note title|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00005|behavioral health|noun|singular|||VALUE:NotIPIR:NotComcog
+NMFO00005|behavioral health treatment plan|noun|singular|||VALUE:NotIPIR:NotComcog
+NMFO00005|behavioral health administrative noteplan|noun|singular|||VALUE:NotIPIR:NotComcog
+NMFO00005|local title|noun|singular|||SLOT:NotIPIR:NotComcog
+NMFO00006|mrn|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00006|service note medical record #|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00006|billing receipt #|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00006|billing type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|make invoice out to|noun|singular|||NMFO:NotIPIR:NotComcog
+NMFO00007|location of wound|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|location of service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|location of rehab|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|location of care|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|service location|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|requesting location|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|pt location|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|location|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00007|user location|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|dale of service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|service date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|entry date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|service datetime|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|visit date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of visit|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of surgery|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|enc date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|enc. date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|admit date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|result date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|result type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|contact type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|run date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|outpatient dates|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|last updated|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of evaluation|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of admission|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|document date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|report date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of report|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|documented date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|documented by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|target date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|start date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|start time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|service start time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|tid start date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|period start date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|stop date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|stop time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|time out|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|today's date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|registration date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|print date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date reported|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|note date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of note|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|exporation date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of last tetanus|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of last pneumovax|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of last pap smear|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of last flu shot|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of last discharge from active duty|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of last bone density study|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of injury|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of evaluation|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of diagnosis|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of consultation|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|date of consult|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|arrival date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|appointment date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|appointment facility|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|appt date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|apt type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|appt type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|appointement type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|appt. date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|immunizations|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|i mmunizations|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00008|service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+#NMFO00008|groups|noun|singular|||SLOT:NotIPIR
+NMFO00008|dos|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00009|office visit|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|receipt acknowledged by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|ssn|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|ssn/case|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|cage|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|ss n|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|fnip/ssn|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|emp/ssn|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|during sex|noun|singular|||
+NMFO00010|sex life|noun|singular|||
+NMFO00010|sex|noun|singular|||SLOT:NotComcog
+NMFO00010|age/sex|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00010|age/sex|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00011|patient number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00011|patient name|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00011|patient's name|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00011|patient's identification|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00011|patient no|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+#NMFO00011|name|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00011|name|noun|singular|||SLOT:NotComcog
+NMFO00012|case#|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|case|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|case 1|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|case 4|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|dos case number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|disability and adult programs case|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|disability and adult programs case #|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|client case|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|case summary|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|case id|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|case file|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00012|case file|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00013|document status|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|resulted by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|referred by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|print date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|printed date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|dictation date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|transcription date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|service date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|date/time of visit|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|reviewed date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|reviewed by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|result date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|date/time signed|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|date/time patient entered treatment|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|date/time of release|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|release date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|relese date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|date/time/duration|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|time spent with veteran|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|length of time spent with the patient|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|length of time spent with patient|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|created|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|bp|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00014|mood|noun|singular|||SLOT:NotIPIR:NotComcog
+NMFO00014|affect|noun|singular|||SLOT:NotIPIR:NotComcog
+NMFO00015|encounter date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00015|date of encounter|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00015|encounter entered by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00015|actual encounter date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00016|discharge date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00016|anticipated discharge date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00016|date of discharge|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00016|conditions at discharge|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00016|condition at discharge|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00017|admission date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00017|vineland adaptive behavior scales|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|attending physician|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|labs and tests|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|labs ordered|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|lab|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|resulting lab|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|printed|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|printed by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|i printed by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|interpreted by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|i nterpreted by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|insurance|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|heent|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|primed by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|printed dt/tm|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|print dt/tm|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|print date/time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|printed on|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|print time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|print at|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|print by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|print date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|i print date|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|payer|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|payer|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|page|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00018|orientation|noun|singular|||SLOT:NotIPIR
+NMFO00018|hypertension|noun|singular|||SLOT:NotIPIR
+NMFO00019|provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|provided at|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|psychiatry nmcpprovider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|ordering provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|requesting provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|referring provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|rendering provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|rendering pr vider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|rendering p ovider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|primary provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|primary care provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|pc provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|current pc provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|pmdp provider report|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|referred by|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00019|axis i|noun|singular|||SLOT:NotIPIR
+NMFO00019|axis ii|noun|singular|||SLOT:NotIPIR
+NMFO00019|axis iii|noun|singular|||SLOT:NotIPIR
+NMFO00019|axis i i|noun|singular|||SLOT:NotIPIR
+NMFO00019|total time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00020|re|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00020|staff|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00020|responsible staff|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00021|branch of service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00021|job in service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00021|length of service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00022|duration of service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00022|service duration|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00023|medical service|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00023|from|noun|singular|||SLOT
+NMFO00023|psychiatric history|noun|singular|||SLOT:NotIPIR
+NMFO00023|psychiatric diagnosis|noun|singular|||SLOT:NotIPIR
+NMFO00023|past psychiatric history|noun|singular|||SLOT:NotIPIR
+NMFO00023|outpatient psychiatric treatment|noun|singular|||SLOT:NotIPIR
+NMFO00023|family psychiatric history|noun|singular|||SLOT:NotIPIR
+NMFO00024|insight|noun|singular|||SLOT:NotIPIR
+NMFO00024|insight/judgment|noun|singular|||SLOT:NotIPIR
+NMFO00024|(*) insight|noun|singular|||SLOT:NotIPIR
+NMFO00023|unit|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00023|units|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00023|unit number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00023|unit#|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00023|max units|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00024|total number of group participants|noun|singular|||SLOT:NotIPIR
+NMFO00025|social security number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|social security admin|noun|singular|||NMFO:NotIPIR:NotComcog
+NMFO00025|request number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|phone number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|toll free|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|cell|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|digtal pager|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|patient id|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|medical record number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|medical record number/patient id|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|med rec number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|mr number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|mr#|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|account number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|unit number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|service vendor number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|vendor #|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|room number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|report number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|pcp phone number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|order id number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|license number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|l cense number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|job number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|financial number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|account number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|accession number|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00025|adm|noun|singular|||SLOT:date:NMFO:NotIPIR:NotComcog
+NMFO00025|d/c|noun|singular|||SLOT:date:NMFO:NotIPIR:NotComcog
+NMFO00025|admitted|noun|singular|||SLOT:date:NotComcog
+NMFO00025|admit/disch|noun|singular|||SLOT:date:NMFO:NotIPIR:NotComcog
+NMFO00025|admission|noun|singular|||SLOT:date:NotComcog
+NMFO00026|user id|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00026|report id|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00026|ordering provider|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00026|resident|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00026|recipient|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00026|rr id|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00026|report request id|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00026|rxid|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00027|privacy act statement|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00028|id #|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00029|result status|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00029|smoking status|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00029|current tobacco usage|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00029|patient status|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00029|final result|noun|singular|||VALUE:NMFO:NotIPIR:NotComcog
+NMFO00030|thought process|noun|singular|||SLOT:NotIPIR
+NMFO00031|refills|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00031|qty|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00031|qty|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00031|quality|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00032|recent and repote memory skills|noun|singular|||SLOT:NotIPIR
+NMFO00032|reason for leaving|noun|singular|||SLOT:NotIPIR
+NMFO00032|reason for message|noun|singular|||SLOT:NotIPIR
+NMFO00033|cognitive functioning|noun|singular|||SLOT:NotIPIR
+NMFO00034|deleted|noun|singular|||VALUE:NMFO:NotIPIR:NotComcog
+NMFO00035|thought content|noun|singular|||SLOT:NotIPIR
+NMFO00036|allegations|noun|singular|||SLOT:NotIPIR
+NMFO00037|treatment provided|noun|singular|||SLOT:NotIPIR
+NMFO00037|type of treatment plan|noun|singular|||SLOT:NotIPIR
+NMFO00037|treatment progress|noun|singular|||SLOT:NotIPIR
+NMFO00037|treatment plan type|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00037|treatment plan progress|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00037|treatment facility|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00037|treatment diagnosis|noun|singular|||SLOT:NotIPIR:NotComcog
+NMFO00037|therapy|noun|singular|||SLOT:NotIPIR
+NMFO00038|pain score|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|pain level|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|pain assessment|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|back pain|noun|singular|||NMFO:NotIPIR:NotComcog
+NMFO00038|clinical information|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|ordering clinical information|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|primary pain intensity|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|secondary pain intensity|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|musculoskeletal|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00038|cardiovascular|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
+NMFO00039|language|noun|singular|||SLOT:NotIPIR
+NMFO00040|disability determinations|noun|singular|||NotIPIR:NotComcog
+NMFO00041|demographics|noun|singular|||SLOT:NotComcog
+NMFO00042|demeanor/behavior|noun|singular|||SLOT:NotIPIR
+NMFO00043|age|noun|singular|||SLOT:NotComcog
+NMFO00043|total time|noun|singular|||SLOT:NMFO:NotIPIR:NotComcog
