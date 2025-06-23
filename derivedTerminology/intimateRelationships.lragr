@@ -1,129 +1,202 @@
 #
 #  Evidence for intimate Relationships
 #
-assertion/subjectIsEvidence.lragr:S000061|girlfriend|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
-E0029780|girlfriend|noun|count(thr_sing)|girlfriend|girlfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-E0029780|girlfriends|noun|count(thr_plur)|girlfriend|girlfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-E0029780|girl-friend|noun|count(thr_sing)|girlfriend|girlfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-E0029780|girl-friends|noun|count(thr_plur)|girlfriend|girlfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-E0013875|boy-friend|noun|count(thr_sing)|boy-friend|boyfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-E0013875|boyfriend|noun|count(thr_sing)|boyfriend|boyfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-E0013875|boy-friends|noun|count(thr_plur)|boy-friend|boyfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-E0013875|boyfriends|noun|count(thr_plur)|boyfriend|boyfriend|SubjectIsOther:IntimateRelationshipEvidence|pre
-C0010222|couple|<noun>|<base>|couple|couple|FamilyHistoryEvidence:IntimateRelationshipEvidence|pre
-C0686787|abusive sexual relationship|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationship|pre
-C0686790|abusive sexual relationship with husband|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-C0686788|abusive sexual relationship with partner|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-C0686789|abusive sexual relationship with wife|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|spouse|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|partner|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|sexual partner|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|casual sexual partner|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|ex-boyfriend|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|ex-girlfriend|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|ex|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|ex-spouse|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|ex spouse|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|husband|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|wife|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|wives|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|domestic partner |<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|romantic interest|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|close |<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|lover|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|love|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|love of my life|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|love of her life|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|love of his life|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|love of their life|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|friends with benifits|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|married|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|kissing cousins|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|compadre|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|common-law husband|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|common-law wife|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|fiance|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|fiancee|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|former spouse|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|mistress|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|intimate relationship|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|sexual relationship|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|spousal relationship|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|romantic relationship|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|courtship|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|daliance|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|fling|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|tryst|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|flirtation|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|affair|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|romantic affair|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|romance|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|amour|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|entanglement|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|illicit love|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|engagement|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|infidelity|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|amorous|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|dating|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|companion|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|sweetheart|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|childhood sweetheart|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|confidante|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|flame|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|soul mate|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|beau|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|soutor|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|escort|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|affianced|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|betrothed|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|future mate|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|groom-to-be|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|husband-to-be|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|intended|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|prospective spouse|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|paramour|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|beloved|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|honey|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|truelove|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|old man|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|bride|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|bride-to-be|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|future wife|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|swain|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|wooer|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|inamorato|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|inamorata|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|#baby|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|darling|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|#dear|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|#dearest|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|heartthrob|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|#number one|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|#numero uno|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|object of affection|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|one and only|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|#pet|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|significant other|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|sugar daddy|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|tootsie|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|#treasure|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|sweetie|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|casanova|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|don juan|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|valentine|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|angel|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|courtesan|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|kept woman|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|ladylove|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|chatelaine|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|bedmate|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|best girl|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|dream girl|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|main squeeze|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|old lady|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|other woman|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-#IR000000|roommate|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|jezebel|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|concubine|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
-IR000000|fancy woman|<noun>|<base>|||SubjectIsOtherEvidence:IntimateRelationshipEvidence|pre
+E0029780|girlfriend|noun|count(thr_sing)|girlfriend|girlfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+E0029780|girlfriends|noun|count(thr_plur)|girlfriend|girlfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+E0029780|girlfriend's|noun|count(thr_plur)|girlfriend|girlfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+E0029780|girlfreind|noun|count(thr_plur)|girlfriend|girlfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+E0029780|girl-friend|noun|count(thr_sing)|girlfriend|girlfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+E0029780|girl-friends|noun|count(thr_plur)|girlfriend|girlfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+E0013875|boy-friend|noun|count(thr_sing)|boy-friend|boyfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+E0013875|boyfriend|noun|count(thr_sing)|boyfriend|boyfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+E0013875|boy-friends|noun|count(thr_plur)|boy-friend|boyfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+E0013875|boyfriends|noun|count(thr_plur)|boyfriend|boyfriend|SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+C0010222|couple|<noun>|<base>|couple|couple|IPIRActivities:FamilyHistoryEvidence:IntimateRelationshipEvidence|pre
+C0686787|abusive sexual relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationship|pre
+C0686790|abusive sexual relationship with husband|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+C0686788|abusive sexual relationship with partner|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+C0686788|physical abuse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+C0686789|abusive sexual relationship with wife|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|spouse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|spouse/significant other|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|partner|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|sexual partner|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|sexual partner/spouse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|casual sexual partner|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|ex-boyfriend|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ex-girlfriend|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ex|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ex-spouse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ex spouse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|husband|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|husband's|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|wife|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|wife's|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|wives|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|domestic partner|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|romantic interest|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|close |<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|lover|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|love|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|love of my life|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|love of her life|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|love of his life|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|love of their life|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|friends with benifits|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|married|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|married at age|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|kissing cousins|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|compadre|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|common-law husband|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|common-law wife|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|fiance|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|fiancee|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|former spouse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|mistress|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|intimate relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|healthy/intimate relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|healthy/intimate relationships|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|sexual relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|during sex|<noun>|<base>|||IntimateRelationshipEvidence|pre
+IR000000|sex life|<noun>|<base>|||IntimateRelationshipEvidence|pre
+IR000000|spousal relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|romantic relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|courtship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|daliance|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|fling|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|tryst|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|flirtation|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|affair|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|romantic affair|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|romance|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|amour|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|entanglement|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|illicit love|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|engagement|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|engaged to be married|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|engaged in|<noun>|<base>|||NotIPIR
+IR000000|infidelity|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|amorous|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|dating|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|companion|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|sweetheart|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|childhood sweetheart|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|confidante|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|flame|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|soul mate|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|beau|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|soutor|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|escort|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|affianced|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|betrothed|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|future mate|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|groom-to-be|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|husband-to-be|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|intended|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|prospective spouse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|paramour|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|beloved|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|honey|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|truelove|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|old man|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|bride|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|bride-to-be|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|future wife|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|swain|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|wooer|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|inamorato|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|inamorata|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|#baby|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|darling|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|#dear|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|#dearest|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|heartthrob|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|#number one|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|#numero uno|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|object of affection|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|one and only|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|#pet|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|significant other|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence:IntimatePartner:Person|pre
+IR000000|significant others|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|sugar daddy|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|tootsie|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|#treasure|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|sweetie|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|casanova|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|don juan|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|valentine|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|angel|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|courtesan|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|kept woman|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ladylove|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|chatelaine|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|bedmate|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|best girl|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|dream girl|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|main squeeze|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|old lady|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|other woman|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+#IR000000|roommate|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|jezebel|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|concubine|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|fancy woman|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
 IR000000|inseparable|<noun>|<base>|||IntimateRelationshipEvidence
+#
+# From ssa observations 
+#
+IR000000|time together|<noun>|<base>|||IntimateRelationshipEvidence
+IR000000|seeing each other|<noun>|<base>|||IntimateRelationshipEvidence
+IR000000|seen each other|<noun>|<base>|||IntimateRelationshipEvidence
+IR000000|on and off for|<noun>|<base>|||IntimateRelationshipEvidence
+IR000000|on & off for|<noun>|<base>|||IntimateRelationshipEvidence
+IR000000|relationships|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship with her partner|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship with his partner|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship issues|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship problems|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship will end|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ended their relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ended her relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ended his relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|ended the relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship ending|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship is over|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship being over|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|end of the relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|end the relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|in a relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship is good|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|relationship was good|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|fiance leaving|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|not in a relationship|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|request for a divorse|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|left him for|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|left her for|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|couples therapy|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|enjoy one another's company|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|enjoy her company|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|enjoy his company|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|enjoys her company|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|enjoys his company|<noun>|<base>|||SubjectIsOtherEvidence:IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|marriage|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|marital relationship|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|marital problems|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|issues with his marriage|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|issues with her marriage|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|issue within his marriage|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|issue within her marriage|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|has been rocky|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|not that great|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|growing apart|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|grew apart|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|on good terms|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|get along well|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|getting along with his|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|getting along with her|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|got along with|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|gots along with|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|separation|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|separated|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|broke up with her|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|broke up with him|<noun>|<base>|||IPIRActivities:IntimateRelationshipEvidence|pre
+IR000000|get in trouble|<noun>|<base>|||IPIRActivities|pre

@@ -6,10 +6,15 @@ SR00000|bicyclist|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|biker|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|bum|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|others|<noun>|<base>|||OtherRelationshipEvidence
+SR00000|interact with others|<verb>|<base>|interact with others|interact with others|OtherRelationshipEvidence
+SR00000|interacts with others|<verb>|<base>|interact with others|interact with others|OtherRelationshipEvidence
+SR00000|interacted with others|<verb>|<base>|interact with others|interact with others|OtherRelationshipEvidence
+SR00000|with others|<verb>|<base>|interact with others|interact with others|OtherRelationshipEvidence
 SR00000|other commuter|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|other commuters|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|commuter|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|customer|<noun>|<base>|||StrangerRelationshipEvidence
+#SR00000|resident|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|cyclist|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|displaced person|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|drifter|<noun>|<base>|||StrangerRelationshipEvidence
@@ -31,6 +36,8 @@ SR00000|motorcyclist|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|motorist|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|navigator|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|nomad|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|other people|<noun>|<base>|||OtherRelationshipEvidence
+SR00000|crowds|<noun>|<plural>|crowd|crowd|OtherRelationshipEvidence
 SR00000|people|<noun>|<base>|||OtherRelationshipEvidence
 SR00000|passenger|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|passer|<noun>|<base>|||StrangerRelationshipEvidence
@@ -48,7 +55,7 @@ SR00000|rider|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|roamer|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|sightseer|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|somebody|<noun>|<base>|||StrangerRelationshipEvidence
-SR00000|someone|<noun>|<base>|||StrangerRelationshipEvidence
+SR00000|someone|<noun>|<base>|||StrangerRelationshipEvidence:OtherRelationshipEvidence
 SR00000|stranger|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|stroller|<noun>|<base>|||StrangerRelationshipEvidence
 SR00000|tourer|<noun>|<base>|||StrangerRelationshipEvidence
@@ -101,7 +108,12 @@ IR00000|isolating himself|<verb>|<base>|||OtherRelationshipEvidence
 IR00000|isolating herself|<verb>|<base>|||OtherRelationshipEvidence
 IR00000|taken advantage of|<verb>|<base>|||OtherRelationshipEvidence
 IR00000|withdrawn|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|social isolation|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|socialy isolated|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|isolated|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|isolation|<verb>|<base>|||OtherRelationshipEvidence
 IR00000|socially withdrawn|<verb>|<base>|||OtherRelationshipEvidence
+IR00000|withdrawn|<verb>|<base>|||OtherRelationshipEvidence
 IR00000|social withdrawl|<verb>|<base>|||OtherRelationshipEvidence
 IR00000|social environment|<noun>|<base>|||OtherRelationshipEvidence
 IR00000|social environments|<noun>|<plural>|||OtherRelationshipEvidence
@@ -115,10 +127,14 @@ IR00000|socialization|<noun>|<base>|||OtherRelationshipEvidence
 IR00000|social interaction|<noun>|<base>|||StrangerRelationshipEvidence:OtherRelationshipEvidence
 IR00000|interact with the public|<noun>|<base>|||StrangerRelationshipEvidence
 IR00000|ability to relate and interact|<noun>|<base>|||StrangerRelationshipEvidence
-IR00000|interact appropriately|<noun>|<base>|||StrangerRelationshipEvidence
-IR00000|interact adequately|<noun>|<base>|||StrangerRelationshipEvidence
-IR00000|could not interact well|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|could not interact well|<noun>|<base>|||StrangerRelationshipEvidence:NegationEvidence|pre
 IR00000|interaction with public|<noun>|<base>|||StrangerRelationshipEvidence
-IR00000|ability to interact|<noun>|<base>|||StrangerRelationshipEvidence
+#IR00000|ability to interact|<noun>|<base>|||StrangerRelationshipEvidence
 IR00000|ability to relate|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|customers|<noun>|<base>|||StrangerRelationshipEvidence
+IR00000|woman at a|<noun>|<base>|||StrangerRelationshipEvidence:Person
+IR00000|woman at the|<noun>|<base>|||StrangerRelationshipEvidence:Person
+IR00000|man at a|<noun>|<base>|||StrangerRelationshipEvidence:Person
+IR00000|man at the|<noun>|<base>|||StrangerRelationshipEvidence:Person
+
 

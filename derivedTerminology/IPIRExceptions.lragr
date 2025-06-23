@@ -15,3 +15,36 @@ E00000|invoice|<noun>|<base>|||NotMFO
 E00000|bill|<noun>|<base>|||NotMFO
 E00000|fax|<noun>|<base>|||NotMFO
 E00000|your|<noun>|<base>|||NotIPIR
+E00000|emotionally supportive|<noun>|<base>|||
+E00000|living with family|<noun>|<base>|||
+E00000|supportive social/community network or family|<noun>|<base>|||
+E00000|supportive family|<noun>|<base>|||
+E00000|supportive family members|<noun>|<base>|||
+E00000|family has been very supportive|<noun>|<base>|||FamilyHistoryEvidence|pre
+E00000|family supportive|<noun>|<base>|||FamilyHistoryEvidence|pre
+E00000|supportive family|<noun>|<base>|||FamilyHistoryEvidence|pre
+E00000|family members or friends who are supportive|<noun>|<base>|||FamilyHistoryEvidence|pre
+E00000|family members are supportive|<noun>|<base>|||FamilyHistoryEvidence|pre
+#E00000|alert|<noun>|<base>|||NotIPIR
+E00000|immediate family|<noun>|<base>|||FamilyHistoryEvidence|pre
+E00000|bring in|<verb>|<base>||||
+E00000|area not assessed|<noun>|<base>|||NotMFO:NegationEvidence|pre
+E00000|not applicable|<noun>|<base>|||NotMFO
+E00000|take turns|<verb>|<base>|||
+E00000|took turns|<verb>|<past>|||
+E00000|taking turns|<verb>|<prespart>|||
+E00000|takes turns|<verb>|<present>|||
+E00000|takes out|<verb>|<present>|||
+E00000|take walks|<verb>|<present>|||
+E00000|take action|<verb>|<present>|||
+E00000|take her|<verb>|<present>|||
+E00000|take him|<verb>|<present>|||
+E00000|take time off|<verb>|<present>|||
+E00000|take time|<verb>|<present>|||
+E00000|finding alternatives|<verb>|<present>|||
+E00000|caregivers readiness to learn|<verb>|<present>|||SubjectIsOther:Person
+E00000|caregiver verbalizes willingness readiness to learn|<verb>|<present>|||SubjectIsOther:Person
+E00000|caregivers willingness to learn|<verb>|<present>|||
+E00000|patients to learn|<verb>|<present>|||
+E00000|calm affect|<verb>|<present>|||
+#E00000|bedside|<verb>|<present>|||NotIPIR
