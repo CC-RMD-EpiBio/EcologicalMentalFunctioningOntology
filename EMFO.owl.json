@@ -19,6 +19,7 @@
       "http://purl.obolibrary.org/obo/RO_0002328",
       "http://www.w3.org/2000/01/rdf-schema",
       "http://purl.obolibrary.org/obo/BFO_0000055",
+      "http://purl.obolibrary.org/obo/BFO_0000054",
       "http://purl.obolibrary.org/obo/BFO_0000034",
       "https://github.com/CC-RMD-EpiBio/EcologicalMentalFunctioningOntology/EMFO",
       "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -6194,10 +6195,10 @@
     },
     {
       "id": "109",
-      "iri": "http://purl.obolibrary.org/obo/BFO_0000055#realizes",
-      "baseIri": "http://purl.obolibrary.org/obo/BFO_0000055",
+      "iri": "http://purl.obolibrary.org/obo/BFO_0000054#realized_by",
+      "baseIri": "http://purl.obolibrary.org/obo/BFO_0000054",
       "label": {
-        "IRI-based": "realizes"
+        "IRI-based": "realized_by"
       },
       "attributes": [
         "object",
@@ -6208,7 +6209,7 @@
           {
             "identifier": "Definition",
             "language": "undefined",
-            "value": "\"Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process\"",
+            "value": "\"Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process\"",
             "type": "label"
           }
         ]
